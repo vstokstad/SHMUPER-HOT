@@ -1,0 +1,13 @@
+using System;
+using UnityEngine;
+
+public class PlayerActions : MonoBehaviour {
+        
+    [NonSerialized]  public bool fireInput;
+    [NonSerialized]  public bool secondFireInput;
+    [NonSerialized]  public bool shieldInput;
+    [NonSerialized]  public bool weaponCycle;
+    
+    //TODO implement actions together with strategy Pattern weapon system!
+
+}
