@@ -1,3 +1,5 @@
+/Users/vilhelmstokstad/Documents/GitHub/SHMUP 2D/obj/Debug/Assembly-CSharp.csprojAssemblyReference.cache
+/Users/vilhelmstokstad/Documents/GitHub/SHMUP 2D/obj/Debug/Assembly-CSharp.csproj.CoreCompileInputs.cache
 /Users/vilhelmstokstad/Documents/GitHub/SHMUP 2D/Temp/bin/Debug/Assembly-CSharp.dll
 /Users/vilhelmstokstad/Documents/GitHub/SHMUP 2D/Temp/bin/Debug/Assembly-CSharp.pdb
 /Users/vilhelmstokstad/Documents/GitHub/SHMUP 2D/Temp/bin/Debug/Microsoft.Win32.Primitives.dll
@@ -372,8 +374,6 @@
 /Users/vilhelmstokstad/Documents/GitHub/SHMUP 2D/Temp/bin/Debug/UnityEditor.iOS.Extensions.Common.pdb
 /Users/vilhelmstokstad/Documents/GitHub/SHMUP 2D/Temp/bin/Debug/UnityEngine.TestRunner.pdb
 /Users/vilhelmstokstad/Documents/GitHub/SHMUP 2D/Temp/bin/Debug/UnityEditor.TestRunner.pdb
-/Users/vilhelmstokstad/Documents/GitHub/SHMUP 2D/obj/Debug/Assembly-CSharp.csprojAssemblyReference.cache
-/Users/vilhelmstokstad/Documents/GitHub/SHMUP 2D/obj/Debug/Assembly-CSharp.csproj.CoreCompileInputs.cache
 /Users/vilhelmstokstad/Documents/GitHub/SHMUP 2D/obj/Debug/Assembly-CSharp.csproj.CopyComplete
 /Users/vilhelmstokstad/Documents/GitHub/SHMUP 2D/obj/Debug/Assembly-CSharp.dll
 /Users/vilhelmstokstad/Documents/GitHub/SHMUP 2D/obj/Debug/Assembly-CSharp.pdb

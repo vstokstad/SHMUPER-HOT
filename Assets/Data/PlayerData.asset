@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: PlayerData
   m_EditorClassIdentifier: 
   health: 3
-  shieldCount: 1
-  turnSpeed: 10
-  moveSpeed: 10
+  boostTimer: -370.8348
+  maxSpeed: 8
+  acceleration: 8
   boostForce: 5
   boostChargeFull: 1
-  ammunition: Infinity
+  ammunition: 10

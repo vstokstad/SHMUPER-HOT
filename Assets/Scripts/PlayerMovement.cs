@@ -1,64 +1,79 @@
 using System;
+using Unity.Mathematics;
 using UnityEngine;
-using Debug = System.Diagnostics.Debug;
 
 public class PlayerMovement : MonoBehaviour {
     [NonSerialized] public float upDownInput;
     [NonSerialized] public float sidewaysInput;
     [NonSerialized] public bool boostInput;
-    
-    [SerializeField] private PlayerData _playerData;
-    
+    [SerializeField] private ParticleSystem _particleSystem;
+
+    [SerializeField] public PlayerData playerData;
+
     private Rigidbody _rigidbody;
     private Vector2 _moveDirection;
-    private Transform _transform;
     private float _boostForce;
-    private float boostTimer;
-
+    private float _acceleration;
+    private float _currentVelocity;
 
     private void Awake(){
         _rigidbody = GetComponent<Rigidbody>();
-        _transform = transform;
-        _rigidbody.rotation.SetLookRotation(Vector3.up);
-        _boostForce = _playerData.boostForce;
-        BoostTimer();
-
-        bool BoostTimer(){
-            //TODO make this work plus basic movement.
-            boostTimer += Time.fixedDeltaTime;
-            if (!(boostTimer >= 1f)) return false;
-            _playerData.boostChargeFull = true;
-            return true;
-
-        }
+        _boostForce = playerData.boostForce;
+        _currentVelocity = 1f;
+        _acceleration = playerData.acceleration;
+        _particleSystem = GetComponentInChildren<ParticleSystem>();
     }
 
 
     private void FixedUpdate(){
-
         //Move (wasd)
-        _moveDirection = (sidewaysInput * _transform.right + upDownInput * _transform.up);
- 
-       float inputAmount = Mathf.Clamp01(value: Mathf.Abs(f: upDownInput) + Mathf.Abs(f: sidewaysInput));
-       Vector2 velocity = _rigidbody.velocity;
-       float currentSpeed = velocity.x + velocity.y;
+        _moveDirection = ((sidewaysInput * Vector3.right) + (upDownInput * Vector3.up));
+       
+      
 
+        float inputAmount = Mathf.Clamp01(value: Mathf.Abs(f: upDownInput) + Mathf.Abs(f: sidewaysInput));
+        _currentVelocity = Mathf.MoveTowards(_currentVelocity, playerData.maxSpeed, inputAmount + _acceleration);
+        SetVelocity(_currentVelocity);
+    FireExhaust();
+      
 
-        SetVelocity(inputAmount, currentSpeed, _boostForce);
+        playerData.BoostTimer();
     }
 
 
-    private void SetVelocity(float inputAmount, float currentSpeed, float boostForce){
-        Vector3 velocity = (_moveDirection * (currentSpeed * inputAmount));
-        _rigidbody.velocity = velocity;
-        
-        if (boostInput && _playerData.boostChargeFull) {
-            _rigidbody.AddForce(boostForce, boostForce, 0f, ForceMode.Force);
-            _playerData.boostChargeFull = false;
-            boostTimer = 0f;
+    private void SetVelocity(float currentVelocity){
+        Vector2 velocity = _moveDirection * currentVelocity;
+        if (boostInput) {
+            if (playerData.boostChargeFull) {
+                _rigidbody.AddForce(velocity * _boostForce, ForceMode.Impulse);
+                playerData.boostTimer += 10f;
+                Debug.Log("Boost!!");
+            }
+            else {
+                Debug.Log("Boost still Charging");
+                _rigidbody.AddForce(velocity, ForceMode.Acceleration);
+            }
         }
-      
-        
+        else {
+            _rigidbody.AddForce(velocity * _acceleration, ForceMode.Acceleration);
+        }
+    }
+
+    private void FireExhaust(){
+        ParticleSystem.LightsModule particleSystemLights = _particleSystem.lights;
        
+        if (sidewaysInput != 0 || upDownInput != 0) {
+            particleSystemLights.enabled = true;
+            _particleSystem.Simulate(1f, true, true, false);
+        }
+        else {
+            _particleSystem.Clear();
+            particleSystemLights.enabled = false;
+          
+        }
+
+        ParticleSystem.ShapeModule particleSystemShape = _particleSystem.shape;
+        particleSystemShape.rotation = new Vector2(_moveDirection.y*90f, -_moveDirection.x*90f);
+           
     }
 }

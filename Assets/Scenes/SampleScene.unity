@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 112000000, guid: 4b479bd40f6254fffb04787c40997618, type: 2}
-  m_LightingSettings: {fileID: 0}
+  m_LightingSettings: {fileID: 4890085278179872738, guid: 40ba89ac1edad4b54b4f935c3a2089a8, type: 2}
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -159,7 +159,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.10737807, g: 0.13532643, b: 0.1792453, a: 0}
+  m_BackGroundColor: {r: 0.3207547, g: 0.3207547, b: 0.3207547, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -176,7 +176,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 5
+  orthographic size: 8
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -308,15 +308,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2730447360973581051, guid: 3fe5dd416eb0f4b0cb4eb7482491eb3e, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 3.72
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 2730447360973581051, guid: 3fe5dd416eb0f4b0cb4eb7482491eb3e, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.56
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2730447360973581051, guid: 3fe5dd416eb0f4b0cb4eb7482491eb3e, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -5.048483
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2730447360973581051, guid: 3fe5dd416eb0f4b0cb4eb7482491eb3e, type: 3}
       propertyPath: m_LocalRotation.x
@@ -363,6 +363,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1137908078776387757, guid: 52686ef3e06f94e11aae7e32aed3aa6d, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1137908078776387757, guid: 52686ef3e06f94e11aae7e32aed3aa6d, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1137908078776387757, guid: 52686ef3e06f94e11aae7e32aed3aa6d, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 4805805623486112806, guid: 52686ef3e06f94e11aae7e32aed3aa6d, type: 3}
       propertyPath: m_Name
       value: Player
@@ -410,6 +422,34 @@ PrefabInstance:
     - target: {fileID: 4805805623486112858, guid: 52686ef3e06f94e11aae7e32aed3aa6d, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7821014034767462932, guid: 52686ef3e06f94e11aae7e32aed3aa6d, type: 3}
+      propertyPath: ShapeModule.type
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7821014034767462932, guid: 52686ef3e06f94e11aae7e32aed3aa6d, type: 3}
+      propertyPath: ShapeModule.alignToDirection
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7821014034767462932, guid: 52686ef3e06f94e11aae7e32aed3aa6d, type: 3}
+      propertyPath: ShapeModule.m_Texture
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 7821014034767462932, guid: 52686ef3e06f94e11aae7e32aed3aa6d, type: 3}
+      propertyPath: ShapeModule.m_TextureClipChannel
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7821014034767462932, guid: 52686ef3e06f94e11aae7e32aed3aa6d, type: 3}
+      propertyPath: ShapeModule.m_TextureClipThreshold
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7821014034767462932, guid: 52686ef3e06f94e11aae7e32aed3aa6d, type: 3}
+      propertyPath: NoiseModule.strength.scalar
+      value: 0.85
+      objectReference: {fileID: 0}
+    - target: {fileID: 7821014034767462932, guid: 52686ef3e06f94e11aae7e32aed3aa6d, type: 3}
+      propertyPath: ShapeModule.radiusThickness
+      value: 1.0000
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 52686ef3e06f94e11aae7e32aed3aa6d, type: 3}
