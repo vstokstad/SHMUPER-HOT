@@ -52,12 +52,18 @@
   <ItemGroup>
      <Compile Include="Assets\Scripts\WeaponManager.cs" />
      <Compile Include="Assets\Scripts\PlayerMovement.cs" />
+     <Compile Include="Assets\Scripts\PlayerBoundaries.cs" />
      <Compile Include="Assets\Scripts\PlayerInput.cs" />
+     <Compile Include="Assets\Scripts\EnemySpawn.cs" />
      <Compile Include="Assets\Scripts\EnemyData.cs" />
+     <Compile Include="Assets\Scripts\GameManager.cs" />
      <Compile Include="Assets\Scripts\PlayerActions.cs" />
      <Compile Include="Assets\Scripts\WeaponController.cs" />
-     <Compile Include="Assets\Scripts\PlasmaBallEffect.cs" />
+     <Compile Include="Assets\Scripts\PlasmaBallController.cs" />
+     <Compile Include="Assets\Scripts\EnemyController.cs" />
      <Compile Include="Assets\Scripts\PlayerData.cs" />
+     <Compile Include="Assets\Scripts\NewPlayableAsset.cs" />
+     <Compile Include="Assets\ShieldControl.cs" />
      <None Include="Assets\2D Space Kit\Particles (Sprites)\Note on Flares.txt" />
      <None Include="Assets\2D Space Kit\Backgrounds\Fantasy Purple 2048\Note.txt" />
      <None Include="Assets\Material\Plasma_S.shader" />
@@ -141,36 +147,6 @@
  </Reference>
  <Reference Include="UnityEditor.UI">
  <HintPath>/Users/vilhelmstokstad/Documents/GitHub/SHMUP 2D/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
- </Reference>
- <Reference Include="Unity.RenderPipelines.Core.Editor">
- <HintPath>/Users/vilhelmstokstad/Documents/GitHub/SHMUP 2D/Library/ScriptAssemblies/Unity.RenderPipelines.Core.Editor.dll</HintPath>
- </Reference>
- <Reference Include="Unity.RenderPipelines.Core.Runtime">
- <HintPath>/Users/vilhelmstokstad/Documents/GitHub/SHMUP 2D/Library/ScriptAssemblies/Unity.RenderPipelines.Core.Runtime.dll</HintPath>
- </Reference>
- <Reference Include="Unity.Searcher.Editor">
- <HintPath>/Users/vilhelmstokstad/Documents/GitHub/SHMUP 2D/Library/ScriptAssemblies/Unity.Searcher.Editor.dll</HintPath>
- </Reference>
- <Reference Include="Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary">
- <HintPath>/Users/vilhelmstokstad/Documents/GitHub/SHMUP 2D/Library/ScriptAssemblies/Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll</HintPath>
- </Reference>
- <Reference Include="Unity.ShaderGraph.Editor">
- <HintPath>/Users/vilhelmstokstad/Documents/GitHub/SHMUP 2D/Library/ScriptAssemblies/Unity.ShaderGraph.Editor.dll</HintPath>
- </Reference>
- <Reference Include="Unity.RenderPipelines.Core.ShaderLibrary">
- <HintPath>/Users/vilhelmstokstad/Documents/GitHub/SHMUP 2D/Library/ScriptAssemblies/Unity.RenderPipelines.Core.ShaderLibrary.dll</HintPath>
- </Reference>
- <Reference Include="Unity.RenderPipeline.Universal.ShaderLibrary">
- <HintPath>/Users/vilhelmstokstad/Documents/GitHub/SHMUP 2D/Library/ScriptAssemblies/Unity.RenderPipeline.Universal.ShaderLibrary.dll</HintPath>
- </Reference>
- <Reference Include="Unity.RenderPipelines.Universal.Shaders">
- <HintPath>/Users/vilhelmstokstad/Documents/GitHub/SHMUP 2D/Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Shaders.dll</HintPath>
- </Reference>
- <Reference Include="Unity.RenderPipelines.Universal.Runtime">
- <HintPath>/Users/vilhelmstokstad/Documents/GitHub/SHMUP 2D/Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Runtime.dll</HintPath>
- </Reference>
- <Reference Include="Unity.RenderPipelines.Universal.Editor">
- <HintPath>/Users/vilhelmstokstad/Documents/GitHub/SHMUP 2D/Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Editor.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine">
  <HintPath>/Applications/Unity/2020.1.4f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.dll</HintPath>

@@ -13,9 +13,7 @@ MonoBehaviour:
   m_Name: PlayerData
   m_EditorClassIdentifier: 
   health: 3
-  boostTimer: -370.8348
-  maxSpeed: 8
-  acceleration: 8
-  boostForce: 5
-  boostChargeFull: 1
-  ammunition: 10
+  rechargeTime: 5
+  maxSpeed: 10
+  acceleration: 3
+  plasmaAmmunition: 10

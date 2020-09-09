@@ -1,25 +1,39 @@
+using System;
 using UnityEngine;
 
 [CreateAssetMenu(fileName = "New Player Data", menuName = "Scriptables/PlayerData", order = 0)]
 public class PlayerData : ScriptableObject {
-    [Header(header: "Statistics")] public float health = 3f;
-    public float ShieldCount { get; } = 1f;
-    public float boostTimer = 10f;
+    [Header("Statistics")] public float health = 3f;
+    public float rechargeTime = 10f;
 
-    [Header(header: "Move")] [Range(min: 4f, max: 12f)]
-    public float maxSpeed = 10f;
+    [Header("Move")] [Range(4f, 12f)] public float maxSpeed = 10f;
 
     public float acceleration = 3f;
-    [Range(min: 1f, max: 10f)] public float boostForce = 10f;
-    public bool boostChargeFull = true;
 
-    public void BoostTimer(){
-        boostTimer -= Time.fixedDeltaTime;
-        boostChargeFull = !(boostTimer > 0f);
-        
+    [Header("Weapons")] public int plasmaAmmunition = 10;
+
+    [NonSerialized] public float boostForce = 2f;
+    [SerializeField] private float _rechargeTimer;
+    private GameObject _shieldBubble;
+
+    private void OnEnable(){
+        _shieldBubble = GameObject.Find("Shield");
     }
 
 
-    [Header(header: "Weapons")]
-    public int ammunition = 10;
+//Called in PlayerMovement to recharge boost but also recharges plasma ammo and shield.
+//TODO Call in a PlayerManager or Controller instead.
+    public void RechargeTimer(){
+        if (_rechargeTimer > 0f) {
+            _rechargeTimer -= Time.fixedDeltaTime;
+        }
+        else if (_rechargeTimer <= 0f) {
+            if (plasmaAmmunition != 10) plasmaAmmunition += 1;
+            if (!_shieldBubble.activeSelf)
+                _shieldBubble.SetActive(true);
+            if (boostForce <= 2f) boostForce += Time.deltaTime;
+
+            _rechargeTimer = rechargeTime;
+        }
+    }
 }
