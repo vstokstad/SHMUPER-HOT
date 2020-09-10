@@ -11,10 +11,10 @@ public class PlayerData : ScriptableObject {
     public float acceleration = 3f;
 
     [Header("Weapons")] public int plasmaAmmunition = 10;
-
-    [NonSerialized] public float boostForce = 2f;
     [SerializeField] private float _rechargeTimer;
     private GameObject _shieldBubble;
+
+    [NonSerialized] public float boostForce = 2f;
 
     private void OnEnable(){
         _shieldBubble = GameObject.Find("Shield");

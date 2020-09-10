@@ -1,35 +1,35 @@
-﻿using UnityEngine;
+﻿#region
+
+using UnityEngine;
+
+#endregion
 
 public class EnemySpawn : MonoBehaviour {
     private const string _enemyTag = "Enemy";
-    [SerializeField] private int numberOfEnemies = 10;
+    private const float _timeBetweenSpawn = 3f;
+    private static Vector3 _initialPosition;
+    private static Vector3 _enemyDirection;
+
     [SerializeField] private GameObject enemyShip;
-    private float _timeBetweenSpawn = 2f;
-    private float _spawnTimer = 3f;
     private GameObject[] _enemyShips;
+    private float _spawnTimer = 0.5f;
+    public static int NumberOfEnemies { get; set; } = 10;
 
-    private static Vector3 InitialPosition { get; set; }
+    private static float PositionY => Random.Range(GameManager.CameraBounds.y, -8);
 
-    private float MoveSpeed {
-        get => enemyShip.GetComponent<EnemyController>().enemyData.moveSpeed;
-        set { }
-    }
+    private static float PositionX => GameManager.CameraBounds.x + 2f;
 
-    private Vector3 _enemyDirection;
-    private Vector3 _playerPosition;
 
-    private void Awake(){
-        InitialPosition = new Vector3(GameManager.CameraBounds.x+1, GameManager.CameraBounds.y, 0f);
-        _enemyShips = new GameObject[numberOfEnemies];
-        _playerPosition = GameObject.FindWithTag("Player").transform.position;
-
+    private void Start(){
+        _enemyShips = new GameObject[NumberOfEnemies];
         for (int i = 0; i < _enemyShips.Length; i++) {
-            _enemyShips[i] = Instantiate(Resources.Load(_enemyTag, typeof(GameObject))) as GameObject;
+            _initialPosition = new Vector3(PositionX, PositionY, 0f);
+            _enemyShips[i] = Instantiate(Resources.Load(_enemyTag, typeof(GameObject)), transform, true) as GameObject;
+            _enemyShips[i].transform.position = _initialPosition;
             _enemyShips[i].SetActive(false);
         }
 
-        _enemyDirection = transform.position - _playerPosition;
-        numberOfEnemies -= 1;
+        NumberOfEnemies -= 1;
     }
 
     private void Update(){
@@ -45,25 +45,25 @@ public class EnemySpawn : MonoBehaviour {
     }
 
     private void Spawn(){
-        if (numberOfEnemies < 0) return;
-        int i = numberOfEnemies;
-        if (i >= 0 && _enemyShips.Length > i) {
-            enemyShip = _enemyShips[i];
-            Vector3 transformLocalPosition = InitialPosition;
-            transformLocalPosition.z = 0f;
-            enemyShip.transform.localPosition = transformLocalPosition;
-              
-            enemyShip.transform.position = transformLocalPosition;
+        if (NumberOfEnemies <= 0) return;
+        int i = NumberOfEnemies;
+        if (i < 0 || _enemyShips.Length <= i) return;
+        for (int j = NumberOfEnemies; j < _enemyShips.Length - 1; j++) {
+            if (_enemyShips[j].activeSelf) continue;
+            enemyShip = _enemyShips[j];
             enemyShip.SetActive(true);
-           
-            Rigidbody rigidBody = enemyShip.GetComponent<Rigidbody>();
-            rigidBody.MovePosition(_enemyDirection * Time.deltaTime);
-            numberOfEnemies -= 1;
+            _initialPosition.x = PositionX;
+            _initialPosition.y = PositionY;
+            enemyShip.transform.position = _initialPosition;
+            break;
         }
+
+        NumberOfEnemies -= 1;
     }
+
     public static void RespawnOnDeath(GameObject enemy){
-        enemy.transform.position = InitialPosition;
-        enemy.GetComponent<MeshRenderer>().material.color = Color.yellow;
-        enemy.SetActive(true);
+        NumberOfEnemies += 1;
+        enemy.transform.position = _initialPosition;
+        enemy.GetComponent<EnemyController>().enemyData.health = 2f;
     }
 }

@@ -1,10 +1,12 @@
 using UnityEngine;
 
 public class PlayerBoundaries : MonoBehaviour {
+    private Vector3 _boundPosition;
+
+    private float _playerHeight;
+
     //Keep player inside the cameraScreen
     private float _playerWidth;
-    private float _playerHeight;
-    private Vector3 _boundPosition;
 
     private void Awake(){
         _playerWidth = gameObject.GetComponent<MeshRenderer>().bounds.size.x / 2;

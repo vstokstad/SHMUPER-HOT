@@ -8,8 +8,8 @@ public class WeaponManager : MonoBehaviour {
     #region PlasmaShotWeaponType
 
     public class PlasmaShot : MonoBehaviour, IWeapon {
-        private int _ammunition;
         private readonly string _plasma = "PlasmaBall";
+        private int _ammunition;
         private GameObject _plasmaShot;
         private GameObject[] _plasmaShots;
         private Vector2 _plasmaVelocity;
@@ -36,7 +36,7 @@ public class WeaponManager : MonoBehaviour {
             int i = _ammunition;
             if (i >= 0 && _plasmaShots.Length > i) {
                 Vector3 velocity = _playerRigidBody.velocity;
-                _plasmaVelocity = new Vector2(15f + velocity.x, Mathf.Sin(Mathf.PI * velocity.y));
+                _plasmaVelocity = new Vector2(15f + velocity.x, Mathf.Sin(Mathf.PI * velocity.x));
                 _plasmaShot = _plasmaShots[i];
                 _plasmaShot.SetActive(true);
                 _plasmaShot.transform.position = initialPosition;

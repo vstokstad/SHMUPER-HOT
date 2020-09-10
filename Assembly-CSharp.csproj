@@ -61,9 +61,9 @@
      <Compile Include="Assets\Scripts\WeaponController.cs" />
      <Compile Include="Assets\Scripts\PlasmaBallController.cs" />
      <Compile Include="Assets\Scripts\EnemyController.cs" />
+     <Compile Include="Assets\ShieldControl.cs" />
      <Compile Include="Assets\Scripts\PlayerData.cs" />
      <Compile Include="Assets\Scripts\NewPlayableAsset.cs" />
-     <Compile Include="Assets\ShieldControl.cs" />
      <None Include="Assets\2D Space Kit\Particles (Sprites)\Note on Flares.txt" />
      <None Include="Assets\2D Space Kit\Backgrounds\Fantasy Purple 2048\Note.txt" />
      <None Include="Assets\Material\Plasma_S.shader" />

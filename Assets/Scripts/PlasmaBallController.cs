@@ -2,10 +2,10 @@
 
 public class PlasmaBallController : MonoBehaviour {
     public float plasmaDamage = 1f;
-    private EnemyData _enemyData;
-    private ParticleSystem _particleSystem;
     private readonly string enemyTag = "Enemy";
     private readonly string outOfBounds = "OutOfBounds";
+    private EnemyData _enemyData;
+    private ParticleSystem _particleSystem;
 
     private void Awake(){
         _particleSystem = GetComponent<ParticleSystem>();

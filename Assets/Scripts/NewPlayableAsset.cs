@@ -1,12 +1,11 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 using UnityEngine.Playables;
 
-[System.Serializable]
-public class NewPlayableAsset : PlayableAsset
-{
+[Serializable]
+public class NewPlayableAsset : PlayableAsset {
     // Factory method that generates a playable based on this asset
-    public override Playable CreatePlayable(PlayableGraph graph, GameObject go)
-    {
+    public override Playable CreatePlayable(PlayableGraph graph, GameObject go){
         return Playable.Create(graph);
     }
 }
