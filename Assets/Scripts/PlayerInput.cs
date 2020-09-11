@@ -1,15 +1,13 @@
 ﻿using UnityEngine;
 
-[RequireComponent(typeof(PlayerMovement), typeof(PlayerActions))]
+[RequireComponent(typeof(PlayerMovement), typeof(PlayerController))]
 public class PlayerInput : MonoBehaviour {
-    private PlayerActions _actions;
     private PlayerMovement _movement;
     private WeaponController _weaponController;
 
 
     private void Awake(){
         _movement = GetComponent<PlayerMovement>();
-        _actions = GetComponent<PlayerActions>();
         _weaponController = GetComponent<WeaponController>();
     }
 
@@ -21,7 +19,6 @@ public class PlayerInput : MonoBehaviour {
 
         _weaponController.fireInput = Input.GetButtonDown("Fire1");
         _weaponController.secondFireInput = Input.GetButtonDown("Fire2");
-        _actions.shieldInput = Input.GetButtonDown("Shield");
-        _actions.weaponCycle = Input.GetButtonDown("Weapon Cycle");
+        _weaponController.cycleWeaponInput = Input.GetButtonDown("Weapon Cycle");
     }
 }

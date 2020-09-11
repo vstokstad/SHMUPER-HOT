@@ -3,12 +3,14 @@ using UnityEngine;
 
 public enum WeaponType {
     Plasma,
-    Laser
+    Laser,
+    HomingMissile
 }
 
 public class WeaponController : MonoBehaviour {
     public WeaponType weaponType;
     private WeaponManager.IWeapon _iWeapon;
+    [NonSerialized] public bool cycleWeaponInput;
 
     [NonSerialized] public bool fireInput;
     [NonSerialized] public bool secondFireInput;
@@ -19,8 +21,8 @@ public class WeaponController : MonoBehaviour {
 
     private void Update(){
         if (fireInput) Fire();
-
-        if (secondFireInput) HandleWeaponType();
+        if (secondFireInput) SecondaryFire();
+        if (cycleWeaponInput) HandleWeaponType();
     }
 
     private void HandleWeaponType(){
@@ -33,17 +35,19 @@ public class WeaponController : MonoBehaviour {
                 break;
             case WeaponType.Laser:
                 break;
+            case WeaponType.HomingMissile:
+                break;
             default:
                 _iWeapon = gameObject.AddComponent<WeaponManager.PlasmaShot>();
                 break;
         }
     }
 
-    public void Fire(){
+    private void Fire(){
         _iWeapon.Shoot();
     }
 
-    public void SecondaryFire(){
+    private void SecondaryFire(){
         //TODO implement second type of weapon/ammo and use this.
         _iWeapon.Shoot();
     }

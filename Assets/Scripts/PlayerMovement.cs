@@ -3,15 +3,13 @@ using UnityEngine;
 
 [RequireComponent(typeof(ParticleSystem))]
 public class PlayerMovement : MonoBehaviour {
-    [SerializeField] public PlayerData playerData;
-
-
     private float _currentVelocity;
     private float _intensity;
     private Light _light;
     private Color _lightColor;
     private Vector2 _moveDirection;
     private ParticleSystem _particleSystem;
+    private PlayerData _playerData;
 
     private Rigidbody _rigidbody;
     [NonSerialized] public bool boostInput;
@@ -19,7 +17,8 @@ public class PlayerMovement : MonoBehaviour {
     [NonSerialized] public float upDownInput;
 
     private void Awake(){
-        _light = GetComponentInChildren<Light>();
+        _playerData = GetComponent<PlayerController>().playerData;
+        _light = GetComponent<Light>();
         _rigidbody = GetComponent<Rigidbody>();
 
         _particleSystem = GetComponent<ParticleSystem>();
@@ -29,14 +28,12 @@ public class PlayerMovement : MonoBehaviour {
 
 
     private void FixedUpdate(){
-        //Move (wasd)
         _moveDirection = sidewaysInput * Vector3.right + upDownInput * Vector3.up;
         float inputAmount = Mathf.Clamp01(Mathf.Abs(upDownInput) + Mathf.Abs(sidewaysInput));
         _currentVelocity =
-            Mathf.MoveTowards(_currentVelocity, playerData.maxSpeed, inputAmount + playerData.acceleration);
+            Mathf.MoveTowards(_currentVelocity, _playerData.maxSpeed, inputAmount + _playerData.acceleration);
         MovePlayer(_currentVelocity);
         FireExhaust();
-        playerData.RechargeTimer();
     }
 
 
@@ -44,11 +41,11 @@ public class PlayerMovement : MonoBehaviour {
         Vector2 velocity = _moveDirection * currentVelocity;
 
         if (Boost()) {
-            velocity *= playerData.boostForce;
+            velocity *= _playerData.boostForce;
             _rigidbody.MovePosition((Vector2) transform.position + velocity * Time.fixedDeltaTime);
-            _light.intensity = _intensity * 10f;
+            _light.intensity = _intensity * 2f;
             _light.color = Color.magenta;
-            playerData.boostForce -= Time.deltaTime;
+            _playerData.boostForce -= Time.deltaTime;
             { }
         }
         else {
@@ -75,7 +72,7 @@ public class PlayerMovement : MonoBehaviour {
 
     private bool Boost(){
         if (!boostInput) return false;
-        if (playerData.boostForce <= 0) return false;
+        if (_playerData.boostForce <= 0) return false;
         return true;
     }
 }

@@ -12,8 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0bfec7da7844a5cbb9a0214c643dc38, type: 3}
   m_Name: PlayerData
   m_EditorClassIdentifier: 
-  health: 3
-  rechargeTime: 5
+  health: 10
+  rechargeTime: 10
   maxSpeed: 10
+  crashDamage: 0.5
   acceleration: 3
-  plasmaAmmunition: 10
+  plasmaAmmunition: 5

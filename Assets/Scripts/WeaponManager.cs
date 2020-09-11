@@ -1,8 +1,11 @@
-﻿using UnityEngine;
+﻿using System;
+using System.Collections.Generic;
+using UnityEngine;
 
 public class WeaponManager : MonoBehaviour {
     public interface IWeapon {
         void Shoot();
+        void SecondShoot();
     }
 
     #region PlasmaShotWeaponType
@@ -11,38 +14,39 @@ public class WeaponManager : MonoBehaviour {
         private readonly string _plasma = "PlasmaBall";
         private int _ammunition;
         private GameObject _plasmaShot;
-        private GameObject[] _plasmaShots;
-        private Vector2 _plasmaVelocity;
+        private List<GameObject> _plasmaShots;
+        private Vector3 _plasmaVelocity;
         private PlayerData _playerData;
         private Rigidbody _playerRigidBody;
 
         private void Awake(){
             _playerRigidBody = GetComponent<Rigidbody>();
-            _playerData = GetComponent<PlayerMovement>().playerData;
+            _playerData = GetComponent<PlayerController>().playerData;
             _ammunition = _playerData.plasmaAmmunition;
-            _plasmaShots = new GameObject[_ammunition];
-            for (int i = 0; i < _plasmaShots.Length; i++) {
-                _plasmaShots[i] = Instantiate(Resources.Load(_plasma, typeof(GameObject))) as GameObject;
+            _plasmaShots = new List<GameObject>();
+            for (int i = 0; i < _ammunition; i++) {
+                _plasmaShots.Add(
+                    Instantiate(Resources.Load(_plasma, typeof(GameObject))) as GameObject);
                 _plasmaShots[i].SetActive(false);
             }
-
-            _ammunition -= 1;
         }
 
         public void Shoot(){
-            Vector3 position = transform.position;
-            Vector3 initialPosition = new Vector3(position.x + 1f, position.y, 0f);
-
-            int i = _ammunition;
-            if (i >= 0 && _plasmaShots.Length > i) {
-                Vector3 velocity = _playerRigidBody.velocity;
-                _plasmaVelocity = new Vector2(15f + velocity.x, Mathf.Sin(Mathf.PI * velocity.x));
-                _plasmaShot = _plasmaShots[i];
-                _plasmaShot.SetActive(true);
-                _plasmaShot.transform.position = initialPosition;
-                _plasmaShot.GetComponent<Rigidbody>().velocity = _plasmaVelocity;
-                _ammunition -= 1;
+            Vector3 initialPosition = transform.position;
+            initialPosition.x += 1f;
+            foreach (GameObject shot in _plasmaShots) {
+                if (shot.activeSelf) continue;
+                shot.SetActive(true);
+                shot.transform.position = initialPosition;
+                _plasmaVelocity.x = 10f;
+                _plasmaVelocity.y = _playerRigidBody.velocity.y * 10f;
+                shot.GetComponent<Rigidbody>().velocity = _plasmaVelocity;
+                break;
             }
+        }
+
+        public void SecondShoot(){
+            throw new NotImplementedException();
         }
     }
 

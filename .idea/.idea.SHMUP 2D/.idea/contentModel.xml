@@ -17,22 +17,25 @@
         <e p="Material" t="Include">
           <e p="Plasma_S.shader" t="Include" />
         </e>
+        <e p="PostProcess" t="Include">
+          <e p="NewUnlitShader.shader" t="Include" />
+        </e>
         <e p="Scripts" t="Include">
           <e p="EnemyController.cs" t="Include" />
           <e p="EnemyData.cs" t="Include" />
           <e p="EnemySpawn.cs" t="Include" />
           <e p="GameManager.cs" t="Include" />
           <e p="NewPlayableAsset.cs" t="Include" />
-          <e p="PlasmaBallController.cs" t="Include" />
-          <e p="PlayerActions.cs" t="Include" />
+          <e p="PlasmaShotController.cs" t="Include" />
           <e p="PlayerBoundaries.cs" t="Include" />
+          <e p="PlayerController.cs" t="Include" />
           <e p="PlayerData.cs" t="Include" />
           <e p="PlayerInput.cs" t="Include" />
           <e p="PlayerMovement.cs" t="Include" />
+          <e p="ShieldControl.cs" t="Include" />
           <e p="WeaponController.cs" t="Include" />
           <e p="WeaponManager.cs" t="Include" />
         </e>
-        <e p="ShieldControl.cs" t="Include" />
       </e>
       <e p="obj" t="ExcludeRecursive" />
       <e p="Packages" t="ExcludeRecursive" />
