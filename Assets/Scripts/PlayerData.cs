@@ -34,7 +34,6 @@ public class PlayerData : ScriptableObject {
         else if (_rechargeTimer <= 0f) {
             if (!_shieldBubble.activeSelf)
                 _shieldBubble.SetActive(true);
-            plasmaAmmunition += 1;
             if (boostForce <= 2f) boostForce = _rechargeTimer;
             _rechargeTimer = rechargeTime;
         }

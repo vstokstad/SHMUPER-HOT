@@ -46,7 +46,7 @@ public class PlayerController : MonoBehaviour {
         Vector3 position = transform1.position;
         Vector2 bounceOffForce = new Vector2(position.x, position.y);
         enemyBody.AddForce(bounceOffForce, ForceMode.Impulse);
-        yield return new WaitForSeconds(0.1f);
+        yield return new WaitForSeconds(0.5f);
         enemyController.TakeDamage(playerData.crashDamage);
     }
 

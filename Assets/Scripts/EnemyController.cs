@@ -52,7 +52,7 @@ public class EnemyController : MonoBehaviour {
         _rigidBody.velocity = Vector3.zero;
         exp.Play();
         _moveSpeed = 0f;
-        yield return new WaitForSeconds(exp.main.duration);
+        yield return new WaitForSeconds(exp.main.duration-0.5f);
         LvLUp();
         gameObject.SetActive(false);
         _playerTransform.GetComponent<PlayerController>().killCounter += 1f;
@@ -65,8 +65,9 @@ public class EnemyController : MonoBehaviour {
         _moveSpeed = EnemyData.moveSpeed;
         _moveSpeed = _level;
         _rigidBody.velocity = Vector3.zero;
-        //  _rigidBody.rotation = Quaternion.Euler(0f, 0f, 0f);
-        transform.localScale = new Vector3(_level, _level, _level) * 1f;
-        // gameObject.GetComponent<Renderer>().material.color = new Color(0.5f * _level, 0.7f * _level, 0.2f * _level, 1);
+        _rigidBody.rotation = Quaternion.Euler(0f, 0f, 0f);
+        transform.localScale = new Vector3(_level, _level, _level);
+        gameObject.GetComponent<Renderer>().material.color = Color.yellow;
+        print("Enemy lvlUP. Lvl is now " + _level);
     }
 }
