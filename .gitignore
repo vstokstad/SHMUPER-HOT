@@ -172,3 +172,5 @@ InitTestScene*.unity
 
 
 # End of https://www.toptal.com/developers/gitignore/api/rider,macos,unity
+.idea/.idea.SHMUP 2D/.idea/workspace.xml
+obj/Debug/Assembly-CSharp.csprojAssemblyReference.cache
