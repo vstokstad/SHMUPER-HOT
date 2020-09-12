@@ -8,10 +8,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b0782a68-a060-4e6c-bd60-010f9108599b" name="Default Changelist" comment="plasma ammo increase needs modifier. enemies dont die after lvl1?">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.SHMUP 2D/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.SHMUP 2D/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp.csprojAssemblyReference.cache" afterDir="false" />
-    </list>
+    <list default="true" id="b0782a68-a060-4e6c-bd60-010f9108599b" name="Default Changelist" comment="workspace" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -22,6 +19,17 @@
       <list>
         <option value="Vilhelm Stokstad &lt;v.stokstad@gmail.com&gt;" />
       </list>
+    </option>
+    <option name="PUSH_TAGS">
+      <GitPushTagMode>
+        <option name="argument" value="--tags" />
+        <option name="title" value="All" />
+      </GitPushTagMode>
+    </option>
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="SIGN_OFF_COMMIT" value="true" />
@@ -147,6 +155,7 @@
       <workItem from="1599727489204" duration="20125000" />
       <workItem from="1599819263312" duration="21482000" />
       <workItem from="1599859027305" duration="165000" />
+      <workItem from="1599861085949" duration="110000" />
     </task>
     <task id="LOCAL−00001" summary="Updated with Particle System  and plasma Shots&#10;WeaponSystem WIP">
       <created>1599581575365</created>
@@ -184,7 +193,13 @@
       <option name="presentableId" value="LOCAL−00006" />
       <updated>1599858217235</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL−00007" summary="workspace">
+      <created>1599861109506</created>
+      <option name="number" value="LOCAL−00007" />
+      <option name="presentableId" value="LOCAL−00007" />
+      <updated>1599861109506</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -269,7 +284,8 @@
     <MESSAGE value="Enemy SPawn almost fixed" />
     <MESSAGE value="enemy explosion and movement. Player health updated." />
     <MESSAGE value="plasma ammo increase needs modifier. enemies dont die after lvl1?" />
-    <option name="LAST_COMMIT_MESSAGE" value="plasma ammo increase needs modifier. enemies dont die after lvl1?" />
+    <MESSAGE value="workspace" />
+    <option name="LAST_COMMIT_MESSAGE" value="workspace" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -515,19 +531,19 @@
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
     <state x="100" y="123" width="2360" height="1217" key="VCS.FileHistoryDialog/0.23.2560.1417/-1792.343.1792.1097@0.23.2560.1417" timestamp="1599639117538" />
-    <state x="471" y="382" key="Vcs.Push.Dialog.v2" timestamp="1599858253877">
+    <state x="471" y="382" key="Vcs.Push.Dialog.v2" timestamp="1599861138876">
       <screen x="0" y="23" width="1792" height="1097" />
     </state>
-    <state x="471" y="382" key="Vcs.Push.Dialog.v2/0.23.1792.1097@0.23.1792.1097" timestamp="1599858253877" />
+    <state x="471" y="382" key="Vcs.Push.Dialog.v2/0.23.1792.1097@0.23.1792.1097" timestamp="1599861138876" />
     <state x="673" y="487" key="Vcs.Push.Dialog.v2/0.23.2560.1417/-1792.343.1792.1097@0.23.2560.1417" timestamp="1599739741241" />
     <state x="958" y="512" key="com.intellij.openapi.vcs.changes.SpecificFilesViewDialog" timestamp="1599494774134">
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
     <state x="958" y="512" key="com.intellij.openapi.vcs.changes.SpecificFilesViewDialog/0.23.2560.1417/348.1463.1792.1097@0.23.2560.1417" timestamp="1599494774134" />
-    <state x="620" y="522" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1599859031417">
+    <state x="620" y="522" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1599861093103">
       <screen x="0" y="23" width="1792" height="1097" />
     </state>
-    <state x="620" y="522" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1792.1097@0.23.1792.1097" timestamp="1599859031417" />
+    <state x="620" y="522" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1792.1097@0.23.1792.1097" timestamp="1599861093103" />
     <state x="886" y="668" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.2560.1417/-1792.343.1792.1097@0.23.2560.1417" timestamp="1599722678362" />
     <state x="832" y="468" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1599752249165">
       <screen x="0" y="23" width="2560" height="1417" />
