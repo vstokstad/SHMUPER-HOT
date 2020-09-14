@@ -43,7 +43,7 @@ public class PlayerMovement : MonoBehaviour {
         if (Boost()) {
             velocity *= _playerData.boostForce;
             _rigidbody.MovePosition((Vector2) transform.position + velocity * Time.fixedDeltaTime);
-            _light.intensity = _intensity * 2f;
+            _light.intensity = _intensity * 10f;
             _light.color = Color.magenta;
             _playerData.boostForce -= Time.deltaTime;
             { }

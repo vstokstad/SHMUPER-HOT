@@ -28,7 +28,7 @@ Transform:
   m_GameObject: {fileID: 1734404138}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.5, y: 0.5, z: 1}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_Children: []
   m_Father: {fileID: 4805805623486112858}
   m_RootOrder: 0
@@ -52,7 +52,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 8779c962636b1694280e3c19e3d9b000, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -72,7 +72,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 1932640e6cf290044a4ee6967192234d, type: 3}
   m_Color: {r: 0.5330188, g: 1, b: 0.9951356, a: 1}
   m_FlipX: 0
@@ -83,7 +83,7 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
+  m_SpriteSortPoint: 1
 --- !u!135 &1734404140
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -91,12 +91,12 @@ SphereCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1734404138}
-  m_Material: {fileID: 13400000, guid: b3965aa74779245dfa94ffba16a4cfd6, type: 2}
+  m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 1.3438168
-  m_Center: {x: 0.01303339, y: 0, z: 0}
+  m_Radius: 2
+  m_Center: {x: 0.020778656, y: 0, z: 0}
 --- !u!114 &5702717483126974422
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -223,9 +223,9 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4805805623486112806}
   serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 1
-  m_AngularDrag: 1
+  m_Mass: 2
+  m_Drag: 0.5
+  m_AngularDrag: 0.5
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 1
@@ -248,7 +248,7 @@ ParticleSystem:
   looping: 1
   prewarm: 1
   playOnAwake: 0
-  useUnscaledTime: 0
+  useUnscaledTime: 1
   autoRandomSeed: 1
   useRigidbodyForVelocity: 0
   startDelay:
@@ -4965,20 +4965,20 @@ Light:
   serializedVersion: 10
   m_Type: 2
   m_Shape: 0
-  m_Color: {r: 0.6698113, g: 0.62557846, b: 0.5023585, a: 0.48235294}
+  m_Color: {r: 0.9245283, g: 0.8671564, b: 0.45790315, a: 0.8666667}
   m_Intensity: 3
-  m_Range: 2
-  m_SpotAngle: 30
-  m_InnerSpotAngle: 21.80208
+  m_Range: 2.09
+  m_SpotAngle: 136
+  m_InnerSpotAngle: 1
   m_CookieSize: 10
   m_Shadows:
     m_Type: 2
     m_Resolution: -1
     m_CustomResolution: -1
-    m_Strength: 1
+    m_Strength: 0.574
     m_Bias: 0.05
     m_NormalBias: 0.4
-    m_NearPlane: 0.1
+    m_NearPlane: 0.031799998
     m_CullingMatrixOverride:
       e00: 1
       e01: 0
@@ -5011,9 +5011,9 @@ Light:
   m_BounceIntensity: 2
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 0, y: 4.6410385e+25, z: 4.591e-41, w: 7.9182527e+34}
+  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 1e-45}
   m_UseBoundingSphereOverride: 0
-  m_ShadowRadius: 10.1
+  m_ShadowRadius: 5
   m_ShadowAngle: 0
 --- !u!114 &7365231321015884042
 MonoBehaviour:
@@ -5155,3 +5155,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerData: {fileID: 11400000, guid: d9e56dc32dd8443e8a325fb20b5639cd, type: 2}
+  killCounter: 0

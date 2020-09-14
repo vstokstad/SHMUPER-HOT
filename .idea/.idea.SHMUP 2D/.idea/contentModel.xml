@@ -17,9 +17,6 @@
         <e p="Material" t="Include">
           <e p="Plasma_S.shader" t="Include" />
         </e>
-        <e p="PostProcess" t="Include">
-          <e p="NewUnlitShader.shader" t="Include" />
-        </e>
         <e p="Scripts" t="Include">
           <e p="EnemyController.cs" t="Include" />
           <e p="EnemyData.cs" t="Include" />
@@ -36,6 +33,7 @@
           <e p="WeaponController.cs" t="Include" />
           <e p="WeaponManager.cs" t="Include" />
         </e>
+        <e p="TimeManager.cs" t="Include" />
       </e>
       <e p="obj" t="ExcludeRecursive" />
       <e p="Packages" t="ExcludeRecursive" />
