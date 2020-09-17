@@ -1,73 +1,79 @@
 ﻿using System;
-using System.Collections;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 public class EnemyController : MonoBehaviour {
-    private IEnumerator _explode;
-
-    private float _health = EnemyData.health;
-    private float _level = 1f;
-    private Vector3 _movement;
-    private float _moveSpeed = EnemyData.moveSpeed;
+    [SerializeField] private EnemyData enemyData;
+    private Vector3 _direction;
+    private ParticleSystem _explosion;
+    private float _health;
+    private float _level;
+    private float _moveSpeed;
     private Transform _playerTransform;
     private Rigidbody _rigidBody;
-    [NonSerialized] public float crashDamage = EnemyData.crashDamage;
+    [NonSerialized] public float crashDamage;
 
     private void Awake(){
+        _health = enemyData.health;
+        _moveSpeed = enemyData.moveSpeed;
+        crashDamage = enemyData.crashDamage;
+        _level = enemyData.enemyLevel;
         _rigidBody = GetComponent<Rigidbody>();
         _playerTransform = GameObject.FindWithTag("Player").GetComponent<Transform>();
-        _explode = Explode();
+        _explosion = Resources.Load<ParticleSystem>("Explosion");
     }
 
     private void Update(){
         Vector3 direction = _playerTransform.position - transform.position;
+        if (_level > 2f)
+            if (Level3Evasion())
+                direction = transform.position + _playerTransform.position;
+
         _rigidBody.rotation = Quaternion.Euler(direction.x, direction.y, 0f);
         direction.Normalize();
-        _movement = direction;
+        _direction = direction;
     }
 
     private void FixedUpdate(){
-        Move(_movement);
+        Move(_direction);
     }
 
-    private void OnBecameInvisible(){
-        gameObject.SetActive(false);
-    }
 
     public void TakeDamage(float damage){
+        if (_level > 1f) _rigidBody.AddForce(-_direction * _moveSpeed, ForceMode.Impulse);
+
         _health = -damage;
-        if (_health <= 0f) StartCoroutine(_explode);
+        if (_health <= 0f) Explode();
     }
 
 
     private void Move(Vector3 direction){
         float speedAdjust = Vector3.Distance(transform.position, _playerTransform.position);
-        direction.y *= Mathf.Sin(Mathf.PI * Time.fixedDeltaTime);
+        if (_level < 2f)
+            direction.y *= Mathf.Sin(Mathf.PI * Random.Range(1f, 5f) * Time.fixedDeltaTime);
+        else if (_level >= 2f) speedAdjust *= _level;
+
+        if (_level > 2f) direction = speedAdjust * direction;
+
         _rigidBody.AddForce(direction * (speedAdjust + _moveSpeed * Time.fixedDeltaTime), ForceMode.Acceleration);
     }
 
+    private bool Level3Evasion(){
+        var raycastHits = new RaycastHit[20];
+        Ray ray = new Ray(transform.position, _playerTransform.position);
+        Physics.RaycastNonAlloc(ray, raycastHits, 40f, 8, QueryTriggerInteraction.Collide);
+        foreach (RaycastHit hit in raycastHits)
+            if (hit.transform.gameObject.CompareTag("Shot"))
+                return true;
 
-    private IEnumerator Explode(){
-        ParticleSystem exp = GetComponentInChildren<ParticleSystem>();
-        _rigidBody.velocity = Vector3.zero;
-        exp.Play();
-        _moveSpeed = 0f;
-        yield return new WaitForSeconds(exp.main.duration-0.5f);
-        LvLUp();
-        gameObject.SetActive(false);
-        _playerTransform.GetComponent<PlayerController>().killCounter += 1f;
+        return false;
     }
 
-    private void LvLUp(){
-        _level += 1f;
-        _health = _level;
-        crashDamage = _level;
-        _moveSpeed = EnemyData.moveSpeed;
-        _moveSpeed = _level;
+    private void Explode(){
+        _explosion.Play();
         _rigidBody.velocity = Vector3.zero;
-        _rigidBody.rotation = Quaternion.Euler(0f, 0f, 0f);
-        transform.localScale = new Vector3(_level, _level, _level);
-        gameObject.GetComponent<Renderer>().material.color = Color.yellow;
-        print("Enemy lvlUP. Lvl is now " + _level);
+        _moveSpeed = 0f;
+        _playerTransform.GetComponent<PlayerController>().killCounter += 1f;
+        Destroy(gameObject, _explosion.main.duration);
     }
 }

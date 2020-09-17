@@ -14,15 +14,15 @@
             <e p="Note on Flares.txt" t="Include" />
           </e>
         </e>
+        <e p="BackgroundController.cs" t="Include" />
         <e p="Material" t="Include">
           <e p="Plasma_S.shader" t="Include" />
         </e>
         <e p="Scripts" t="Include">
           <e p="EnemyController.cs" t="Include" />
           <e p="EnemyData.cs" t="Include" />
-          <e p="EnemySpawn.cs" t="Include" />
+          <e p="EnemySpawnManager.cs" t="Include" />
           <e p="GameManager.cs" t="Include" />
-          <e p="NewPlayableAsset.cs" t="Include" />
           <e p="PlasmaShotController.cs" t="Include" />
           <e p="PlayerBoundaries.cs" t="Include" />
           <e p="PlayerController.cs" t="Include" />
@@ -32,6 +32,7 @@
           <e p="ShieldControl.cs" t="Include" />
           <e p="WeaponController.cs" t="Include" />
           <e p="WeaponManager.cs" t="Include" />
+          <e p="WeaponType.cs" t="Include" />
         </e>
         <e p="TimeManager.cs" t="Include" />
       </e>

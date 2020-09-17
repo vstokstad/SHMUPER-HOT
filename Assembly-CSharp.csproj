@@ -51,12 +51,13 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
+      <Compile Include="Assets\BackgroundController.cs"/>
      <Compile Include="Assets\Scripts\WeaponManager.cs" />
      <Compile Include="Assets\Scripts\PlayerMovement.cs" />
      <Compile Include="Assets\Scripts\PlayerBoundaries.cs" />
       <Compile Include="Assets\TimeManager.cs"/>
      <Compile Include="Assets\Scripts\PlayerInput.cs" />
-     <Compile Include="Assets\Scripts\EnemySpawn.cs" />
+      <Compile Include="Assets\Scripts\EnemySpawnManager.cs"/>
      <Compile Include="Assets\Scripts\EnemyData.cs" />
      <Compile Include="Assets\Scripts\GameManager.cs" />
      <Compile Include="Assets\Scripts\WeaponController.cs" />
@@ -64,8 +65,8 @@
      <Compile Include="Assets\Scripts\EnemyController.cs" />
      <Compile Include="Assets\Scripts\ShieldControl.cs" />
      <Compile Include="Assets\Scripts\PlayerData.cs" />
-     <Compile Include="Assets\Scripts\NewPlayableAsset.cs" />
      <Compile Include="Assets\Scripts\PlayerController.cs" />
+      <Compile Include="Assets\Scripts\WeaponType.cs"/>
      <None Include="Assets\2D Space Kit\Particles (Sprites)\Note on Flares.txt" />
      <None Include="Assets\2D Space Kit\Backgrounds\Fantasy Purple 2048\Note.txt" />
      <None Include="Assets\Material\Plasma_S.shader" />
@@ -367,26 +368,29 @@
  <HintPath>/Applications/Unity/2020.1.4f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.VideoModule.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.VirtualTexturingModule">
- <HintPath>/Applications/Unity/2020.1.4f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.VirtualTexturingModule.dll</HintPath>
+     <HintPath>/Applications/Unity/2020.1.4f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.VirtualTexturingModule.dll</HintPath>
  </Reference>
- <Reference Include="UnityEngine.WindModule">
- <HintPath>/Applications/Unity/2020.1.4f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.WindModule.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.XRModule">
- <HintPath>/Applications/Unity/2020.1.4f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.XRModule.dll</HintPath>
- </Reference>
- <Reference Include="UnityEditor">
- <HintPath>/Applications/Unity/2020.1.4f1/Unity.app/Contents/Managed/UnityEditor.dll</HintPath>
- </Reference>
- <Reference Include="UnityEditor.iOS.Extensions.Xcode">
- <HintPath>/Applications/Unity/2020.1.4f1/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
- </Reference>
- <Reference Include="UnityEditor.iOS.Extensions.Common">
- <HintPath>/Applications/Unity/2020.1.4f1/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Common.dll</HintPath>
- </Reference>
- <Reference Include="netstandard">
- <HintPath>/Applications/Unity/2020.1.4f1/Unity.app/Contents/NetStandard/ref/2.0.0/netstandard.dll</HintPath>
- </Reference>
+      <Reference Include="UnityEngine.WindModule">
+          <HintPath>/Applications/Unity/2020.1.4f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.WindModule.dll</HintPath>
+      </Reference>
+      <Reference Include="UnityEngine.XRModule">
+          <HintPath>/Applications/Unity/2020.1.4f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.XRModule.dll</HintPath>
+      </Reference>
+      <Reference Include="UnityEditor">
+          <HintPath>/Applications/Unity/2020.1.4f1/Unity.app/Contents/Managed/UnityEditor.dll</HintPath>
+      </Reference>
+      <Reference Include="UnityEditor.iOS.Extensions.Xcode">
+          <HintPath>/Applications/Unity/2020.1.4f1/PlaybackEngines/AppleTVSupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
+      </Reference>
+      <Reference Include="UnityEditor.iOS.Extensions.Xcode">
+          <HintPath>/Applications/Unity/2020.1.4f1/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
+      </Reference>
+      <Reference Include="UnityEditor.iOS.Extensions.Common">
+          <HintPath>/Applications/Unity/2020.1.4f1/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Common.dll</HintPath>
+      </Reference>
+      <Reference Include="netstandard">
+          <HintPath>/Applications/Unity/2020.1.4f1/Unity.app/Contents/NetStandard/ref/2.0.0/netstandard.dll</HintPath>
+      </Reference>
  <Reference Include="Microsoft.Win32.Primitives">
  <HintPath>/Applications/Unity/2020.1.4f1/Unity.app/Contents/NetStandard/compat/2.0.0/shims/netstandard/Microsoft.Win32.Primitives.dll</HintPath>
  </Reference>

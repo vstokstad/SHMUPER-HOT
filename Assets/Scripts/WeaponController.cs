@@ -1,19 +1,13 @@
 using System;
+using System.Collections.Generic;
 using UnityEngine;
-
-public enum WeaponType {
-    Plasma,
-    Laser,
-    HomingMissile
-}
 
 public class WeaponController : MonoBehaviour {
     public WeaponType weaponType;
     private WeaponManager.IWeapon _iWeapon;
-    [NonSerialized] public bool cycleWeaponInput;
-
+    private IEnumerator<WeaponType> _weaponSwitch;
     [NonSerialized] public bool fireInput;
-    [NonSerialized] public bool secondFireInput;
+    [NonSerialized] public bool nextWeaponInput;
 
     private void Start(){
         HandleWeaponType();
@@ -21,14 +15,11 @@ public class WeaponController : MonoBehaviour {
 
     private void Update(){
         if (fireInput) Fire();
-        if (secondFireInput) SecondaryFire();
-        if (cycleWeaponInput) HandleWeaponType();
+        if (nextWeaponInput) { }
     }
 
-    private void HandleWeaponType(){
-        Component c = gameObject.GetComponent<WeaponManager.IWeapon>() as Component;
-        if (c != null) Destroy(c);
 
+    private void HandleWeaponType(){
         switch (weaponType) {
             case WeaponType.Plasma:
                 _iWeapon = gameObject.AddComponent<WeaponManager.PlasmaShot>();
@@ -38,17 +29,13 @@ public class WeaponController : MonoBehaviour {
             case WeaponType.HomingMissile:
                 break;
             default:
+                weaponType = WeaponType.Plasma;
                 _iWeapon = gameObject.AddComponent<WeaponManager.PlasmaShot>();
                 break;
         }
     }
 
     private void Fire(){
-        _iWeapon.Shoot();
-    }
-
-    private void SecondaryFire(){
-        //TODO implement second type of weapon/ammo and use this.
         _iWeapon.Shoot();
     }
 }

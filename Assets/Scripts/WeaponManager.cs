@@ -5,19 +5,19 @@ using UnityEngine;
 public class WeaponManager : MonoBehaviour {
     public interface IWeapon {
         void Shoot();
-        void SecondShoot();
     }
 
     #region PlasmaShotWeaponType
 
     public class PlasmaShot : MonoBehaviour, IWeapon {
         private readonly string _plasma = "PlasmaBall";
-        [NonSerialized] public int ammunition;
 
         private GameObject _plasmaShot;
         private List<GameObject> _plasmaShots;
         private Vector3 _plasmaVelocity;
         private PlayerData _playerData;
+        private float _shootTimer = 0.1f;
+        [NonSerialized] public int ammunition;
 
         private void Awake(){
             _playerData = GetComponent<PlayerController>().playerData;
@@ -31,6 +31,13 @@ public class WeaponManager : MonoBehaviour {
         }
 
         public void Shoot(){
+            if (!(_shootTimer <= 0f)) {
+                _shootTimer -= Time.deltaTime;
+                return;
+            }
+
+            _shootTimer = 0.1f;
+
             Vector3 initialPosition = transform.position;
             initialPosition.x += 1f;
             foreach (GameObject shot in _plasmaShots) {
@@ -40,19 +47,60 @@ public class WeaponManager : MonoBehaviour {
                 _plasmaVelocity.x = 10f;
                 _plasmaVelocity.y = 0f;
                 shot.GetComponent<Rigidbody>().velocity = _plasmaVelocity;
-
                 break;
             }
 
-            if (ammunition > _playerData.plasmaAmmunition) {
-                _plasmaShots.Add(Instantiate(Resources.Load(_plasma, typeof(GameObject))) as GameObject);
-            }
-        }
 
-        public void SecondShoot(){
-            throw new NotImplementedException();
+            if (ammunition == _playerData.plasmaAmmunition || ammunition > 15) return;
+            _playerData.plasmaAmmunition = ammunition;
+            _plasmaShots.Add(Instantiate(Resources.Load(_plasma, typeof(GameObject))) as GameObject);
+            int count = _plasmaShots.Count - 1;
+            _plasmaShots[count].transform.position = initialPosition;
+            _plasmaShots[count].SetActive(false);
         }
     }
+
+    #endregion
+
+    #region LaserWeaponType
+
+    public class LaserBeam : MonoBehaviour, IWeapon {
+        private readonly string _laser = "LaserBeam";
+
+        private GameObject _laserBeam;
+
+
+        private PlayerData _playerData;
+        [NonSerialized] public float ammunition;
+
+
+        private void Awake(){
+            _playerData = GetComponent<PlayerController>().playerData;
+            ammunition = _playerData.laserAmmunition;
+            _laserBeam = (GameObject) Instantiate(Resources.Load(_laser, typeof(GameObject)));
+            _laserBeam.SetActive(true);
+        }
+
+
+        public void Shoot(){
+            if (ammunition <= 0f) return;
+            Vector3 transformLocalScale = _laserBeam.transform.localScale;
+            while (ammunition > 0f) {
+                transformLocalScale.x += 10f * Time.fixedDeltaTime;
+                _laserBeam.transform.localScale = transformLocalScale;
+                ammunition -= Time.fixedDeltaTime;
+            }
+
+            if (ammunition <= 0f) {
+                transformLocalScale.x = 0f;
+                _laserBeam.transform.localScale = transformLocalScale;
+            }
+        }
+    }
+
+    #endregion
+
+    #region HomingMissileWeaponType
 
     #endregion
 }

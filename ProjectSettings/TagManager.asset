@@ -7,6 +7,9 @@ TagManager:
   - Shot
   - OutOfBounds
   - Enemy
+  - Shield
+  - Nebula
+  - Enemy2
   layers:
   - Default
   - TransparentFX

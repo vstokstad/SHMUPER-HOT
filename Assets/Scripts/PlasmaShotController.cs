@@ -25,7 +25,6 @@ public class PlasmaShotController : MonoBehaviour {
 
     private void OnTriggerEnter(Collider other){
         if (!other.gameObject.CompareTag(enemyTag)) return;
-        FindObjectOfType<WeaponManager.PlasmaShot>().ammunition += 1;
         other.gameObject.GetComponent<EnemyController>().TakeDamage(plasmaDamage);
         gameObject.SetActive(false);
     }

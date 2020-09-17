@@ -83,7 +83,7 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
-  m_SpriteSortPoint: 1
+  m_SpriteSortPoint: 0
 --- !u!135 &1734404140
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -96,7 +96,7 @@ SphereCollider:
   m_Enabled: 1
   serializedVersion: 2
   m_Radius: 2
-  m_Center: {x: 0.020778656, y: 0, z: 0}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &5702717483126974422
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -223,9 +223,9 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4805805623486112806}
   serializedVersion: 2
-  m_Mass: 2
-  m_Drag: 0.5
-  m_AngularDrag: 0.5
+  m_Mass: 1
+  m_Drag: 5
+  m_AngularDrag: 1
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 1
@@ -239,8 +239,8 @@ ParticleSystem:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4805805623486112806}
   serializedVersion: 6
-  lengthInSec: 1
-  simulationSpeed: 0.42
+  lengthInSec: 0.05
+  simulationSpeed: 0.5
   stopAction: 0
   cullingMode: 0
   ringBufferMode: 0
@@ -314,7 +314,7 @@ ParticleSystem:
     startLifetime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 0.2
+      scalar: 0.28
       minScalar: 5
       maxCurve:
         serializedVersion: 2
@@ -367,7 +367,7 @@ ParticleSystem:
     startSpeed:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 9.23
+      scalar: 9.61
       minScalar: 5
       maxCurve:
         serializedVersion: 2
@@ -483,7 +483,7 @@ ParticleSystem:
     startSize:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 0.2
+      scalar: 0.17
       minScalar: 1
       maxCurve:
         serializedVersion: 2
@@ -748,7 +748,7 @@ ParticleSystem:
     startRotation:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 0.042411502
+      scalar: 0
       minScalar: 0
       maxCurve:
         serializedVersion: 2
@@ -798,8 +798,8 @@ ParticleSystem:
         m_PreInfinity: 2
         m_PostInfinity: 2
         m_RotationOrder: 4
-    randomizeRotationDirection: 0.79
-    maxNumParticles: 500
+    randomizeRotationDirection: 0
+    maxNumParticles: 1000
     size3D: 0
     rotation3D: 0
     gravityModifier:
@@ -941,9 +941,9 @@ ParticleSystem:
     m_TextureColorAffectsParticles: 1
     m_TextureAlphaAffectsParticles: 1
     m_TextureBilinearFiltering: 0
-    randomDirectionAmount: 0
-    sphericalDirectionAmount: 0
-    randomPositionAmount: 0
+    randomDirectionAmount: 0.09
+    sphericalDirectionAmount: 0.09
+    randomPositionAmount: 0.15
     radius:
       value: 1
       mode: 0
@@ -1064,7 +1064,7 @@ ParticleSystem:
     rateOverTime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 100
+      scalar: 500
       minScalar: 10
       maxCurve:
         serializedVersion: 2
@@ -1117,7 +1117,7 @@ ParticleSystem:
     rateOverDistance:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 100
+      scalar: 500
       minScalar: 0
       maxCurve:
         serializedVersion: 2
@@ -2881,7 +2881,7 @@ ParticleSystem:
     strength:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 1.27
+      scalar: 0.91
       minScalar: 1
       maxCurve:
         serializedVersion: 2
@@ -3038,9 +3038,9 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
     separateAxes: 0
-    frequency: 0.65
+    frequency: 1.94
     damping: 1
-    octaves: 4
+    octaves: 1
     octaveMultiplier: 0.5
     octaveScale: 2
     quality: 2
@@ -3322,7 +3322,7 @@ ParticleSystem:
     rotationAmount:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 1.6
+      scalar: 2.44
       minScalar: 0
       maxCurve:
         serializedVersion: 2
@@ -3375,7 +3375,7 @@ ParticleSystem:
     sizeAmount:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 0.21
+      scalar: 0.73
       minScalar: 0
       maxCurve:
         serializedVersion: 2
@@ -4027,10 +4027,10 @@ ParticleSystem:
       emitProbability: 1
   LightsModule:
     enabled: 1
-    ratio: 0.8
+    ratio: 1
     light: {fileID: 5097930644572582933}
-    randomDistribution: 1
-    color: 1
+    randomDistribution: 0
+    color: 0
     range: 1
     intensity: 1
     rangeCurve:
@@ -4141,13 +4141,13 @@ ParticleSystem:
         m_RotationOrder: 4
     maxLights: 20
   TrailModule:
-    enabled: 0
-    mode: 0
-    ratio: 0.36
+    enabled: 1
+    mode: 1
+    ratio: 1
     lifetime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 0.49
+      scalar: 1
       minScalar: 1
       maxCurve:
         serializedVersion: 2
@@ -4199,16 +4199,16 @@ ParticleSystem:
         m_RotationOrder: 4
     minVertexDistance: 0.18
     textureMode: 2
-    ribbonCount: 8
+    ribbonCount: 1
     shadowBias: 0.45
-    worldSpace: 0
+    worldSpace: 1
     dieWithParticles: 1
     sizeAffectsWidth: 1
     sizeAffectsLifetime: 1
     inheritParticleColor: 1
     generateLightingData: 1
-    splitSubEmitterRibbons: 0
-    attachRibbonsToTransform: 0
+    splitSubEmitterRibbons: 1
+    attachRibbonsToTransform: 1
     colorOverLifetime:
       serializedVersion: 2
       minMaxState: 1
@@ -5011,7 +5011,7 @@ Light:
   m_BounceIntensity: 2
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 1e-45}
+  m_BoundingSphereOverride: {x: 0, y: 2.6901224e-13, z: 4.5741e-41, w: 1.385127e+11}
   m_UseBoundingSphereOverride: 0
   m_ShadowRadius: 5
   m_ShadowAngle: 0
@@ -5085,6 +5085,7 @@ ParticleSystemRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: 415b2b5b090ea4d35a9f21b6eddd5c65, type: 2}
+  - {fileID: 2100000, guid: 415b2b5b090ea4d35a9f21b6eddd5c65, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -5105,16 +5106,16 @@ ParticleSystemRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_RenderMode: 4
+  m_RenderMode: 5
   m_SortMode: 1
   m_MinParticleSize: 0
   m_MaxParticleSize: 0.5
   m_CameraVelocityScale: 0
   m_VelocityScale: 0
   m_LengthScale: 2
-  m_SortingFudge: 1
+  m_SortingFudge: -1.13
   m_NormalDirection: 1
-  m_ShadowBias: 1.08
+  m_ShadowBias: 0.81
   m_RenderAlignment: 4
   m_Pivot: {x: 0, y: 0, z: 0}
   m_Flip: {x: 0, y: 0, z: 0}

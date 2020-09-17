@@ -1,30 +1,26 @@
 ﻿using UnityEngine;
 
 public class PlayerInput : MonoBehaviour {
-    private static bool _gamePaused;
     private PlayerMovement _movement;
+    private ShieldControl _shieldControl;
     private WeaponController _weaponController;
 
     private void Awake(){
         _movement = GetComponent<PlayerMovement>();
         _weaponController = GetComponent<WeaponController>();
+        _shieldControl = GetComponentInChildren<ShieldControl>();
     }
 
     private void Update(){
         _movement.upDownInput = Input.GetAxis("Vertical");
         _movement.sidewaysInput = Input.GetAxis("Horizontal");
-        if (_gamePaused) return;
+
+        _shieldControl.shieldInput = Input.GetKeyDown(KeyCode.E);
+
         _movement.boostInput = Input.GetButton("Boost");
-        _weaponController.fireInput = Input.GetButtonDown("Fire1");
-        _weaponController.secondFireInput = Input.GetButtonDown("Fire2");
-        _weaponController.cycleWeaponInput = Input.GetButtonDown("Weapon Cycle");
-    }
 
-    public static void IsGamePaused(){
-        _gamePaused = Time.timeScale == 0.0f;
-    }
+        _weaponController.fireInput = Input.GetButton("Fire1");
 
-    public bool PlayerIsMoving(){
-        return _movement.upDownInput != 0 || _movement.sidewaysInput != 0;
+        _weaponController.nextWeaponInput = Input.GetButtonDown("Weapon Cycle");
     }
 }
