@@ -11,6 +11,8 @@ GameObject:
   - component: {fileID: 3817481248280697560}
   - component: {fileID: 3817481248280697561}
   - component: {fileID: 2573173878350181043}
+  - component: {fileID: -5339824511376720077}
+  - component: {fileID: 5135295518622044536}
   m_Layer: 0
   m_Name: Homing Missile
   m_TagString: Shot
@@ -27,7 +29,7 @@ Transform:
   m_GameObject: {fileID: 3817481248280697562}
   m_LocalRotation: {x: 0, y: 0, z: -0.7071068, w: 0.7071068}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 2, y: 2, z: 2}
+  m_LocalScale: {x: 3, y: 3, z: 3}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -97,3 +99,31 @@ CapsuleCollider:
   m_Height: 0.27000007
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!54 &-5339824511376720077
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3817481248280697562}
+  serializedVersion: 2
+  m_Mass: 0.5
+  m_Drag: 0
+  m_AngularDrag: 0
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!114 &5135295518622044536
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3817481248280697562}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8457a35a8ef412a9c6d67cb64046c8d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

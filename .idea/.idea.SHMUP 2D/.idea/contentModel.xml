@@ -25,6 +25,9 @@
           <e p="GameManager.cs" t="Include" />
           <e p="HomingMissile.cs" t="Include" />
           <e p="LaserBeam.cs" t="Include" />
+          <e p="LaserControl.cs" t="Include" />
+          <e p="MissileControl.cs" t="Include" />
+          <e p="PlasmaControl.cs" t="Include" />
           <e p="PlasmaShot.cs" t="Include" />
           <e p="PlayerBoundaries.cs" t="Include" />
           <e p="PlayerController.cs" t="Include" />

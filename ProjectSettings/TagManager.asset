@@ -9,7 +9,7 @@ TagManager:
   - Enemy
   - Shield
   - Nebula
-  - Enemy2
+  - WeaponManager
   layers:
   - Default
   - TransparentFX

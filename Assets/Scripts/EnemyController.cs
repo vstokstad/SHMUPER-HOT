@@ -1,6 +1,5 @@
 ﻿using System;
 using UnityEngine;
-using Random = UnityEngine.Random;
 
 public class EnemyController : MonoBehaviour {
     [SerializeField] private EnemyData enemyData;
@@ -18,9 +17,6 @@ public class EnemyController : MonoBehaviour {
         _moveSpeed = enemyData.moveSpeed;
         crashDamage = enemyData.crashDamage;
         _level = enemyData.enemyLevel;
-        _rigidBody = GetComponent<Rigidbody>();
-        _playerTransform = GameObject.FindWithTag("Player").GetComponent<Transform>();
-        _explosion = Instantiate(Resources.Load<GameObject>("Explosion"), transform).GetComponent<ParticleSystem>();
     }
 
     private void Update(){
@@ -38,11 +34,17 @@ public class EnemyController : MonoBehaviour {
         Move(_direction);
     }
 
+    private void OnEnable(){
+        _rigidBody = GetComponent<Rigidbody>();
+        _playerTransform = GameObject.FindWithTag("Player").GetComponent<Transform>();
+        _explosion = Instantiate(Resources.Load<GameObject>("Explosion"), transform).GetComponent<ParticleSystem>();
+    }
+
 
     public void TakeDamage(float damage){
         if (_level > 1f) _rigidBody.AddForce(-_direction * _moveSpeed, ForceMode.Impulse);
 
-        _health = -damage;
+        _health -= damage;
         if (_health <= 0f) Explode();
     }
 
@@ -50,8 +52,8 @@ public class EnemyController : MonoBehaviour {
     private void Move(Vector3 direction){
         float speedAdjust = Vector3.Distance(transform.position, _playerTransform.position);
         if (_level < 2f)
-            direction.y *= Mathf.Sin(Mathf.PI * Random.Range(1f, 5f) * Time.fixedDeltaTime);
-        else if (_level >= 2f) speedAdjust *= _level;
+            direction.y += Mathf.Sin(Mathf.PI * Time.fixedDeltaTime);
+        else if (_level >= 2f) direction *= _level;
 
         if (_level > 2f) direction = speedAdjust * direction;
 
@@ -59,7 +61,7 @@ public class EnemyController : MonoBehaviour {
     }
 
     private bool Level3Evasion(){
-        var raycastHits = new RaycastHit[20];
+        RaycastHit[] raycastHits = new RaycastHit[20];
         Ray ray = new Ray(transform.position, _playerTransform.position);
         Physics.RaycastNonAlloc(ray, raycastHits, 40f, 8, QueryTriggerInteraction.Collide);
         foreach (RaycastHit hit in raycastHits)

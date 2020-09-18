@@ -12,8 +12,6 @@ public class PlayerData : ScriptableObject {
     public float crashDamage = 0.5f;
     public float acceleration = 3f;
 
-    [Header("Weapons")] public float laserAmmunition = 5f;
-
 
     private float _rechargeTimer;
     private GameObject _shieldBubble;
@@ -35,7 +33,6 @@ public class PlayerData : ScriptableObject {
             _rechargeTimer -= Time.deltaTime;
         }
         else if (_rechargeTimer <= 0f) {
-            laserAmmunition = 5;
             ShieldIsLoaded = true;
             if (boostCharge < 0.1f && boostCharge < 10f) boostCharge += rechargeTime * Time.deltaTime;
             _rechargeTimer = rechargeTime;

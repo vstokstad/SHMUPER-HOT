@@ -1,13 +1,14 @@
 ﻿using UnityEngine;
 
 public class PlayerInput : MonoBehaviour {
+    private readonly string _weaponManagerString = "WeaponManager";
     private PlayerMovement _movement;
     private ShieldControl _shieldControl;
     private WeaponController _weaponController;
 
     private void Awake(){
         _movement = GetComponent<PlayerMovement>();
-        _weaponController = GetComponent<WeaponController>();
+        _weaponController = GameObject.FindGameObjectWithTag(_weaponManagerString).GetComponent<WeaponController>();
         _shieldControl = GetComponentInChildren<ShieldControl>();
     }
 

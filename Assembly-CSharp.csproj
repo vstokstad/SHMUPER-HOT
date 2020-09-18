@@ -50,23 +50,26 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-     <Compile Include="Assets\Scripts\BackgroundController.cs" />
-     <Compile Include="Assets\Scripts\WeaponManager.cs" />
-     <Compile Include="Assets\Scripts\PlayerMovement.cs" />
-     <Compile Include="Assets\Scripts\LaserBeam.cs"/>
-     <Compile Include="Assets\Scripts\PlayerBoundaries.cs" />
-     <Compile Include="Assets\Scripts\TimeManager.cs" />
-     <Compile Include="Assets\Scripts\PlayerInput.cs" />
-     <Compile Include="Assets\Scripts\EnemySpawnManager.cs" />
-     <Compile Include="Assets\Scripts\EnemyData.cs" />
-     <Compile Include="Assets\Scripts\GameManager.cs" />
-     <Compile Include="Assets\Scripts\WeaponController.cs" />
+      <Compile Include="Assets\Scripts\BackgroundController.cs"/>
+      <Compile Include="Assets\Scripts\WeaponManager.cs"/>
+      <Compile Include="Assets\Scripts\PlayerMovement.cs"/>
+      <Compile Include="Assets\Scripts\LaserBeam.cs"/>
+      <Compile Include="Assets\Scripts\PlayerBoundaries.cs"/>
+      <Compile Include="Assets\Scripts\TimeManager.cs"/>
+      <Compile Include="Assets\Scripts\PlayerInput.cs"/>
+      <Compile Include="Assets\Scripts\EnemySpawnManager.cs"/>
+      <Compile Include="Assets\Scripts\EnemyData.cs"/>
+      <Compile Include="Assets\Scripts\MissileControl.cs"/>
+      <Compile Include="Assets\Scripts\LaserControl.cs"/>
+      <Compile Include="Assets\Scripts\GameManager.cs"/>
+      <Compile Include="Assets\Scripts\WeaponController.cs"/>
       <Compile Include="Assets\Scripts\PlasmaShot.cs"/>
-     <Compile Include="Assets\Scripts\EnemyController.cs" />
-     <Compile Include="Assets\Scripts\ShieldControl.cs" />
+      <Compile Include="Assets\Scripts\EnemyController.cs"/>
+      <Compile Include="Assets\Scripts\PlasmaControl.cs"/>
+      <Compile Include="Assets\Scripts\ShieldControl.cs"/>
       <Compile Include="Assets\Scripts\HomingMissile.cs"/>
-     <Compile Include="Assets\Scripts\PlayerData.cs" />
-     <Compile Include="Assets\Scripts\PlayerController.cs" />
+      <Compile Include="Assets\Scripts\PlayerData.cs"/>
+      <Compile Include="Assets\Scripts\PlayerController.cs"/>
       <Compile Include="Assets\Scripts\WeaponPool.cs"/>
      <None Include="Assets\2D Space Kit\Particles (Sprites)\Note on Flares.txt" />
      <None Include="Assets\2D Space Kit\Backgrounds\Fantasy Purple 2048\Note.txt" />
