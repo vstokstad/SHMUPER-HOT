@@ -22,8 +22,5 @@ public class PlayerInput : MonoBehaviour {
         _weaponController.fireInput = Input.GetButton("Fire1");
 
         _weaponController.nextWeaponInput = Input.GetButtonDown("Weapon Cycle");
-        _weaponController.weapon1 = Input.GetKeyDown(key: KeyCode.Alpha1);
-        _weaponController.weapon2 = Input.GetKeyDown(key: KeyCode.Alpha2);
-        _weaponController.weapon3 = Input.GetKeyDown(key: KeyCode.Alpha3);
     }
 }

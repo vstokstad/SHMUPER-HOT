@@ -23,9 +23,9 @@
           <e p="EnemyData.cs" t="Include" />
           <e p="EnemySpawnManager.cs" t="Include" />
           <e p="GameManager.cs" t="Include" />
-          <e p="HomingMissileController.cs" t="Include" />
-          <e p="LaserBeamControl.cs" t="Include" />
-          <e p="PlasmaShotController.cs" t="Include" />
+          <e p="HomingMissile.cs" t="Include" />
+          <e p="LaserBeam.cs" t="Include" />
+          <e p="PlasmaShot.cs" t="Include" />
           <e p="PlayerBoundaries.cs" t="Include" />
           <e p="PlayerController.cs" t="Include" />
           <e p="PlayerData.cs" t="Include" />
@@ -35,6 +35,7 @@
           <e p="TimeManager.cs" t="Include" />
           <e p="WeaponController.cs" t="Include" />
           <e p="WeaponManager.cs" t="Include" />
+          <e p="WeaponPool.cs" t="Include" />
         </e>
       </e>
       <e p="obj" t="ExcludeRecursive" />

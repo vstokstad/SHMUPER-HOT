@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: ed9332eff40f49cb9514c9b6a447405c
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - plasmaPrefab: {fileID: 3001663091048251561, guid: 8e7af79416d354c4589fa7a3a5c44af3, type: 3}
+  - laserPrefab: {fileID: 1037395835945583735, guid: 5d30b8bc3cf624904bda1e03752101ca, type: 3}
+  - missilePrefab: {fileID: 3817481248280697562, guid: 1410a9a23a26c4205b98f3908d83fb8a, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

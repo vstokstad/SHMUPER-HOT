@@ -10,41 +10,22 @@ public enum WeaponType {
 }
 
 public class WeaponController : MonoBehaviour {
-    [NonSerialized] public WeaponType weaponType;
     private WeaponManager.IWeapon _iWeapon;
     [NonSerialized] public bool fireInput;
     [NonSerialized] public bool nextWeaponInput;
-    [NonSerialized] public bool weapon1;
-    [NonSerialized] public bool weapon2;
-    [NonSerialized] public bool weapon3;
+    [NonSerialized] public WeaponType weaponType;
+
 
     private void Awake(){
         weaponType = Plasma;
-    }
-
-    private void Start(){
         HandleWeaponType(weaponType);
     }
 
     private void Update(){
         if (fireInput) Fire();
-        /*if (weapon1) {
-            weaponType = Plasma;
-            HandleWeaponType(weaponType);
-        }
-
-        if (weapon2) {
-            weaponType = Laser;
-            HandleWeaponType(weaponType);
-        }
-
-        if (weapon3) {
-            weaponType = HomingMissile;
-            HandleWeaponType(weaponType);
-        }*/
 
         if (nextWeaponInput) {
-            if (weaponType == HomingMissile) {
+            if (weaponType == WeaponType.HomingMissile) {
                 weaponType = Plasma;
                 HandleWeaponType(weaponType);
             }
@@ -58,23 +39,22 @@ public class WeaponController : MonoBehaviour {
 
     private void HandleWeaponType(WeaponType weaponChoice){
         Component c = gameObject.GetComponent<WeaponManager.IWeapon>() as Component;
-        
-        if(c!=null){
-            Destroy(c);
-        }
-        
+
+        if (c != null) Destroy(c);
+
         switch (weaponChoice) {
             case Plasma:
-                _iWeapon = gameObject.AddComponent<WeaponManager.PlasmaShot>();
+                _iWeapon = gameObject.AddComponent<PlasmaShot>();
                 break;
             case Laser:
-                _iWeapon = gameObject.AddComponent<WeaponManager.LaserBeam>();
+                _iWeapon = gameObject.AddComponent<LaserBeam>();
                 break;
-            case HomingMissile:
+            case WeaponType.HomingMissile:
+                _iWeapon = gameObject.AddComponent<HomingMissile>();
                 break;
             default:
                 weaponType = Plasma;
-                _iWeapon = gameObject.AddComponent<WeaponManager.PlasmaShot>();
+                _iWeapon = gameObject.AddComponent<PlasmaShot>();
                 break;
         }
     }

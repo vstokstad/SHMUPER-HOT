@@ -75,7 +75,6 @@ public class EnemyController : MonoBehaviour {
         _rigidBody.velocity = Vector3.zero;
         _moveSpeed = 0f;
         _playerTransform.GetComponent<PlayerController>().killCounter += 1f;
-      //  Destroy(_explosion.gameObject, _explosion.main.duration);
         Destroy(gameObject, _explosion.main.duration);
     }
 }
