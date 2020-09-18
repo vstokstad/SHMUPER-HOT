@@ -15,12 +15,15 @@ public class PlayerInput : MonoBehaviour {
         _movement.upDownInput = Input.GetAxis("Vertical");
         _movement.sidewaysInput = Input.GetAxis("Horizontal");
 
-        _shieldControl.shieldInput = Input.GetKeyDown(KeyCode.E);
+        _shieldControl.shieldInput = Input.GetButtonDown("Shield");
 
         _movement.boostInput = Input.GetButton("Boost");
 
         _weaponController.fireInput = Input.GetButton("Fire1");
 
         _weaponController.nextWeaponInput = Input.GetButtonDown("Weapon Cycle");
+        _weaponController.weapon1 = Input.GetKeyDown(key: KeyCode.Alpha1);
+        _weaponController.weapon2 = Input.GetKeyDown(key: KeyCode.Alpha2);
+        _weaponController.weapon3 = Input.GetKeyDown(key: KeyCode.Alpha3);
     }
 }

@@ -39,15 +39,14 @@ public class PlayerMovement : MonoBehaviour {
 
     private void MovePlayer(Vector3 velocity){
         TrailingFlames();
-        if (boostInput && _playerData.boostForce > 0) {
-            velocity *= _playerData.boostForce * 2f;
+        if (boostInput && _playerData.boostCharge > 0) {
+            velocity *= 5f;
 
-            _rigidbody.velocity = Vector3.Slerp(_currentVelocity, velocity,
-                _playerData.acceleration * Time.fixedUnscaledDeltaTime);
+            _rigidbody.velocity = velocity;
 
             _light.intensity = _intensity * 10f;
             _light.color = Color.magenta;
-            _playerData.boostForce -= Time.deltaTime;
+            _playerData.boostCharge -= Time.deltaTime;
             { }
         }
         else {

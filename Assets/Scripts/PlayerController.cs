@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using UnityEngine;
 
@@ -7,8 +8,7 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour {
     [SerializeField] public PlayerData playerData;
     public float killCounter;
-    public bool shieldInput;
-    private IEnumerator _coroutine;
+    private IEnumerator _collisionManagerRoutine;
     private float _playerHealth;
 
     private void Awake(){

@@ -17,4 +17,6 @@ MonoBehaviour:
   maxSpeed: 10
   crashDamage: 0.5
   acceleration: 3
-  plasmaAmmunition: 5
+  plasmaAmmunition: 0
+  laserAmmunition: 1.2869442
+  homingMissileAmmunition: 5

@@ -20,7 +20,7 @@ public class EnemyController : MonoBehaviour {
         _level = enemyData.enemyLevel;
         _rigidBody = GetComponent<Rigidbody>();
         _playerTransform = GameObject.FindWithTag("Player").GetComponent<Transform>();
-        _explosion = Resources.Load<ParticleSystem>("Explosion");
+        _explosion = Instantiate(Resources.Load<GameObject>("Explosion"), transform).GetComponent<ParticleSystem>();
     }
 
     private void Update(){
@@ -70,10 +70,12 @@ public class EnemyController : MonoBehaviour {
     }
 
     private void Explode(){
+        _explosion.transform.position = transform.position;
         _explosion.Play();
         _rigidBody.velocity = Vector3.zero;
         _moveSpeed = 0f;
         _playerTransform.GetComponent<PlayerController>().killCounter += 1f;
+      //  Destroy(_explosion.gameObject, _explosion.main.duration);
         Destroy(gameObject, _explosion.main.duration);
     }
 }

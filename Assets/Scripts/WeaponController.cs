@@ -1,35 +1,79 @@
 using System;
-using System.Collections.Generic;
 using UnityEngine;
+using static WeaponType;
+
+
+public enum WeaponType {
+    Plasma = 0,
+    Laser = 1,
+    HomingMissile = 2
+}
 
 public class WeaponController : MonoBehaviour {
-    public WeaponType weaponType;
+    [NonSerialized] public WeaponType weaponType;
     private WeaponManager.IWeapon _iWeapon;
-    private IEnumerator<WeaponType> _weaponSwitch;
     [NonSerialized] public bool fireInput;
     [NonSerialized] public bool nextWeaponInput;
+    [NonSerialized] public bool weapon1;
+    [NonSerialized] public bool weapon2;
+    [NonSerialized] public bool weapon3;
+
+    private void Awake(){
+        weaponType = Plasma;
+    }
 
     private void Start(){
-        HandleWeaponType();
+        HandleWeaponType(weaponType);
     }
 
     private void Update(){
         if (fireInput) Fire();
-        if (nextWeaponInput) { }
+        /*if (weapon1) {
+            weaponType = Plasma;
+            HandleWeaponType(weaponType);
+        }
+
+        if (weapon2) {
+            weaponType = Laser;
+            HandleWeaponType(weaponType);
+        }
+
+        if (weapon3) {
+            weaponType = HomingMissile;
+            HandleWeaponType(weaponType);
+        }*/
+
+        if (nextWeaponInput) {
+            if (weaponType == HomingMissile) {
+                weaponType = Plasma;
+                HandleWeaponType(weaponType);
+            }
+            else {
+                weaponType += 1;
+                HandleWeaponType(weaponType);
+            }
+        }
     }
 
 
-    private void HandleWeaponType(){
-        switch (weaponType) {
-            case WeaponType.Plasma:
+    private void HandleWeaponType(WeaponType weaponChoice){
+        Component c = gameObject.GetComponent<WeaponManager.IWeapon>() as Component;
+        
+        if(c!=null){
+            Destroy(c);
+        }
+        
+        switch (weaponChoice) {
+            case Plasma:
                 _iWeapon = gameObject.AddComponent<WeaponManager.PlasmaShot>();
                 break;
-            case WeaponType.Laser:
+            case Laser:
+                _iWeapon = gameObject.AddComponent<WeaponManager.LaserBeam>();
                 break;
-            case WeaponType.HomingMissile:
+            case HomingMissile:
                 break;
             default:
-                weaponType = WeaponType.Plasma;
+                weaponType = Plasma;
                 _iWeapon = gameObject.AddComponent<WeaponManager.PlasmaShot>();
                 break;
         }

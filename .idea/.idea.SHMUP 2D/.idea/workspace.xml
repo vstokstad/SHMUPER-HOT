@@ -11,46 +11,33 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b0782a68-a060-4e6c-bd60-010f9108599b" name="Default Changelist" comment="Time manager implemented and working good enough.&#10;&#10;Signed-off-by: Vilhelm Stokstad &lt;v.stokstad@gmail.com&gt;">
-      <change afterPath="$PROJECT_DIR$/Assets/2D Space Kit/Background Elements/Dust and Nebulae/Materials/Nebula 1.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/2D Space Kit/Background Elements/Dust and Nebulae/Materials/Nebula 1.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/BackgroundController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Data/Enemy2Data.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Data/Enemy2Data.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Material/EnemyLvl2_M.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Material/EnemyLvl2_M.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Enemy2.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Enemy2.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/EnemySpawnManager.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/WeaponType.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/WeaponType.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/TimeManager.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UIElementsSchema/UIElements.xsd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UIElementsSchema/Unity.Cloud.Collaborate.Components.ChangeListEntries.xsd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UIElementsSchema/Unity.Cloud.Collaborate.Components.xsd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UIElementsSchema/Unity.Cloud.Collaborate.Views.xsd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UIElementsSchema/UnityEditor.PackageManager.UI.xsd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UIElementsSchema/UnityEditor.Rendering.LookDev.xsd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UIElementsSchema/UnityEditor.ShaderGraph.Drawing.xsd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UIElementsSchema/UnityEditor.U2D.Animation.xsd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UIElementsSchema/UnityEditor.U2D.Layout.xsd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UIElementsSchema/UnityEditor.UIElements.Debugger.xsd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UIElementsSchema/UnityEditor.UIElements.xsd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UIElementsSchema/UnityEngine.UIElements.xsd" afterDir="false" />
+    <list default="true" id="b0782a68-a060-4e6c-bd60-010f9108599b" name="Default Changelist" comment="Updates to enemy spawner and plasma fire rate">
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Homing Missile.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Homing Missile.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/LaserBeam.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/LaserBeam.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/BackgroundController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/BackgroundController.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/HomingMissileController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/HomingMissileController.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/LaserBeamControl.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/LaserBeamControl.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/TimeManager.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/TimeManager.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.SHMUP 2D/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.SHMUP 2D/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.SHMUP 2D/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.SHMUP 2D/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.SHMUP 2D/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.SHMUP 2D/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assembly-CSharp.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Assembly-CSharp.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Material/PLayerShip_M.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Material/PLayerShip_M.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BackgroundController.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BackgroundController.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Data/PlayerData.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Data/PlayerData.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Resources/Enemy.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Enemy.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Enemy2.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Enemy2.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Explosion.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Explosion.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Resources/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Player.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/EnemyController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/EnemyController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/EnemyData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/EnemyData.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/EnemySpawn.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/EnemySpawn.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/EnemySpawnManager.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/NewPlayableAsset.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/NewPlayableAsset.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/BackgroundController.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/EnemySpawnManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/EnemySpawnManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlasmaShotController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlasmaShotController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerData.cs" afterDir="false" />
@@ -59,39 +46,35 @@
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/ShieldControl.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ShieldControl.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/WeaponController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/WeaponController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/WeaponManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/WeaponManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TimeManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TimeManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/AnnotationManager" beforeDir="false" afterPath="$PROJECT_DIR$/Library/AnnotationManager" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/WeaponType.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/WeaponType.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TimeManager.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TimeManager.cs.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/ArtifactDB" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ArtifactDB" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/2c/2caaf47a4a07ad2c1f536cfdf21ea8d8" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/41/411256f02aaf33aa474260d6ec6e6abd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/46/46f0e145705facae9a3edfb6992cda06" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/5a/5a7f8e969800e392f84c24c59c0c7a95" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/a6/a6de7b4b3c1a055cb76d8e3221448137" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/cf/cfa0bf4a42bfee88e9c733cfec6ad7e3" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/CurrentLayout-default.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/Library/CurrentLayout-default.dwlt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/CurrentMaximizeLayout.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/Library/CurrentMaximizeLayout.dwlt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/EditorUserBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Library/EditorUserBuildSettings.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/InspectorExpandedItems.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Library/InspectorExpandedItems.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/SceneVisibilityState.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Library/SceneVisibilityState.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/BuiltinAssemblies.stamp" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/ShaderCache/EditorEncounteredVariants" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ShaderCache/EditorEncounteredVariants" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/SourceAssetDB" beforeDir="false" afterPath="$PROJECT_DIR$/Library/SourceAssetDB" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/StateCache/MainStageHierarchy/b3/b33c0e3f811f60f68b686d48892eb094.json" beforeDir="false" afterPath="$PROJECT_DIR$/Library/StateCache/MainStageHierarchy/b3/b33c0e3f811f60f68b686d48892eb094.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/StateCache/SceneView/d8/d8ceb4b4b810e823a3347aadfc1996d1.json" beforeDir="false" afterPath="$PROJECT_DIR$/Library/StateCache/SceneView/d8/d8ceb4b4b810e823a3347aadfc1996d1.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/expandedItems" beforeDir="false" afterPath="$PROJECT_DIR$/Library/expandedItems" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler1.log" beforeDir="false" afterPath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler1.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler10.log" beforeDir="false" afterPath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler10.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler11.log" beforeDir="false" afterPath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler11.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler12.log" beforeDir="false" afterPath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler12.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler13.log" beforeDir="false" afterPath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler13.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler14.log" beforeDir="false" afterPath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler14.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler15.log" beforeDir="false" afterPath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler15.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler2.log" beforeDir="false" afterPath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler2.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler3.log" beforeDir="false" afterPath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler3.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler4.log" beforeDir="false" afterPath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler4.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler5.log" beforeDir="false" afterPath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler5.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler6.log" beforeDir="false" afterPath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler6.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler7.log" beforeDir="false" afterPath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler7.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp.csproj.CoreCompileInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp.csprojAssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp.dll" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler8.log" beforeDir="false" afterPath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler8.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler9.log" beforeDir="false" afterPath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler9.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/InputManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/InputManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -120,18 +103,28 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/7CD321F2-2A98-4E1E-B513-F00B987C648C/55/325a4a2a/Transform.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/EnemyController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/7CD321F2-2A98-4E1E-B513-F00B987C648C/22/5d72074d/Material.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/7CD321F2-2A98-4E1E-B513-F00B987C648C/2b/0b738b3d/GameObject.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/484E0A2F-7D55-49CC-9F07-3823AD678B61/1b/dfaa467c/ParticleSystem.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/1CC9F42F-C888-4DD6-B922-6D52BD1D749D/7a/dced9cdc/Rigidbody.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/1CC9F42F-C888-4DD6-B922-6D52BD1D749D/91/a8cc8430/RaycastHit.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/7CD321F2-2A98-4E1E-B513-F00B987C648C/94/1e87cc21/Component.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.2d.spriteshape@4.1.3/Runtime/SpriteShapeController.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/484E0A2F-7D55-49CC-9F07-3823AD678B61/9b/5adc7f2c/ParticleSystem.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/7CD321F2-2A98-4E1E-B513-F00B987C648C/7f/95c33ebd/MonoBehaviour.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/7CD321F2-2A98-4E1E-B513-F00B987C648C/e1/a8143129/UsedImplicitlyAttribute.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/1CC9F42F-C888-4DD6-B922-6D52BD1D749D/eb/8e1ba61f/Collision.cs" root0="SKIP_HIGHLIGHTING" />
@@ -139,6 +132,7 @@
     <setting file="file:///Applications/Unity/2020.1.4f1/Unity.app/Contents/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/UI/Animation/CoroutineTween.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/99258562-0D64-4271-98DD-F3A0E1467733/94/eb24392d/List`1.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/EnemySpawnManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/WeaponManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/7CD321F2-2A98-4E1E-B513-F00B987C648C/69/ba8dba9c/Time.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.textmeshpro@3.0.1/Scripts/Editor/TMPro_ContextMenus.cs" root0="SKIP_HIGHLIGHTING" />
@@ -153,25 +147,26 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/PlasmaBallEffect.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PlasmaBallController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/NewPlayableAsset.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PlayerBoundaries.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PlayerActions.cs" />
         <option value="$PROJECT_DIR$/Assets/ShieldControl.cs" />
         <option value="$PROJECT_DIR$/Assets/BackgroundController.cs" />
         <option value="$PROJECT_DIR$/Assets/TimeManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/PlayerMovement.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/PlasmaShotController.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/WeaponType.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/WeaponController.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/PlayerData.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/PlayerInput.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/ShieldControl.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/EnemyData.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/EnemySpawn.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/EnemyController.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/WeaponManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/EnemySpawnManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PlayerMovement.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/WeaponType.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/ShieldControl.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PlayerInput.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/EnemyController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/WeaponController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/LaserBeamControl.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PlayerData.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PlasmaShotController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/WeaponManager.cs" />
       </list>
     </option>
   </component>
@@ -275,7 +270,7 @@
       <workItem from="1600156363507" duration="18020000" />
       <workItem from="1600239889631" duration="3587000" />
       <workItem from="1600245527374" duration="9387000" />
-      <workItem from="1600326593422" duration="2841000" />
+      <workItem from="1600326593422" duration="21293000" />
     </task>
     <task id="LOCAL−00001" summary="Updated with Particle System  and plasma Shots&#10;WeaponSystem WIP">
       <created>1599581575365</created>
@@ -325,7 +320,13 @@
       <option name="presentableId" value="LOCAL−00008" />
       <updated>1600074137326</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL−00009" summary="Updates to enemy spawner and plasma fire rate">
+      <created>1600329611979</created>
+      <option name="number" value="LOCAL−00009" />
+      <option name="presentableId" value="LOCAL−00009" />
+      <updated>1600329611979</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -413,7 +414,8 @@
     <MESSAGE value="workspace" />
     <MESSAGE value="Time manager implemented and working good enough." />
     <MESSAGE value="Time manager implemented and working good enough.&#10;&#10;Signed-off-by: Vilhelm Stokstad &lt;v.stokstad@gmail.com&gt;" />
-    <option name="LAST_COMMIT_MESSAGE" value="Time manager implemented and working good enough.&#10;&#10;Signed-off-by: Vilhelm Stokstad &lt;v.stokstad@gmail.com&gt;" />
+    <MESSAGE value="Updates to enemy spawner and plasma fire rate" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updates to enemy spawner and plasma fire rate" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -659,10 +661,10 @@
     <state x="-1395" y="538" width="900" height="722" key="SettingsEditor/0.23.2560.1417/-1792.343.1792.1097@-1792.343.1792.1097" timestamp="1599650552831" />
     <state x="567" y="275" width="1027" height="722" key="SettingsEditor/0.23.2560.1417/-1792.343.1792.1097@0.23.2560.1417" timestamp="1600154869751" />
     <state x="567" y="275" key="SettingsEditor/0.23.2560.1417@0.23.2560.1417" timestamp="1599555145383" />
-    <state x="100" y="123" width="2360" height="1217" key="VCS.FileHistoryDialog" timestamp="1599639117538">
+    <state x="100" y="123" width="2360" height="1217" key="VCS.FileHistoryDialog" timestamp="1600330048173">
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
-    <state x="100" y="123" width="2360" height="1217" key="VCS.FileHistoryDialog/0.23.2560.1417/-1792.343.1792.1097@0.23.2560.1417" timestamp="1599639117538" />
+    <state x="100" y="123" width="2360" height="1217" key="VCS.FileHistoryDialog/0.23.2560.1417/-1792.343.1792.1097@0.23.2560.1417" timestamp="1600330048173" />
     <state x="471" y="382" key="Vcs.Push.Dialog.v2" timestamp="1599861138876">
       <screen x="0" y="23" width="1792" height="1097" />
     </state>
@@ -681,12 +683,12 @@
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
     <state x="832" y="468" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.23.2560.1417/-1792.343.1792.1097@0.23.2560.1417" timestamp="1599752249165" />
-    <state width="600" height="428" key="javadoc.popup" timestamp="1600328351495">
+    <state width="1002" height="428" key="javadoc.popup" timestamp="1600352441116">
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
     <state width="420" height="332" key="javadoc.popup/0.23.1792.1097@0.23.1792.1097" timestamp="1600016191803" />
     <state width="932" height="428" key="javadoc.popup/0.23.2560.1417/-1792.343.1792.1097@-1792.343.1792.1097" timestamp="1599654340151" />
-    <state width="600" height="428" key="javadoc.popup/0.23.2560.1417/-1792.343.1792.1097@0.23.2560.1417" timestamp="1600328351495" />
+    <state width="1002" height="428" key="javadoc.popup/0.23.2560.1417/-1792.343.1792.1097@0.23.2560.1417" timestamp="1600352441116" />
     <state x="908" y="984" key="run.anything.popup" timestamp="1599493012896">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
@@ -697,37 +699,5 @@
     <state x="660" y="273" width="672" height="678" key="search.everywhere.popup/0.23.1792.1097@0.23.1792.1097" timestamp="1599857865729" />
     <state x="943" y="346" width="961" height="876" key="search.everywhere.popup/0.23.2560.1417/-1792.343.1792.1097@0.23.2560.1417" timestamp="1600254421698" />
     <state x="943" y="346" key="search.everywhere.popup/0.23.2560.1417@0.23.2560.1417" timestamp="1599552286895" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/Scripts/EnemySpawnManager.cs</url>
-          <line>51</line>
-          <properties documentPath="$PROJECT_DIR$/Assets/Scripts/EnemySpawnManager.cs" initialLine="51">
-            <startOffsets>
-              <option value="1826" />
-            </startOffsets>
-            <endOffsets>
-              <option value="1894" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/Scripts/EnemySpawnManager.cs</url>
-          <line>56</line>
-          <properties documentPath="$PROJECT_DIR$/Assets/Scripts/EnemySpawnManager.cs" initialLine="56">
-            <startOffsets>
-              <option value="1937" />
-            </startOffsets>
-            <endOffsets>
-              <option value="1982" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

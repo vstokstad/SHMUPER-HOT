@@ -1,6 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine;
+using Debug = System.Diagnostics.Debug;
 
 public class WeaponManager : MonoBehaviour {
     public interface IWeapon {
@@ -11,96 +11,102 @@ public class WeaponManager : MonoBehaviour {
 
     public class PlasmaShot : MonoBehaviour, IWeapon {
         private readonly string _plasma = "PlasmaBall";
-
-        private GameObject _plasmaShot;
-        private List<GameObject> _plasmaShots;
+        
         private Vector3 _plasmaVelocity;
         private PlayerData _playerData;
+        private PlayerController _playerController;
         private float _shootTimer = 0.1f;
-        [NonSerialized] public int ammunition;
+        private GameObject _plasmaShot;
+
 
         private void Awake(){
-            _playerData = GetComponent<PlayerController>().playerData;
-            ammunition = _playerData.plasmaAmmunition;
-            _plasmaShots = new List<GameObject>();
-            for (int i = 0; i < ammunition; i++) {
-                _plasmaShots.Add(
-                    Instantiate(Resources.Load(_plasma, typeof(GameObject))) as GameObject);
-                _plasmaShots[i].SetActive(false);
-            }
+            _playerController = GetComponent<PlayerController>();
+            _playerData = _playerController.playerData;
+          
+
+
+
         }
 
         public void Shoot(){
             if (!(_shootTimer <= 0f)) {
-                _shootTimer -= Time.deltaTime;
+                _shootTimer -= Time.unscaledDeltaTime;
                 return;
             }
-
             _shootTimer = 0.1f;
-
-            Vector3 initialPosition = transform.position;
+            if (_playerData.plasmaAmmunition <= 0) return;
+            _plasmaShot  = Instantiate(Resources.Load(_plasma, typeof(GameObject))) as GameObject;
+            _plasmaShot.SetActive(true);
+            Vector3 initialPosition = gameObject.transform.position;
             initialPosition.x += 1f;
-            foreach (GameObject shot in _plasmaShots) {
-                if (shot.activeSelf) continue;
-                shot.SetActive(true);
-                shot.transform.position = initialPosition;
-                _plasmaVelocity.x = 10f;
-                _plasmaVelocity.y = 0f;
-                shot.GetComponent<Rigidbody>().velocity = _plasmaVelocity;
-                break;
-            }
-
-
-            if (ammunition == _playerData.plasmaAmmunition || ammunition > 15) return;
-            _playerData.plasmaAmmunition = ammunition;
-            _plasmaShots.Add(Instantiate(Resources.Load(_plasma, typeof(GameObject))) as GameObject);
-            int count = _plasmaShots.Count - 1;
-            _plasmaShots[count].transform.position = initialPosition;
-            _plasmaShots[count].SetActive(false);
+            _plasmaShot.transform.position = initialPosition;
+            _plasmaShot.SetActive(true);
+            _plasmaVelocity.x = 15f;
+            _plasmaVelocity.y = 0f;
+            _plasmaShot.GetComponent<Rigidbody>().velocity = _plasmaVelocity;
+            _playerData.plasmaAmmunition -= 1;
         }
     }
+
+
+
 
     #endregion
 
     #region LaserWeaponType
 
     public class LaserBeam : MonoBehaviour, IWeapon {
-        private readonly string _laser = "LaserBeam";
-
-        private GameObject _laserBeam;
-
-
         private PlayerData _playerData;
-        [NonSerialized] public float ammunition;
-
+        private LaserBeamControl _laserBeamControl;
+        private GameObject _laserBeam;
+        private float _laserLengthOn = 30f;
+        private float _laserLengthOff = 0f;
+        private Vector3 _laserScale;
+        private Collider _laserCollider;
+        private string _laserBeamString = "LaserBeam";
+        private bool _laserIsOn;
 
         private void Awake(){
+            _laserBeam = Instantiate(Resources.Load(_laserBeamString, typeof(GameObject)), transform) as GameObject;
             _playerData = GetComponent<PlayerController>().playerData;
-            ammunition = _playerData.laserAmmunition;
-            _laserBeam = (GameObject) Instantiate(Resources.Load(_laser, typeof(GameObject)));
-            _laserBeam.SetActive(true);
+            _laserBeamControl = GetComponent<LaserBeamControl>();
+            _laserCollider = _laserBeam.GetComponent<Collider>();
+            _laserScale.z = _laserLengthOff;
+            _laserBeam.transform.localScale = _laserScale;
+            _laserCollider.enabled = false;
+            _laserIsOn = false;
         }
 
+        private void Update(){
+            if (_laserIsOn) _playerData.laserAmmunition -= Time.unscaledDeltaTime;
+            if (_playerData.laserAmmunition <= 0f) {
+                _laserScale.z = _laserLengthOff;
+                _laserBeam.transform.localScale = _laserScale;
+                _laserCollider.enabled = false;
+                _laserIsOn = false;
+            }
+        }
+
+        private void OnDisable(){
+            Destroy(_laserBeam);
+        }
 
         public void Shoot(){
-            if (ammunition <= 0f) return;
-            Vector3 transformLocalScale = _laserBeam.transform.localScale;
-            while (ammunition > 0f) {
-                transformLocalScale.x += 10f * Time.fixedDeltaTime;
-                _laserBeam.transform.localScale = transformLocalScale;
-                ammunition -= Time.fixedDeltaTime;
-            }
-
-            if (ammunition <= 0f) {
-                transformLocalScale.x = 0f;
-                _laserBeam.transform.localScale = transformLocalScale;
+            if (_playerData.laserAmmunition < 1f) return;
+            if (_playerData.laserAmmunition > 0f) {
+                _laserIsOn = true;
+                _laserScale.z = _laserLengthOn;
+                _laserBeam.transform.localScale = _laserScale;
+                _laserBeamControl.enabled = true;
+                _laserCollider.enabled = true;
             }
         }
+
+
+        #endregion
+
+        #region HomingMissileWeaponType
+
+        #endregion
     }
-
-    #endregion
-
-    #region HomingMissileWeaponType
-
-    #endregion
 }

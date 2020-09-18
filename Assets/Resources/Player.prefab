@@ -5011,7 +5011,7 @@ Light:
   m_BounceIntensity: 2
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 0, y: 2.6901224e-13, z: 4.5741e-41, w: 1.385127e+11}
+  m_BoundingSphereOverride: {x: 0, y: -0.000013196972, z: 4.5822e-41, w: 0}
   m_UseBoundingSphereOverride: 0
   m_ShadowRadius: 5
   m_ShadowAngle: 0
@@ -5051,7 +5051,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0a87c3b7d6cf40e98d690b51f6f5bab3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  weaponType: 0
 --- !u!114 &2337300872824297735
 MonoBehaviour:
   m_ObjectHideFlags: 0

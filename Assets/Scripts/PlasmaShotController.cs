@@ -4,8 +4,9 @@ public class PlasmaShotController : MonoBehaviour {
     public float plasmaDamage = 1f;
     private readonly string enemyTag = "Enemy";
     private ParticleSystem _particleSystem;
-
+    private float lifeTime;
     private void Awake(){
+        lifeTime = 5f;
         _particleSystem = GetComponent<ParticleSystem>();
     }
 
@@ -16,14 +17,23 @@ public class PlasmaShotController : MonoBehaviour {
 
     private void OnDisable(){
         _particleSystem.Stop();
-        enabled = true;
+       Destroy(gameObject);
     }
 
     private void OnBecameInvisible(){
-        gameObject.SetActive(false);
+        Destroy(gameObject);
     }
 
-    private void OnTriggerEnter(Collider other){
+    private void Update(){
+        lifeTime -= Time.deltaTime;
+        if (lifeTime <= 0f) {
+            gameObject.SetActive(false);
+            lifeTime = 5f;
+        }
+    }
+
+   
+private void OnTriggerEnter(Collider other){
         if (!other.gameObject.CompareTag(enemyTag)) return;
         other.gameObject.GetComponent<EnemyController>().TakeDamage(plasmaDamage);
         gameObject.SetActive(false);
