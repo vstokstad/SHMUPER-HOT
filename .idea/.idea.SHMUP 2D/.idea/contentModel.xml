@@ -35,6 +35,8 @@
           <e p="PlayerInput.cs" t="Include" />
           <e p="PlayerMovement.cs" t="Include" />
           <e p="ShieldControl.cs" t="Include" />
+          <e p="SpaceJunkController.cs" t="Include" />
+          <e p="SpaceJunkManager.cs" t="Include" />
           <e p="TimeManager.cs" t="Include" />
           <e p="WeaponController.cs" t="Include" />
           <e p="WeaponManager.cs" t="Include" />

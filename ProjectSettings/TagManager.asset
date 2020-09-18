@@ -10,6 +10,7 @@ TagManager:
   - Shield
   - Nebula
   - WeaponManager
+  - SpaceJunk
   layers:
   - Default
   - TransparentFX

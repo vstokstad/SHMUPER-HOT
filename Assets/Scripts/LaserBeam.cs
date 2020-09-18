@@ -2,7 +2,7 @@
 using static WeaponManager;
 
 public class LaserBeam : MonoBehaviour, IWeapon {
-    private float rateOfFire = 0.4f;
+    private float rateOfFire = 1f;
 
     private void Update(){
         rateOfFire -= Time.unscaledDeltaTime;
@@ -12,7 +12,7 @@ public class LaserBeam : MonoBehaviour, IWeapon {
         if (rateOfFire <= 0f) {
             GameObject laserBeam = WeaponPool.Instance.Get(WeaponType.Laser);
             laserBeam.SetActive(true);
-            rateOfFire = 0.4f;
+            rateOfFire = 1f;
         }
     }
 }

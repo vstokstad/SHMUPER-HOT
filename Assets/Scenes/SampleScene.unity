@@ -9970,6 +9970,7 @@ Transform:
   - {fileID: 827522350}
   - {fileID: 2145312676}
   - {fileID: 1973902377}
+  - {fileID: 2013239334}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -10249,6 +10250,49 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0a87c3b7d6cf40e98d690b51f6f5bab3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &2013239333
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2013239334}
+  - component: {fileID: 2013239335}
+  m_Layer: 0
+  m_Name: SpaceJunk Manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2013239334
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2013239333}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1419407856}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2013239335
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2013239333}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 945a42dba8e7940cfac2bb2e77e4eb58, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2145312675
 GameObject:
   m_ObjectHideFlags: 0
@@ -10347,6 +10391,18 @@ PrefabInstance:
     - target: {fileID: 4805805623486112858, guid: 52686ef3e06f94e11aae7e32aed3aa6d, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5097930644572582933, guid: 52686ef3e06f94e11aae7e32aed3aa6d, type: 3}
+      propertyPath: m_BoundingSphereOverride.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5097930644572582933, guid: 52686ef3e06f94e11aae7e32aed3aa6d, type: 3}
+      propertyPath: m_BoundingSphereOverride.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5097930644572582933, guid: 52686ef3e06f94e11aae7e32aed3aa6d, type: 3}
+      propertyPath: m_BoundingSphereOverride.w
+      value: 1e-45
       objectReference: {fileID: 0}
     - target: {fileID: 5567292025432985074, guid: 52686ef3e06f94e11aae7e32aed3aa6d, type: 3}
       propertyPath: _weaponController

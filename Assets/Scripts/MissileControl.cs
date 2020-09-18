@@ -4,7 +4,6 @@ public class MissileControl : MonoBehaviour {
     private readonly float _missileDamage = 1f;
     private readonly float _speed = 10f;
     private Vector3 _moveDirection;
-    private PlayerController _playerController;
     private Rigidbody _rigidBody;
 
 
@@ -22,7 +21,7 @@ public class MissileControl : MonoBehaviour {
 
     private void OnEnable(){
         _rigidBody = GetComponent<Rigidbody>();
-        _playerController = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>();
+
         gameObject.SetActive(true);
         _moveDirection = Vector3.right * 10f;
     }
@@ -48,6 +47,7 @@ public class MissileControl : MonoBehaviour {
             if (!hitColliders[i].CompareTag("Enemy")) continue;
             Vector3 enemyPos = hitColliders[i].attachedRigidbody.position;
             _moveDirection = enemyPos - transform.position;
+            return;
         }
     }
 }

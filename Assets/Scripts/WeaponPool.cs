@@ -6,10 +6,8 @@ public class WeaponPool : MonoBehaviour {
     [SerializeField] private GameObject plasmaPrefab;
     [SerializeField] private GameObject laserPrefab;
     [SerializeField] private GameObject missilePrefab;
-    private readonly Queue<GameObject> _laserQueue = new Queue<GameObject>(10);
-    private readonly Queue<GameObject> _missileQueue = new Queue<GameObject>(10);
-
-
+    private readonly Queue<GameObject> _laserQueue = new Queue<GameObject>(15);
+    private readonly Queue<GameObject> _missileQueue = new Queue<GameObject>(15);
     private readonly Queue<GameObject> _plasmaQueue = new Queue<GameObject>(15);
     public static WeaponPool Instance { get; private set; }
 

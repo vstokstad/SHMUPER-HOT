@@ -18,7 +18,7 @@ public class LaserControl : MonoBehaviour {
 
     private void Update(){
         transform.position = _playerTransform.position;
-        if (_laserIsOn) _laserTimer -= Time.deltaTime;
+        if (_laserIsOn) _laserTimer -= Time.unscaledDeltaTime;
         if (_laserTimer <= 0f) {
             WeaponPool.Instance.ReturnToPool(WeaponType.Laser, gameObject);
             gameObject.SetActive(false);
@@ -29,7 +29,7 @@ public class LaserControl : MonoBehaviour {
         _laserScale.z = _laserLengthOn;
         gameObject.transform.localScale = _laserScale;
         _laserIsOn = true;
-        _laserTimer = 0.2f;
+        _laserTimer = 0.5f;
         gameObject.SetActive(true);
     }
 
