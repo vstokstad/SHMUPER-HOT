@@ -1,4 +1,5 @@
 Base path: '/Applications/Unity/2020.1.6f1/Unity.app/Contents', plugins path '/Applications/Unity/2020.1.6f1/PlaybackEngines'
 Cmd: initializeCompiler
+Cmd: initializeCompiler
 
 Quitting shader compiler process

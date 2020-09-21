@@ -63,29 +63,37 @@
      <Compile Include="Assets\Scripts\LaserControl.cs" />
      <Compile Include="Assets\Scripts\GameManager.cs" />
      <Compile Include="Assets\Scripts\WeaponController.cs" />
-     <Compile Include="Assets\Scripts\PlasmaShot.cs" />
-     <Compile Include="Assets\Scripts\EnemyController.cs" />
-     <Compile Include="Assets\Scripts\PlasmaControl.cs" />
-     <Compile Include="Assets\Scripts\ShieldControl.cs" />
-     <Compile Include="Assets\Scripts\SpaceJunkManager.cs" />
-     <Compile Include="Assets\Scripts\HomingMissile.cs" />
-     <Compile Include="Assets\Scripts\PlayerData.cs" />
-     <Compile Include="Assets\Scripts\PlayerController.cs" />
-     <Compile Include="Assets\Scripts\SpaceJunkController.cs" />
-     <Compile Include="Assets\Scripts\WeaponPool.cs" />
-     <None Include="Assets\2D Space Kit\Particles (Sprites)\Note on Flares.txt" />
-     <None Include="Assets\2D Space Kit\Backgrounds\Fantasy Purple 2048\Note.txt" />
-     <None Include="Assets\Material\Plasma_S.shader" />
- <Reference Include="Unity.RenderPipeline.Universal.ShaderLibrary">
- <HintPath>/Users/vilhelmstokstad/Documents/GitHub/SHMUP 2D/Library/ScriptAssemblies/Unity.RenderPipeline.Universal.ShaderLibrary.dll</HintPath>
- </Reference>
- <Reference Include="Unity.Timeline.Editor">
- <HintPath>/Users/vilhelmstokstad/Documents/GitHub/SHMUP 2D/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
- </Reference>
- <Reference Include="Unity.2D.Animation.Runtime">
- <HintPath>/Users/vilhelmstokstad/Documents/GitHub/SHMUP 2D/Library/ScriptAssemblies/Unity.2D.Animation.Runtime.dll</HintPath>
- </Reference>
- <Reference Include="Unity.2D.PixelPerfect.Editor">
+      <Compile Include="Assets\Scripts\PlasmaShot.cs"/>
+      <Compile Include="Assets\Scripts\EnemyController.cs"/>
+      <Compile Include="Assets\Scripts\PlasmaControl.cs"/>
+      <Compile Include="Assets\Scripts\ShieldControl.cs"/>
+      <Compile Include="Assets\Scripts\SpaceJunkManager.cs"/>
+      <Compile Include="Assets\Scripts\HomingMissile.cs"/>
+      <Compile Include="Assets\Scripts\PlayerData.cs"/>
+      <Compile Include="Assets\Scripts\PlayerController.cs"/>
+      <Compile Include="Assets\Scripts\SpaceJunkController.cs"/>
+      <Compile Include="Assets\Scripts\WeaponPool.cs"/>
+      <Compile Include="Assets\Scripts\WeaponPickUpManager.cs"/>
+      <Compile Include="Assets\MissilePickUp.cs"/>
+      <Compile Include="Assets\PlasmaPickUp.cs"/>
+      <Compile Include="Assets\LaserPickUp.cs"/>
+      <None Include="Assets\Downloads\SimplePixelUI\fonts\Font2\license.txt"/>
+      <None Include="Assets\Downloads\SimplePixelUI\fonts\Font1\license.txt"/>
+      <None Include="Assets\Downloads\2D Space Kit\Particles (Sprites)\Note on Flares.txt"/>
+      <None Include="Assets\Downloads\2D Space Kit\Backgrounds\Fantasy Purple 2048\Note.txt"/>
+      <None Include="Assets\Material\Plasma_S.shader"/>
+      <None Include="Assets\Downloads\SimplePixelUI\fonts\Font1\readme.txt"/>
+      <None Include="Assets\Downloads\SimplePixelUI\fonts\Font2\readme.txt"/>
+      <Reference Include="Unity.RenderPipeline.Universal.ShaderLibrary">
+          <HintPath>/Users/vilhelmstokstad/Documents/GitHub/SHMUP 2D/Library/ScriptAssemblies/Unity.RenderPipeline.Universal.ShaderLibrary.dll</HintPath>
+      </Reference>
+      <Reference Include="Unity.Timeline.Editor">
+          <HintPath>/Users/vilhelmstokstad/Documents/GitHub/SHMUP 2D/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+      </Reference>
+      <Reference Include="Unity.2D.Animation.Runtime">
+          <HintPath>/Users/vilhelmstokstad/Documents/GitHub/SHMUP 2D/Library/ScriptAssemblies/Unity.2D.Animation.Runtime.dll</HintPath>
+      </Reference>
+      <Reference Include="Unity.2D.PixelPerfect.Editor">
  <HintPath>/Users/vilhelmstokstad/Documents/GitHub/SHMUP 2D/Library/ScriptAssemblies/Unity.2D.PixelPerfect.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.RenderPipelines.Universal.Shaders">
@@ -94,17 +102,8 @@
  <Reference Include="Unity.VSCode.Editor">
  <HintPath>/Users/vilhelmstokstad/Documents/GitHub/SHMUP 2D/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
  </Reference>
- <Reference Include="Unity.ProBuilder">
- <HintPath>/Users/vilhelmstokstad/Documents/GitHub/SHMUP 2D/Library/ScriptAssemblies/Unity.ProBuilder.dll</HintPath>
- </Reference>
  <Reference Include="Unity.RenderPipelines.Core.Editor">
  <HintPath>/Users/vilhelmstokstad/Documents/GitHub/SHMUP 2D/Library/ScriptAssemblies/Unity.RenderPipelines.Core.Editor.dll</HintPath>
- </Reference>
- <Reference Include="Unity.ProBuilder.Editor">
- <HintPath>/Users/vilhelmstokstad/Documents/GitHub/SHMUP 2D/Library/ScriptAssemblies/Unity.ProBuilder.Editor.dll</HintPath>
- </Reference>
- <Reference Include="Unity.ProBuilder.AssetIdRemapUtility">
- <HintPath>/Users/vilhelmstokstad/Documents/GitHub/SHMUP 2D/Library/ScriptAssemblies/Unity.ProBuilder.AssetIdRemapUtility.dll</HintPath>
  </Reference>
  <Reference Include="Unity.RenderPipelines.Core.Runtime">
  <HintPath>/Users/vilhelmstokstad/Documents/GitHub/SHMUP 2D/Library/ScriptAssemblies/Unity.RenderPipelines.Core.Runtime.dll</HintPath>
@@ -183,9 +182,6 @@
  </Reference>
  <Reference Include="Unity.VisualStudio.Editor">
  <HintPath>/Users/vilhelmstokstad/Documents/GitHub/SHMUP 2D/Library/ScriptAssemblies/Unity.VisualStudio.Editor.dll</HintPath>
- </Reference>
- <Reference Include="Unity.ProBuilder.AddOns.Editor">
- <HintPath>/Users/vilhelmstokstad/Documents/GitHub/SHMUP 2D/Library/ScriptAssemblies/Unity.ProBuilder.AddOns.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.ShaderGraph.Editor">
  <HintPath>/Users/vilhelmstokstad/Documents/GitHub/SHMUP 2D/Library/ScriptAssemblies/Unity.ShaderGraph.Editor.dll</HintPath>

@@ -27,7 +27,6 @@ public class EnemySpawnManager : MonoBehaviour {
 
     private void Awake(){
         _playerController = GameObject.FindWithTag("Player").GetComponent<PlayerController>();
-        _playerKills = _playerController.killCounter;
         _enemiesLvl1 = new List<GameObject>();
         _enemiesLvl2 = new List<GameObject>();
         _enemiesLvl3 = new List<GameObject>();
@@ -37,19 +36,18 @@ public class EnemySpawnManager : MonoBehaviour {
 
     private void Update(){
         _spawnTimer -= Time.deltaTime;
+
         if (_spawnTimer <= 0f) {
             Spawn();
-            if (_playerController.killCounter > 5) Spawn();
-            if (_playerController.killCounter > 10) Spawn();
-            if (_playerController.killCounter > 20) Spawn();
-            if (_playerController.killCounter > 30) Spawn();
-            if (_playerController.killCounter > 40) Spawn();
+            if (_playerController.killCounter > 10f) Spawn();
+            if (_playerController.killCounter > 20f) Spawn();
+            if (_playerController.killCounter > 30f) Spawn();
+            if (_playerController.killCounter > 40f) Spawn();
             _spawnTimer = _timeBetweenSpawn;
         }
     }
-    private void Spawn(){
-        _playerKills = _playerController.killCounter;
 
+    private void Spawn(){
         if (_enemiesLvl1.Count > 0) {
             foreach (GameObject enemy1 in _enemiesLvl1.Where(enemy1 => !enemy1.activeSelf)) {
                 _initialPosition.x = PositionX;
@@ -62,19 +60,21 @@ public class EnemySpawnManager : MonoBehaviour {
             }
         }
 
-        if (_enemiesLvl2.Count <= 0 || _playerKills < 10f) {
-
-            foreach (GameObject enemy2 in _enemiesLvl2.Where(enemy2 => !enemy2.activeSelf)) {
-                _initialPosition.x = PositionX;
-                _initialPosition.y = PositionY;
-                enemy2.transform.position = _initialPosition;
-                enemy2.gameObject.SetActive(true);
-                _enemiesLvl2.Remove(enemy2);
-                print("ENEMIES LVL2 LEFT: " + _enemiesLvl2.Count);
-                break;
-            }
+        if (_playerController.killCounter < 10f) {
+            return;
         }
 
+        foreach (GameObject enemy2 in _enemiesLvl2.Where(enemy2 => !enemy2.activeSelf)) {
+            _initialPosition.x = PositionX;
+            _initialPosition.y = PositionY;
+            enemy2.transform.position = _initialPosition;
+            enemy2.gameObject.SetActive(true);
+            _enemiesLvl2.Remove(enemy2);
+            print("ENEMIES LVL2 LEFT: " + _enemiesLvl2.Count);
+            break;
+        }
+
+        print(_enemiesLvl1.Count + _enemiesLvl2.Count);
         if (_enemiesLvl1.Count + _enemiesLvl2.Count <= 0) {
             print("LEVEL 1 COMPLETE");
 
@@ -85,11 +85,9 @@ public class EnemySpawnManager : MonoBehaviour {
                 enemy3.gameObject.SetActive(true);
                 _enemiesLvl3.Remove(enemy3);
                 print("ENEMIES LVL3 LEFT: " + _enemiesLvl3.Count);
-                break;
+                return;
             }
         }
-
-        if (_enemiesLvl3.Count <= 0) EnemyPoolFiller();
     }
 
     private void EnemyPoolFiller(){
@@ -107,7 +105,7 @@ public class EnemySpawnManager : MonoBehaviour {
                 Instantiate(Resources.Load(_enemy2Path, typeof(GameObject)), transform, true) as GameObject);
             _enemiesLvl2[i].transform.position = _initialPosition;
         }
-        
+
         for (int i = 0; i < _numberOfEnemies; i++) {
             _initialPosition = new Vector3(PositionX, PositionY, 0f);
 

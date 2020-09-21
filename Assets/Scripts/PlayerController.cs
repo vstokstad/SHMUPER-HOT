@@ -7,17 +7,21 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour {
     [SerializeField] public PlayerData playerData;
     public float killCounter;
+    public WeaponPickUpManager _weaponPickUpManager;
     private IEnumerator _collisionManagerRoutine;
-    private float _playerHealth;
 
     private void Awake(){
         killCounter = 0f;
-        _playerHealth = playerData.health;
     }
 
     private void Update(){
-        //charges shield and boost!
         playerData.RechargeTimer();
+        if (playerData.rechargeTime <= 0f) {
+            _weaponPickUpManager.SpawnLaser();
+        }
+        else if (playerData.rechargeTime <= 0f) {
+            _weaponPickUpManager.SpawnMissiles();
+        }
     }
 
     private void OnCollisionEnter(Collision other){
@@ -30,19 +34,18 @@ public class PlayerController : MonoBehaviour {
         EnemyController enemyController = other.gameObject.GetComponent<EnemyController>();
         Rigidbody enemyBody = other.gameObject.GetComponent<Rigidbody>();
 
-        TakeDamage(enemyController.crashDamage);
-        Vector2 bounceOffForce = new Vector2(10f, 10f);
+        TakeDamage(PlayerData.health, enemyController.crashDamage);
+        Vector2 bounceOffForce = -enemyBody.velocity;
         enemyBody.AddForce(bounceOffForce, ForceMode.Impulse);
-        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSeconds(0.8f);
         enemyController.TakeDamage(playerData.crashDamage);
     }
 
 
-    private void TakeDamage(float damage){
-        _playerHealth -= damage;
-        print("took " + damage + " damage. health is now " + _playerHealth);
-        if (_playerHealth <= 0f) print("DEAD");
-
-        //GAME OVER!
+    static void TakeDamage(float playerHealth, float damage){
+        playerHealth -= damage;
+        print("took " + damage + " damage. health is now " + playerHealth);
+        PlayerData.health = playerHealth;
+        if (playerHealth <= 0f) print("DEAD");
     }
 }

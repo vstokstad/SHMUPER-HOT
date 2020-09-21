@@ -129,8 +129,6 @@ GameObject:
   - component: {fileID: 2035047893}
   - component: {fileID: 2870423132358844714}
   - component: {fileID: 4565420466384218642}
-  - component: {fileID: 5460034014831184036}
-  - component: {fileID: 8513680352510307759}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -5011,7 +5009,7 @@ Light:
   m_BounceIntensity: 2
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 0, y: -0.000013196972, z: 4.5822e-41, w: 0}
+  m_BoundingSphereOverride: {x: 1e-45, y: 1.39e-43, z: 0, w: 1.417914e+30}
   m_UseBoundingSphereOverride: 0
   m_ShadowRadius: 5
   m_ShadowAngle: 0
@@ -5039,7 +5037,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 58a6a6d38d83343d3b379bf3d86599c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _weaponController: {fileID: 0}
 --- !u!199 &2035047893
 ParticleSystemRenderer:
   serializedVersion: 6
@@ -5133,27 +5130,3 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerData: {fileID: 11400000, guid: d9e56dc32dd8443e8a325fb20b5639cd, type: 2}
   killCounter: 0
---- !u!114 &5460034014831184036
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4805805623486112806}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0a87c3b7d6cf40e98d690b51f6f5bab3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &8513680352510307759
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4805805623486112806}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 07262931db0fe4423961b89408c63497, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 

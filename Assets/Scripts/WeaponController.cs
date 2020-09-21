@@ -10,27 +10,33 @@ public enum WeaponType {
 }
 
 public class WeaponController : MonoBehaviour {
+    [NonSerialized] public static WeaponType weaponType;
+    [NonSerialized] public static bool laserEquipped;
+    [NonSerialized] public static bool plasmaEquipped;
+    [NonSerialized] public static bool missileEquipped;
     private WeaponManager.IWeapon _iWeapon;
-    [NonSerialized] private WeaponType _weaponType;
     [NonSerialized] public bool fireInput;
     [NonSerialized] public bool nextWeaponInput;
 
 
     private void Awake(){
-        _weaponType = Plasma;
-        HandleWeaponType(_weaponType);
+        plasmaEquipped = true;
+        laserEquipped = false;
+        missileEquipped = false;
+        weaponType = Plasma;
+        HandleWeaponType(weaponType);
     }
 
     private void Update(){
         if (fireInput) Fire();
         if (nextWeaponInput) {
-            if (_weaponType == Missile) {
-                _weaponType = Plasma;
-                HandleWeaponType(_weaponType);
+            if (weaponType == Missile) {
+                weaponType = Plasma;
+                HandleWeaponType(weaponType);
             }
             else {
-                _weaponType += 1;
-                HandleWeaponType(_weaponType);
+                weaponType += 1;
+                HandleWeaponType(weaponType);
             }
         }
     }
@@ -43,12 +49,15 @@ public class WeaponController : MonoBehaviour {
 
         switch (weaponChoice) {
             case Plasma:
+                if (!plasmaEquipped) goto case default;
                 _iWeapon = gameObject.AddComponent<PlasmaShot>();
                 break;
             case Laser:
+                if (!laserEquipped) goto case default;
                 _iWeapon = gameObject.AddComponent<LaserBeam>();
                 break;
             case Missile:
+                if (!missileEquipped) goto case default;
                 _iWeapon = gameObject.AddComponent<HomingMissile>();
                 break;
 

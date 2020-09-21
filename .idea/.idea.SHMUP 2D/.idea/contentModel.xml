@@ -4,19 +4,36 @@
     <e p="$PROJECT_DIR$" t="IncludeRecursive">
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
-        <e p="2D Space Kit" t="Include">
-          <e p="Backgrounds" t="Include">
-            <e p="Fantasy Purple 2048" t="Include">
-              <e p="Note.txt" t="Include" />
+        <e p="Downloads" t="Include">
+          <e p="2D Space Kit" t="Include">
+            <e p="Backgrounds" t="Include">
+              <e p="Fantasy Purple 2048" t="Include">
+                <e p="Note.txt" t="Include" />
+              </e>
+            </e>
+            <e p="Particles (Sprites)" t="Include">
+              <e p="Note on Flares.txt" t="Include" />
             </e>
           </e>
-          <e p="Particles (Sprites)" t="Include">
-            <e p="Note on Flares.txt" t="Include" />
+          <e p="SimplePixelUI" t="Include">
+            <e p="fonts" t="Include">
+              <e p="Font1" t="Include">
+                <e p="license.txt" t="Include" />
+                <e p="readme.txt" t="Include" />
+              </e>
+              <e p="Font2" t="Include">
+                <e p="license.txt" t="Include" />
+                <e p="readme.txt" t="Include" />
+              </e>
+            </e>
           </e>
         </e>
+        <e p="LaserPickUp.cs" t="Include" />
         <e p="Material" t="Include">
           <e p="Plasma_S.shader" t="Include" />
         </e>
+        <e p="MissilePickUp.cs" t="Include" />
+        <e p="PlasmaPickUp.cs" t="Include" />
         <e p="Scripts" t="Include">
           <e p="BackgroundController.cs" t="Include" />
           <e p="EnemyController.cs" t="Include" />
@@ -40,6 +57,7 @@
           <e p="TimeManager.cs" t="Include" />
           <e p="WeaponController.cs" t="Include" />
           <e p="WeaponManager.cs" t="Include" />
+          <e p="WeaponPickUpManager.cs" t="Include" />
           <e p="WeaponPool.cs" t="Include" />
         </e>
       </e>

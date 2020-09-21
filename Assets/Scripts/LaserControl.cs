@@ -29,7 +29,7 @@ public class LaserControl : MonoBehaviour {
         _laserScale.z = _laserLengthOn;
         gameObject.transform.localScale = _laserScale;
         _laserIsOn = true;
-        _laserTimer = 0.5f;
+        _laserTimer = 1f;
         gameObject.SetActive(true);
     }
 
@@ -40,19 +40,12 @@ public class LaserControl : MonoBehaviour {
         WeaponPool.Instance.ReturnToPool(WeaponType.Laser, gameObject);
     }
 
-
-    private void OnTriggerEnter(Collider other){
-        if (!other.gameObject.CompareTag("Enemy")) return;
-        other.GetComponent<EnemyController>().TakeDamage(_laserDamage);
-    }
-
-
-    private void OnTriggerExit(Collider other){
-        if (!other.gameObject.CompareTag("Enemy")) return;
-        other.GetComponent<EnemyController>().TakeDamage(_laserDamage);
-    }
-
     private void OnTriggerStay(Collider other){
+        if (other.gameObject.CompareTag("SpaceJunk")) {
+            _laserScale -= other.ClosestPointOnBounds(default);
+            other.transform.localScale -= Vector3.one * Time.deltaTime;
+        }
+
         if (!other.gameObject.CompareTag("Enemy")) return;
         other.GetComponent<EnemyController>().TakeDamage(_laserDamage);
     }

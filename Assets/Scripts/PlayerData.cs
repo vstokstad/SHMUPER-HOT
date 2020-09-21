@@ -3,7 +3,7 @@ using UnityEngine;
 
 [CreateAssetMenu(fileName = "New Player Data", menuName = "Scriptable/PlayerData", order = 0)]
 public class PlayerData : ScriptableObject {
-    [Header("Statistics")] public float health = 10f;
+    [Header("Statistics")] public static float health = 5f;
 
     public float rechargeTime = 5f;
 
