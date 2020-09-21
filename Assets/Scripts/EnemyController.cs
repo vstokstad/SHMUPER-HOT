@@ -1,5 +1,6 @@
 ﻿using System;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 public class EnemyController : MonoBehaviour {
     [SerializeField] private EnemyData enemyData;
@@ -43,12 +44,16 @@ public class EnemyController : MonoBehaviour {
 
 
     private void Move(Vector3 direction){
-        float speedAdjust = Vector3.Distance(transform.position, _playerTransform.position);
+        float speedAdjust = Vector3.Distance(_playerTransform.position, transform.position);
+       
         if (_level < 2f) {
-            direction.y = Mathf.Sin(Mathf.PI + speedAdjust * Time.fixedDeltaTime);
+            direction.y = Mathf.Sin(speedAdjust*Mathf.PI);
         }
 
-        _rigidBody.AddForce(direction * (_moveSpeed * Time.fixedDeltaTime), ForceMode.Acceleration);
+        if (_level >= 3) {
+            _rigidBody.rotation = Random.rotationUniform;
+        }
+        _rigidBody.AddForce(direction * ( speedAdjust + _moveSpeed * Time.fixedDeltaTime), ForceMode.Acceleration);
     }
 
 

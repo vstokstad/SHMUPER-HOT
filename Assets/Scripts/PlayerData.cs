@@ -11,7 +11,7 @@ public class PlayerData : ScriptableObject {
 
     public float crashDamage = 0.5f;
     public float acceleration = 3f;
-
+    
 
     private float _rechargeTimer;
     private GameObject _shieldBubble;

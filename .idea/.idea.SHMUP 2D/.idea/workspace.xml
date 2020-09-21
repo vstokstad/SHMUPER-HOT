@@ -11,1165 +11,285 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b0782a68-a060-4e6c-bd60-010f9108599b" name="Default Changelist" comment="WeaponSystems Online!&#10;&#10;Signed-off-by: Vilhelm Stokstad &lt;v.stokstad@gmail.com&gt;">
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/2D Space Kit.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/2D Space Kit/Background Elements.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/2D Space Kit/Background Elements/Dust and Nebulae.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/2D Space Kit/Background Elements/Dust and Nebulae/Materials.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/2D Space Kit/Background Elements/Dust and Nebulae/Materials/EM Cloud 1.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/2D Space Kit/Background Elements/Dust and Nebulae/Materials/EM Cloud 1.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/2D Space Kit/Background Elements/Dust and Nebulae/Materials/EM Cloud 2.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/2D Space Kit/Background Elements/Dust and Nebulae/Materials/EM Cloud 2.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/2D Space Kit/Background Elements/Dust and Nebulae/Materials/EM Cloud 3.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/2D Space Kit/Background Elements/Dust and Nebulae/Materials/EM Cloud 3.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/2D Space Kit/Background Elements/Dust and Nebulae/Materials/Nebula 1.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/2D Space Kit/Background Elements/Dust and Nebulae/Materials/Nebula 1.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/2D Space Kit/Background Elements/Dust and Nebulae/Nebula 1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/2D Space Kit/Background Elements/Dust and Nebulae/Nebula 1.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/2D Space Kit/Background Elements/Dust and Nebulae/Nebula 2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/2D Space Kit/Background Elements/Dust and Nebulae/Nebula 2.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/2D Space Kit/Backgrounds.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/2D Space Kit/Backgrounds/Fantasy Purple 2048.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/2D Space Kit/Backgrounds/Fantasy Purple 2048/Fantasy 1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/2D Space Kit/Backgrounds/Fantasy Purple 2048/Fantasy 1.jpg.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/2D Space Kit/Backgrounds/Fantasy Purple 2048/Fantasy 2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/2D Space Kit/Backgrounds/Fantasy Purple 2048/Fantasy 2.jpg.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/2D Space Kit/Backgrounds/Fantasy Purple 2048/Fantasy 3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/2D Space Kit/Backgrounds/Fantasy Purple 2048/Fantasy 3.jpg.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/2D Space Kit/Backgrounds/Fantasy Purple 2048/Fantasy 4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/2D Space Kit/Backgrounds/Fantasy Purple 2048/Fantasy 4.jpg.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/2D Space Kit/Backgrounds/Fantasy Purple 2048/Fantasy 5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/2D Space Kit/Backgrounds/Fantasy Purple 2048/Fantasy 5.jpg.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/2D Space Kit/Backgrounds/Fantasy Purple 2048/Fantasy 6.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/2D Space Kit/Backgrounds/Fantasy Purple 2048/Fantasy 6.jpg.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/2D Space Kit/Backgrounds/Fantasy Purple 2048/Note.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/2D Space Kit/Backgrounds/Fantasy Purple 2048/Note.txt.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/2D Space Kit/Missiles.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/2D Space Kit/Missiles/Missile (1).png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/2D Space Kit/Missiles/Missile (1).png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/2D Space Kit/Missiles/Missile (3).png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/2D Space Kit/Missiles/Missile (3).png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/2D Space Kit/Missiles/Missile (4).png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/2D Space Kit/Missiles/Missile (4).png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/2D Space Kit/Missiles/Missile (5).png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/2D Space Kit/Missiles/Missile (5).png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/2D Space Kit/Missiles/Missile (6).png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/2D Space Kit/Missiles/Missile (6).png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/2D Space Kit/Missiles/Missile (7).png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/2D Space Kit/Missiles/Missile (7).png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/2D Space Kit/Particles (Sprites).meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/2D Space Kit/Particles (Sprites)/Beam.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/2D Space Kit/Particles (Sprites)/Beam.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/2D Space Kit/Particles (Sprites)/Big Projectile.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/2D Space Kit/Particles (Sprites)/Big Projectile.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/2D Space Kit/Particles (Sprites)/BigFlare.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/2D Space Kit/Particles (Sprites)/BigFlare.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/2D Space Kit/Particles (Sprites)/Burst.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/2D Space Kit/Particles (Sprites)/Burst.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/2D Space Kit/Particles (Sprites)/DustSpray (1).png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/2D Space Kit/Particles (Sprites)/DustSpray (1).png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/2D Space Kit/Particles (Sprites)/DustSpray (2).png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/2D Space Kit/Particles (Sprites)/DustSpray (2).png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/2D Space Kit/Particles (Sprites)/Exhaust.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/2D Space Kit/Particles (Sprites)/Exhaust.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/2D Space Kit/Particles (Sprites)/Explosion.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/2D Space Kit/Particles (Sprites)/Explosion.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/2D Space Kit/Particles (Sprites)/Flare.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/2D Space Kit/Particles (Sprites)/Flare.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/2D Space Kit/Particles (Sprites)/IonTrail.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/2D Space Kit/Particles (Sprites)/IonTrail.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/2D Space Kit/Particles (Sprites)/Materials.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/2D Space Kit/Particles (Sprites)/Materials/Beam.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/2D Space Kit/Particles (Sprites)/Materials/Beam.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/2D Space Kit/Particles (Sprites)/Materials/Exhaust.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/2D Space Kit/Particles (Sprites)/Materials/Exhaust.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/2D Space Kit/Particles (Sprites)/Materials/Explosion.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/2D Space Kit/Particles (Sprites)/Materials/Explosion.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/2D Space Kit/Particles (Sprites)/Materials/Flare Animorphic.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/2D Space Kit/Particles (Sprites)/Materials/Flare Animorphic.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/2D Space Kit/Particles (Sprites)/Materials/Flare.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/2D Space Kit/Particles (Sprites)/Materials/Flare.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/2D Space Kit/Particles (Sprites)/Materials/Ion Trail.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/2D Space Kit/Particles (Sprites)/Materials/Ion Trail.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/2D Space Kit/Particles (Sprites)/Materials/Smoke Trail 1.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/2D Space Kit/Particles (Sprites)/Materials/Smoke Trail 1.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/2D Space Kit/Particles (Sprites)/Materials/Smoke Trail 2.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/2D Space Kit/Particles (Sprites)/Materials/Smoke Trail 2.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/2D Space Kit/Particles (Sprites)/Note on Flares.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/2D Space Kit/Particles (Sprites)/Note on Flares.txt.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/2D Space Kit/Particles (Sprites)/Projectile Sharp.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/2D Space Kit/Particles (Sprites)/Projectile Sharp.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/2D Space Kit/Particles (Sprites)/Projectile Thin.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/2D Space Kit/Particles (Sprites)/Projectile Thin.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/2D Space Kit/Particles (Sprites)/Shield Bubble.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/2D Space Kit/Particles (Sprites)/Shield Bubble.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/2D Space Kit/Particles (Sprites)/Small Flare.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/2D Space Kit/Particles (Sprites)/Small Flare.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/2D Space Kit/Particles (Sprites)/Smoke 1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/2D Space Kit/Particles (Sprites)/Smoke 1.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/2D Space Kit/Particles (Sprites)/Smoke 2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/2D Space Kit/Particles (Sprites)/Smoke 2.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/2D Space Kit/Particles (Sprites)/Smoke 3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/2D Space Kit/Particles (Sprites)/Smoke 3.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/2D Space Kit/Particles (Sprites)/SmokeTrail1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/2D Space Kit/Particles (Sprites)/SmokeTrail1.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/2D Space Kit/Particles (Sprites)/SmokeTrail2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/2D Space Kit/Particles (Sprites)/SmokeTrail2.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/2D Space Kit/Particles (Sprites)/Starflare.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/2D Space Kit/Particles (Sprites)/Starflare.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/Concrete textures pack.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/Concrete textures pack/pattern 01.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/Concrete textures pack/pattern 01/Concrete pattern 01.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/Concrete textures pack/pattern 01/Concrete pattern 01.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/Concrete textures pack/pattern 01/diffuse.tga" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/Concrete textures pack/pattern 01/diffuse.tga.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/Concrete textures pack/pattern 01/normal.tga" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/Concrete textures pack/pattern 01/normal.tga.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/Concrete textures pack/pattern 01/preview.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/Concrete textures pack/pattern 01/preview.jpg.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/Concrete textures pack/pattern 02.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/Concrete textures pack/pattern 02/Concrete pattern 02.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/Concrete textures pack/pattern 02/Concrete pattern 02.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/Concrete textures pack/pattern 02/diffuse.tga" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/Concrete textures pack/pattern 02/diffuse.tga.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/Concrete textures pack/pattern 02/normal.tga" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/Concrete textures pack/pattern 02/normal.tga.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/Concrete textures pack/pattern 02/preview.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/Concrete textures pack/pattern 02/preview.jpg.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/Concrete textures pack/pattern 03.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/Concrete textures pack/pattern 03/Concrete pattern 03.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/Concrete textures pack/pattern 03/Concrete pattern 03.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/Concrete textures pack/pattern 03/diffuse.tga" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/Concrete textures pack/pattern 03/diffuse.tga.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/Concrete textures pack/pattern 03/normal.tga" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/Concrete textures pack/pattern 03/normal.tga.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/Concrete textures pack/pattern 03/preview.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/Concrete textures pack/pattern 03/preview.jpg.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/Concrete textures pack/pattern 04.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/Concrete textures pack/pattern 04/Concrete pattern 04.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/Concrete textures pack/pattern 04/Concrete pattern 04.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/Concrete textures pack/pattern 04/diffuse.tga" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/Concrete textures pack/pattern 04/diffuse.tga.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/Concrete textures pack/pattern 04/normal.tga" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/Concrete textures pack/pattern 04/normal.tga.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/Concrete textures pack/pattern 04/preview.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/Concrete textures pack/pattern 04/preview.jpg.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/Concrete textures pack/pattern 05.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/Concrete textures pack/pattern 05/Concrete pattern 05.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/Concrete textures pack/pattern 05/Concrete pattern 05.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/Concrete textures pack/pattern 05/diffuse.tga" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/Concrete textures pack/pattern 05/diffuse.tga.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/Concrete textures pack/pattern 05/normal.tga" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/Concrete textures pack/pattern 05/normal.tga.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/Concrete textures pack/pattern 05/preview.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/Concrete textures pack/pattern 05/preview.jpg.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/Concrete textures pack/pattern 06.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/Concrete textures pack/pattern 06/Concrete pattern 06.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/Concrete textures pack/pattern 06/Concrete pattern 06.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/Concrete textures pack/pattern 06/diffuse.tga" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/Concrete textures pack/pattern 06/diffuse.tga.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/Concrete textures pack/pattern 06/normal.tga" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/Concrete textures pack/pattern 06/normal.tga.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/Concrete textures pack/pattern 06/preview.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/Concrete textures pack/pattern 06/preview.jpg.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/Concrete textures pack/pattern 07.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/Concrete textures pack/pattern 07/Concrete pattern 07.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/Concrete textures pack/pattern 07/Concrete pattern 07.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/Concrete textures pack/pattern 07/diffuse.tga" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/Concrete textures pack/pattern 07/diffuse.tga.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/Concrete textures pack/pattern 07/normal.tga" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/Concrete textures pack/pattern 07/normal.tga.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/Concrete textures pack/pattern 07/preview.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/Concrete textures pack/pattern 07/preview.jpg.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/Concrete textures pack/pattern 08.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/Concrete textures pack/pattern 08/Concrete pattern 08.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/Concrete textures pack/pattern 08/Concrete pattern 08.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/Concrete textures pack/pattern 08/diffuse.tga" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/Concrete textures pack/pattern 08/diffuse.tga.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/Concrete textures pack/pattern 08/normal.tga" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/Concrete textures pack/pattern 08/normal.tga.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/Concrete textures pack/pattern 08/preview.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/Concrete textures pack/pattern 08/preview.jpg.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/Concrete textures pack/pattern 09.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/Concrete textures pack/pattern 09/Concrete pattern 09.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/Concrete textures pack/pattern 09/Concrete pattern 09.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/Concrete textures pack/pattern 09/diffuse.tga" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/Concrete textures pack/pattern 09/diffuse.tga.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/Concrete textures pack/pattern 09/normal.tga" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/Concrete textures pack/pattern 09/normal.tga.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/Concrete textures pack/pattern 09/preview.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/Concrete textures pack/pattern 09/preview.jpg.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/Concrete textures pack/pattern 10.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/Concrete textures pack/pattern 10/Concrete pattern 10.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/Concrete textures pack/pattern 10/Concrete pattern 10.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/Concrete textures pack/pattern 10/diffuse.tga" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/Concrete textures pack/pattern 10/diffuse.tga.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/Concrete textures pack/pattern 10/normal.tga" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/Concrete textures pack/pattern 10/normal.tga.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/Concrete textures pack/pattern 10/preview.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/Concrete textures pack/pattern 10/preview.jpg.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/Concrete textures pack/pattern 11.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/Concrete textures pack/pattern 11/Concrete pattern 11.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/Concrete textures pack/pattern 11/Concrete pattern 11.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/Concrete textures pack/pattern 11/diffuse.tga" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/Concrete textures pack/pattern 11/diffuse.tga.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/Concrete textures pack/pattern 11/normal.tga" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/Concrete textures pack/pattern 11/normal.tga.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/Concrete textures pack/pattern 11/preview.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/Concrete textures pack/pattern 11/preview.jpg.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/Concrete textures pack/pattern 12.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/Concrete textures pack/pattern 12/Concrete pattern 12.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/Concrete textures pack/pattern 12/Concrete pattern 12.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/Concrete textures pack/pattern 12/diffuse.tga" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/Concrete textures pack/pattern 12/diffuse.tga.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/Concrete textures pack/pattern 12/normal.tga" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/Concrete textures pack/pattern 12/normal.tga.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/Concrete textures pack/pattern 12/preview.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/Concrete textures pack/pattern 12/preview.jpg.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/Concrete textures pack/pattern 13.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/Concrete textures pack/pattern 13/Concrete pattern 13.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/Concrete textures pack/pattern 13/Concrete pattern 13.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/Concrete textures pack/pattern 13/diffuse.tga" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/Concrete textures pack/pattern 13/diffuse.tga.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/Concrete textures pack/pattern 13/normal.tga" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/Concrete textures pack/pattern 13/normal.tga.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/Concrete textures pack/pattern 13/preview.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/Concrete textures pack/pattern 13/preview.jpg.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/Concrete textures pack/pattern 14.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/Concrete textures pack/pattern 14/Concrete pattern 14.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/Concrete textures pack/pattern 14/Concrete pattern 14.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/Concrete textures pack/pattern 14/diffuse.tga" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/Concrete textures pack/pattern 14/diffuse.tga.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/Concrete textures pack/pattern 14/normal.tga" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/Concrete textures pack/pattern 14/normal.tga.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/Concrete textures pack/pattern 14/preview.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/Concrete textures pack/pattern 14/preview.jpg.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/Concrete textures pack/pattern 15.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/Concrete textures pack/pattern 15/Concrete pattern 15.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/Concrete textures pack/pattern 15/Concrete pattern 15.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/Concrete textures pack/pattern 15/diffuse.tga" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/Concrete textures pack/pattern 15/diffuse.tga.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/Concrete textures pack/pattern 15/normal.tga" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/Concrete textures pack/pattern 15/normal.tga.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/Concrete textures pack/pattern 15/preview.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/Concrete textures pack/pattern 15/preview.jpg.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/Concrete textures pack/pattern 16.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/Concrete textures pack/pattern 16/Concrete pattern 16.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/Concrete textures pack/pattern 16/Concrete pattern 16.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/Concrete textures pack/pattern 16/diffuse.tga" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/Concrete textures pack/pattern 16/diffuse.tga.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/Concrete textures pack/pattern 16/normal.tga" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/Concrete textures pack/pattern 16/normal.tga.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/Concrete textures pack/pattern 16/preview.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/Concrete textures pack/pattern 16/preview.jpg.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/Concrete textures pack/pattern 17.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/Concrete textures pack/pattern 17/Concrete pattern 17.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/Concrete textures pack/pattern 17/Concrete pattern 17.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/Concrete textures pack/pattern 17/diffuse.tga" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/Concrete textures pack/pattern 17/diffuse.tga.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/Concrete textures pack/pattern 17/normal.tga" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/Concrete textures pack/pattern 17/normal.tga.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/Concrete textures pack/pattern 17/preview.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/Concrete textures pack/pattern 17/preview.jpg.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/Concrete textures pack/pattern 18.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/Concrete textures pack/pattern 18/Concrete pattern 18.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/Concrete textures pack/pattern 18/Concrete pattern 18.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/Concrete textures pack/pattern 18/diffuse.tga" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/Concrete textures pack/pattern 18/diffuse.tga.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/Concrete textures pack/pattern 18/normal.tga" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/Concrete textures pack/pattern 18/normal.tga.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/Concrete textures pack/pattern 18/preview.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/Concrete textures pack/pattern 18/preview.jpg.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/Concrete textures pack/pattern 19.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/Concrete textures pack/pattern 19/Concrete pattern 19.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/Concrete textures pack/pattern 19/Concrete pattern 19.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/Concrete textures pack/pattern 19/diffuse.tga" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/Concrete textures pack/pattern 19/diffuse.tga.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/Concrete textures pack/pattern 19/normal.tga" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/Concrete textures pack/pattern 19/normal.tga.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/Concrete textures pack/pattern 19/preview.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/Concrete textures pack/pattern 19/preview.jpg.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/Concrete textures pack/pattern 20.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/Concrete textures pack/pattern 20/Concrete pattern 20.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/Concrete textures pack/pattern 20/Concrete pattern 20.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/Concrete textures pack/pattern 20/diffuse.tga" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/Concrete textures pack/pattern 20/diffuse.tga.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/Concrete textures pack/pattern 20/normal.tga" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/Concrete textures pack/pattern 20/normal.tga.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/Concrete textures pack/pattern 20/preview.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/Concrete textures pack/pattern 20/preview.jpg.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/Free Pack.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/Free Pack/Autocannon - Shot 1.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/Free Pack/Autocannon - Shot 1.wav.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/Free Pack/Bloody punch.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/Free Pack/Bloody punch.wav.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/Free Pack/Bullet Impact 14.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/Free Pack/Bullet Impact 14.wav.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/Free Pack/Bullet Impact 21.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/Free Pack/Bullet Impact 21.wav.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/Free Pack/Bullet Impacts - Multiple 1.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/Free Pack/Bullet Impacts - Multiple 1.wav.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/Free Pack/Cannon impact 9.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/Free Pack/Cannon impact 9.wav.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/Free Pack/Carriage on Stone Road - Loop.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/Free Pack/Carriage on Stone Road - Loop.wav.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/Free Pack/Cavern Atmosphere - Loop.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/Free Pack/Cavern Atmosphere - Loop.wav.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/Free Pack/Chemistry reaction 3 - Big.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/Free Pack/Chemistry reaction 3 - Big.wav.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/Free Pack/Computer explosion 6 - Alarm.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/Free Pack/Computer explosion 6 - Alarm.wav.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/Free Pack/Dragon Spit Fire 1.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/Free Pack/Dragon Spit Fire 1.wav.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/Free Pack/Earthquake 3 - Big.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/Free Pack/Earthquake 3 - Big.wav.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/Free Pack/Easy Going Medieval Tavern - Loop.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/Free Pack/Easy Going Medieval Tavern - Loop.wav.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/Free Pack/Explosion 1.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/Free Pack/Explosion 1.wav.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/Free Pack/Explosion 2.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/Free Pack/Explosion 2.wav.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/Free Pack/Explosion 8.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/Free Pack/Explosion 8.wav.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/Free Pack/Flare gun 5-2.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/Free Pack/Flare gun 5-2.wav.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/Free Pack/Forest 6 - Ice Forest.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/Free Pack/Forest 6 - Ice Forest.wav.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/Free Pack/Ghost Manifestation 1.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/Free Pack/Ghost Manifestation 1.wav.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/Free Pack/Ghost Manifestation 2.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/Free Pack/Ghost Manifestation 2.wav.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/Free Pack/Hand Gun 1.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/Free Pack/Hand Gun 1.wav.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/Free Pack/Hand Gun 2.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/Free Pack/Hand Gun 2.wav.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/Free Pack/Hand Gun 3.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/Free Pack/Hand Gun 3.wav.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/Free Pack/Hand Gun_6.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/Free Pack/Hand Gun_6.wav.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/Free Pack/Heavy Object Impact 10.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/Free Pack/Heavy Object Impact 10.wav.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/Free Pack/Heavy Object Impact 4.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/Free Pack/Heavy Object Impact 4.wav.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/Free Pack/Ice Cavern-Loop.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/Free Pack/Ice Cavern-Loop.wav.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/Free Pack/Indiana Jones Punch.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/Free Pack/Indiana Jones Punch.wav.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/Free Pack/Laser Gun Salve.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/Free Pack/Laser Gun Salve.wav.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/Free Pack/Laser Impact Light_6.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/Free Pack/Laser Impact Light_6.wav.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/Free Pack/Laser Multiple shots 1.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/Free Pack/Laser Multiple shots 1.wav.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/Free Pack/Machine Gun 1.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/Free Pack/Machine Gun 1.wav.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/Free Pack/Magic Spell - Sleeping spell 1.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/Free Pack/Magic Spell - Sleeping spell 1.wav.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/Free Pack/Magic Spell - Turn to stone.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/Free Pack/Magic Spell - Turn to stone.wav.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/Free Pack/Magic Spell_Coins_2.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/Free Pack/Magic Spell_Coins_2.wav.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/Free Pack/Magic Spell_Electricity Spell_1.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/Free Pack/Magic Spell_Electricity Spell_1.wav.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/Free Pack/Magic Spell_Short Reverse_1.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/Free Pack/Magic Spell_Short Reverse_1.wav.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/Free Pack/Magic Spell_Simple Swoosh_6.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/Free Pack/Magic Spell_Simple Swoosh_6.wav.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/Free Pack/Medieval City.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/Free Pack/Medieval City.wav.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/Free Pack/Metal Impact 7.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/Free Pack/Metal Impact 7.wav.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/Free Pack/Metal impact 5.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/Free Pack/Metal impact 5.wav.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/Free Pack/Missile - Shot 4.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/Free Pack/Missile - Shot 4.wav.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/Free Pack/Monster Bite on Armor.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/Free Pack/Monster Bite on Armor.wav.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/Free Pack/Monster Bite.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/Free Pack/Monster Bite.wav.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/Free Pack/Railgun - Shot 6.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/Free Pack/Railgun - Shot 6.wav.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/Free Pack/Row Boat - Loop.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/Free Pack/Row Boat - Loop.wav.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/Free Pack/Secret door.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/Free Pack/Secret door.wav.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/Free Pack/Spaceship passing by.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/Free Pack/Spaceship passing by.wav.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/Free Pack/Thunder strikes 30 second- Loop.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/Free Pack/Thunder strikes 30 second- Loop.wav.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/Free Pack/Tsunami hitting a Large City.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/Free Pack/Tsunami hitting a Large City.wav.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/Free Pack/Walking in ChainMail - Loop.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/Free Pack/Walking in ChainMail - Loop.wav.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/ExamleScene.unity" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/ExamleScene.unity.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/artwork.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/artwork/colorCustomizible.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/artwork/colorCustomizible/rounded.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/artwork/colorCustomizible/rounded/Background_CC_rounded.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/artwork/colorCustomizible/rounded/Background_CC_rounded.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/artwork/colorCustomizible/rounded/InputField_CC.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/artwork/colorCustomizible/rounded/InputField_CC.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/artwork/colorCustomizible/rounded/Slot3D_rounded_CC.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/artwork/colorCustomizible/rounded/Slot3D_rounded_CC.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/artwork/colorCustomizible/rounded/Slot_rounded_CC.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/artwork/colorCustomizible/rounded/Slot_rounded_CC.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/artwork/colorCustomizible/rounded/bar_rounded_CC_Vertical.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/artwork/colorCustomizible/rounded/bar_rounded_CC_Vertical.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/artwork/colorCustomizible/rounded/bar_rounded_CC_horizontal.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/artwork/colorCustomizible/rounded/bar_rounded_CC_horizontal.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/artwork/colorCustomizible/rounded/border_Rounded_CC.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/artwork/colorCustomizible/rounded/border_Rounded_CC.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/artwork/colorCustomizible/rounded/buttons.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/artwork/colorCustomizible/rounded/buttons/button2_rounded_CC.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/artwork/colorCustomizible/rounded/buttons/button2_rounded_CC.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/artwork/colorCustomizible/rounded/buttons/button_rounded_CC.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/artwork/colorCustomizible/rounded/buttons/button_rounded_CC.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/artwork/colorCustomizible/square.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/artwork/colorCustomizible/square/Buttons.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/artwork/colorCustomizible/square/Buttons/button_1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/artwork/colorCustomizible/square/Buttons/button_1.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/artwork/colorCustomizible/square/Buttons/button_2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/artwork/colorCustomizible/square/Buttons/button_2.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/artwork/colorCustomizible/square/Buttons/button_small_1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/artwork/colorCustomizible/square/Buttons/button_small_1.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/artwork/colorCustomizible/square/Buttons/button_small_2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/artwork/colorCustomizible/square/Buttons/button_small_2.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/artwork/colorCustomizible/square/background.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/artwork/colorCustomizible/square/background.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/artwork/colorCustomizible/square/border.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/artwork/colorCustomizible/square/border.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/artwork/colorCustomizible/square/health_Bar_Vertical.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/artwork/colorCustomizible/square/health_Bar_Vertical.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/artwork/colorCustomizible/square/health_bar.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/artwork/colorCustomizible/square/health_bar.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/artwork/colorCustomizible/square/scroll_horizontal.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/artwork/colorCustomizible/square/scroll_horizontal/Background.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/artwork/colorCustomizible/square/scroll_horizontal/Background.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/artwork/colorCustomizible/square/scroll_horizontal/handle.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/artwork/colorCustomizible/square/scroll_horizontal/handle.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/artwork/colorCustomizible/square/scroll_vertical.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/artwork/colorCustomizible/square/scroll_vertical/background.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/artwork/colorCustomizible/square/scroll_vertical/background.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/artwork/colorCustomizible/square/scroll_vertical/handle.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/artwork/colorCustomizible/square/scroll_vertical/handle.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/artwork/colorCustomizible/square/slot.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/artwork/colorCustomizible/square/slot.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/artwork/colorCustomizible/square/slot3D.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/artwork/colorCustomizible/square/slot3D.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/artwork/gray.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/artwork/gray/rounded.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/artwork/gray/rounded/Background_GB_rounded.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/artwork/gray/rounded/Background_GB_rounded.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/artwork/gray/rounded/InputField_Rounded_GB.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/artwork/gray/rounded/InputField_Rounded_GB.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/artwork/gray/rounded/Slot3D_rounded_GB.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/artwork/gray/rounded/Slot3D_rounded_GB.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/artwork/gray/rounded/Slot_rounded_GB.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/artwork/gray/rounded/Slot_rounded_GB.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/artwork/gray/rounded/border_Rounded_GB.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/artwork/gray/rounded/border_Rounded_GB.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/artwork/gray/rounded/buttons.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/artwork/gray/rounded/buttons/button2_rounded_GB.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/artwork/gray/rounded/buttons/button2_rounded_GB.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/artwork/gray/rounded/buttons/button_rounded_GB.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/artwork/gray/rounded/buttons/button_rounded_GB.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/artwork/gray/rounded/off_rounded.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/artwork/gray/rounded/off_rounded.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/artwork/gray/square.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/artwork/gray/square/Buttons.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/artwork/gray/square/Buttons/button_1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/artwork/gray/square/Buttons/button_1.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/artwork/gray/square/Buttons/button_2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/artwork/gray/square/Buttons/button_2.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/artwork/gray/square/Buttons/button_small_1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/artwork/gray/square/Buttons/button_small_1.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/artwork/gray/square/Buttons/button_small_2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/artwork/gray/square/Buttons/button_small_2.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/artwork/gray/square/InputField.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/artwork/gray/square/InputField.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/artwork/gray/square/background.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/artwork/gray/square/background.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/artwork/gray/square/border.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/artwork/gray/square/border.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/artwork/gray/square/slot.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/artwork/gray/square/slot.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/artwork/gray/square/slot3D.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/artwork/gray/square/slot3D.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/artwork/halfcustomizible.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/artwork/halfcustomizible/rounded.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/artwork/halfcustomizible/rounded/Background_HCC_rounded.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/artwork/halfcustomizible/rounded/Background_HCC_rounded.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/artwork/halfcustomizible/rounded/InputField_Rounded_HCC.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/artwork/halfcustomizible/rounded/InputField_Rounded_HCC.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/artwork/halfcustomizible/rounded/Slot3D_rounded_HCC.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/artwork/halfcustomizible/rounded/Slot3D_rounded_HCC.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/artwork/halfcustomizible/rounded/Slot_rounded_HCC.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/artwork/halfcustomizible/rounded/Slot_rounded_HCC.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/artwork/halfcustomizible/rounded/bar_rounded_HCC_Vertical.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/artwork/halfcustomizible/rounded/bar_rounded_HCC_Vertical.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/artwork/halfcustomizible/rounded/bar_rounded_HCC_horizontal.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/artwork/halfcustomizible/rounded/bar_rounded_HCC_horizontal.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/artwork/halfcustomizible/rounded/border_Rounded_HCC.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/artwork/halfcustomizible/rounded/border_Rounded_HCC.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/artwork/halfcustomizible/rounded/buttons.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/artwork/halfcustomizible/rounded/buttons/button2_rounded_HCC.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/artwork/halfcustomizible/rounded/buttons/button2_rounded_HCC.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/artwork/halfcustomizible/rounded/buttons/button_rounded_HCC.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/artwork/halfcustomizible/rounded/buttons/button_rounded_HCC.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/artwork/halfcustomizible/square.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/artwork/halfcustomizible/square/Background.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/artwork/halfcustomizible/square/Background.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/artwork/halfcustomizible/square/Border.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/artwork/halfcustomizible/square/Border.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/artwork/halfcustomizible/square/Buttons.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/artwork/halfcustomizible/square/Buttons/button_1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/artwork/halfcustomizible/square/Buttons/button_1.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/artwork/halfcustomizible/square/Buttons/button_2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/artwork/halfcustomizible/square/Buttons/button_2.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/artwork/halfcustomizible/square/Buttons/button_small_1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/artwork/halfcustomizible/square/Buttons/button_small_1.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/artwork/halfcustomizible/square/Buttons/button_small_2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/artwork/halfcustomizible/square/Buttons/button_small_2.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/artwork/halfcustomizible/square/InputField.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/artwork/halfcustomizible/square/InputField.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/artwork/halfcustomizible/square/Slider.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/artwork/halfcustomizible/square/Slider/background.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/artwork/halfcustomizible/square/Slider/background.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/artwork/halfcustomizible/square/Slider/background_Vertical.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/artwork/halfcustomizible/square/Slider/background_Vertical.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/artwork/halfcustomizible/square/Slider/filled.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/artwork/halfcustomizible/square/Slider/filled.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/artwork/halfcustomizible/square/Slider/filled_vertical.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/artwork/halfcustomizible/square/Slider/filled_vertical.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/artwork/halfcustomizible/square/Slider/handle.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/artwork/halfcustomizible/square/Slider/handle.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/artwork/halfcustomizible/square/Slider2.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/artwork/halfcustomizible/square/Slider2/background_background.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/artwork/halfcustomizible/square/Slider2/background_background.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/artwork/halfcustomizible/square/Slider2/background_vertical.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/artwork/halfcustomizible/square/Slider2/background_vertical.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/artwork/halfcustomizible/square/Slider2/filled_Vertical.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/artwork/halfcustomizible/square/Slider2/filled_Vertical.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/artwork/halfcustomizible/square/Slider2/filled_horizontal.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/artwork/halfcustomizible/square/Slider2/filled_horizontal.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/artwork/halfcustomizible/square/Slider2/handle.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/artwork/halfcustomizible/square/Slider2/handle.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/artwork/halfcustomizible/square/Slider3.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/artwork/halfcustomizible/square/Slider3/Background_vertical.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/artwork/halfcustomizible/square/Slider3/Background_vertical.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/artwork/halfcustomizible/square/Slider3/background_horizontal.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/artwork/halfcustomizible/square/Slider3/background_horizontal.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/artwork/halfcustomizible/square/Slider3/filled_horizontal.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/artwork/halfcustomizible/square/Slider3/filled_horizontal.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/artwork/halfcustomizible/square/Slider3/filled_vertical.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/artwork/halfcustomizible/square/Slider3/filled_vertical.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/artwork/halfcustomizible/square/Slider3/handle.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/artwork/halfcustomizible/square/Slider3/handle.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/artwork/halfcustomizible/square/Slot.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/artwork/halfcustomizible/square/Slot.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/artwork/halfcustomizible/square/Slot3D.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/artwork/halfcustomizible/square/Slot3D.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/artwork/halfcustomizible/square/health_Bar_vertical.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/artwork/halfcustomizible/square/health_Bar_vertical.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/artwork/halfcustomizible/square/health_bar.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/artwork/halfcustomizible/square/health_bar.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/artwork/halfcustomizible/square/toogle.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/artwork/halfcustomizible/square/toogle/off.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/artwork/halfcustomizible/square/toogle/off.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/artwork/halfcustomizible/square/toogle/off2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/artwork/halfcustomizible/square/toogle/off2.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/artwork/halfcustomizible/square/toogle/on 1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/artwork/halfcustomizible/square/toogle/on 1.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/artwork/halfcustomizible/square/toogle/on2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/artwork/halfcustomizible/square/toogle/on2.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/artwork/halfcustomizible/square/toogle/on3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/artwork/halfcustomizible/square/toogle/on3.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/artwork/icons.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/artwork/icons/icons_color_customizible.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/artwork/icons/icons_color_customizible.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/artwork/icons/isons_black.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/artwork/icons/isons_black.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/artwork/icons/locked.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/artwork/icons/locked.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/artwork/icons/locked_white.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/artwork/icons/locked_white.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/fonts.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/fonts/Font1.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/fonts/Font1/license.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/fonts/Font1/license.txt.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/fonts/Font1/pixelfont.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/fonts/Font1/pixelfont.ttf.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/fonts/Font1/readme.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/fonts/Font1/readme.txt.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/fonts/Font2.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/fonts/Font2/license.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/fonts/Font2/license.txt.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/fonts/Font2/pixelfont2.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/fonts/Font2/pixelfont2.ttf.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/fonts/Font2/readme.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/fonts/Font2/readme.txt.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/prefabs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/prefabs/Gray_black.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/prefabs/Gray_black/rounded.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/prefabs/Gray_black/rounded/InputField.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/prefabs/Gray_black/rounded/InputField.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/prefabs/Gray_black/rounded/Inventory.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/prefabs/Gray_black/rounded/Inventory.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/prefabs/Gray_black/rounded/background.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/prefabs/Gray_black/rounded/background.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/prefabs/Gray_black/rounded/border.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/prefabs/Gray_black/rounded/border.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/prefabs/Gray_black/rounded/buttons.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/prefabs/Gray_black/rounded/buttons/button_1.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/prefabs/Gray_black/rounded/buttons/button_1.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/prefabs/Gray_black/rounded/buttons/button_2.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/prefabs/Gray_black/rounded/buttons/button_2.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/prefabs/Gray_black/square.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/prefabs/Gray_black/square/InputField.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/prefabs/Gray_black/square/InputField.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/prefabs/Gray_black/square/Inventory.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/prefabs/Gray_black/square/Inventory.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/prefabs/Gray_black/square/background.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/prefabs/Gray_black/square/background.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/prefabs/Gray_black/square/border.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/prefabs/Gray_black/square/border.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/prefabs/Gray_black/square/buttons.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/prefabs/Gray_black/square/buttons/button_1.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/prefabs/Gray_black/square/buttons/button_1.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/prefabs/Gray_black/square/buttons/button_2.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/prefabs/Gray_black/square/buttons/button_2.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/prefabs/Gray_black/square/buttons/button_small_1.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/prefabs/Gray_black/square/buttons/button_small_1.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/prefabs/Gray_black/square/buttons/button_small_2.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/prefabs/Gray_black/square/buttons/button_small_2.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/prefabs/Gray_black/square/icon.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/prefabs/Gray_black/square/icon.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/prefabs/Half_color_customizible.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/prefabs/Half_color_customizible/rounded.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/prefabs/Half_color_customizible/rounded/Border.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/prefabs/Half_color_customizible/rounded/Border.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/prefabs/Half_color_customizible/rounded/Inventory.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/prefabs/Half_color_customizible/rounded/Inventory.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/prefabs/Half_color_customizible/rounded/Toggle.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/prefabs/Half_color_customizible/rounded/Toggle.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/prefabs/Half_color_customizible/rounded/backgroundHalfCustom.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/prefabs/Half_color_customizible/rounded/backgroundHalfCustom.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/prefabs/Half_color_customizible/rounded/buttons.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/prefabs/Half_color_customizible/rounded/buttons/button_1.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/prefabs/Half_color_customizible/rounded/buttons/button_1.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/prefabs/Half_color_customizible/rounded/buttons/button_2.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/prefabs/Half_color_customizible/rounded/buttons/button_2.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/prefabs/Half_color_customizible/rounded/health_bar_rounded.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/prefabs/Half_color_customizible/rounded/health_bar_rounded/HealthBar_BT.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/prefabs/Half_color_customizible/rounded/health_bar_rounded/HealthBar_BT.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/prefabs/Half_color_customizible/rounded/health_bar_rounded/HealthBar_LR.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/prefabs/Half_color_customizible/rounded/health_bar_rounded/HealthBar_LR.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/prefabs/Half_color_customizible/rounded/health_bar_rounded/HealthBar_RL.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/prefabs/Half_color_customizible/rounded/health_bar_rounded/HealthBar_RL.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/prefabs/Half_color_customizible/rounded/health_bar_rounded/HealthBar_TB.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/prefabs/Half_color_customizible/rounded/health_bar_rounded/HealthBar_TB.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/prefabs/Half_color_customizible/square.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/prefabs/Half_color_customizible/square/Border.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/prefabs/Half_color_customizible/square/Border.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/prefabs/Half_color_customizible/square/Health_bar.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/prefabs/Half_color_customizible/square/Health_bar/HealthBar_BT.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/prefabs/Half_color_customizible/square/Health_bar/HealthBar_BT.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/prefabs/Half_color_customizible/square/Health_bar/HealthBar_RL .prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/prefabs/Half_color_customizible/square/Health_bar/HealthBar_RL .prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/prefabs/Half_color_customizible/square/Health_bar/HealthBar_RL 1.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/prefabs/Half_color_customizible/square/Health_bar/HealthBar_RL 1.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/prefabs/Half_color_customizible/square/Health_bar/HealthBar_TB 1.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/prefabs/Half_color_customizible/square/Health_bar/HealthBar_TB 1.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/prefabs/Half_color_customizible/square/Inventory.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/prefabs/Half_color_customizible/square/Inventory.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/prefabs/Half_color_customizible/square/ScrollBar.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/prefabs/Half_color_customizible/square/ScrollBar/Scrollbar.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/prefabs/Half_color_customizible/square/ScrollBar/Scrollbar.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/prefabs/Half_color_customizible/square/ScrollBar/ScrollbarBT.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/prefabs/Half_color_customizible/square/ScrollBar/ScrollbarBT.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/prefabs/Half_color_customizible/square/ScrollBar/ScrollbarLR.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/prefabs/Half_color_customizible/square/ScrollBar/ScrollbarLR.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/prefabs/Half_color_customizible/square/ScrollBar/ScrollbarTB.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/prefabs/Half_color_customizible/square/ScrollBar/ScrollbarTB.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/prefabs/Half_color_customizible/square/Slider 2.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/prefabs/Half_color_customizible/square/Slider 2/Slider 2 BT.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/prefabs/Half_color_customizible/square/Slider 2/Slider 2 BT.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/prefabs/Half_color_customizible/square/Slider 2/Slider 2 LR.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/prefabs/Half_color_customizible/square/Slider 2/Slider 2 LR.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/prefabs/Half_color_customizible/square/Slider 2/Slider 2 RL.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/prefabs/Half_color_customizible/square/Slider 2/Slider 2 RL.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/prefabs/Half_color_customizible/square/Slider 2/Slider 2 TB.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/prefabs/Half_color_customizible/square/Slider 2/Slider 2 TB.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/prefabs/Half_color_customizible/square/Slider.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/prefabs/Half_color_customizible/square/Slider/SliderBT.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/prefabs/Half_color_customizible/square/Slider/SliderBT.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/prefabs/Half_color_customizible/square/Slider/SliderLR.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/prefabs/Half_color_customizible/square/Slider/SliderLR.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/prefabs/Half_color_customizible/square/Slider/SliderRL.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/prefabs/Half_color_customizible/square/Slider/SliderRL.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/prefabs/Half_color_customizible/square/Slider/SliderTB.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/prefabs/Half_color_customizible/square/Slider/SliderTB.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/prefabs/Half_color_customizible/square/Toggle.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/prefabs/Half_color_customizible/square/Toggle.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/prefabs/Half_color_customizible/square/backgroundHalfCustom.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/prefabs/Half_color_customizible/square/backgroundHalfCustom.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/prefabs/Half_color_customizible/square/buttons.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/prefabs/Half_color_customizible/square/buttons/button_1.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/prefabs/Half_color_customizible/square/buttons/button_1.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/prefabs/Half_color_customizible/square/buttons/button_2.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/prefabs/Half_color_customizible/square/buttons/button_2.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/prefabs/Half_color_customizible/square/buttons/button_small_1.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/prefabs/Half_color_customizible/square/buttons/button_small_1.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/prefabs/Half_color_customizible/square/buttons/button_small_2.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/prefabs/Half_color_customizible/square/buttons/button_small_2.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/prefabs/Half_color_customizible/square/slider3.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/prefabs/Half_color_customizible/square/slider3/SliderBT.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/prefabs/Half_color_customizible/square/slider3/SliderBT.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/prefabs/Half_color_customizible/square/slider3/SliderLR.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/prefabs/Half_color_customizible/square/slider3/SliderLR.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/prefabs/Half_color_customizible/square/slider3/SliderRL.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/prefabs/Half_color_customizible/square/slider3/SliderRL.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/prefabs/Half_color_customizible/square/slider3/SliderTB.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/prefabs/Half_color_customizible/square/slider3/SliderTB.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/prefabs/color_customizible.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/prefabs/color_customizible/rounded.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/prefabs/color_customizible/rounded/Border.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/prefabs/color_customizible/rounded/Border.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/prefabs/color_customizible/rounded/Inventory.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/prefabs/color_customizible/rounded/Inventory.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/prefabs/color_customizible/rounded/backgroundCustom.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/prefabs/color_customizible/rounded/backgroundCustom.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/prefabs/color_customizible/rounded/buttons.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/prefabs/color_customizible/rounded/buttons/button_1.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/prefabs/color_customizible/rounded/buttons/button_1.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/prefabs/color_customizible/rounded/buttons/button_2.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/prefabs/color_customizible/rounded/buttons/button_2.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/prefabs/color_customizible/rounded/health_bar_rounded 1.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/prefabs/color_customizible/rounded/health_bar_rounded 1/HealthBar_BT.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/prefabs/color_customizible/rounded/health_bar_rounded 1/HealthBar_BT.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/prefabs/color_customizible/rounded/health_bar_rounded 1/HealthBar_LR.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/prefabs/color_customizible/rounded/health_bar_rounded 1/HealthBar_LR.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/prefabs/color_customizible/rounded/health_bar_rounded 1/HealthBar_RL.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/prefabs/color_customizible/rounded/health_bar_rounded 1/HealthBar_RL.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/prefabs/color_customizible/rounded/health_bar_rounded 1/HealthBar_TB.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/prefabs/color_customizible/rounded/health_bar_rounded 1/HealthBar_TB.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/prefabs/color_customizible/square.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/prefabs/color_customizible/square/Border.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/prefabs/color_customizible/square/Border.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/prefabs/color_customizible/square/Inventory.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/prefabs/color_customizible/square/Inventory.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/prefabs/color_customizible/square/backgroundCustom.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/prefabs/color_customizible/square/backgroundCustom.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/prefabs/color_customizible/square/buttons.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/prefabs/color_customizible/square/buttons/button_1.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/prefabs/color_customizible/square/buttons/button_1.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/prefabs/color_customizible/square/buttons/button_2.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/prefabs/color_customizible/square/buttons/button_2.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/prefabs/color_customizible/square/buttons/button_small_1.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/prefabs/color_customizible/square/buttons/button_small_1.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/prefabs/color_customizible/square/buttons/button_small_2.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/prefabs/color_customizible/square/buttons/button_small_2.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/prefabs/color_customizible/square/icon.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/prefabs/color_customizible/square/icon.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/update 1.15.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/update 1.15/arrow_CC.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/update 1.15/arrow_CC.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/update 1.15/dropdown_CC.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/update 1.15/dropdown_CC.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/update 1.15/dropdown_GB.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/update 1.15/dropdown_GB.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/update 1.15/dropdown_HCC.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/update 1.15/dropdown_HCC.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/update 1.15/dropdown_rounded_CC.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/update 1.15/dropdown_rounded_CC.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/update 1.15/dropdown_rounded_GB.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/update 1.15/dropdown_rounded_GB.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/update 1.15/dropdown_rounded_HCC.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/update 1.15/dropdown_rounded_HCC.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/update 1.15/prefabs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/update 1.15/prefabs/Dropdown_CC.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/update 1.15/prefabs/Dropdown_CC.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/update 1.15/prefabs/Dropdown_GB.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/update 1.15/prefabs/Dropdown_GB.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/update 1.15/prefabs/Dropdown_HHC.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/update 1.15/prefabs/Dropdown_HHC.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/update 1.15/prefabs/Dropdown_rounded_CC.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/update 1.15/prefabs/Dropdown_rounded_CC.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/update 1.15/prefabs/Dropdown_rounded_GB.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/update 1.15/prefabs/Dropdown_rounded_GB.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/update 1.15/prefabs/Dropdown_rounded_HHC.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/update 1.15/prefabs/Dropdown_rounded_HHC.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/diffuse.tga" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/diffuse.tga.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/normal.tga" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Downloads/normal.tga.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/LaserPickUp.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/MissilePickUp.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/MissilePickUp.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/AudioMixer.mixer" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/AudioMixer.mixer.meta" afterDir="false" />
+    <list default="true" id="b0782a68-a060-4e6c-bd60-010f9108599b" name="Default Changelist" comment="weapon pickup started, enemy levels cleaned up">
+      <change afterPath="$PROJECT_DIR$/Assets/GUI.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/GUI/Scripts.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/GUI/Scripts/ControllInstructions.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/GUI/Scripts/ControllInstructions.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/GUI/Scripts/HealthBar.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/GUI/Scripts/HealthBar.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/GUI/Scripts/RechargeGUI.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Documentation.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Documentation/TextMesh Pro User Guide 2016.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Documentation/TextMesh Pro User Guide 2016.pdf.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Fonts.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Fonts/LiberationSans - OFL.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Fonts/LiberationSans - OFL.txt.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Fonts/LiberationSans.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Fonts/LiberationSans.ttf.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Drop Shadow.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Drop Shadow.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Outline.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Outline.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/LineBreaking Following Characters.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/LineBreaking Following Characters.txt.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/LineBreaking Leading Characters.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/LineBreaking Leading Characters.txt.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Sprite Assets.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Sprite Assets/EmojiOne.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Sprite Assets/EmojiOne.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Style Sheets.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Style Sheets/Default Style Sheet.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Style Sheets/Default Style Sheet.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/TMP Settings.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/TMP Settings.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMP_Bitmap-Custom-Atlas.shader" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMP_Bitmap-Custom-Atlas.shader.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMP_Bitmap-Mobile.shader" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMP_Bitmap-Mobile.shader.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMP_Bitmap.shader" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMP_Bitmap.shader.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMP_SDF Overlay.shader" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMP_SDF Overlay.shader.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMP_SDF SSD.shader" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMP_SDF SSD.shader.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile Masking.shader" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile Masking.shader.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile Overlay.shader" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile Overlay.shader.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile SSD.shader" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile SSD.shader.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile.shader" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile.shader.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMP_SDF-Surface-Mobile.shader" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMP_SDF-Surface-Mobile.shader.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMP_SDF-Surface.shader" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMP_SDF-Surface.shader.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMP_SDF.shader" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMP_SDF.shader.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMP_Sprite.shader" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMP_Sprite.shader.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMPro.cginc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMPro.cginc.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMPro_Mobile.cginc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMPro_Mobile.cginc.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMPro_Properties.cginc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMPro_Properties.cginc.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMPro_Surface.cginc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMPro_Surface.cginc.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Sprites.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Sprites/EmojiOne Attribution.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Sprites/EmojiOne Attribution.txt.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Sprites/EmojiOne.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Sprites/EmojiOne.json.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Sprites/EmojiOne.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Sprites/EmojiOne.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Profiling.app/Contents/Frameworks/UnityPlayer.dylib" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Profiling.app/Contents/Frameworks/libMonoPosixHelper.dylib" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Profiling.app/Contents/Frameworks/libcrypto.dylib" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Profiling.app/Contents/Frameworks/libmonobdwgc-2.0.dylib" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Profiling.app/Contents/Frameworks/libssl.dylib" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Profiling.app/Contents/Info.plist" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Profiling.app/Contents/MacOS/SHMUP 2D" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Profiling.app/Contents/MonoBleedingEdge/etc/mono/2.0/Browsers/Compat.browser" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Profiling.app/Contents/MonoBleedingEdge/etc/mono/2.0/DefaultWsdlHelpGenerator.aspx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Profiling.app/Contents/MonoBleedingEdge/etc/mono/2.0/machine.config" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Profiling.app/Contents/MonoBleedingEdge/etc/mono/2.0/settings.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Profiling.app/Contents/MonoBleedingEdge/etc/mono/2.0/web.config" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Profiling.app/Contents/MonoBleedingEdge/etc/mono/4.0/Browsers/Compat.browser" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Profiling.app/Contents/MonoBleedingEdge/etc/mono/4.0/DefaultWsdlHelpGenerator.aspx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Profiling.app/Contents/MonoBleedingEdge/etc/mono/4.0/machine.config" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Profiling.app/Contents/MonoBleedingEdge/etc/mono/4.0/settings.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Profiling.app/Contents/MonoBleedingEdge/etc/mono/4.0/web.config" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Profiling.app/Contents/MonoBleedingEdge/etc/mono/4.5/Browsers/Compat.browser" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Profiling.app/Contents/MonoBleedingEdge/etc/mono/4.5/DefaultWsdlHelpGenerator.aspx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Profiling.app/Contents/MonoBleedingEdge/etc/mono/4.5/machine.config" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Profiling.app/Contents/MonoBleedingEdge/etc/mono/4.5/settings.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Profiling.app/Contents/MonoBleedingEdge/etc/mono/4.5/web.config" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Profiling.app/Contents/MonoBleedingEdge/etc/mono/browscap.ini" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Profiling.app/Contents/MonoBleedingEdge/etc/mono/config" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Profiling.app/Contents/MonoBleedingEdge/etc/mono/mconfig/config.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Profiling.app/Contents/Resources/Data/Managed/Assembly-CSharp.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Profiling.app/Contents/Resources/Data/Managed/Mono.Security.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Profiling.app/Contents/Resources/Data/Managed/System.ComponentModel.Composition.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Profiling.app/Contents/Resources/Data/Managed/System.Configuration.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Profiling.app/Contents/Resources/Data/Managed/System.Core.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Profiling.app/Contents/Resources/Data/Managed/System.Data.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Profiling.app/Contents/Resources/Data/Managed/System.Diagnostics.StackTrace.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Profiling.app/Contents/Resources/Data/Managed/System.Drawing.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Profiling.app/Contents/Resources/Data/Managed/System.EnterpriseServices.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Profiling.app/Contents/Resources/Data/Managed/System.Globalization.Extensions.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Profiling.app/Contents/Resources/Data/Managed/System.IO.Compression.FileSystem.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Profiling.app/Contents/Resources/Data/Managed/System.IO.Compression.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Profiling.app/Contents/Resources/Data/Managed/System.Net.Http.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Profiling.app/Contents/Resources/Data/Managed/System.Numerics.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Profiling.app/Contents/Resources/Data/Managed/System.Runtime.Serialization.Xml.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Profiling.app/Contents/Resources/Data/Managed/System.Runtime.Serialization.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Profiling.app/Contents/Resources/Data/Managed/System.ServiceModel.Internals.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Profiling.app/Contents/Resources/Data/Managed/System.Transactions.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Profiling.app/Contents/Resources/Data/Managed/System.Xml.Linq.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Profiling.app/Contents/Resources/Data/Managed/System.Xml.XPath.XDocument.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Profiling.app/Contents/Resources/Data/Managed/System.Xml.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Profiling.app/Contents/Resources/Data/Managed/System.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Profiling.app/Contents/Resources/Data/Managed/Unity.2D.Animation.Runtime.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Profiling.app/Contents/Resources/Data/Managed/Unity.2D.Animation.Triangle.Runtime.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Profiling.app/Contents/Resources/Data/Managed/Unity.2D.Common.Runtime.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Profiling.app/Contents/Resources/Data/Managed/Unity.2D.PixelPerfect.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Profiling.app/Contents/Resources/Data/Managed/Unity.2D.SpriteShape.Runtime.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Profiling.app/Contents/Resources/Data/Managed/Unity.InternalAPIEngineBridge.001.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Profiling.app/Contents/Resources/Data/Managed/Unity.Mathematics.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Profiling.app/Contents/Resources/Data/Managed/Unity.Postprocessing.Runtime.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Profiling.app/Contents/Resources/Data/Managed/Unity.RenderPipeline.Universal.ShaderLibrary.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Profiling.app/Contents/Resources/Data/Managed/Unity.RenderPipelines.Core.Runtime.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Profiling.app/Contents/Resources/Data/Managed/Unity.RenderPipelines.Core.ShaderLibrary.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Profiling.app/Contents/Resources/Data/Managed/Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Profiling.app/Contents/Resources/Data/Managed/Unity.RenderPipelines.Universal.Runtime.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Profiling.app/Contents/Resources/Data/Managed/Unity.RenderPipelines.Universal.Shaders.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Profiling.app/Contents/Resources/Data/Managed/Unity.TextMeshPro.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Profiling.app/Contents/Resources/Data/Managed/Unity.Timeline.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Profiling.app/Contents/Resources/Data/Managed/UnityEngine.AIModule.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Profiling.app/Contents/Resources/Data/Managed/UnityEngine.ARModule.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Profiling.app/Contents/Resources/Data/Managed/UnityEngine.AccessibilityModule.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Profiling.app/Contents/Resources/Data/Managed/UnityEngine.AndroidJNIModule.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Profiling.app/Contents/Resources/Data/Managed/UnityEngine.AnimationModule.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Profiling.app/Contents/Resources/Data/Managed/UnityEngine.AssetBundleModule.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Profiling.app/Contents/Resources/Data/Managed/UnityEngine.AudioModule.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Profiling.app/Contents/Resources/Data/Managed/UnityEngine.ClothModule.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Profiling.app/Contents/Resources/Data/Managed/UnityEngine.ClusterInputModule.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Profiling.app/Contents/Resources/Data/Managed/UnityEngine.ClusterRendererModule.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Profiling.app/Contents/Resources/Data/Managed/UnityEngine.CoreModule.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Profiling.app/Contents/Resources/Data/Managed/UnityEngine.CrashReportingModule.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Profiling.app/Contents/Resources/Data/Managed/UnityEngine.DSPGraphModule.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Profiling.app/Contents/Resources/Data/Managed/UnityEngine.DirectorModule.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Profiling.app/Contents/Resources/Data/Managed/UnityEngine.GameCenterModule.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Profiling.app/Contents/Resources/Data/Managed/UnityEngine.GridModule.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Profiling.app/Contents/Resources/Data/Managed/UnityEngine.HotReloadModule.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Profiling.app/Contents/Resources/Data/Managed/UnityEngine.IMGUIModule.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Profiling.app/Contents/Resources/Data/Managed/UnityEngine.ImageConversionModule.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Profiling.app/Contents/Resources/Data/Managed/UnityEngine.InputLegacyModule.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Profiling.app/Contents/Resources/Data/Managed/UnityEngine.InputModule.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Profiling.app/Contents/Resources/Data/Managed/UnityEngine.JSONSerializeModule.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Profiling.app/Contents/Resources/Data/Managed/UnityEngine.LocalizationModule.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Profiling.app/Contents/Resources/Data/Managed/UnityEngine.ParticleSystemModule.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Profiling.app/Contents/Resources/Data/Managed/UnityEngine.PerformanceReportingModule.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Profiling.app/Contents/Resources/Data/Managed/UnityEngine.Physics2DModule.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Profiling.app/Contents/Resources/Data/Managed/UnityEngine.PhysicsModule.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Profiling.app/Contents/Resources/Data/Managed/UnityEngine.ProfilerModule.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Profiling.app/Contents/Resources/Data/Managed/UnityEngine.ScreenCaptureModule.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Profiling.app/Contents/Resources/Data/Managed/UnityEngine.SharedInternalsModule.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Profiling.app/Contents/Resources/Data/Managed/UnityEngine.SpriteMaskModule.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Profiling.app/Contents/Resources/Data/Managed/UnityEngine.SpriteShapeModule.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Profiling.app/Contents/Resources/Data/Managed/UnityEngine.StreamingModule.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Profiling.app/Contents/Resources/Data/Managed/UnityEngine.SubstanceModule.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Profiling.app/Contents/Resources/Data/Managed/UnityEngine.SubsystemsModule.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Profiling.app/Contents/Resources/Data/Managed/UnityEngine.TLSModule.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Profiling.app/Contents/Resources/Data/Managed/UnityEngine.TerrainModule.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Profiling.app/Contents/Resources/Data/Managed/UnityEngine.TerrainPhysicsModule.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Profiling.app/Contents/Resources/Data/Managed/UnityEngine.TextCoreModule.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Profiling.app/Contents/Resources/Data/Managed/UnityEngine.TextRenderingModule.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Profiling.app/Contents/Resources/Data/Managed/UnityEngine.TilemapModule.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Profiling.app/Contents/Resources/Data/Managed/UnityEngine.UI.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Profiling.app/Contents/Resources/Data/Managed/UnityEngine.UIElementsModule.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Profiling.app/Contents/Resources/Data/Managed/UnityEngine.UIElementsNativeModule.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Profiling.app/Contents/Resources/Data/Managed/UnityEngine.UIModule.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Profiling.app/Contents/Resources/Data/Managed/UnityEngine.UNETModule.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Profiling.app/Contents/Resources/Data/Managed/UnityEngine.UmbraModule.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Profiling.app/Contents/Resources/Data/Managed/UnityEngine.UnityAnalyticsModule.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Profiling.app/Contents/Resources/Data/Managed/UnityEngine.UnityConnectModule.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Profiling.app/Contents/Resources/Data/Managed/UnityEngine.UnityTestProtocolModule.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Profiling.app/Contents/Resources/Data/Managed/UnityEngine.UnityWebRequestAssetBundleModule.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Profiling.app/Contents/Resources/Data/Managed/UnityEngine.UnityWebRequestAudioModule.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Profiling.app/Contents/Resources/Data/Managed/UnityEngine.UnityWebRequestModule.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Profiling.app/Contents/Resources/Data/Managed/UnityEngine.UnityWebRequestTextureModule.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Profiling.app/Contents/Resources/Data/Managed/UnityEngine.UnityWebRequestWWWModule.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Profiling.app/Contents/Resources/Data/Managed/UnityEngine.VFXModule.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Profiling.app/Contents/Resources/Data/Managed/UnityEngine.VRModule.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Profiling.app/Contents/Resources/Data/Managed/UnityEngine.VehiclesModule.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Profiling.app/Contents/Resources/Data/Managed/UnityEngine.VideoModule.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Profiling.app/Contents/Resources/Data/Managed/UnityEngine.VirtualTexturingModule.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Profiling.app/Contents/Resources/Data/Managed/UnityEngine.WindModule.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Profiling.app/Contents/Resources/Data/Managed/UnityEngine.XRModule.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Profiling.app/Contents/Resources/Data/Managed/UnityEngine.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Profiling.app/Contents/Resources/Data/Managed/mscorlib.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Profiling.app/Contents/Resources/Data/Managed/netstandard.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Profiling.app/Contents/Resources/Data/Resources/unity_builtin_extra" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Profiling.app/Contents/Resources/Data/app.info" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Profiling.app/Contents/Resources/Data/boot.config" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Profiling.app/Contents/Resources/Data/globalgamemanagers" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Profiling.app/Contents/Resources/Data/globalgamemanagers.assets" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Profiling.app/Contents/Resources/Data/level0" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Profiling.app/Contents/Resources/Data/resources.assets" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Profiling.app/Contents/Resources/Data/resources.assets.resS" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Profiling.app/Contents/Resources/Data/resources.resource" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Profiling.app/Contents/Resources/Data/sharedassets0.assets" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Profiling.app/Contents/Resources/Data/sharedassets0.assets.resS" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Profiling.app/Contents/Resources/Data/sharedassets0.resource" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Profiling.app/Contents/Resources/DefaultPreferences.plist" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Profiling.app/Contents/Resources/MainMenu.nib" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Profiling.app/Contents/Resources/unity default resources" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.SHMUP 2D/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.SHMUP 2D/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.SHMUP 2D/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.SHMUP 2D/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.SHMUP 2D/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.SHMUP 2D/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assembly-CSharp.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Assembly-CSharp.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/2D Space Kit.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/2D Space Kit/Background Elements.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/2D Space Kit/Background Elements/Dust and Nebulae.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/2D Space Kit/Background Elements/Dust and Nebulae/Materials.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/2D Space Kit/Background Elements/Dust and Nebulae/Materials/EM Cloud 1.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/2D Space Kit/Background Elements/Dust and Nebulae/Materials/EM Cloud 1.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/2D Space Kit/Background Elements/Dust and Nebulae/Materials/EM Cloud 2.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/2D Space Kit/Background Elements/Dust and Nebulae/Materials/EM Cloud 2.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/2D Space Kit/Background Elements/Dust and Nebulae/Materials/EM Cloud 3.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/2D Space Kit/Background Elements/Dust and Nebulae/Materials/EM Cloud 3.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/2D Space Kit/Background Elements/Dust and Nebulae/Materials/Nebula 1.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/2D Space Kit/Background Elements/Dust and Nebulae/Materials/Nebula 1.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/2D Space Kit/Background Elements/Dust and Nebulae/Nebula 1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/2D Space Kit/Background Elements/Dust and Nebulae/Nebula 1.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/2D Space Kit/Background Elements/Dust and Nebulae/Nebula 2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/2D Space Kit/Background Elements/Dust and Nebulae/Nebula 2.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/2D Space Kit/Backgrounds.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/2D Space Kit/Backgrounds/Fantasy Purple 2048.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/2D Space Kit/Backgrounds/Fantasy Purple 2048/Fantasy 1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/2D Space Kit/Backgrounds/Fantasy Purple 2048/Fantasy 1.jpg.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/2D Space Kit/Backgrounds/Fantasy Purple 2048/Fantasy 2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/2D Space Kit/Backgrounds/Fantasy Purple 2048/Fantasy 2.jpg.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/2D Space Kit/Backgrounds/Fantasy Purple 2048/Fantasy 3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/2D Space Kit/Backgrounds/Fantasy Purple 2048/Fantasy 3.jpg.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/2D Space Kit/Backgrounds/Fantasy Purple 2048/Fantasy 4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/2D Space Kit/Backgrounds/Fantasy Purple 2048/Fantasy 4.jpg.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/2D Space Kit/Backgrounds/Fantasy Purple 2048/Fantasy 5.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/2D Space Kit/Backgrounds/Fantasy Purple 2048/Fantasy 5.jpg.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/2D Space Kit/Backgrounds/Fantasy Purple 2048/Fantasy 6.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/2D Space Kit/Backgrounds/Fantasy Purple 2048/Fantasy 6.jpg.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/2D Space Kit/Backgrounds/Fantasy Purple 2048/Note.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/2D Space Kit/Backgrounds/Fantasy Purple 2048/Note.txt.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/2D Space Kit/Missiles.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/2D Space Kit/Missiles/Missile (1).png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/2D Space Kit/Missiles/Missile (1).png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/2D Space Kit/Missiles/Missile (3).png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/2D Space Kit/Missiles/Missile (3).png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/2D Space Kit/Missiles/Missile (4).png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/2D Space Kit/Missiles/Missile (4).png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/2D Space Kit/Missiles/Missile (5).png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/2D Space Kit/Missiles/Missile (5).png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/2D Space Kit/Missiles/Missile (6).png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/2D Space Kit/Missiles/Missile (6).png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/2D Space Kit/Missiles/Missile (7).png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/2D Space Kit/Missiles/Missile (7).png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/2D Space Kit/Particles (Sprites).meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/2D Space Kit/Particles (Sprites)/Beam.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/2D Space Kit/Particles (Sprites)/Beam.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/2D Space Kit/Particles (Sprites)/Big Projectile.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/2D Space Kit/Particles (Sprites)/Big Projectile.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/2D Space Kit/Particles (Sprites)/BigFlare.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/2D Space Kit/Particles (Sprites)/BigFlare.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/2D Space Kit/Particles (Sprites)/Burst.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/2D Space Kit/Particles (Sprites)/Burst.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/2D Space Kit/Particles (Sprites)/DustSpray (1).png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/2D Space Kit/Particles (Sprites)/DustSpray (1).png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/2D Space Kit/Particles (Sprites)/DustSpray (2).png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/2D Space Kit/Particles (Sprites)/DustSpray (2).png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/2D Space Kit/Particles (Sprites)/Exhaust.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/2D Space Kit/Particles (Sprites)/Exhaust.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/2D Space Kit/Particles (Sprites)/Explosion.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/2D Space Kit/Particles (Sprites)/Explosion.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/2D Space Kit/Particles (Sprites)/Flare.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/2D Space Kit/Particles (Sprites)/Flare.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/2D Space Kit/Particles (Sprites)/IonTrail.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/2D Space Kit/Particles (Sprites)/IonTrail.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/2D Space Kit/Particles (Sprites)/Materials.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/2D Space Kit/Particles (Sprites)/Materials/Beam.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/2D Space Kit/Particles (Sprites)/Materials/Beam.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/2D Space Kit/Particles (Sprites)/Materials/Exhaust.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/2D Space Kit/Particles (Sprites)/Materials/Exhaust.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/2D Space Kit/Particles (Sprites)/Materials/Explosion.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/2D Space Kit/Particles (Sprites)/Materials/Explosion.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/2D Space Kit/Particles (Sprites)/Materials/Flare Animorphic.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/2D Space Kit/Particles (Sprites)/Materials/Flare Animorphic.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/2D Space Kit/Particles (Sprites)/Materials/Flare.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/2D Space Kit/Particles (Sprites)/Materials/Flare.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/2D Space Kit/Particles (Sprites)/Materials/Ion Trail.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/2D Space Kit/Particles (Sprites)/Materials/Ion Trail.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/2D Space Kit/Particles (Sprites)/Materials/Smoke Trail 1.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/2D Space Kit/Particles (Sprites)/Materials/Smoke Trail 1.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/2D Space Kit/Particles (Sprites)/Materials/Smoke Trail 2.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/2D Space Kit/Particles (Sprites)/Materials/Smoke Trail 2.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/2D Space Kit/Particles (Sprites)/Note on Flares.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/2D Space Kit/Particles (Sprites)/Note on Flares.txt.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/2D Space Kit/Particles (Sprites)/Projectile Sharp.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/2D Space Kit/Particles (Sprites)/Projectile Sharp.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/2D Space Kit/Particles (Sprites)/Projectile Thin.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/2D Space Kit/Particles (Sprites)/Projectile Thin.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/2D Space Kit/Particles (Sprites)/Shield Bubble.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/2D Space Kit/Particles (Sprites)/Shield Bubble.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/2D Space Kit/Particles (Sprites)/Small Flare.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/2D Space Kit/Particles (Sprites)/Small Flare.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/2D Space Kit/Particles (Sprites)/Smoke 1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/2D Space Kit/Particles (Sprites)/Smoke 1.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/2D Space Kit/Particles (Sprites)/Smoke 2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/2D Space Kit/Particles (Sprites)/Smoke 2.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/2D Space Kit/Particles (Sprites)/Smoke 3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/2D Space Kit/Particles (Sprites)/Smoke 3.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/2D Space Kit/Particles (Sprites)/SmokeTrail1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/2D Space Kit/Particles (Sprites)/SmokeTrail1.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/2D Space Kit/Particles (Sprites)/SmokeTrail2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/2D Space Kit/Particles (Sprites)/SmokeTrail2.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/2D Space Kit/Particles (Sprites)/Starflare.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/2D Space Kit/Particles (Sprites)/Starflare.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Concrete textures pack.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Concrete textures pack/pattern 01.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Concrete textures pack/pattern 01/Concrete pattern 01.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Concrete textures pack/pattern 01/Concrete pattern 01.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Concrete textures pack/pattern 01/diffuse.tga" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Concrete textures pack/pattern 01/diffuse.tga.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Concrete textures pack/pattern 01/normal.tga" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Concrete textures pack/pattern 01/normal.tga.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Concrete textures pack/pattern 01/preview.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Concrete textures pack/pattern 01/preview.jpg.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Concrete textures pack/pattern 02.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Concrete textures pack/pattern 02/Concrete pattern 02.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Concrete textures pack/pattern 02/Concrete pattern 02.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Concrete textures pack/pattern 02/diffuse.tga" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Concrete textures pack/pattern 02/diffuse.tga.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Concrete textures pack/pattern 02/normal.tga" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Concrete textures pack/pattern 02/normal.tga.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Concrete textures pack/pattern 02/preview.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Concrete textures pack/pattern 02/preview.jpg.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Concrete textures pack/pattern 03.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Concrete textures pack/pattern 03/Concrete pattern 03.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Concrete textures pack/pattern 03/Concrete pattern 03.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Concrete textures pack/pattern 03/diffuse.tga" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Concrete textures pack/pattern 03/diffuse.tga.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Concrete textures pack/pattern 03/normal.tga" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Concrete textures pack/pattern 03/normal.tga.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Concrete textures pack/pattern 03/preview.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Concrete textures pack/pattern 03/preview.jpg.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Concrete textures pack/pattern 04.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Concrete textures pack/pattern 04/Concrete pattern 04.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Concrete textures pack/pattern 04/Concrete pattern 04.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Concrete textures pack/pattern 04/diffuse.tga" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Concrete textures pack/pattern 04/diffuse.tga.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Concrete textures pack/pattern 04/normal.tga" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Concrete textures pack/pattern 04/normal.tga.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Concrete textures pack/pattern 04/preview.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Concrete textures pack/pattern 04/preview.jpg.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Concrete textures pack/pattern 05.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Concrete textures pack/pattern 05/Concrete pattern 05.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Concrete textures pack/pattern 05/Concrete pattern 05.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Concrete textures pack/pattern 05/diffuse.tga" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Concrete textures pack/pattern 05/diffuse.tga.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Concrete textures pack/pattern 05/normal.tga" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Concrete textures pack/pattern 05/normal.tga.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Concrete textures pack/pattern 05/preview.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Concrete textures pack/pattern 05/preview.jpg.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Concrete textures pack/pattern 06.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Concrete textures pack/pattern 06/Concrete pattern 06.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Concrete textures pack/pattern 06/Concrete pattern 06.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Concrete textures pack/pattern 06/diffuse.tga" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Concrete textures pack/pattern 06/diffuse.tga.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Concrete textures pack/pattern 06/normal.tga" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Concrete textures pack/pattern 06/normal.tga.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Concrete textures pack/pattern 06/preview.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Concrete textures pack/pattern 06/preview.jpg.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Concrete textures pack/pattern 07.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Concrete textures pack/pattern 07/Concrete pattern 07.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Concrete textures pack/pattern 07/Concrete pattern 07.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Concrete textures pack/pattern 07/diffuse.tga" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Concrete textures pack/pattern 07/diffuse.tga.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Concrete textures pack/pattern 07/normal.tga" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Concrete textures pack/pattern 07/normal.tga.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Concrete textures pack/pattern 07/preview.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Concrete textures pack/pattern 07/preview.jpg.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Concrete textures pack/pattern 08.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Concrete textures pack/pattern 08/Concrete pattern 08.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Concrete textures pack/pattern 08/Concrete pattern 08.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Concrete textures pack/pattern 08/diffuse.tga" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Concrete textures pack/pattern 08/diffuse.tga.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Concrete textures pack/pattern 08/normal.tga" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Concrete textures pack/pattern 08/normal.tga.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Concrete textures pack/pattern 08/preview.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Concrete textures pack/pattern 08/preview.jpg.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Concrete textures pack/pattern 09.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Concrete textures pack/pattern 09/Concrete pattern 09.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Concrete textures pack/pattern 09/Concrete pattern 09.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Concrete textures pack/pattern 09/diffuse.tga" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Concrete textures pack/pattern 09/diffuse.tga.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Concrete textures pack/pattern 09/normal.tga" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Concrete textures pack/pattern 09/normal.tga.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Concrete textures pack/pattern 09/preview.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Concrete textures pack/pattern 09/preview.jpg.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Concrete textures pack/pattern 10.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Concrete textures pack/pattern 10/Concrete pattern 10.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Concrete textures pack/pattern 10/Concrete pattern 10.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Concrete textures pack/pattern 10/diffuse.tga" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Concrete textures pack/pattern 10/diffuse.tga.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Concrete textures pack/pattern 10/normal.tga" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Concrete textures pack/pattern 10/normal.tga.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Concrete textures pack/pattern 10/preview.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Concrete textures pack/pattern 10/preview.jpg.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Concrete textures pack/pattern 11.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Concrete textures pack/pattern 11/Concrete pattern 11.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Concrete textures pack/pattern 11/Concrete pattern 11.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Concrete textures pack/pattern 11/diffuse.tga" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Concrete textures pack/pattern 11/diffuse.tga.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Concrete textures pack/pattern 11/normal.tga" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Concrete textures pack/pattern 11/normal.tga.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Concrete textures pack/pattern 11/preview.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Concrete textures pack/pattern 11/preview.jpg.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Concrete textures pack/pattern 12.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Concrete textures pack/pattern 12/Concrete pattern 12.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Concrete textures pack/pattern 12/Concrete pattern 12.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Concrete textures pack/pattern 12/diffuse.tga" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Concrete textures pack/pattern 12/diffuse.tga.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Concrete textures pack/pattern 12/normal.tga" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Concrete textures pack/pattern 12/normal.tga.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Concrete textures pack/pattern 12/preview.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Concrete textures pack/pattern 12/preview.jpg.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Concrete textures pack/pattern 13.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Concrete textures pack/pattern 13/Concrete pattern 13.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Concrete textures pack/pattern 13/Concrete pattern 13.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Concrete textures pack/pattern 13/diffuse.tga" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Concrete textures pack/pattern 13/diffuse.tga.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Concrete textures pack/pattern 13/normal.tga" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Concrete textures pack/pattern 13/normal.tga.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Concrete textures pack/pattern 13/preview.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Concrete textures pack/pattern 13/preview.jpg.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Concrete textures pack/pattern 14.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Concrete textures pack/pattern 14/Concrete pattern 14.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Concrete textures pack/pattern 14/Concrete pattern 14.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Concrete textures pack/pattern 14/diffuse.tga" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Concrete textures pack/pattern 14/diffuse.tga.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Concrete textures pack/pattern 14/normal.tga" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Concrete textures pack/pattern 14/normal.tga.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Concrete textures pack/pattern 14/preview.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Concrete textures pack/pattern 14/preview.jpg.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Concrete textures pack/pattern 15.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Concrete textures pack/pattern 15/Concrete pattern 15.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Concrete textures pack/pattern 15/Concrete pattern 15.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Concrete textures pack/pattern 15/diffuse.tga" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Concrete textures pack/pattern 15/diffuse.tga.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Concrete textures pack/pattern 15/normal.tga" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Concrete textures pack/pattern 15/normal.tga.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Concrete textures pack/pattern 15/preview.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Concrete textures pack/pattern 15/preview.jpg.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Concrete textures pack/pattern 16.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Concrete textures pack/pattern 16/Concrete pattern 16.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Concrete textures pack/pattern 16/Concrete pattern 16.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Concrete textures pack/pattern 16/diffuse.tga" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Concrete textures pack/pattern 16/diffuse.tga.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Concrete textures pack/pattern 16/normal.tga" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Concrete textures pack/pattern 16/normal.tga.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Concrete textures pack/pattern 16/preview.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Concrete textures pack/pattern 16/preview.jpg.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Concrete textures pack/pattern 17.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Concrete textures pack/pattern 17/Concrete pattern 17.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Concrete textures pack/pattern 17/Concrete pattern 17.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Concrete textures pack/pattern 17/diffuse.tga" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Concrete textures pack/pattern 17/diffuse.tga.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Concrete textures pack/pattern 17/normal.tga" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Concrete textures pack/pattern 17/normal.tga.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Concrete textures pack/pattern 17/preview.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Concrete textures pack/pattern 17/preview.jpg.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Concrete textures pack/pattern 18.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Concrete textures pack/pattern 18/Concrete pattern 18.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Concrete textures pack/pattern 18/Concrete pattern 18.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Concrete textures pack/pattern 18/diffuse.tga" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Concrete textures pack/pattern 18/diffuse.tga.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Concrete textures pack/pattern 18/normal.tga" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Concrete textures pack/pattern 18/normal.tga.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Concrete textures pack/pattern 18/preview.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Concrete textures pack/pattern 18/preview.jpg.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Concrete textures pack/pattern 19.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Concrete textures pack/pattern 19/Concrete pattern 19.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Concrete textures pack/pattern 19/Concrete pattern 19.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Concrete textures pack/pattern 19/diffuse.tga" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Concrete textures pack/pattern 19/diffuse.tga.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Concrete textures pack/pattern 19/normal.tga" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Concrete textures pack/pattern 19/normal.tga.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Concrete textures pack/pattern 19/preview.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Concrete textures pack/pattern 19/preview.jpg.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Concrete textures pack/pattern 20.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Concrete textures pack/pattern 20/Concrete pattern 20.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Concrete textures pack/pattern 20/Concrete pattern 20.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Concrete textures pack/pattern 20/diffuse.tga" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Concrete textures pack/pattern 20/diffuse.tga.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Concrete textures pack/pattern 20/normal.tga" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Concrete textures pack/pattern 20/normal.tga.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Concrete textures pack/pattern 20/preview.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Concrete textures pack/pattern 20/preview.jpg.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Data/PlayerData.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Data/PlayerData.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Icosphere.mtl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Icosphere.mtl.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Icosphere.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Icosphere.obj.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ProBuilder Data.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ProBuilder Data/Default Color Palette.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ProBuilder Data/Default Color Palette.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ProBuilder Data/Default Material Palette.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ProBuilder Data/Default Material Palette.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/prefabs/color_customizible/rounded/health_bar_rounded 1/HealthBar_LR.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/prefabs/color_customizible/rounded/health_bar_rounded 1/HealthBar_LR.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LaserPickUp.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/LaserPickUp.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LaserPickUp.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/LaserPickUp.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MissilePickUp.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MissilePickUp.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MissilePickUp.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MissilePickUp.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PlasmaPickUp.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlasmaPickUp.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PlasmaPickUp.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlasmaPickUp.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Resources/Explosion.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Explosion.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Resources/Homing Missile.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Homing Missile.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Resources/LaserBeam.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/LaserBeam.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Resources/PlasmaBall.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/PlasmaBall.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Player.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/SpaceJunk.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/SpaceJunk.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/AudioMixer.mixer" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/AudioMixer.mixer" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/EnemyController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/EnemyController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/EnemySpawnManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/EnemySpawnManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/LaserBeam.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/LaserBeam.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/LaserControl.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/LaserControl.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerData.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/SpaceJunkController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SpaceJunkController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/SpaceJunkManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SpaceJunkManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/WeaponController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/WeaponController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Tests.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Tests/Tests.asmdef" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Tests/Tests.asmdef.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/diffuse.tga" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/diffuse.tga.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/normal.tga" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/normal.tga.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/WeaponPickUpManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/WeaponPickUpManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/ArtifactDB" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ArtifactDB" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/ArtifactDB-lock" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ArtifactDB-lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/CurrentLayout-default.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/Library/CurrentLayout-default.dwlt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/CurrentMaximizeLayout.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/Library/CurrentMaximizeLayout.dwlt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/InspectorExpandedItems.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Library/InspectorExpandedItems.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageManager/ProjectCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/Library/PackageManager/ProjectCache.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/SceneVisibilityState.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Library/SceneVisibilityState.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.Timeline.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.Timeline.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.Timeline.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.Timeline.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/ScriptMapper" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptMapper" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/ShaderCache/EditorEncounteredVariants" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ShaderCache/EditorEncounteredVariants" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/SourceAssetDB" beforeDir="false" afterPath="$PROJECT_DIR$/Library/SourceAssetDB" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/StateCache/MainStageHierarchy/b3/b33c0e3f811f60f68b686d48892eb094.json" beforeDir="false" afterPath="$PROJECT_DIR$/Library/StateCache/MainStageHierarchy/b3/b33c0e3f811f60f68b686d48892eb094.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/StateCache/PrefabStageHierarchy/07/07062ad18604523715a41a212db8971e.json" beforeDir="false" afterPath="$PROJECT_DIR$/Library/StateCache/PrefabStageHierarchy/07/07062ad18604523715a41a212db8971e.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/StateCache/PrefabStageHierarchy/8c/8cc317165583460d6b3a6f0099aa002f.json" beforeDir="false" afterPath="$PROJECT_DIR$/Library/StateCache/PrefabStageHierarchy/8c/8cc317165583460d6b3a6f0099aa002f.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/StateCache/SceneView/24/2405b852a61509573ca7ab5cc8918b1a.json" beforeDir="false" afterPath="$PROJECT_DIR$/Library/StateCache/SceneView/24/2405b852a61509573ca7ab5cc8918b1a.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/StateCache/SceneView/d8/d8ceb4b4b810e823a3347aadfc1996d1.json" beforeDir="false" afterPath="$PROJECT_DIR$/Library/StateCache/SceneView/d8/d8ceb4b4b810e823a3347aadfc1996d1.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/UIElements/EditorWindows/UnityEditor.PackageManager.UI.PackageManagerWindow.pref" beforeDir="false" afterPath="$PROJECT_DIR$/Library/UIElements/EditorWindows/UnityEditor.PackageManager.UI.PackageManagerWindow.pref" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/expandedItems" beforeDir="false" afterPath="$PROJECT_DIR$/Library/expandedItems" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler0.log" beforeDir="false" afterPath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler0.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler1.log" beforeDir="false" afterPath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler1.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler10.log" beforeDir="false" afterPath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler10.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler11.log" beforeDir="false" afterPath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler11.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler12.log" beforeDir="false" afterPath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler12.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler13.log" beforeDir="false" afterPath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler13.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler14.log" beforeDir="false" afterPath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler14.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler15.log" beforeDir="false" afterPath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler15.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler2.log" beforeDir="false" afterPath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler2.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler3.log" beforeDir="false" afterPath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler3.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler4.log" beforeDir="false" afterPath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler4.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler5.log" beforeDir="false" afterPath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler5.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler6.log" beforeDir="false" afterPath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler6.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler7.log" beforeDir="false" afterPath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler7.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler8.log" beforeDir="false" afterPath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler8.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler9.log" beforeDir="false" afterPath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler9.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/InputManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/InputManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -1206,11 +326,13 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/1CC9F42F-C888-4DD6-B922-6D52BD1D749D/7a/dced9cdc/Rigidbody.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/1CC9F42F-C888-4DD6-B922-6D52BD1D749D/91/a8cc8430/RaycastHit.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/7CD321F2-2A98-4E1E-B513-F00B987C648C/94/1e87cc21/Component.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/GUI/Scripts/RechargeGUI.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.2d.spriteshape@4.1.3/Runtime/SpriteShapeController.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/7CD321F2-2A98-4E1E-B513-F00B987C648C/c5/1e90ffc0/Random.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/GUI/Scripts/HealthBar.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/484E0A2F-7D55-49CC-9F07-3823AD678B61/9b/5adc7f2c/ParticleSystem.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/7CD321F2-2A98-4E1E-B513-F00B987C648C/7f/95c33ebd/MonoBehaviour.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/LaserPickUp.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/LaserPickUp.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/7CD321F2-2A98-4E1E-B513-F00B987C648C/e1/a8143129/UsedImplicitlyAttribute.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/1CC9F42F-C888-4DD6-B922-6D52BD1D749D/eb/8e1ba61f/Collision.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/EnemyData.cs" root0="FORCE_HIGHLIGHTING" />
@@ -1241,7 +363,6 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/PlayerMovement.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/WeaponType.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ShieldControl.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" />
         <option value="$PROJECT_DIR$/Assets/MissilePool.cs" />
         <option value="$PROJECT_DIR$/Assets/WeaponPool.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/HomingMissileController.cs" />
@@ -1257,19 +378,25 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/MissileControl.cs" />
         <option value="$PROJECT_DIR$/Assets/SpaceJunkController.cs" />
         <option value="$PROJECT_DIR$/Assets/SpaceJunkManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/PlayerData.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/SpaceJunkManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/SpaceJunkController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/LaserBeam.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/LaserControl.cs" />
         <option value="$PROJECT_DIR$/Assets/WeaponPickUpManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/WeaponPickUpManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/WeaponController.cs" />
         <option value="$PROJECT_DIR$/Assets/MissilePickUp.cs" />
         <option value="$PROJECT_DIR$/Assets/LaserPickUp.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/EnemySpawnManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/SpaceJunkManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/SpaceJunkController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/EnemyController.cs" />
+        <option value="$PROJECT_DIR$/Assets/HealthBar.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PlayerData.cs" />
+        <option value="$PROJECT_DIR$/Assets/RechargeGUI.cs" />
+        <option value="$PROJECT_DIR$/Assets/GUI/Scripts/HealthBar.cs" />
+        <option value="$PROJECT_DIR$/Assets/GUI/Scripts/ControllInstructions.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/WeaponPickUpManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/LaserPickUp.cs" />
       </list>
     </option>
   </component>
@@ -1381,7 +508,7 @@
       <workItem from="1600541017086" duration="419000" />
       <workItem from="1600673162811" duration="270000" />
       <workItem from="1600674548435" duration="10044000" />
-      <workItem from="1600688417490" duration="89000" />
+      <workItem from="1600688417490" duration="6133000" />
     </task>
     <task id="LOCAL−00001" summary="Updated with Particle System  and plasma Shots&#10;WeaponSystem WIP">
       <created>1599581575365</created>
@@ -1461,7 +588,13 @@
       <option name="presentableId" value="LOCAL−00013" />
       <updated>1600440088828</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL−00014" summary="weapon pickup started, enemy levels cleaned up">
+      <created>1600688566778</created>
+      <option name="number" value="LOCAL−00014" />
+      <option name="presentableId" value="LOCAL−00014" />
+      <updated>1600688566778</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1554,7 +687,8 @@
     <MESSAGE value="Updates to weaponSystem" />
     <MESSAGE value="Updates to weaponSystem&#10;&#10;Signed-off-by: Vilhelm Stokstad &lt;v.stokstad@gmail.com&gt;" />
     <MESSAGE value="WeaponSystems Online!&#10;&#10;Signed-off-by: Vilhelm Stokstad &lt;v.stokstad@gmail.com&gt;" />
-    <option name="LAST_COMMIT_MESSAGE" value="WeaponSystems Online!&#10;&#10;Signed-off-by: Vilhelm Stokstad &lt;v.stokstad@gmail.com&gt;" />
+    <MESSAGE value="weapon pickup started, enemy levels cleaned up" />
+    <option name="LAST_COMMIT_MESSAGE" value="weapon pickup started, enemy levels cleaned up" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -1594,11 +728,11 @@
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
     <state x="763" y="642" key="ANALYSIS_DLG_com.jetbrains.rider.actions.impl.cleanup.ChooseSilentCodeCleanupProfileDialog/0.23.2560.1417/-1792.343.1792.1097@0.23.2560.1417" timestamp="1599739763865" />
-    <state x="-1070" y="777" key="ANALYSIS_DLG_com.jetbrains.rider.actions.impl.cleanup.RiderCodeCleanupAction$actionPerformed$dlg$1" timestamp="1600686928279">
+    <state x="-1070" y="777" key="ANALYSIS_DLG_com.jetbrains.rider.actions.impl.cleanup.RiderCodeCleanupAction$actionPerformed$dlg$1" timestamp="1600691749674">
       <screen x="-1792" y="343" width="1792" height="1097" />
     </state>
     <state x="722" y="457" key="ANALYSIS_DLG_com.jetbrains.rider.actions.impl.cleanup.RiderCodeCleanupAction$actionPerformed$dlg$1/0.23.1792.1097@0.23.1792.1097" timestamp="1600510928831" />
-    <state x="-1070" y="777" key="ANALYSIS_DLG_com.jetbrains.rider.actions.impl.cleanup.RiderCodeCleanupAction$actionPerformed$dlg$1/0.23.2560.1417/-1792.343.1792.1097@-1792.343.1792.1097" timestamp="1600686928278" />
+    <state x="-1070" y="777" key="ANALYSIS_DLG_com.jetbrains.rider.actions.impl.cleanup.RiderCodeCleanupAction$actionPerformed$dlg$1/0.23.2560.1417/-1792.343.1792.1097@-1792.343.1792.1097" timestamp="1600691749674" />
     <state x="1031" y="583" key="ANALYSIS_DLG_com.jetbrains.rider.actions.impl.cleanup.RiderCodeCleanupAction$actionPerformed$dlg$1/0.23.2560.1417/-1792.343.1792.1097@0.23.2560.1417" timestamp="1600437924857" />
     <state width="486" height="465" key="DebuggerActiveHint" timestamp="1600070003892">
       <screen x="0" y="23" width="2560" height="1417" />
@@ -1837,10 +971,11 @@
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
     <state x="908" y="984" key="run.anything.popup/0.0.2560.1440/348.1440.1792.1120@348.1440.1792.1120" timestamp="1599493012896" />
-    <state x="660" y="273" width="672" height="678" key="search.everywhere.popup" timestamp="1600509323759">
-      <screen x="0" y="23" width="1792" height="1097" />
+    <state x="-1132" y="593" width="672" height="678" key="search.everywhere.popup" timestamp="1600695043535">
+      <screen x="-1792" y="343" width="1792" height="1097" />
     </state>
     <state x="660" y="273" width="672" height="678" key="search.everywhere.popup/0.23.1792.1097@0.23.1792.1097" timestamp="1600509323759" />
+    <state x="-1132" y="593" width="672" height="678" key="search.everywhere.popup/0.23.2560.1417/-1792.343.1792.1097@-1792.343.1792.1097" timestamp="1600695043535" />
     <state x="943" y="346" width="961" height="876" key="search.everywhere.popup/0.23.2560.1417/-1792.343.1792.1097@0.23.2560.1417" timestamp="1600254421698" />
     <state x="943" y="346" key="search.everywhere.popup/0.23.2560.1417@0.23.2560.1417" timestamp="1599552286895" />
   </component>

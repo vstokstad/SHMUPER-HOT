@@ -5,7 +5,7 @@ public class SpaceJunkManager : MonoBehaviour {
     private readonly int _numberOfSpaceJunk = 10;
     private readonly string _spaceJunkPath = "SpaceJunk";
     private List<GameObject> _spaceJunkList;
-    private float _spawnTimer = 1.5f;
+    private float _spawnTimer = 2f;
 
     private void Awake(){
         _spaceJunkList = new List<GameObject>(_numberOfSpaceJunk);
@@ -23,8 +23,9 @@ public class SpaceJunkManager : MonoBehaviour {
                 for (int i = 0; i < _spaceJunkList.Count - 1; i++) {
                     if (_spaceJunkList[i].activeSelf) continue;
                     _spaceJunkList[i].gameObject.SetActive(true);
-                    _spawnTimer = 1.5f;
-                    return;
+                    _spawnTimer = 2;
+                    break;
+                 
                 }
     }
 }

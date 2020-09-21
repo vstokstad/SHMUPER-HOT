@@ -13,7 +13,7 @@ public class SpaceJunkController : MonoBehaviour {
 
     private void Awake(){
         _scale = Mathf.Clamp(Random.value * Mathf.PI, 1f, 5f);
-        _speed = Random.Range(1f, 10f);
+        _speed = Random.Range(5f, 15f);
         _initialRotation = Quaternion.LookRotation(Vector3.left, Vector3.up);
         _initialPosition = new Vector3(GameManager.CameraBounds.x + 2f, Random.Range(-8f, GameManager.CameraBounds.y));
         _rigidbody = GetComponent<Rigidbody>();

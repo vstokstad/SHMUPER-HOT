@@ -39,10 +39,7 @@ public class EnemySpawnManager : MonoBehaviour {
 
         if (_spawnTimer <= 0f) {
             Spawn();
-            if (_playerController.killCounter > 10f) Spawn();
             if (_playerController.killCounter > 20f) Spawn();
-            if (_playerController.killCounter > 30f) Spawn();
-            if (_playerController.killCounter > 40f) Spawn();
             _spawnTimer = _timeBetweenSpawn;
         }
     }

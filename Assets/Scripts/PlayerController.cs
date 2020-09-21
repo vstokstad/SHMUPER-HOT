@@ -7,7 +7,7 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour {
     [SerializeField] public PlayerData playerData;
     public float killCounter;
-    public WeaponPickUpManager _weaponPickUpManager;
+    public WeaponPickUpManager weaponPickUpManager;
     private IEnumerator _collisionManagerRoutine;
 
     private void Awake(){
@@ -16,11 +16,11 @@ public class PlayerController : MonoBehaviour {
 
     private void Update(){
         playerData.RechargeTimer();
-        if (playerData.rechargeTime <= 0f) {
-            _weaponPickUpManager.SpawnLaser();
+        if (killCounter > 5f && killCounter < 10f) {
+            weaponPickUpManager.SpawnLaser();
         }
-        else if (playerData.rechargeTime <= 0f) {
-            _weaponPickUpManager.SpawnMissiles();
+        else if (killCounter > 10f && killCounter < 15f) {
+            weaponPickUpManager.SpawnMissiles();
         }
     }
 
@@ -37,7 +37,7 @@ public class PlayerController : MonoBehaviour {
         TakeDamage(PlayerData.health, enemyController.crashDamage);
         Vector2 bounceOffForce = -enemyBody.velocity;
         enemyBody.AddForce(bounceOffForce, ForceMode.Impulse);
-        yield return new WaitForSeconds(0.8f);
+        yield return new WaitForSeconds(0.4f);
         enemyController.TakeDamage(playerData.crashDamage);
     }
 

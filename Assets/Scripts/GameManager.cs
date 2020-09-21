@@ -2,6 +2,7 @@
 using static UnityEngine.Cursor;
 using UnityEngine;
 
+[RequireComponent(typeof(Transform))]
 [DefaultExecutionOrder(-1000)]
 public class GameManager : MonoBehaviour {
     public static Camera PlayerCamera { get; private set; }
