@@ -193,7 +193,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'KILLS:'
+  m_text: 'KILLS:
+
+    highscore:'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
   m_sharedMaterial: {fileID: 2140032, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
@@ -220,7 +222,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 29.7
+  m_fontSize: 18
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -293,7 +295,7 @@ GameObject:
   - component: {fileID: 394086861}
   - component: {fileID: 394086863}
   - component: {fileID: 394086862}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: SidewaysStars
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -312,7 +314,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 842642119}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!198 &394086862
 ParticleSystem:
@@ -5339,7 +5341,7 @@ GameObject:
   - component: {fileID: 514849405}
   - component: {fileID: 514849407}
   - component: {fileID: 514849406}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: BackgroundStars
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5358,7 +5360,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 842642119}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!198 &514849406
 ParticleSystem:
@@ -10228,8 +10230,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 1700663213}
+  m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -10276,6 +10277,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 135b74f379d2e4196a9147f5112ab922, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  numberOfEnemies: 20
+  timeBetweenSpawn: 3
 --- !u!1 &842642118
 GameObject:
   m_ObjectHideFlags: 0
@@ -10287,7 +10290,7 @@ GameObject:
   - component: {fileID: 842642119}
   - component: {fileID: 842642122}
   - component: {fileID: 842642120}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Environment
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10305,6 +10308,7 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1.275, y: 1.1332, z: 0.46715}
   m_Children:
+  - {fileID: 1700663213}
   - {fileID: 1583163876}
   - {fileID: 514849405}
   - {fileID: 394086861}
@@ -10543,7 +10547,7 @@ GameObject:
   - component: {fileID: 1583163876}
   - component: {fileID: 1583163875}
   - component: {fileID: 1583163877}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Nebula
   m_TagString: Nebula
   m_Icon: {fileID: 0}
@@ -10589,7 +10593,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: -212
+  m_SortingOrder: -58
   m_Sprite: {fileID: 21300000, guid: d7cd3cce2fc5c084eb7dab8f4c559963, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -10609,11 +10613,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1583163874}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.411, y: -0.215, z: 100}
+  m_LocalPosition: {x: -1.411, y: -0.215, z: 20}
   m_LocalScale: {x: 1.1584084, y: 0.97861236, z: 1}
   m_Children: []
   m_Father: {fileID: 842642119}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!167 &1583163877
 AudioReverbZone:
@@ -10623,16 +10627,16 @@ AudioReverbZone:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1583163874}
   m_Enabled: 1
-  m_MinDistance: 15
-  m_MaxDistance: 30
-  m_ReverbPreset: 1
+  m_MinDistance: 10
+  m_MaxDistance: 20.8
+  m_ReverbPreset: 23
   m_Room: -1000
-  m_RoomHF: -100
+  m_RoomHF: -4000
   m_DecayTime: 1.49
-  m_DecayHFRatio: 0.83
-  m_Reflections: -2602
+  m_DecayHFRatio: 0.1
+  m_Reflections: -449
   m_ReflectionsDelay: 0.007
-  m_Reverb: 200
+  m_Reverb: 1700
   m_ReverbDelay: 0.011
   m_HFReference: 5000
   m_Diffusion: 100
@@ -10649,7 +10653,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1700663213}
   - component: {fileID: 1700663212}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Directional Light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10725,10 +10729,10 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1700663211}
   m_LocalRotation: {x: 0.37253177, y: -0.21589527, z: -0.22019686, w: 0.8752844}
-  m_LocalPosition: {x: 7.59, y: 15.45, z: -19.16}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 5.9529414, y: 13.633956, z: -62.421062}
+  m_LocalScale: {x: 0.8363145, y: 1.3012837, z: 1.097507}
   m_Children: []
-  m_Father: {fileID: 519420032}
+  m_Father: {fileID: 842642119}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 33.853, y: -40.741, z: -41.136}
 --- !u!1 &1783950577
@@ -11115,6 +11119,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0a87c3b7d6cf40e98d690b51f6f5bab3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  debugMode: 0
 --- !u!1 &2013239333
 GameObject:
   m_ObjectHideFlags: 0
@@ -11591,7 +11596,7 @@ MonoBehaviour:
   m_MinValue: 0
   m_MaxValue: 10
   m_WholeNumbers: 0
-  m_Value: 0
+  m_Value: 10
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
@@ -16830,7 +16835,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 0.4528302, g: 0.4528302, b: 0.4528302, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -16860,7 +16865,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 0.4528302, g: 0.4528302, b: 0.4528302, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -17159,7 +17164,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 0, b: 0, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -17189,7 +17194,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 0, g: 0.45634604, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:

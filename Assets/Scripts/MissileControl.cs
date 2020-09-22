@@ -1,13 +1,13 @@
+using Unity.Mathematics;
 using UnityEngine;
 using static TagsAsStrings;
 
 public class MissileControl : MonoBehaviour {
-    private readonly float _missileDamage = 0.3f;
-    private readonly float _speed = 10f;
+    private readonly float _missileDamage = 0.5f;
+    private readonly float _speed = 15f;
     private Vector3 _moveDirection;
     private Rigidbody _rigidBody;
-    private AudioSource audioSource;
-
+    private float _searchForTargetTimer = 0.5f;
 
     private void Awake(){
         _rigidBody = GetComponent<Rigidbody>();
@@ -15,19 +15,23 @@ public class MissileControl : MonoBehaviour {
     }
 
     private void FixedUpdate(){
-        SearchForEnemy();
-        _rigidBody.AddForce(_moveDirection * (_speed * Time.fixedDeltaTime), ForceMode.Force);
-        Quaternion rotation = Quaternion.Euler(_moveDirection.x, _moveDirection.y, _moveDirection.z);
-        _rigidBody.MoveRotation(rotation);
-
-        audioSource.panStereo = transform.position.normalized.x;
+        _searchForTargetTimer -= Time.fixedDeltaTime;
+        if (_searchForTargetTimer <= 0f) {
+            SearchForEnemy();
+            _searchForTargetTimer = 0.1f;
+        }
+        _moveDirection.Normalize();
+        Vector3 velocity = _rigidBody.velocity + _moveDirection * (_speed * Time.fixedDeltaTime);
+        velocity = Vector3.ClampMagnitude(velocity, 10f);
+        _rigidBody.velocity = velocity;
+      
     }
 
     private void OnEnable(){
+        SearchForEnemy();
         _rigidBody = GetComponent<Rigidbody>();
+        _rigidBody.velocity = Vector3.right;
         gameObject.SetActive(true);
-        _moveDirection = transform.position * 1.1f;
-        audioSource = GetComponent<AudioSource>();
     }
 
     private void OnDisable(){
@@ -45,11 +49,11 @@ public class MissileControl : MonoBehaviour {
     }
 
     private void SearchForEnemy(){
-        Collider[] hitColliders = new Collider[10];
-        int numColliders = Physics.OverlapSphereNonAlloc(transform.position, 10f, hitColliders);
+        Collider[] hitColliders = new Collider[20];
+        int numColliders = Physics.OverlapSphereNonAlloc(transform.position, 20f, hitColliders);
         for (int i = 0; i < numColliders; i++) {
             if (!hitColliders[i].CompareTag(enemyTag)) continue;
-            Vector3 enemyPos = hitColliders[i].attachedRigidbody.position;
+            Vector3 enemyPos = hitColliders[i].transform.position;
             _moveDirection = enemyPos - transform.position;
             return;
         }

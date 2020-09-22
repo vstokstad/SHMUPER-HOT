@@ -4,9 +4,8 @@ using UnityEngine;
 using static TagsAsStrings;
 
 public class EnemySpawnManager : MonoBehaviour {
-    private readonly int _numberOfEnemies = 20;
-
-    private readonly float _timeBetweenSpawn = 3f;
+    [SerializeField] public int numberOfEnemies = 20;
+    [SerializeField] private float timeBetweenSpawn = 3f;
     private List<GameObject> _enemiesLvl1;
     private List<GameObject> _enemiesLvl2;
     private List<GameObject> _enemiesLvl3;
@@ -15,7 +14,7 @@ public class EnemySpawnManager : MonoBehaviour {
 
     private PlayerController _playerController;
     private float _playerKills;
-    private float _spawnTimer = 3f;
+    private float _spawnTimer = 1f;
 
 
     private float PositionY => Random.Range(max: GameManager.CameraBounds.y, min: -8);
@@ -37,8 +36,7 @@ public class EnemySpawnManager : MonoBehaviour {
 
         if (_spawnTimer <= 0f) {
             Spawn();
-            if (_playerController.killCounter > 20f) Spawn();
-            _spawnTimer = _timeBetweenSpawn;
+            _spawnTimer = timeBetweenSpawn;
         }
     }
 
@@ -50,7 +48,7 @@ public class EnemySpawnManager : MonoBehaviour {
                 enemy1.transform.position = _initialPosition;
                 enemy1.gameObject.SetActive(true);
                 _enemiesLvl1.Remove(enemy1);
-
+                timeBetweenSpawn -= 0.01f;
                 break;
             }
 
@@ -62,7 +60,7 @@ public class EnemySpawnManager : MonoBehaviour {
             enemy2.transform.position = _initialPosition;
             enemy2.gameObject.SetActive(true);
             _enemiesLvl2.Remove(enemy2);
-
+            timeBetweenSpawn -= 0.01f;
             break;
         }
 
@@ -74,20 +72,24 @@ public class EnemySpawnManager : MonoBehaviour {
             enemy3.transform.position = _initialPosition;
             enemy3.gameObject.SetActive(true);
             _enemiesLvl3.Remove(enemy3);
-            if (_enemiesLvl3.Count <= 0) EnemyPoolFiller();
+            if (_enemiesLvl3.Count <= 0) {
+                EnemyPoolFiller();
+                timeBetweenSpawn = 3f;
+            }
+
             return;
         }
     }
 
     private void EnemyPoolFiller(){
-        for (int i = 0; i < _numberOfEnemies; i++) {
+        for (int i = 0; i < numberOfEnemies; i++) {
             _initialPosition = new Vector3(PositionX, PositionY, 0f);
             _enemiesLvl1.Add(
                 Instantiate(Resources.Load(enemyTag, typeof(GameObject)), transform, true) as GameObject);
             _enemiesLvl1[i].transform.position = _initialPosition;
         }
 
-        for (int i = 0; i < _numberOfEnemies; i++) {
+        for (int i = 0; i < numberOfEnemies; i++) {
             _initialPosition = new Vector3(PositionX, PositionY, 0f);
 
             _enemiesLvl2.Add(
@@ -95,7 +97,7 @@ public class EnemySpawnManager : MonoBehaviour {
             _enemiesLvl2[i].transform.position = _initialPosition;
         }
 
-        for (int i = 0; i < _numberOfEnemies; i++) {
+        for (int i = 0; i < numberOfEnemies; i++) {
             _initialPosition = new Vector3(PositionX, PositionY, 0f);
 
             _enemiesLvl3.Add(

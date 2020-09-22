@@ -9,9 +9,10 @@ public class UIKillCounter : MonoBehaviour {
 
     private void Awake(){
         _killCounter = GetComponent<TextMeshProUGUI>();
-        _killCountString = _killCounter.text;
         _playerController = FindObjectOfType<PlayerController>();
         _playerData = _playerController.playerData;
+        _killCountString = "Kills: " + _playerController.killCounter + "\nHighscore: " + _playerData.highScore;
+        _killCounter.text = _killCountString;
     }
 
     private void OnGUI(){

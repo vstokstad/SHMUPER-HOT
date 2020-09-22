@@ -21,14 +21,11 @@ public class EnemyController : MonoBehaviour {
         _level = enemyData.enemyLevel;
     }
 
-    private void Update(){
-        Vector3 direction = _playerTransform.position - transform.position;
-        _rigidBody.rotation = Quaternion.Euler(direction.x, direction.y, 0f);
-        direction.Normalize();
-        _direction = direction;
-    }
-
     private void FixedUpdate(){
+        Vector3 direction = _playerTransform.position - transform.position;
+        _direction = direction;
+        _rigidBody.rotation = Quaternion.Euler(_direction.x, _direction.y, 0f);
+        _direction.Normalize();
         Move(_direction);
     }
 
@@ -47,9 +44,9 @@ public class EnemyController : MonoBehaviour {
     private void Move(Vector3 direction){
         float speedAdjust = Vector3.Distance(_playerTransform.position, transform.position);
 
-        if (_level < 2f) direction.y = Mathf.Sin(speedAdjust * Mathf.PI);
+        if (_level < 2f) direction.y = Mathf.Sin(direction.y * (Mathf.PI * Time.fixedDeltaTime));
 
-        if (_level >= 3) _rigidBody.rotation = Random.rotationUniform;
+        if (_level >= 3) _rigidBody.rotation = Random.rotationUniform.normalized;
         _rigidBody.AddForce(direction * (speedAdjust + _moveSpeed * Time.fixedDeltaTime), ForceMode.Acceleration);
     }
 

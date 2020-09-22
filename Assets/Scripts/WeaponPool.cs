@@ -52,6 +52,7 @@ public class WeaponPool : MonoBehaviour {
     }
 
     public void ReturnToPool(WeaponType weaponType, GameObject shot){
+       
         switch (weaponType) {
             case WeaponType.Plasma:
                 _plasmaQueue.Enqueue(shot);
@@ -60,6 +61,7 @@ public class WeaponPool : MonoBehaviour {
                 _laserQueue.Enqueue(shot);
                 break;
             case WeaponType.Missile:
+                shot.GetComponent<Rigidbody>().velocity = Vector3.zero;
                 _missileQueue.Enqueue(shot);
                 break;
             default:

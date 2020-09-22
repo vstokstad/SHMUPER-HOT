@@ -10,10 +10,11 @@ public enum WeaponType {
 }
 
 public class WeaponController : MonoBehaviour {
+    [SerializeField] public bool debugMode;
     [NonSerialized] public static WeaponType weaponType;
-    [NonSerialized] public static bool laserEquipped;
-    [NonSerialized] public static bool plasmaEquipped;
-    [NonSerialized] public static bool missileEquipped;
+    public static bool laserEquipped;
+    public static bool plasmaEquipped;
+    public static bool missileEquipped;
     private WeaponManager.IWeapon _iWeapon;
     [NonSerialized] public bool fireInput;
     [NonSerialized] public bool nextWeaponInput;
@@ -44,6 +45,13 @@ public class WeaponController : MonoBehaviour {
     }
 
     public void HandleWeaponType(WeaponType weaponChoice){
+#if DEBUG
+        if (debugMode) {
+            plasmaEquipped = true;
+            laserEquipped = true;
+            missileEquipped = true;
+        }
+#endif
         Component c = GetComponent<WeaponManager.IWeapon>() as Component;
 
         if (c != null) Destroy(c);
