@@ -29,7 +29,6 @@ public class SpaceJunkController : MonoBehaviour {
     private void FixedUpdate(){
         _rigidbody.angularVelocity = _angularVelocity * (_speed * Time.fixedDeltaTime);
         _velocity.y = Mathf.Sin(_velocity.y * Mathf.PI * Time.fixedDeltaTime);
-        _velocity.x = _velocity.x;
         _rigidbody.velocity = _velocity * (_speed * Time.fixedDeltaTime);
     }
 
