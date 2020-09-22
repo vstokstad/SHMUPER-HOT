@@ -28,50 +28,50 @@ namespace TMPro {
 
 
         /// <summary>
-        /// Event delegate triggered when pointer is over a character.
+        ///     Event delegate triggered when pointer is over a character.
         /// </summary>
         public CharacterSelectionEvent onCharacterSelection {
-            get { return m_OnCharacterSelection; }
-            set { m_OnCharacterSelection = value; }
+            get => m_OnCharacterSelection;
+            set => m_OnCharacterSelection = value;
         }
 
 
         /// <summary>
-        /// Event delegate triggered when pointer is over a sprite.
+        ///     Event delegate triggered when pointer is over a sprite.
         /// </summary>
         public SpriteSelectionEvent onSpriteSelection {
-            get { return m_OnSpriteSelection; }
-            set { m_OnSpriteSelection = value; }
+            get => m_OnSpriteSelection;
+            set => m_OnSpriteSelection = value;
         }
 
 
         /// <summary>
-        /// Event delegate triggered when pointer is over a word.
+        ///     Event delegate triggered when pointer is over a word.
         /// </summary>
         public WordSelectionEvent onWordSelection {
-            get { return m_OnWordSelection; }
-            set { m_OnWordSelection = value; }
+            get => m_OnWordSelection;
+            set => m_OnWordSelection = value;
         }
 
 
         /// <summary>
-        /// Event delegate triggered when pointer is over a line.
+        ///     Event delegate triggered when pointer is over a line.
         /// </summary>
         public LineSelectionEvent onLineSelection {
-            get { return m_OnLineSelection; }
-            set { m_OnLineSelection = value; }
+            get => m_OnLineSelection;
+            set => m_OnLineSelection = value;
         }
 
 
         /// <summary>
-        /// Event delegate triggered when pointer is over a link.
+        ///     Event delegate triggered when pointer is over a link.
         /// </summary>
         public LinkSelectionEvent onLinkSelection {
-            get { return m_OnLinkSelection; }
-            set { m_OnLinkSelection = value; }
+            get => m_OnLinkSelection;
+            set => m_OnLinkSelection = value;
         }
 
-        void Awake(){
+        private void Awake(){
             // Get a reference to the text component.
             m_TextComponent = gameObject.GetComponent<TMP_Text>();
 
@@ -91,7 +91,7 @@ namespace TMPro {
         }
 
 
-        void LateUpdate(){
+        private void LateUpdate(){
             if (TMP_TextUtilities.IsIntersectingRectTransform(m_TextComponent.rectTransform, Input.mousePosition,
                 m_Camera)) {
                 #region Example of Character or Sprite Selection
@@ -145,9 +145,8 @@ namespace TMPro {
                     char[] buffer = new char[lineInfo.characterCount];
                     for (int i = 0;
                         i < lineInfo.characterCount && i < m_TextComponent.textInfo.characterInfo.Length;
-                        i++) {
+                        i++)
                         buffer[i] = m_TextComponent.textInfo.characterInfo[i + lineInfo.firstCharacterIndex].character;
-                    }
 
                     string lineText = new string(buffer);
                     SendOnLineSelection(lineText, lineInfo.firstCharacterIndex, lineInfo.characterCount);

@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System.Collections.Generic;
+using UnityEngine;
 using static TagsAsStrings;
 
 public class SpaceJunkController : MonoBehaviour {
@@ -8,6 +9,7 @@ public class SpaceJunkController : MonoBehaviour {
     private Rigidbody _rigidbody;
     private Quaternion _rotation;
     private float _scale;
+    private List<GameObject> _spaceJunkList;
     private float _speed;
     private Vector3 _velocity;
 
@@ -19,13 +21,15 @@ public class SpaceJunkController : MonoBehaviour {
         _initialPosition = new Vector3(GameManager.CameraBounds.x + 2f, Random.Range(-8f, GameManager.CameraBounds.y));
         _rigidbody = GetComponent<Rigidbody>();
         _angularVelocity = new Vector3(Random.Range(-10f, 10f), Random.Range(-10f, 10f));
-        _velocity = new Vector3(Random.Range(-2f, -10f), Mathf.Sin(Random.Range(-2f, 2f)));
+        _velocity = new Vector3(Random.Range(-2f, -20f), Mathf.Sin(Random.Range(-2f, 2f)));
         transform.localScale = new Vector3(_scale, _scale, _scale);
+        _spaceJunkList = FindObjectOfType<SpaceJunkManager>()._spaceJunkList;
     }
 
     private void FixedUpdate(){
         _rigidbody.angularVelocity = _angularVelocity * (_speed * Time.fixedDeltaTime);
-        _velocity.y = Mathf.Sin(Mathf.PI * Time.fixedDeltaTime);
+        _velocity.y = Mathf.Sin(_velocity.y * Mathf.PI * Time.fixedDeltaTime);
+        _velocity.x = _velocity.x;
         _rigidbody.velocity = _velocity * (_speed * Time.fixedDeltaTime);
     }
 
@@ -46,11 +50,8 @@ public class SpaceJunkController : MonoBehaviour {
         gameObject.SetActive(false);
     }
 
-    private void OnCollisionEnter(Collision other){
-        if (other.gameObject.CompareTag(shotTag)) {
-            GameObject capsule = GameObject.CreatePrimitive(PrimitiveType.Capsule);
-            capsule.transform.position = other.GetContact(0).point;
-            capsule.transform.localScale = new Vector3(1f, 1f, 1f);
-        }
+    private void OnTriggerEnter(Collider other){
+        if (!other.CompareTag(shotTag)) return;
+        other.gameObject.SetActive(false);
     }
 }

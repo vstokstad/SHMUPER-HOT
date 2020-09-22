@@ -24,4 +24,8 @@ public class PlayerInput : MonoBehaviour {
 
         _weaponController.nextWeaponInput = Input.GetButtonDown("Weapon Cycle");
     }
+
+    private void OnDisable(){
+        gameObject.SetActive(false);
+    }
 }

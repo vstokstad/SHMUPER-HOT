@@ -21,7 +21,7 @@ public class PlayerData : ScriptableObject {
 
     public bool ShieldIsLoaded {
         get => _shieldBubble.activeSelf;
-        set => _shieldBubble.SetActive(value);
+        set => _shieldBubble?.SetActive(value);
     }
 
     private void OnEnable(){

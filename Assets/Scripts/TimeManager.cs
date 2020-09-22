@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 
 public enum TimeState {
     Stopped = 0,
@@ -10,20 +11,20 @@ public class TimeManager : MonoBehaviour {
     private readonly float _normalTime = 1.0f;
     private readonly float _stoppedTime = 0.0f;
     private float _fixedDeltaTime;
-    private TimeState _timeState;
+    [NonSerialized] public TimeState timeState;
 
     private void Awake(){
         _fixedDeltaTime = Time.fixedUnscaledDeltaTime;
     }
 
     private void Update(){
-        if (Input.anyKey) _timeState = TimeState.Normal;
-        else if (!Input.anyKey) _timeState = TimeState.Stopped;
+        if (Input.anyKey) timeState = TimeState.Normal;
+        else if (!Input.anyKey) timeState = TimeState.Stopped;
         TimeShift();
     }
 
     private void TimeShift(){
-        switch (_timeState) {
+        switch (timeState) {
             case TimeState.Stopped:
                 Time.timeScale = Mathf.Lerp(Time.timeScale, _stoppedTime,
                     timeChangeRate * Time.unscaledDeltaTime);

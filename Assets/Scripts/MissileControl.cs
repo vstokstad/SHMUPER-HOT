@@ -6,6 +6,7 @@ public class MissileControl : MonoBehaviour {
     private readonly float _speed = 10f;
     private Vector3 _moveDirection;
     private Rigidbody _rigidBody;
+    private AudioSource audioSource;
 
 
     private void Awake(){
@@ -16,15 +17,17 @@ public class MissileControl : MonoBehaviour {
     private void FixedUpdate(){
         SearchForEnemy();
         _rigidBody.AddForce(_moveDirection * (_speed * Time.fixedDeltaTime), ForceMode.Force);
-        _rigidBody.rotation = Quaternion.Euler(_moveDirection.x, _moveDirection.y, _moveDirection.z);
-        transform.rotation = _rigidBody.rotation;
+        Quaternion rotation = Quaternion.Euler(_moveDirection.x, _moveDirection.y, _moveDirection.z);
+        _rigidBody.MoveRotation(rotation);
+
+        audioSource.panStereo = transform.position.normalized.x;
     }
 
     private void OnEnable(){
         _rigidBody = GetComponent<Rigidbody>();
-
         gameObject.SetActive(true);
-        _moveDirection = Vector3.right * 10f;
+        _moveDirection = transform.position * 1.1f;
+        audioSource = GetComponent<AudioSource>();
     }
 
     private void OnDisable(){
@@ -43,7 +46,7 @@ public class MissileControl : MonoBehaviour {
 
     private void SearchForEnemy(){
         Collider[] hitColliders = new Collider[10];
-        int numColliders = Physics.OverlapSphereNonAlloc(transform.position, 20f, hitColliders);
+        int numColliders = Physics.OverlapSphereNonAlloc(transform.position, 10f, hitColliders);
         for (int i = 0; i < numColliders; i++) {
             if (!hitColliders[i].CompareTag(enemyTag)) continue;
             Vector3 enemyPos = hitColliders[i].attachedRigidbody.position;

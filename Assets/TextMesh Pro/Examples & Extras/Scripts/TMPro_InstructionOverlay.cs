@@ -7,7 +7,7 @@ namespace TMPro.Examples {
             BottomLeft,
             TopRight,
             BottomRight
-        };
+        }
 
         private const string instructions =
             "Camera Control - <#ffff00>Shift + RMB\n</color>Zoom - <#ffff00>Mouse wheel.";
@@ -21,7 +21,7 @@ namespace TMPro.Examples {
 
         //private FpsCounterAnchorPositions last_AnchorPosition;
 
-        void Awake(){
+        private void Awake(){
             if (!enabled)
                 return;
 
@@ -50,7 +50,7 @@ namespace TMPro.Examples {
         }
 
 
-        void Set_FrameCounter_Position(FpsCounterAnchorPositions anchor_position){
+        private void Set_FrameCounter_Position(FpsCounterAnchorPositions anchor_position){
             switch (anchor_position) {
                 case FpsCounterAnchorPositions.TopLeft:
                     //m_TextMeshPro.anchor = AnchorPositions.TopLeft;

@@ -6,7 +6,7 @@ namespace TMPro.Examples {
         private const string label01 = "The <#0050FF>count is: </color>{0}";
         private const string label02 = "The <color=#0050FF>count is: </color>";
 
-        public int BenchmarkType = 0;
+        public int BenchmarkType;
 
         public TMP_FontAsset TMProFont;
         public Font TextMeshFont;
@@ -22,7 +22,7 @@ namespace TMPro.Examples {
         private TextMeshPro m_textMeshPro;
 
 
-        IEnumerator Start(){
+        private IEnumerator Start(){
             if (BenchmarkType == 0) // TextMesh Pro Component
             {
                 m_textMeshPro = gameObject.AddComponent<TextMeshPro>();
@@ -82,8 +82,9 @@ namespace TMPro.Examples {
                             ? m_textMeshPro.fontSharedMaterial = m_material02
                             : m_textMeshPro.fontSharedMaterial = m_material01;
                 }
-                else if (BenchmarkType == 1)
-                    m_textMesh.text = label02 + (i % 1000).ToString();
+                else if (BenchmarkType == 1) {
+                    m_textMesh.text = label02 + (i % 1000);
+                }
 
                 yield return null;
             }

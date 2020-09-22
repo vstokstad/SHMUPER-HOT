@@ -7,7 +7,7 @@ namespace TMPro.Examples {
         private const string label01 = "The <#0050FF>count is: </color>";
         private const string label02 = "The <color=#0050FF>count is: </color>";
 
-        public int BenchmarkType = 0;
+        public int BenchmarkType;
 
         public Canvas canvas;
         public TMP_FontAsset TMProFont;
@@ -29,7 +29,7 @@ namespace TMPro.Examples {
         private TextMeshProUGUI m_textMeshPro;
 
 
-        IEnumerator Start(){
+        private IEnumerator Start(){
             if (BenchmarkType == 0) // TextMesh Pro Component
             {
                 m_textMeshPro = gameObject.AddComponent<TextMeshProUGUI>();
@@ -70,10 +70,6 @@ namespace TMPro.Examples {
                     m_textMesh.font = TextMeshFont;
                     //m_textMesh.renderer.sharedMaterial = m_textMesh.font.material;
                 }
-                else {
-                    //m_textMesh.font = Resources.Load("Fonts/ARIAL", typeof(Font)) as Font;
-                    //m_textMesh.renderer.sharedMaterial = m_textMesh.font.material;
-                }
 
                 m_textMesh.fontSize = 48;
                 m_textMesh.alignment = TextAnchor.MiddleCenter;
@@ -84,14 +80,15 @@ namespace TMPro.Examples {
 
             for (int i = 0; i <= 1000000; i++) {
                 if (BenchmarkType == 0) {
-                    m_textMeshPro.text = label01 + (i % 1000);
+                    m_textMeshPro.text = label01 + i % 1000;
                     if (i % 1000 == 999)
                         m_textMeshPro.fontSharedMaterial = m_textMeshPro.fontSharedMaterial == m_material01
                             ? m_textMeshPro.fontSharedMaterial = m_material02
                             : m_textMeshPro.fontSharedMaterial = m_material01;
                 }
-                else if (BenchmarkType == 1)
-                    m_textMesh.text = label02 + (i % 1000).ToString();
+                else if (BenchmarkType == 1) {
+                    m_textMesh.text = label02 + (i % 1000);
+                }
 
                 yield return null;
             }

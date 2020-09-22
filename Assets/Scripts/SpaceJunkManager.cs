@@ -3,9 +3,9 @@ using UnityEngine;
 using static TagsAsStrings;
 
 public class SpaceJunkManager : MonoBehaviour {
-    private readonly int _numberOfSpaceJunk = 10;
-    private List<GameObject> _spaceJunkList;
-    private float _spawnTimer = 2f;
+    private readonly int _numberOfSpaceJunk = 15;
+    internal List<GameObject> _spaceJunkList;
+    private float _spawnTimer;
 
     private void Awake(){
         _spaceJunkList = new List<GameObject>(_numberOfSpaceJunk);
@@ -23,7 +23,7 @@ public class SpaceJunkManager : MonoBehaviour {
                 for (int i = 0; i < _spaceJunkList.Count - 1; i++) {
                     if (_spaceJunkList[i].activeSelf) continue;
                     _spaceJunkList[i].gameObject.SetActive(true);
-                    _spawnTimer = 2;
+                    _spawnTimer = 1.5f;
                     break;
                 }
     }

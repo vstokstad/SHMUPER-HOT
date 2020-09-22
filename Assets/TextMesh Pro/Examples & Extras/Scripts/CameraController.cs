@@ -23,14 +23,14 @@ namespace TMPro.Examples {
 
         public float ElevationAngle = 30.0f;
         public float MaxElevationAngle = 85.0f;
-        public float MinElevationAngle = 0f;
+        public float MinElevationAngle;
 
-        public float OrbitalAngle = 0f;
+        public float OrbitalAngle;
 
         public CameraModes CameraMode = CameraModes.Follow;
 
         public bool MovementSmoothing = true;
-        public bool RotationSmoothing = false;
+        public bool RotationSmoothing;
 
         public float MovementSmoothingValue = 25f;
         public float RotationSmoothingValue = 5.0f;
@@ -49,7 +49,7 @@ namespace TMPro.Examples {
         private bool previousSmoothing;
 
 
-        void Awake(){
+        private void Awake(){
             if (QualitySettings.vSyncCount > 0)
                 Application.targetFrameRate = 60;
             else
@@ -64,7 +64,7 @@ namespace TMPro.Examples {
 
 
         // Use this for initialization
-        void Start(){
+        private void Start(){
             if (CameraTarget == null) {
                 // If we don't have a target (assigned by the player, create a dummy in the center of the scene).
                 dummyTarget = new GameObject("Camera Target").transform;
@@ -73,7 +73,7 @@ namespace TMPro.Examples {
         }
 
         // Update is called once per frame
-        void LateUpdate(){
+        private void LateUpdate(){
             GetPlayerInput();
 
 
@@ -85,35 +85,29 @@ namespace TMPro.Examples {
                 }
                 else if (CameraMode == CameraModes.Follow) {
                     desiredPosition = CameraTarget.position + CameraTarget.TransformDirection(
-                        Quaternion.Euler(ElevationAngle, OrbitalAngle, 0f) * (new Vector3(0, 0, -FollowDistance)));
-                }
-                else {
-                    // Free Camera implementation
+                        Quaternion.Euler(ElevationAngle, OrbitalAngle, 0f) * new Vector3(0, 0, -FollowDistance));
                 }
 
-                if (MovementSmoothing == true) {
+                if (MovementSmoothing)
                     // Using Smoothing
                     cameraTransform.position = Vector3.SmoothDamp(cameraTransform.position, desiredPosition,
                         ref currentVelocity, MovementSmoothingValue * Time.fixedDeltaTime);
-                    //cameraTransform.position = Vector3.Lerp(cameraTransform.position, desiredPosition, Time.deltaTime * 5.0f);
-                }
-                else {
+                //cameraTransform.position = Vector3.Lerp(cameraTransform.position, desiredPosition, Time.deltaTime * 5.0f);
+                else
                     // Not using Smoothing
                     cameraTransform.position = desiredPosition;
-                }
 
-                if (RotationSmoothing == true)
+                if (RotationSmoothing)
                     cameraTransform.rotation = Quaternion.Lerp(cameraTransform.rotation,
                         Quaternion.LookRotation(CameraTarget.position - cameraTransform.position),
                         RotationSmoothingValue * Time.deltaTime);
-                else {
+                else
                     cameraTransform.LookAt(CameraTarget);
-                }
             }
         }
 
 
-        void GetPlayerInput(){
+        private void GetPlayerInput(){
             moveVector = Vector3.zero;
 
             // Check Mouse Wheel Input prior to Shift Key so we can apply multiplier on Shift for Scrolling
@@ -181,7 +175,7 @@ namespace TMPro.Examples {
                     Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
                     RaycastHit hit;
 
-                    if (Physics.Raycast(ray, out hit, 300, 1 << 10 | 1 << 11 | 1 << 12 | 1 << 14)) {
+                    if (Physics.Raycast(ray, out hit, 300, (1 << 10) | (1 << 11) | (1 << 12) | (1 << 14))) {
                         if (hit.transform == CameraTarget) {
                             // Reset Follow Position
                             OrbitalAngle = 0;

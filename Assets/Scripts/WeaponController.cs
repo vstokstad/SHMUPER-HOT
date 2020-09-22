@@ -28,15 +28,14 @@ public class WeaponController : MonoBehaviour {
 
     private void Update(){
         if (fireInput) Fire();
-        if (nextWeaponInput) {
-            if (weaponType == Missile) {
-                weaponType = Plasma;
-                HandleWeaponType(weaponType);
-            }
-            else {
-                weaponType += 1;
-                HandleWeaponType(weaponType);
-            }
+        if (!nextWeaponInput) return;
+        if (weaponType == Missile) {
+            weaponType = Plasma;
+            HandleWeaponType(weaponType);
+        }
+        else {
+            weaponType += 1;
+            HandleWeaponType(weaponType);
         }
     }
 

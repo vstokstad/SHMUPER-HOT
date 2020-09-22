@@ -2,14 +2,14 @@ using UnityEngine;
 
 namespace TMPro.Examples {
     public class Benchmark02 : MonoBehaviour {
-        public int SpawnType = 0;
+        public int SpawnType;
         public int NumberOfNPC = 12;
 
         private TextMeshProFloatingText floatingText_Script;
 
 
-        void Start(){
-            for (int i = 0; i < NumberOfNPC; i++) {
+        private void Start(){
+            for (int i = 0; i < NumberOfNPC; i++)
                 if (SpawnType == 0) {
                     // TextMesh Pro Implementation
                     GameObject go = new GameObject();
@@ -72,7 +72,6 @@ namespace TMPro.Examples {
                     floatingText_Script = go.AddComponent<TextMeshProFloatingText>();
                     floatingText_Script.SpawnType = 0;
                 }
-            }
         }
     }
 }

@@ -13,17 +13,17 @@ namespace TMPro.Examples {
         private Vector3 m_initial_Rotation;
         private Vector3 m_initial_Position;
         private Color32 m_lightColor;
-        private int frames = 0;
+        private int frames;
 
         public enum MotionType {
             Rotation,
             BackAndForth,
             Translation
-        };
+        }
 
         public MotionType Motion;
 
-        void Awake(){
+        private void Awake(){
             m_transform = transform;
             m_initial_Rotation = m_transform.rotation.eulerAngles;
             m_initial_Position = m_transform.position;
@@ -34,7 +34,7 @@ namespace TMPro.Examples {
 
 
         // Update is called once per frame
-        void Update(){
+        private void Update(){
             if (Motion == MotionType.Rotation) {
                 m_transform.Rotate(0, SpinSpeed * Time.deltaTime, 0);
             }

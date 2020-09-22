@@ -7,8 +7,8 @@ namespace TMPro.Examples {
 
         public int SpawnType;
 
-        Vector3 lastPOS = Vector3.zero;
-        Quaternion lastRotation = Quaternion.identity;
+        private Vector3 lastPOS = Vector3.zero;
+        private Quaternion lastRotation = Quaternion.identity;
         private Transform m_cameraTransform;
 
         private GameObject m_floatingText;
@@ -20,9 +20,9 @@ namespace TMPro.Examples {
 
         //private int m_frame = 0;
 
-        void Awake(){
+        private void Awake(){
             m_transform = transform;
-            m_floatingText = new GameObject(this.name + " floating text");
+            m_floatingText = new GameObject(name + " floating text");
 
             // Reference to Transform is lost when TMP component is added since it replaces it by a RectTransform.
             //m_floatingText_Transform = m_floatingText.transform;
@@ -31,7 +31,7 @@ namespace TMPro.Examples {
             m_cameraTransform = Camera.main.transform;
         }
 
-        void Start(){
+        private void Start(){
             if (SpawnType == 0) {
                 // TextMesh Pro Implementation
                 m_textMeshPro = m_floatingText.AddComponent<TextMeshPro>();
@@ -104,12 +104,11 @@ namespace TMPro.Examples {
             float fadeDuration = 3 / starting_Count * CountDuration;
 
             while (current_Count > 0) {
-                current_Count -= (Time.deltaTime / CountDuration) * starting_Count;
+                current_Count -= Time.deltaTime / CountDuration * starting_Count;
 
-                if (current_Count <= 3) {
+                if (current_Count <= 3)
                     //Debug.Log("Fading Counter ... " + current_Count.ToString("f2"));
-                    alpha = Mathf.Clamp(alpha - (Time.deltaTime / fadeDuration) * 255, 0, 255);
-                }
+                    alpha = Mathf.Clamp(alpha - Time.deltaTime / fadeDuration * 255, 0, 255);
 
                 int_counter = (int) current_Count;
                 m_textMeshPro.text = int_counter.ToString();
@@ -156,12 +155,11 @@ namespace TMPro.Examples {
             float fadeDuration = 3 / starting_Count * CountDuration;
 
             while (current_Count > 0) {
-                current_Count -= (Time.deltaTime / CountDuration) * starting_Count;
+                current_Count -= Time.deltaTime / CountDuration * starting_Count;
 
-                if (current_Count <= 3) {
+                if (current_Count <= 3)
                     //Debug.Log("Fading Counter ... " + current_Count.ToString("f2"));
-                    alpha = Mathf.Clamp(alpha - (Time.deltaTime / fadeDuration) * 255, 0, 255);
-                }
+                    alpha = Mathf.Clamp(alpha - Time.deltaTime / fadeDuration * 255, 0, 255);
 
                 int_counter = (int) current_Count;
                 m_textMesh.text = int_counter.ToString();

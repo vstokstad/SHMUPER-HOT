@@ -11,6 +11,7 @@ public class UIBoostBar : MonoBehaviour {
     }
 
     private void OnGUI(){
+        _slider.value *= Time.deltaTime;
         _slider.value = PlayerData.boostCharge;
     }
 }

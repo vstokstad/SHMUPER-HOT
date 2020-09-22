@@ -19,8 +19,8 @@ public class MissilePickUp : MonoBehaviour {
 
     private void OnTriggerEnter(Collider other){
         if (!other.CompareTag(playerTag)) return;
-        WeaponController.laserEquipped = true;
-        WeaponController.weaponType = WeaponType.Laser;
+        WeaponController.missileEquipped = true;
+        WeaponController.weaponType = WeaponType.Missile;
         onPickUp.Invoke();
         gameObject.SetActive(false);
     }

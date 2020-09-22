@@ -13,12 +13,12 @@ namespace TMPro.Examples {
 
         private TMP_Text m_TextComponent;
 
-        void Awake(){
+        private void Awake(){
             m_TextComponent = gameObject.GetComponent<TMP_Text>();
         }
 
 
-        void Start(){
+        private void Start(){
             StartCoroutine(WarpText());
         }
 
@@ -33,11 +33,11 @@ namespace TMPro.Examples {
 
 
         /// <summary>
-        ///  Method to curve text along a Unity animation curve.
+        ///     Method to curve text along a Unity animation curve.
         /// </summary>
         /// <param name="textComponent"></param>
         /// <returns></returns>
-        IEnumerator WarpText(){
+        private IEnumerator WarpText(){
             VertexCurve.preWrapMode = WrapMode.Clamp;
             VertexCurve.postWrapMode = WrapMode.Clamp;
 

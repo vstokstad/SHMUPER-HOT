@@ -11,6 +11,8 @@ TagManager:
   - Nebula
   - WeaponManager
   - SpaceJunk
+  - Laser
+  - Missile
   layers:
   - Default
   - TransparentFX

@@ -6,14 +6,16 @@ public class WeaponPool : MonoBehaviour {
     [SerializeField] private GameObject plasmaPrefab;
     [SerializeField] private GameObject laserPrefab;
     [SerializeField] private GameObject missilePrefab;
-    private readonly Queue<GameObject> _laserQueue = new Queue<GameObject>(15);
-    private readonly Queue<GameObject> _missileQueue = new Queue<GameObject>(15);
-    private readonly Queue<GameObject> _plasmaQueue = new Queue<GameObject>(15);
+    private readonly Queue<GameObject> _laserQueue = new Queue<GameObject>(5);
+    private readonly Queue<GameObject> _missileQueue = new Queue<GameObject>(20);
+    private readonly Queue<GameObject> _plasmaQueue = new Queue<GameObject>(20);
     public static WeaponPool Instance { get; private set; }
 
     private void Awake(){
         Instance = this;
-        AddWeapon(_plasmaQueue, plasmaPrefab, 5);
+        AddWeapon(_plasmaQueue, plasmaPrefab, 10);
+        AddWeapon(_laserQueue, laserPrefab, 1);
+        AddWeapon(_missileQueue, missilePrefab, 10);
     }
 
     public GameObject Get(WeaponType currentWeapon){

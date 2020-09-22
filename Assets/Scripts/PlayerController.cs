@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.Events;
 using static TagsAsStrings;
 
 [RequireComponent(typeof(PlayerInput), typeof(PlayerMovement), typeof(PlayerBoundaries))]
@@ -8,6 +9,7 @@ public class PlayerController : MonoBehaviour {
     [SerializeField] public PlayerData playerData;
     public float killCounter;
     public WeaponPickUpManager weaponPickUpManager;
+    public UnityEvent gameOverEvent = new UnityEvent();
     private Rigidbody _playerRigidbody;
 
     private void Awake(){
@@ -38,8 +40,9 @@ public class PlayerController : MonoBehaviour {
     }
 
 
-    private static void TakeDamage(float playerHealth, float damage){
+    private void TakeDamage(float playerHealth, float damage){
         playerHealth -= damage;
         PlayerData.health = playerHealth;
+        if (PlayerData.health <= 0f) gameOverEvent.Invoke();
     }
 }

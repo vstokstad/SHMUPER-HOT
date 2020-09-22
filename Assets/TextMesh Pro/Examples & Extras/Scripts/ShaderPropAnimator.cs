@@ -10,7 +10,7 @@ namespace TMPro.Examples {
 
         private Renderer m_Renderer;
 
-        void Awake(){
+        private void Awake(){
             // Cache a reference to object's renderer
             m_Renderer = GetComponent<Renderer>();
 
@@ -18,11 +18,11 @@ namespace TMPro.Examples {
             m_Material = m_Renderer.material;
         }
 
-        void Start(){
+        private void Start(){
             StartCoroutine(AnimateProperties());
         }
 
-        IEnumerator AnimateProperties(){
+        private IEnumerator AnimateProperties(){
             //float lightAngle;
             float glowPower;
             m_frame = Random.Range(0f, 1f);

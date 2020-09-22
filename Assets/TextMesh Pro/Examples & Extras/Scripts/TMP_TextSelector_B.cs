@@ -28,7 +28,7 @@ namespace TMPro.Examples {
         private RectTransform m_TextPopup_RectTransform;
         private TextMeshProUGUI m_TextPopup_TMPComponent;
 
-        void Awake(){
+        private void Awake(){
             m_TextMeshPro = gameObject.GetComponent<TextMeshProUGUI>();
 
 
@@ -41,14 +41,14 @@ namespace TMPro.Examples {
                 m_Camera = m_Canvas.worldCamera;
 
             // Create pop-up text object which is used to show the link information.
-            m_TextPopup_RectTransform = Instantiate(TextPopup_Prefab_01) as RectTransform;
+            m_TextPopup_RectTransform = Instantiate(TextPopup_Prefab_01);
             m_TextPopup_RectTransform.SetParent(m_Canvas.transform, false);
             m_TextPopup_TMPComponent = m_TextPopup_RectTransform.GetComponentInChildren<TextMeshProUGUI>();
             m_TextPopup_RectTransform.gameObject.SetActive(false);
         }
 
 
-        void LateUpdate(){
+        private void LateUpdate(){
             if (isHoveringObject) {
                 // Check if Mouse Intersects any of the characters. If so, assign a random color.
 
@@ -213,7 +213,7 @@ namespace TMPro.Examples {
                 int linkIndex = TMP_TextUtilities.FindIntersectingLink(m_TextMeshPro, Input.mousePosition, m_Camera);
 
                 // Clear previous link selection if one existed.
-                if ((linkIndex == -1 && m_selectedLink != -1) || linkIndex != m_selectedLink) {
+                if (linkIndex == -1 && m_selectedLink != -1 || linkIndex != m_selectedLink) {
                     m_TextPopup_RectTransform.gameObject.SetActive(false);
                     m_selectedLink = -1;
                 }
@@ -256,12 +256,12 @@ namespace TMPro.Examples {
         }
 
 
-        void OnEnable(){
+        private void OnEnable(){
             // Subscribe to event fired when text object has been regenerated.
             TMPro_EventManager.TEXT_CHANGED_EVENT.Add(ON_TEXT_CHANGED);
         }
 
-        void OnDisable(){
+        private void OnDisable(){
             // UnSubscribe to event fired when text object has been regenerated.
             TMPro_EventManager.TEXT_CHANGED_EVENT.Remove(ON_TEXT_CHANGED);
         }
@@ -433,15 +433,14 @@ namespace TMPro.Examples {
         }
 
 
-        void ON_TEXT_CHANGED(Object obj){
-            if (obj == m_TextMeshPro) {
+        private void ON_TEXT_CHANGED(Object obj){
+            if (obj == m_TextMeshPro)
                 // Update cached vertex data.
                 m_cachedMeshInfoVertexData = m_TextMeshPro.textInfo.CopyMeshInfoVertexData();
-            }
         }
 
 
-        void RestoreCachedVertexAttributes(int index){
+        private void RestoreCachedVertexAttributes(int index){
             if (index == -1 || index > m_TextMeshPro.textInfo.characterCount - 1) return;
 
             // Get the index of the material / sub text object used by this character.

@@ -39,14 +39,13 @@ public class LaserControl : MonoBehaviour {
         GameObject o = gameObject;
         o.transform.localScale = _laserScale;
         _laserIsOn = false;
-        WeaponPool.Instance.ReturnToPool(WeaponType.Laser, shot: o);
+        WeaponPool.Instance.ReturnToPool(WeaponType.Laser, o);
     }
 
     private void OnTriggerStay(Collider other){
-        if (other.gameObject.CompareTag(spaceJunkTag)) {
-            _laserScale -= other.ClosestPointOnBounds(default);
-            other.transform.localScale -= Vector3.one * Time.deltaTime;
-        }
+        if (other.gameObject.CompareTag(spaceJunkTag))
+            if (other.transform.localScale.magnitude > 0.5f)
+                other.transform.localScale -= Vector3.one * Time.deltaTime;
 
         if (!other.gameObject.CompareTag(enemyTag)) return;
         other.GetComponent<EnemyController>().TakeDamage(_laserDamage);

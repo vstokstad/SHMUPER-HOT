@@ -28,6 +28,7 @@
             </e>
           </e>
         </e>
+        <e p="GameOverScript.cs" t="Include" />
         <e p="Material" t="Include">
           <e p="Plasma_S.shader" t="Include" />
         </e>

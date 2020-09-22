@@ -11,7 +11,7 @@ namespace TMPro.Examples {
         private int m_selectedLink = -1;
         private TextMeshPro m_TextMeshPro;
 
-        void Awake(){
+        private void Awake(){
             m_TextMeshPro = gameObject.GetComponent<TextMeshPro>();
             m_Camera = Camera.main;
 
@@ -20,13 +20,11 @@ namespace TMPro.Examples {
         }
 
 
-        void LateUpdate(){
+        private void LateUpdate(){
             m_isHoveringObject = false;
 
             if (TMP_TextUtilities.IsIntersectingRectTransform(m_TextMeshPro.rectTransform, Input.mousePosition,
-                Camera.main)) {
-                m_isHoveringObject = true;
-            }
+                Camera.main)) m_isHoveringObject = true;
 
             if (m_isHoveringObject) {
                 #region Example of Character Selection
@@ -65,10 +63,9 @@ namespace TMPro.Examples {
                 int linkIndex = TMP_TextUtilities.FindIntersectingLink(m_TextMeshPro, Input.mousePosition, m_Camera);
 
                 // Clear previous link selection if one existed.
-                if ((linkIndex == -1 && m_selectedLink != -1) || linkIndex != m_selectedLink) {
+                if (linkIndex == -1 && m_selectedLink != -1 || linkIndex != m_selectedLink)
                     //m_TextPopup_RectTransform.gameObject.SetActive(false);
                     m_selectedLink = -1;
-                }
 
                 // Handle new Link selection.
                 if (linkIndex != -1 && linkIndex != m_selectedLink) {

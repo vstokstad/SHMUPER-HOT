@@ -50,109 +50,110 @@
     <ImplicitlyExpandNETStandardFacades>false</ImplicitlyExpandNETStandardFacades>
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
-  <ItemGroup>
-     <Compile Include="Assets\Scripts\BackgroundController.cs" />
-      <Compile Include="Assets\Scripts\TagsAsStrings.cs"/>
-     <Compile Include="Assets\Scripts\WeaponManager.cs" />
-      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_PhoneNumberValidator.cs"/>
-      <Compile Include="Assets\Scripts\PlayerMovement.cs"/>
-      <Compile Include="Assets\Scripts\LaserBeam.cs"/>
-      <Compile Include="Assets\Scripts\WeaponPickUpManager.cs"/>
-      <Compile Include="Assets\Scripts\PlayerBoundaries.cs"/>
-      <Compile Include="Assets\Scripts\UIBoostBar.cs"/>
-      <Compile Include="Assets\Scripts\TimeManager.cs"/>
-      <Compile Include="Assets\Scripts\PlayerInput.cs"/>
-      <Compile Include="Assets\Scripts\EnemySpawnManager.cs"/>
-      <Compile Include="Assets\Scripts\EnemyData.cs"/>
-      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark03.cs"/>
-      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\WarpTextExample.cs"/>
-      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextEventCheck.cs"/>
-      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextEventHandler.cs"/>
-      <Compile Include="Assets\Scripts\MissileControl.cs"/>
-      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs"/>
-      <Compile Include="Assets\Scripts\LaserPickUp.cs"/>
-      <Compile Include="Assets\Scripts\LaserControl.cs"/>
-      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\CameraController.cs"/>
-      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexJitter.cs"/>
-      <Compile Include="Assets\Scripts\GameManager.cs"/>
-      <Compile Include="Assets\Scripts\WeaponController.cs"/>
-      <Compile Include="Assets\Scripts\PlasmaPickUp.cs"/>
-      <Compile Include="Assets\Scripts\PlasmaShot.cs"/>
-      <Compile Include="Assets\Scripts\EnemyController.cs"/>
-      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\ChatController.cs"/>
-      <Compile Include="Assets\Scripts\PlasmaControl.cs"/>
-      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_ExampleScript_01.cs"/>
-      <Compile Include="Assets\Scripts\ShieldControl.cs"/>
-      <Compile Include="Assets\Scripts\MissilePickUp.cs"/>
-      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\ObjectSpin.cs"/>
-      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_DigitValidator.cs"/>
-      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\DropdownSample.cs"/>
-      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TextConsoleSimulator.cs"/>
-      <Compile Include="Assets\Scripts\UIKillCounter.cs"/>
-      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\ShaderPropAnimator.cs"/>
-      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextSelector_A.cs"/>
-      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\SimpleScript.cs"/>
-      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextInfoDebugTool.cs"/>
-      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_FrameRateCounter.cs"/>
-      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextSelector_B.cs"/>
-      <Compile Include="Assets\Scripts\SpaceJunkManager.cs"/>
-      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01_UGUI.cs"/>
-      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\SkewTextExample.cs"/>
-      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark04.cs"/>
-      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TextMeshSpawner.cs"/>
-      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexShakeB.cs"/>
-      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark02.cs"/>
-      <Compile Include="Assets\Scripts\HomingMissile.cs"/>
-      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_UiFrameRateCounter.cs"/>
-      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexColorCycler.cs"/>
-      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexZoom.cs"/>
-      <Compile Include="Assets\Scripts\UIControlInstructions.cs"/>
-      <Compile Include="Assets\Scripts\PlayerData.cs"/>
-      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMPro_InstructionOverlay.cs"/>
-      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TeleType.cs"/>
-      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TextMeshProFloatingText.cs"/>
-      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexShakeA.cs"/>
-      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\EnvMapAnimator.cs"/>
-      <Compile Include="Assets\Scripts\PlayerController.cs"/>
-      <Compile Include="Assets\Scripts\SpaceJunkController.cs"/>
-      <Compile Include="Assets\Scripts\UIHealthBar.cs"/>
-      <Compile Include="Assets\Scripts\WeaponPool.cs"/>
-      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc"/>
-      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader"/>
-      <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader"/>
-      <None Include="Assets\Downloads\SimplePixelUI\fonts\Font2\license.txt"/>
-      <None Include="Assets\TextMesh Pro\Examples &amp; Extras\Fonts\Oswald-Bold - OFL.txt"/>
-      <None Include="Assets\TextMesh Pro\Examples &amp; Extras\Fonts\Anton OFL.txt"/>
-      <None Include="Assets\TextMesh Pro\Shaders\TMPro_Mobile.cginc"/>
-      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF SSD.shader"/>
-      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface-Mobile.shader"/>
-      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface.shader"/>
-      <None Include="Assets\TextMesh Pro\Sprites\EmojiOne Attribution.txt"/>
-      <None Include="Assets\Downloads\SimplePixelUI\fonts\Font1\license.txt"/>
-      <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Custom-Atlas.shader"/>
-      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF.shader"/>
-      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile SSD.shader"/>
-      <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt"/>
-      <None Include="Assets\TextMesh Pro\Shaders\TMPro_Properties.cginc"/>
-      <None Include="Assets\TextMesh Pro\Shaders\TMPro_Surface.cginc"/>
-      <None Include="Assets\Downloads\2D Space Kit\Particles (Sprites)\Note on Flares.txt"/>
-      <None Include="Assets\Downloads\2D Space Kit\Backgrounds\Fantasy Purple 2048\Note.txt"/>
-      <None Include="Assets\Material\Plasma_S.shader"/>
-      <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt"/>
-      <None Include="Assets\Downloads\SimplePixelUI\fonts\Font1\readme.txt"/>
-      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Masking.shader"/>
-      <None Include="Assets\Downloads\SimplePixelUI\fonts\Font2\readme.txt"/>
-      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF Overlay.shader"/>
-     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Mobile.shader" />
-     <None Include="Assets\TextMesh Pro\Fonts\LiberationSans - OFL.txt" />
-     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile.shader" />
-     <None Include="Assets\TextMesh Pro\Shaders\TMP_Sprite.shader" />
-      <None Include="Assets\TextMesh Pro\Examples &amp; Extras\Fonts\Bangers - OFL.txt"/>
- <Reference Include="Unity.RenderPipeline.Universal.ShaderLibrary">
- <HintPath>/Users/vilhelmstokstad/Documents/GitHub/SHMUP 2D/Library/ScriptAssemblies/Unity.RenderPipeline.Universal.ShaderLibrary.dll</HintPath>
- </Reference>
- <Reference Include="Unity.Timeline.Editor">
- <HintPath>/Users/vilhelmstokstad/Documents/GitHub/SHMUP 2D/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+    <ItemGroup>
+        <Compile Include="Assets\Scripts\BackgroundController.cs"/>
+        <Compile Include="Assets\Scripts\TagsAsStrings.cs"/>
+        <Compile Include="Assets\Scripts\WeaponManager.cs"/>
+        <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_PhoneNumberValidator.cs"/>
+        <Compile Include="Assets\Scripts\PlayerMovement.cs"/>
+        <Compile Include="Assets\Scripts\LaserBeam.cs"/>
+        <Compile Include="Assets\Scripts\WeaponPickUpManager.cs"/>
+        <Compile Include="Assets\Scripts\PlayerBoundaries.cs"/>
+        <Compile Include="Assets\Scripts\UIBoostBar.cs"/>
+        <Compile Include="Assets\Scripts\TimeManager.cs"/>
+        <Compile Include="Assets\Scripts\PlayerInput.cs"/>
+        <Compile Include="Assets\Scripts\EnemySpawnManager.cs"/>
+        <Compile Include="Assets\Scripts\EnemyData.cs"/>
+        <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark03.cs"/>
+        <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\WarpTextExample.cs"/>
+        <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextEventCheck.cs"/>
+        <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextEventHandler.cs"/>
+        <Compile Include="Assets\Scripts\MissileControl.cs"/>
+        <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs"/>
+        <Compile Include="Assets\Scripts\LaserPickUp.cs"/>
+        <Compile Include="Assets\Scripts\LaserControl.cs"/>
+        <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\CameraController.cs"/>
+        <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexJitter.cs"/>
+        <Compile Include="Assets\Scripts\GameManager.cs"/>
+        <Compile Include="Assets\Scripts\WeaponController.cs"/>
+        <Compile Include="Assets\Scripts\PlasmaPickUp.cs"/>
+        <Compile Include="Assets\Scripts\PlasmaShot.cs"/>
+        <Compile Include="Assets\Scripts\EnemyController.cs"/>
+        <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\ChatController.cs"/>
+        <Compile Include="Assets\Scripts\PlasmaControl.cs"/>
+        <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_ExampleScript_01.cs"/>
+        <Compile Include="Assets\Scripts\ShieldControl.cs"/>
+        <Compile Include="Assets\Scripts\MissilePickUp.cs"/>
+        <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\ObjectSpin.cs"/>
+        <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_DigitValidator.cs"/>
+        <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\DropdownSample.cs"/>
+        <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TextConsoleSimulator.cs"/>
+        <Compile Include="Assets\Scripts\UIKillCounter.cs"/>
+        <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\ShaderPropAnimator.cs"/>
+        <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextSelector_A.cs"/>
+        <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\SimpleScript.cs"/>
+        <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextInfoDebugTool.cs"/>
+        <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_FrameRateCounter.cs"/>
+        <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextSelector_B.cs"/>
+        <Compile Include="Assets\Scripts\SpaceJunkManager.cs"/>
+        <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01_UGUI.cs"/>
+        <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\SkewTextExample.cs"/>
+        <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark04.cs"/>
+        <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TextMeshSpawner.cs"/>
+        <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexShakeB.cs"/>
+        <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark02.cs"/>
+        <Compile Include="Assets\Scripts\HomingMissile.cs"/>
+        <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_UiFrameRateCounter.cs"/>
+        <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexColorCycler.cs"/>
+        <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexZoom.cs"/>
+        <Compile Include="Assets\Scripts\UIControlInstructions.cs"/>
+        <Compile Include="Assets\Scripts\PlayerData.cs"/>
+        <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMPro_InstructionOverlay.cs"/>
+        <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TeleType.cs"/>
+        <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TextMeshProFloatingText.cs"/>
+        <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexShakeA.cs"/>
+        <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\EnvMapAnimator.cs"/>
+        <Compile Include="Assets\Scripts\PlayerController.cs"/>
+        <Compile Include="Assets\Scripts\SpaceJunkController.cs"/>
+        <Compile Include="Assets\Scripts\UIHealthBar.cs"/>
+        <Compile Include="Assets\Scripts\WeaponPool.cs"/>
+        <Compile Include="Assets\GameOverScript.cs"/>
+        <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc"/>
+        <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader"/>
+        <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader"/>
+        <None Include="Assets\Downloads\SimplePixelUI\fonts\Font2\license.txt"/>
+        <None Include="Assets\TextMesh Pro\Examples &amp; Extras\Fonts\Oswald-Bold - OFL.txt"/>
+        <None Include="Assets\TextMesh Pro\Examples &amp; Extras\Fonts\Anton OFL.txt"/>
+        <None Include="Assets\TextMesh Pro\Shaders\TMPro_Mobile.cginc"/>
+        <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF SSD.shader"/>
+        <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface-Mobile.shader"/>
+        <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface.shader"/>
+        <None Include="Assets\TextMesh Pro\Sprites\EmojiOne Attribution.txt"/>
+        <None Include="Assets\Downloads\SimplePixelUI\fonts\Font1\license.txt"/>
+        <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Custom-Atlas.shader"/>
+        <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF.shader"/>
+        <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile SSD.shader"/>
+        <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt"/>
+        <None Include="Assets\TextMesh Pro\Shaders\TMPro_Properties.cginc"/>
+        <None Include="Assets\TextMesh Pro\Shaders\TMPro_Surface.cginc"/>
+        <None Include="Assets\Downloads\2D Space Kit\Particles (Sprites)\Note on Flares.txt"/>
+        <None Include="Assets\Downloads\2D Space Kit\Backgrounds\Fantasy Purple 2048\Note.txt"/>
+        <None Include="Assets\Material\Plasma_S.shader"/>
+        <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt"/>
+        <None Include="Assets\Downloads\SimplePixelUI\fonts\Font1\readme.txt"/>
+        <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Masking.shader"/>
+        <None Include="Assets\Downloads\SimplePixelUI\fonts\Font2\readme.txt"/>
+        <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF Overlay.shader"/>
+        <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Mobile.shader"/>
+        <None Include="Assets\TextMesh Pro\Fonts\LiberationSans - OFL.txt"/>
+        <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile.shader"/>
+        <None Include="Assets\TextMesh Pro\Shaders\TMP_Sprite.shader"/>
+        <None Include="Assets\TextMesh Pro\Examples &amp; Extras\Fonts\Bangers - OFL.txt"/>
+        <Reference Include="Unity.RenderPipeline.Universal.ShaderLibrary">
+            <HintPath>/Users/vilhelmstokstad/Documents/GitHub/SHMUP 2D/Library/ScriptAssemblies/Unity.RenderPipeline.Universal.ShaderLibrary.dll</HintPath>
+        </Reference>
+        <Reference Include="Unity.Timeline.Editor">
+            <HintPath>/Users/vilhelmstokstad/Documents/GitHub/SHMUP 2D/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.2D.Animation.Runtime">
  <HintPath>/Users/vilhelmstokstad/Documents/GitHub/SHMUP 2D/Library/ScriptAssemblies/Unity.2D.Animation.Runtime.dll</HintPath>
@@ -174,9 +175,6 @@
  </Reference>
  <Reference Include="Unity.2D.SpriteShape.Editor">
  <HintPath>/Users/vilhelmstokstad/Documents/GitHub/SHMUP 2D/Library/ScriptAssemblies/Unity.2D.SpriteShape.Editor.dll</HintPath>
- </Reference>
- <Reference Include="Unity.TextMeshPro.Editor">
- <HintPath>/Users/vilhelmstokstad/Documents/GitHub/SHMUP 2D/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.2D.Path.Editor">
  <HintPath>/Users/vilhelmstokstad/Documents/GitHub/SHMUP 2D/Library/ScriptAssemblies/Unity.2D.Path.Editor.dll</HintPath>
@@ -254,29 +252,32 @@
  <HintPath>/Users/vilhelmstokstad/Documents/GitHub/SHMUP 2D/Library/ScriptAssemblies/Unity.Mathematics.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.RenderPipelines.Core.ShaderLibrary">
- <HintPath>/Users/vilhelmstokstad/Documents/GitHub/SHMUP 2D/Library/ScriptAssemblies/Unity.RenderPipelines.Core.ShaderLibrary.dll</HintPath>
+     <HintPath>/Users/vilhelmstokstad/Documents/GitHub/SHMUP 2D/Library/ScriptAssemblies/Unity.RenderPipelines.Core.ShaderLibrary.dll</HintPath>
  </Reference>
- <Reference Include="Unity.TextMeshPro">
- <HintPath>/Users/vilhelmstokstad/Documents/GitHub/SHMUP 2D/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
- </Reference>
- <Reference Include="Unity.2D.Common.Editor">
- <HintPath>/Users/vilhelmstokstad/Documents/GitHub/SHMUP 2D/Library/ScriptAssemblies/Unity.2D.Common.Editor.dll</HintPath>
- </Reference>
- <Reference Include="Unity.InternalAPIEditorBridge.001">
- <HintPath>/Users/vilhelmstokstad/Documents/GitHub/SHMUP 2D/Library/ScriptAssemblies/Unity.InternalAPIEditorBridge.001.dll</HintPath>
- </Reference>
- <Reference Include="UnityEditor.UI">
- <HintPath>/Users/vilhelmstokstad/Documents/GitHub/SHMUP 2D/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine">
- <HintPath>/Applications/Unity/2020.1.6f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.AIModule">
- <HintPath>/Applications/Unity/2020.1.6f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.AccessibilityModule">
- <HintPath>/Applications/Unity/2020.1.6f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.AccessibilityModule.dll</HintPath>
- </Reference>
+        <Reference Include="Unity.2D.Common.Editor">
+            <HintPath>/Users/vilhelmstokstad/Documents/GitHub/SHMUP 2D/Library/ScriptAssemblies/Unity.2D.Common.Editor.dll</HintPath>
+        </Reference>
+        <Reference Include="Unity.InternalAPIEditorBridge.001">
+            <HintPath>/Users/vilhelmstokstad/Documents/GitHub/SHMUP 2D/Library/ScriptAssemblies/Unity.InternalAPIEditorBridge.001.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEditor.UI">
+            <HintPath>/Users/vilhelmstokstad/Documents/GitHub/SHMUP 2D/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+        </Reference>
+        <Reference Include="Unity.TextMeshPro.Editor">
+            <HintPath>/Users/vilhelmstokstad/Documents/GitHub/SHMUP 2D/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+        </Reference>
+        <Reference Include="Unity.TextMeshPro">
+            <HintPath>/Users/vilhelmstokstad/Documents/GitHub/SHMUP 2D/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine">
+            <HintPath>/Applications/Unity/2020.1.6f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine.AIModule">
+            <HintPath>/Applications/Unity/2020.1.6f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine.AccessibilityModule">
+            <HintPath>/Applications/Unity/2020.1.6f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.AccessibilityModule.dll</HintPath>
+        </Reference>
  <Reference Include="UnityEngine.AndroidJNIModule">
  <HintPath>/Applications/Unity/2020.1.6f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.AndroidJNIModule.dll</HintPath>
  </Reference>
@@ -418,46 +419,46 @@
  <Reference Include="UnityEngine.UnityWebRequestAudioModule">
  <HintPath>/Applications/Unity/2020.1.6f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.UnityWebRequestAudioModule.dll</HintPath>
  </Reference>
- <Reference Include="UnityEngine.UnityWebRequestTextureModule">
- <HintPath>/Applications/Unity/2020.1.6f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.UnityWebRequestTextureModule.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.UnityWebRequestWWWModule">
- <HintPath>/Applications/Unity/2020.1.6f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.UnityWebRequestWWWModule.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.VFXModule">
- <HintPath>/Applications/Unity/2020.1.6f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.VFXModule.dll</HintPath>
- </Reference>
-      <Reference Include="UnityEngine.VRModule">
-          <HintPath>/Applications/Unity/2020.1.6f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.VRModule.dll</HintPath>
-      </Reference>
-      <Reference Include="UnityEngine.VehiclesModule">
-          <HintPath>/Applications/Unity/2020.1.6f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.VehiclesModule.dll</HintPath>
-      </Reference>
-      <Reference Include="UnityEngine.VideoModule">
-          <HintPath>/Applications/Unity/2020.1.6f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.VideoModule.dll</HintPath>
-      </Reference>
-      <Reference Include="UnityEngine.WebGLModule">
-          <HintPath>/Applications/Unity/2020.1.6f1/PlaybackEngines/WebGLSupport/Managed/UnityEngine.WebGLModule.dll</HintPath>
-      </Reference>
-      <Reference Include="UnityEngine.WindModule">
-          <HintPath>/Applications/Unity/2020.1.6f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.WindModule.dll</HintPath>
-      </Reference>
-      <Reference Include="UnityEngine.XRModule">
-          <HintPath>/Applications/Unity/2020.1.6f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.XRModule.dll</HintPath>
-      </Reference>
-      <Reference Include="UnityEditor">
-          <HintPath>/Applications/Unity/2020.1.6f1/Unity.app/Contents/Managed/UnityEditor.dll</HintPath>
-      </Reference>
- <Reference Include="netstandard">
- <HintPath>/Applications/Unity/2020.1.6f1/Unity.app/Contents/NetStandard/ref/2.0.0/netstandard.dll</HintPath>
- </Reference>
- <Reference Include="Microsoft.Win32.Primitives">
- <HintPath>/Applications/Unity/2020.1.6f1/Unity.app/Contents/NetStandard/compat/2.0.0/shims/netstandard/Microsoft.Win32.Primitives.dll</HintPath>
- </Reference>
- <Reference Include="System.AppContext">
- <HintPath>/Applications/Unity/2020.1.6f1/Unity.app/Contents/NetStandard/compat/2.0.0/shims/netstandard/System.AppContext.dll</HintPath>
- </Reference>
- <Reference Include="System.Collections.Concurrent">
+        <Reference Include="UnityEngine.UnityWebRequestTextureModule">
+            <HintPath>/Applications/Unity/2020.1.6f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.UnityWebRequestTextureModule.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine.UnityWebRequestWWWModule">
+            <HintPath>/Applications/Unity/2020.1.6f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.UnityWebRequestWWWModule.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine.VFXModule">
+            <HintPath>/Applications/Unity/2020.1.6f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.VFXModule.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine.VRModule">
+            <HintPath>/Applications/Unity/2020.1.6f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.VRModule.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine.VehiclesModule">
+            <HintPath>/Applications/Unity/2020.1.6f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.VehiclesModule.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine.VideoModule">
+            <HintPath>/Applications/Unity/2020.1.6f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.VideoModule.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine.WebGLModule">
+            <HintPath>/Applications/Unity/2020.1.6f1/PlaybackEngines/WebGLSupport/Managed/UnityEngine.WebGLModule.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine.WindModule">
+            <HintPath>/Applications/Unity/2020.1.6f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.WindModule.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine.XRModule">
+            <HintPath>/Applications/Unity/2020.1.6f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.XRModule.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEditor">
+            <HintPath>/Applications/Unity/2020.1.6f1/Unity.app/Contents/Managed/UnityEditor.dll</HintPath>
+        </Reference>
+        <Reference Include="netstandard">
+            <HintPath>/Applications/Unity/2020.1.6f1/Unity.app/Contents/NetStandard/ref/2.0.0/netstandard.dll</HintPath>
+        </Reference>
+        <Reference Include="Microsoft.Win32.Primitives">
+            <HintPath>/Applications/Unity/2020.1.6f1/Unity.app/Contents/NetStandard/compat/2.0.0/shims/netstandard/Microsoft.Win32.Primitives.dll</HintPath>
+        </Reference>
+        <Reference Include="System.AppContext">
+            <HintPath>/Applications/Unity/2020.1.6f1/Unity.app/Contents/NetStandard/compat/2.0.0/shims/netstandard/System.AppContext.dll</HintPath>
+        </Reference>
+        <Reference Include="System.Collections.Concurrent">
  <HintPath>/Applications/Unity/2020.1.6f1/Unity.app/Contents/NetStandard/compat/2.0.0/shims/netstandard/System.Collections.Concurrent.dll</HintPath>
  </Reference>
  <Reference Include="System.Collections.NonGeneric">

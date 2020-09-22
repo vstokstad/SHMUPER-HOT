@@ -5,7 +5,7 @@ namespace TMPro.Examples {
         public enum objectType {
             TextMeshPro = 0,
             TextMeshProUGUI = 1
-        };
+        }
 
         //private TMP_InputField m_inputfield;
 
@@ -18,7 +18,7 @@ namespace TMPro.Examples {
 
         private TMP_Text m_text;
 
-        void Awake(){
+        private void Awake(){
             // Get a reference to the TMP text component if one already exists otherwise add one.
             // This example show the convenience of having both TMP components derive from TMP_Text. 
             if (ObjectType == 0)
@@ -46,7 +46,7 @@ namespace TMPro.Examples {
         }
 
 
-        void Update(){
+        private void Update(){
             if (!isStatic) {
                 m_text.SetText(k_label, count % 1000);
                 count += 1;

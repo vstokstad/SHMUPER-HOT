@@ -2,17 +2,17 @@ using UnityEngine;
 
 namespace TMPro.Examples {
     public class TextMeshSpawner : MonoBehaviour {
-        public int SpawnType = 0;
+        public int SpawnType;
         public int NumberOfNPC = 12;
 
         public Font TheFont;
 
         private TextMeshProFloatingText floatingText_Script;
 
-        void Awake(){ }
+        private void Awake(){ }
 
-        void Start(){
-            for (int i = 0; i < NumberOfNPC; i++) {
+        private void Start(){
+            for (int i = 0; i < NumberOfNPC; i++)
                 if (SpawnType == 0) {
                     // TextMesh Pro Implementation     
                     //go.transform.localScale = new Vector3(2, 2, 2);
@@ -58,7 +58,6 @@ namespace TMPro.Examples {
                     floatingText_Script = go.AddComponent<TextMeshProFloatingText>();
                     floatingText_Script.SpawnType = 1;
                 }
-            }
         }
     }
 }
