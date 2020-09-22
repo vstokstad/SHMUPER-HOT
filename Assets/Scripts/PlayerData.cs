@@ -33,8 +33,7 @@ public class PlayerData : ScriptableObject {
     public void RechargeTimer(){
         if (_rechargeTimer > 0f) {
             _rechargeTimer -= Time.deltaTime;
-            boostCharge += Time.deltaTime * 0.5f;
-            Mathf.Clamp(boostCharge, 0f, 10f);
+            boostCharge = Mathf.Lerp(boostCharge, Mathf.Clamp(boostCharge, 0f, 10f), Time.deltaTime);
         }
         else if (_rechargeTimer <= 0f) {
             ShieldIsLoaded = true;

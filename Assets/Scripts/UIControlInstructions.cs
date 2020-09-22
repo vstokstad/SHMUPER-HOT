@@ -7,6 +7,5 @@ public class UIControlInstructions : MonoBehaviour {
 
     private void OnGUI(){
         if (Input.anyKey) gameObject.SetActive(false);
-        if (Input.GetKeyDown(KeyCode.I)) gameObject.SetActive(true);
     }
 }

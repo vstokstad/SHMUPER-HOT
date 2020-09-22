@@ -1,8 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="AnalysisUIOptions">
-    <option name="SCOPE_TYPE" value="3" />
-  </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
@@ -11,75 +8,41 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b0782a68-a060-4e6c-bd60-010f9108599b" name="Default Changelist" comment="weapon pickup started, enemy levels cleaned up">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/TagsAsStrings.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/TagsAsStrings.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UIBoostBar.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UIKillCounter.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UIKillCounter.cs.meta" afterDir="false" />
+    <list default="true" id="b0782a68-a060-4e6c-bd60-010f9108599b" name="Default Changelist" comment="All working?! Good to go&#10;(No indication on which weapon is selected)">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.SHMUP 2D/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.SHMUP 2D/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.SHMUP 2D/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.SHMUP 2D/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.SHMUP 2D/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.SHMUP 2D/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assembly-CSharp.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Assembly-CSharp.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GUI.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GUI/Scripts.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GUI/Scripts/ControllInstructions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UIControlInstructions.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GUI/Scripts/ControllInstructions.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UIControlInstructions.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GUI/Scripts/HealthBar.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UIHealthBar.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GUI/Scripts/HealthBar.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UIHealthBar.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GUI/Scripts/RechargeGUI.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GUI/Scripts/RechargeGUI.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UIBoostBar.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Explosion.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Explosion.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Homing Missile.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Homing Missile.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/LaserBeam.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/LaserBeam.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/PlasmaBall.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/PlasmaBall.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Player.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/AudioMixer.mixer" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/AudioMixer.mixer" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene/LightingData.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene/LightingData.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BackgroundController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/BackgroundController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/EnemyController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/EnemyController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/EnemySpawnManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/EnemySpawnManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/HomingMissile.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/HomingMissile.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/LaserControl.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/LaserControl.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/LaserPickUp.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/LaserPickUp.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MissileControl.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MissileControl.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MissilePickUp.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MissilePickUp.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlasmaControl.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlasmaControl.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlasmaPickUp.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlasmaPickUp.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlasmaShot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlasmaShot.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerBoundaries.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerBoundaries.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerData.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerInput.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerInput.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerMovement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerMovement.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ShieldControl.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ShieldControl.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SpaceJunkController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SpaceJunkController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SpaceJunkManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SpaceJunkManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/TimeManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/TimeManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/WeaponController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/WeaponController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/WeaponPickUpManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/WeaponPickUpManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/WeaponPool.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/WeaponPool.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UIControlInstructions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UIControlInstructions.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/ArtifactDB" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ArtifactDB" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/21/21958bfc78c2c1dbdde429060a564d87" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/CurrentLayout-default.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/Library/CurrentLayout-default.dwlt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/CurrentMaximizeLayout.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/Library/CurrentMaximizeLayout.dwlt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/InspectorExpandedItems.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Library/InspectorExpandedItems.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/EditorUserBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Library/EditorUserBuildSettings.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/SceneVisibilityState.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Library/SceneVisibilityState.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/UnityEngine.TestRunner.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/UnityEngine.TestRunner.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/UnityEngine.TestRunner.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/UnityEngine.TestRunner.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/ShaderCache/EditorEncounteredVariants" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ShaderCache/EditorEncounteredVariants" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/SourceAssetDB" beforeDir="false" afterPath="$PROJECT_DIR$/Library/SourceAssetDB" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/StateCache/MainStageHierarchy/b3/b33c0e3f811f60f68b686d48892eb094.json" beforeDir="false" afterPath="$PROJECT_DIR$/Library/StateCache/MainStageHierarchy/b3/b33c0e3f811f60f68b686d48892eb094.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/StateCache/SceneView/d8/d8ceb4b4b810e823a3347aadfc1996d1.json" beforeDir="false" afterPath="$PROJECT_DIR$/Library/StateCache/SceneView/d8/d8ceb4b4b810e823a3347aadfc1996d1.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/UIElements/EditorWindows/UnityEditor.PackageManager.UI.PackageManagerWindow.pref" beforeDir="false" afterPath="$PROJECT_DIR$/Library/UIElements/EditorWindows/UnityEditor.PackageManager.UI.PackageManagerWindow.pref" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/expandedItems" beforeDir="false" afterPath="$PROJECT_DIR$/Library/expandedItems" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler0.log" beforeDir="false" afterPath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler0.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler1.log" beforeDir="false" afterPath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler1.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler10.log" beforeDir="false" afterPath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler10.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler11.log" beforeDir="false" afterPath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler11.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler12.log" beforeDir="false" afterPath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler12.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler13.log" beforeDir="false" afterPath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler13.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler14.log" beforeDir="false" afterPath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler14.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler15.log" beforeDir="false" afterPath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler15.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler2.log" beforeDir="false" afterPath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler2.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler3.log" beforeDir="false" afterPath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler3.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler4.log" beforeDir="false" afterPath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler4.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler5.log" beforeDir="false" afterPath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler5.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler6.log" beforeDir="false" afterPath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler6.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler7.log" beforeDir="false" afterPath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler7.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler8.log" beforeDir="false" afterPath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler8.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler9.log" beforeDir="false" afterPath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler9.log" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -110,7 +73,6 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/7CD321F2-2A98-4E1E-B513-F00B987C648C/55/325a4a2a/Transform.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/6DB092D1-1A2C-42B6-84A7-EB3CC9C0740E/4c/60bb3cad/Queue`1.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/EnemyController.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/7CD321F2-2A98-4E1E-B513-F00B987C648C/22/5d72074d/Material.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/7CD321F2-2A98-4E1E-B513-F00B987C648C/2b/0b738b3d/GameObject.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/484E0A2F-7D55-49CC-9F07-3823AD678B61/1b/dfaa467c/ParticleSystem.cs" root0="SKIP_HIGHLIGHTING" />
@@ -166,7 +128,6 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/PlasmaShot.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PlasmaControl.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/MissileControl.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/LaserControl.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/HomingMissile.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/EnemySpawnManager.cs" />
@@ -178,18 +139,19 @@
         <option value="$PROJECT_DIR$/Assets/GUI/Scripts/RechargeGUI.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/HealtBarUI.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI_HealthBar.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/UIBoostBar.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/UIControlInstructions.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/WeaponPickUpManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/WeaponPool.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/MissilePickUp.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/WeaponController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PlayerMovement.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UIKillCounter.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PlasmaPickUp.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/LaserPickUp.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/WeaponController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UIBoostBar.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/LaserControl.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PlayerData.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UIControlInstructions.cs" />
       </list>
     </option>
   </component>
@@ -220,7 +182,7 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.CommitDialog" />
+    <property name="settings.editor.selected.configurable" value="CodeInspectionSettingsId" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
@@ -302,7 +264,8 @@
       <workItem from="1600673162811" duration="270000" />
       <workItem from="1600674548435" duration="10044000" />
       <workItem from="1600688417490" duration="6133000" />
-      <workItem from="1600755711758" duration="10582000" />
+      <workItem from="1600755711758" duration="11545000" />
+      <workItem from="1600771157290" duration="1336000" />
     </task>
     <task id="LOCAL−00001" summary="Updated with Particle System  and plasma Shots&#10;WeaponSystem WIP">
       <created>1599581575365</created>
@@ -388,7 +351,13 @@
       <option name="presentableId" value="LOCAL−00014" />
       <updated>1600688566778</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL−00015" summary="All working?! Good to go&#10;(No indication on which weapon is selected)">
+      <created>1600768709473</created>
+      <option name="number" value="LOCAL−00015" />
+      <option name="presentableId" value="LOCAL−00015" />
+      <updated>1600768709473</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -482,7 +451,8 @@
     <MESSAGE value="Updates to weaponSystem&#10;&#10;Signed-off-by: Vilhelm Stokstad &lt;v.stokstad@gmail.com&gt;" />
     <MESSAGE value="WeaponSystems Online!&#10;&#10;Signed-off-by: Vilhelm Stokstad &lt;v.stokstad@gmail.com&gt;" />
     <MESSAGE value="weapon pickup started, enemy levels cleaned up" />
-    <option name="LAST_COMMIT_MESSAGE" value="weapon pickup started, enemy levels cleaned up" />
+    <MESSAGE value="All working?! Good to go&#10;(No indication on which weapon is selected)" />
+    <option name="LAST_COMMIT_MESSAGE" value="All working?! Good to go&#10;(No indication on which weapon is selected)" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -522,10 +492,10 @@
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
     <state x="763" y="642" key="ANALYSIS_DLG_com.jetbrains.rider.actions.impl.cleanup.ChooseSilentCodeCleanupProfileDialog/0.23.2560.1417/-1792.343.1792.1097@0.23.2560.1417" timestamp="1599739763865" />
-    <state x="722" y="457" key="ANALYSIS_DLG_com.jetbrains.rider.actions.impl.cleanup.RiderCodeCleanupAction$actionPerformed$dlg$1" timestamp="1600768346823">
+    <state x="722" y="457" key="ANALYSIS_DLG_com.jetbrains.rider.actions.impl.cleanup.RiderCodeCleanupAction$actionPerformed$dlg$1" timestamp="1600768593824">
       <screen x="0" y="23" width="1792" height="1097" />
     </state>
-    <state x="722" y="457" key="ANALYSIS_DLG_com.jetbrains.rider.actions.impl.cleanup.RiderCodeCleanupAction$actionPerformed$dlg$1/0.23.1792.1097@0.23.1792.1097" timestamp="1600768346823" />
+    <state x="722" y="457" key="ANALYSIS_DLG_com.jetbrains.rider.actions.impl.cleanup.RiderCodeCleanupAction$actionPerformed$dlg$1/0.23.1792.1097@0.23.1792.1097" timestamp="1600768593824" />
     <state x="-1070" y="777" key="ANALYSIS_DLG_com.jetbrains.rider.actions.impl.cleanup.RiderCodeCleanupAction$actionPerformed$dlg$1/0.23.2560.1417/-1792.343.1792.1097@-1792.343.1792.1097" timestamp="1600691749674" />
     <state x="1031" y="583" key="ANALYSIS_DLG_com.jetbrains.rider.actions.impl.cleanup.RiderCodeCleanupAction$actionPerformed$dlg$1/0.23.2560.1417/-1792.343.1792.1097@0.23.2560.1417" timestamp="1600437924857" />
     <state width="486" height="465" key="DebuggerActiveHint" timestamp="1600070003892">
@@ -725,11 +695,11 @@
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
     <state x="405" y="449" key="RollbackChangesDialog/0.23.2560.1417/-1792.343.1792.1097@0.23.2560.1417" timestamp="1600074914265" />
-    <state x="-1395" y="538" width="900" height="722" key="SettingsEditor" timestamp="1600688505110">
-      <screen x="-1792" y="343" width="1792" height="1097" />
+    <state x="397" y="218" width="1217" height="722" key="SettingsEditor" timestamp="1600772694283">
+      <screen x="0" y="23" width="1792" height="1097" />
     </state>
     <state x="745" y="1639" key="SettingsEditor/0.0.2560.1440/348.1440.1792.1120@348.1440.1792.1120" timestamp="1599492984915" />
-    <state x="397" y="218" width="900" height="722" key="SettingsEditor/0.23.1792.1097@0.23.1792.1097" timestamp="1599835096631" />
+    <state x="397" y="218" width="1217" height="722" key="SettingsEditor/0.23.1792.1097@0.23.1792.1097" timestamp="1600772694283" />
     <state x="-1395" y="538" width="900" height="722" key="SettingsEditor/0.23.2560.1417/-1792.343.1792.1097@-1792.343.1792.1097" timestamp="1600688505110" />
     <state x="567" y="275" width="1027" height="722" key="SettingsEditor/0.23.2560.1417/-1792.343.1792.1097@0.23.2560.1417" timestamp="1600412406755" />
     <state x="567" y="275" key="SettingsEditor/0.23.2560.1417@0.23.2560.1417" timestamp="1599555145383" />
@@ -737,10 +707,10 @@
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
     <state x="100" y="123" width="2360" height="1217" key="VCS.FileHistoryDialog/0.23.2560.1417/-1792.343.1792.1097@0.23.2560.1417" timestamp="1600330048173" />
-    <state x="673" y="487" width="973" height="520" key="Vcs.Push.Dialog.v2" timestamp="1600440095467">
-      <screen x="0" y="23" width="2560" height="1417" />
+    <state x="471" y="382" width="973" height="520" key="Vcs.Push.Dialog.v2" timestamp="1600768774226">
+      <screen x="0" y="23" width="1792" height="1097" />
     </state>
-    <state x="471" y="382" key="Vcs.Push.Dialog.v2/0.23.1792.1097@0.23.1792.1097" timestamp="1599861138876" />
+    <state x="471" y="382" key="Vcs.Push.Dialog.v2/0.23.1792.1097@0.23.1792.1097" timestamp="1600768774226" />
     <state x="673" y="487" width="973" height="520" key="Vcs.Push.Dialog.v2/0.23.2560.1417/-1792.343.1792.1097@0.23.2560.1417" timestamp="1600440095467" />
     <state x="958" y="512" key="com.intellij.openapi.vcs.changes.SpecificFilesViewDialog" timestamp="1599494774134">
       <screen x="0" y="23" width="2560" height="1417" />
@@ -751,10 +721,10 @@
     </state>
     <state x="620" y="522" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1792.1097@0.23.1792.1097" timestamp="1599861093103" />
     <state x="886" y="668" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.2560.1417/-1792.343.1792.1097@0.23.2560.1417" timestamp="1600412265769" />
-    <state x="582" y="368" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1600768320140">
+    <state x="582" y="368" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1600768535396">
       <screen x="0" y="23" width="1792" height="1097" />
     </state>
-    <state x="582" y="368" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.23.1792.1097@0.23.1792.1097" timestamp="1600768320140" />
+    <state x="582" y="368" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.23.1792.1097@0.23.1792.1097" timestamp="1600768535396" />
     <state x="832" y="468" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.23.2560.1417/-1792.343.1792.1097@0.23.2560.1417" timestamp="1599752249165" />
     <state width="420" height="332" key="javadoc.popup" timestamp="1600767711667">
       <screen x="0" y="23" width="1792" height="1097" />
@@ -766,10 +736,10 @@
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
     <state x="908" y="984" key="run.anything.popup/0.0.2560.1440/348.1440.1792.1120@348.1440.1792.1120" timestamp="1599493012896" />
-    <state x="-1132" y="593" width="672" height="678" key="search.everywhere.popup" timestamp="1600695043535">
-      <screen x="-1792" y="343" width="1792" height="1097" />
+    <state x="660" y="273" width="672" height="678" key="search.everywhere.popup" timestamp="1600771272273">
+      <screen x="0" y="23" width="1792" height="1097" />
     </state>
-    <state x="660" y="273" width="672" height="678" key="search.everywhere.popup/0.23.1792.1097@0.23.1792.1097" timestamp="1600509323759" />
+    <state x="660" y="273" width="672" height="678" key="search.everywhere.popup/0.23.1792.1097@0.23.1792.1097" timestamp="1600771272273" />
     <state x="-1132" y="593" width="672" height="678" key="search.everywhere.popup/0.23.2560.1417/-1792.343.1792.1097@-1792.343.1792.1097" timestamp="1600695043535" />
     <state x="943" y="346" width="961" height="876" key="search.everywhere.popup/0.23.2560.1417/-1792.343.1792.1097@0.23.2560.1417" timestamp="1600254421698" />
     <state x="943" y="346" key="search.everywhere.popup/0.23.2560.1417@0.23.2560.1417" timestamp="1599552286895" />
