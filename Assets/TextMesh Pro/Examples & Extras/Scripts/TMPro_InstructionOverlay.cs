@@ -1,27 +1,28 @@
 ﻿using UnityEngine;
+using System.Collections;
 
-namespace TMPro.Examples {
-    public class TMPro_InstructionOverlay : MonoBehaviour {
-        public enum FpsCounterAnchorPositions {
-            TopLeft,
-            BottomLeft,
-            TopRight,
-            BottomRight
-        }
 
-        private const string instructions =
-            "Camera Control - <#ffff00>Shift + RMB\n</color>Zoom - <#ffff00>Mouse wheel.";
+namespace TMPro.Examples
+{
+    
+    public class TMPro_InstructionOverlay : MonoBehaviour
+    {
+
+        public enum FpsCounterAnchorPositions { TopLeft, BottomLeft, TopRight, BottomRight };
 
         public FpsCounterAnchorPositions AnchorPosition = FpsCounterAnchorPositions.BottomLeft;
-        private Camera m_camera;
-        private Transform m_frameCounter_transform;
-        private TextContainer m_textContainer;
+
+        private const string instructions = "Camera Control - <#ffff00>Shift + RMB\n</color>Zoom - <#ffff00>Mouse wheel.";
 
         private TextMeshPro m_TextMeshPro;
+        private TextContainer m_textContainer;
+        private Transform m_frameCounter_transform;
+        private Camera m_camera;
 
         //private FpsCounterAnchorPositions last_AnchorPosition;
 
-        private void Awake(){
+        void Awake()
+        {
             if (!enabled)
                 return;
 
@@ -35,8 +36,7 @@ namespace TMPro.Examples {
 
             m_TextMeshPro = frameCounter.AddComponent<TextMeshPro>();
             m_TextMeshPro.font = Resources.Load<TMP_FontAsset>("Fonts & Materials/LiberationSans SDF");
-            m_TextMeshPro.fontSharedMaterial =
-                Resources.Load<Material>("Fonts & Materials/LiberationSans SDF - Overlay");
+            m_TextMeshPro.fontSharedMaterial = Resources.Load<Material>("Fonts & Materials/LiberationSans SDF - Overlay");
 
             m_TextMeshPro.fontSize = 30;
 
@@ -47,11 +47,17 @@ namespace TMPro.Examples {
             //last_AnchorPosition = AnchorPosition;
 
             m_TextMeshPro.text = instructions;
+
         }
 
 
-        private void Set_FrameCounter_Position(FpsCounterAnchorPositions anchor_position){
-            switch (anchor_position) {
+
+
+        void Set_FrameCounter_Position(FpsCounterAnchorPositions anchor_position)
+        {
+
+            switch (anchor_position)
+            {
                 case FpsCounterAnchorPositions.TopLeft:
                     //m_TextMeshPro.anchor = AnchorPositions.TopLeft;
                     m_textContainer.anchorPosition = TextContainerAnchors.TopLeft;

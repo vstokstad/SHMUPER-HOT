@@ -28,7 +28,6 @@
             </e>
           </e>
         </e>
-        <e p="GameOverScript.cs" t="Include" />
         <e p="Material" t="Include">
           <e p="Plasma_S.shader" t="Include" />
         </e>
@@ -38,6 +37,7 @@
           <e p="EnemyData.cs" t="Include" />
           <e p="EnemySpawnManager.cs" t="Include" />
           <e p="GameManager.cs" t="Include" />
+          <e p="GameOverScript.cs" t="Include" />
           <e p="HomingMissile.cs" t="Include" />
           <e p="LaserBeam.cs" t="Include" />
           <e p="LaserControl.cs" t="Include" />

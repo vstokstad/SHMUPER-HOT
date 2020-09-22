@@ -1,10 +1,17 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
+using System.Collections;
+using UnityEditor;
 
-namespace TMPro.Examples {
-    public class TMP_TextInfoDebugTool : MonoBehaviour {
+
+namespace TMPro.Examples
+{
+
+    public class TMP_TextInfoDebugTool : MonoBehaviour
+    {
         // Since this script is used for debugging, we exclude it from builds.
         // TODO: Rework this script to make it into an editor utility.
-#if UNITY_EDITOR
+        #if UNITY_EDITOR
         public bool ShowCharacters;
         public bool ShowWords;
         public bool ShowLinks;
@@ -41,8 +48,7 @@ namespace TMPro.Examples {
             m_TextInfo = m_TextComponent.textInfo;
 
             // Update Text Statistics
-            ObjectStats =
- "Characters: " + m_TextInfo.characterCount + "   Words: " + m_TextInfo.wordCount + "   Spaces: " + m_TextInfo.spaceCount + "   Sprites: " + m_TextInfo.spriteCount + "   Links: " + m_TextInfo.linkCount
+            ObjectStats = "Characters: " + m_TextInfo.characterCount + "   Words: " + m_TextInfo.wordCount + "   Spaces: " + m_TextInfo.spaceCount + "   Sprites: " + m_TextInfo.spriteCount + "   Links: " + m_TextInfo.linkCount
                           + "\nLines: " + m_TextInfo.lineCount + "   Pages: " + m_TextInfo.pageCount;
 
             // Get the handle size for drawing the various
@@ -110,11 +116,9 @@ namespace TMPro.Examples {
 
                 // Get Bottom Left and Top Right position of the current character
                 Vector3 bottomLeft = m_Transform.TransformPoint(characterInfo.bottomLeft);
-                Vector3 topLeft =
- m_Transform.TransformPoint(new Vector3(characterInfo.topLeft.x, characterInfo.topLeft.y, 0));
+                Vector3 topLeft = m_Transform.TransformPoint(new Vector3(characterInfo.topLeft.x, characterInfo.topLeft.y, 0));
                 Vector3 topRight = m_Transform.TransformPoint(characterInfo.topRight);
-                Vector3 bottomRight =
- m_Transform.TransformPoint(new Vector3(characterInfo.bottomRight.x, characterInfo.bottomRight.y, 0));
+                Vector3 bottomRight = m_Transform.TransformPoint(new Vector3(characterInfo.bottomRight.x, characterInfo.bottomRight.y, 0));
 
                 // Draw character bounds
                 if (characterInfo.isVisible)
@@ -126,8 +130,7 @@ namespace TMPro.Examples {
                 {
                     Color color = Color.grey;
 
-                    float whiteSpaceAdvance =
- Math.Abs(characterInfo.origin - characterInfo.xAdvance) > 0.01f ? characterInfo.xAdvance : characterInfo.origin + (characterInfo.ascender - characterInfo.descender) * 0.03f;
+                    float whiteSpaceAdvance = Math.Abs(characterInfo.origin - characterInfo.xAdvance) > 0.01f ? characterInfo.xAdvance : characterInfo.origin + (characterInfo.ascender - characterInfo.descender) * 0.03f;
                     DrawDottedRectangle(m_Transform.TransformPoint(new Vector3(characterInfo.origin, characterInfo.descender, 0)), m_Transform.TransformPoint(new Vector3(whiteSpaceAdvance, characterInfo.ascender, 0)), color, 4);
                 }
 
@@ -145,19 +148,13 @@ namespace TMPro.Examples {
                 Handles.DrawDottedLine(ascentlineStart, ascentlineEnd, dottedLineSize);
 
                 // Draw Cap Height & Mean line
-                float capline =
- characterInfo.fontAsset == null ? 0 : baseline + characterInfo.fontAsset.faceInfo.capLine * characterInfo.scale;
-                Vector3 capHeightStart =
- new Vector3(topLeft.x, m_Transform.TransformPoint(new Vector3(0, capline, 0)).y, 0);
-                Vector3 capHeightEnd =
- new Vector3(topRight.x, m_Transform.TransformPoint(new Vector3(0, capline, 0)).y, 0);
+                float capline = characterInfo.fontAsset == null ? 0 : baseline + characterInfo.fontAsset.faceInfo.capLine * characterInfo.scale;
+                Vector3 capHeightStart = new Vector3(topLeft.x, m_Transform.TransformPoint(new Vector3(0, capline, 0)).y, 0);
+                Vector3 capHeightEnd = new Vector3(topRight.x, m_Transform.TransformPoint(new Vector3(0, capline, 0)).y, 0);
 
-                float meanline =
- characterInfo.fontAsset == null ? 0 : baseline + characterInfo.fontAsset.faceInfo.meanLine * characterInfo.scale;
-                Vector3 meanlineStart =
- new Vector3(topLeft.x, m_Transform.TransformPoint(new Vector3(0, meanline, 0)).y, 0);
-                Vector3 meanlineEnd =
- new Vector3(topRight.x, m_Transform.TransformPoint(new Vector3(0, meanline, 0)).y, 0);
+                float meanline = characterInfo.fontAsset == null ? 0 : baseline + characterInfo.fontAsset.faceInfo.meanLine * characterInfo.scale;
+                Vector3 meanlineStart = new Vector3(topLeft.x, m_Transform.TransformPoint(new Vector3(0, meanline, 0)).y, 0);
+                Vector3 meanlineEnd = new Vector3(topRight.x, m_Transform.TransformPoint(new Vector3(0, meanline, 0)).y, 0);
 
                 if (characterInfo.isVisible)
                 {
@@ -309,10 +306,8 @@ namespace TMPro.Examples {
 
                             topLeft = m_Transform.TransformPoint(new Vector3(topLeft.x, maxAscender, 0));
                             bottomLeft = m_Transform.TransformPoint(new Vector3(bottomLeft.x, minDescender, 0));
-                            bottomRight =
- m_Transform.TransformPoint(new Vector3(currentCharInfo.topRight.x, minDescender, 0));
-                            topRight =
- m_Transform.TransformPoint(new Vector3(currentCharInfo.topRight.x, maxAscender, 0));
+                            bottomRight = m_Transform.TransformPoint(new Vector3(currentCharInfo.topRight.x, minDescender, 0));
+                            topRight = m_Transform.TransformPoint(new Vector3(currentCharInfo.topRight.x, maxAscender, 0));
 
                             // Draw Region
                             DrawRectangle(bottomLeft, topLeft, topRight, bottomRight, wordColor);
@@ -328,8 +323,7 @@ namespace TMPro.Examples {
 
                         topLeft = m_Transform.TransformPoint(new Vector3(topLeft.x, maxAscender, 0));
                         bottomLeft = m_Transform.TransformPoint(new Vector3(bottomLeft.x, minDescender, 0));
-                        bottomRight =
- m_Transform.TransformPoint(new Vector3(currentCharInfo.topRight.x, minDescender, 0));
+                        bottomRight = m_Transform.TransformPoint(new Vector3(currentCharInfo.topRight.x, minDescender, 0));
                         topRight = m_Transform.TransformPoint(new Vector3(currentCharInfo.topRight.x, maxAscender, 0));
 
                         // Draw Region
@@ -344,8 +338,7 @@ namespace TMPro.Examples {
 
                         topLeft = m_Transform.TransformPoint(new Vector3(topLeft.x, maxAscender, 0));
                         bottomLeft = m_Transform.TransformPoint(new Vector3(bottomLeft.x, minDescender, 0));
-                        bottomRight =
- m_Transform.TransformPoint(new Vector3(currentCharInfo.topRight.x, minDescender, 0));
+                        bottomRight = m_Transform.TransformPoint(new Vector3(currentCharInfo.topRight.x, minDescender, 0));
                         topRight = m_Transform.TransformPoint(new Vector3(currentCharInfo.topRight.x, maxAscender, 0));
 
                         // Draw Region
@@ -419,10 +412,8 @@ namespace TMPro.Examples {
 
                             topLeft = m_Transform.TransformPoint(new Vector3(topLeft.x, maxAscender, 0));
                             bottomLeft = m_Transform.TransformPoint(new Vector3(bottomLeft.x, minDescender, 0));
-                            bottomRight =
- m_Transform.TransformPoint(new Vector3(currentCharInfo.topRight.x, minDescender, 0));
-                            topRight =
- m_Transform.TransformPoint(new Vector3(currentCharInfo.topRight.x, maxAscender, 0));
+                            bottomRight = m_Transform.TransformPoint(new Vector3(currentCharInfo.topRight.x, minDescender, 0));
+                            topRight = m_Transform.TransformPoint(new Vector3(currentCharInfo.topRight.x, maxAscender, 0));
 
                             // Draw Region
                             DrawRectangle(bottomLeft, topLeft, topRight, bottomRight, linkColor);
@@ -438,8 +429,7 @@ namespace TMPro.Examples {
 
                         topLeft = m_Transform.TransformPoint(new Vector3(topLeft.x, maxAscender, 0));
                         bottomLeft = m_Transform.TransformPoint(new Vector3(bottomLeft.x, minDescender, 0));
-                        bottomRight =
- m_Transform.TransformPoint(new Vector3(currentCharInfo.topRight.x, minDescender, 0));
+                        bottomRight = m_Transform.TransformPoint(new Vector3(currentCharInfo.topRight.x, minDescender, 0));
                         topRight = m_Transform.TransformPoint(new Vector3(currentCharInfo.topRight.x, maxAscender, 0));
 
                         // Draw Region
@@ -454,8 +444,7 @@ namespace TMPro.Examples {
 
                         topLeft = m_Transform.TransformPoint(new Vector3(topLeft.x, maxAscender, 0));
                         bottomLeft = m_Transform.TransformPoint(new Vector3(bottomLeft.x, minDescender, 0));
-                        bottomRight =
- m_Transform.TransformPoint(new Vector3(currentCharInfo.topRight.x, minDescender, 0));
+                        bottomRight = m_Transform.TransformPoint(new Vector3(currentCharInfo.topRight.x, minDescender, 0));
                         topRight = m_Transform.TransformPoint(new Vector3(currentCharInfo.topRight.x, maxAscender, 0));
 
                         // Draw Region
@@ -486,8 +475,7 @@ namespace TMPro.Examples {
                 TMP_CharacterInfo firstCharacterInfo = m_TextInfo.characterInfo[lineInfo.firstCharacterIndex];
                 TMP_CharacterInfo lastCharacterInfo = m_TextInfo.characterInfo[lineInfo.lastCharacterIndex];
 
-                bool isLineVisible =
- (lineInfo.characterCount == 1 && (firstCharacterInfo.character == 10 || firstCharacterInfo.character == 11 || firstCharacterInfo.character == 0x2028 || firstCharacterInfo.character == 0x2029)) ||
+                bool isLineVisible = (lineInfo.characterCount == 1 && (firstCharacterInfo.character == 10 || firstCharacterInfo.character == 11 || firstCharacterInfo.character == 0x2028 || firstCharacterInfo.character == 0x2029)) ||
                                       i > m_TextComponent.maxVisibleLines ||
                                      (m_TextComponent.overflowMode == TextOverflowModes.Page && firstCharacterInfo.pageNumber + 1 != m_TextComponent.pageToDisplay) ? false : true;
 
@@ -654,6 +642,7 @@ namespace TMPro.Examples {
             UnityEditor.Handles.DrawDottedLine(tr, br, dotSpacing);
             UnityEditor.Handles.DrawDottedLine(br, bl, dotSpacing);
         }
-#endif
+        #endif
     }
 }
+
