@@ -3,6 +3,7 @@ using UnityEngine;
 
 [RequireComponent(typeof(ParticleSystem))]
 public class PlayerMovement : MonoBehaviour {
+    private AudioSource _audioSource;
     private Vector3 _currentVelocity;
     private float _intensity;
     private Light _light;
@@ -20,7 +21,7 @@ public class PlayerMovement : MonoBehaviour {
         _playerData = GetComponent<PlayerController>().playerData;
         _light = GetComponent<Light>();
         _rigidbody = GetComponent<Rigidbody>();
-
+        _audioSource = GetComponent<AudioSource>();
         _particleSystem = GetComponent<ParticleSystem>();
         _intensity = _light.intensity;
         _lightColor = _light.color;
@@ -34,19 +35,21 @@ public class PlayerMovement : MonoBehaviour {
         Vector3 velocity = _currentVelocity + _moveDirection * (inputAmount * _playerData.acceleration);
         velocity = Vector3.ClampMagnitude(velocity, _playerData.maxSpeed);
         MovePlayer(velocity);
+        _audioSource.panStereo = sidewaysInput;
+        if (boostInput && !_audioSource.isPlaying) _audioSource.Play();
     }
 
 
     private void MovePlayer(Vector3 velocity){
         TrailingFlames();
-        if (boostInput && _playerData.boostCharge > 0) {
+        if (boostInput && PlayerData.boostCharge > 0) {
             velocity *= 5f;
 
             _rigidbody.velocity = velocity;
 
             _light.intensity = _intensity * 10f;
             _light.color = Color.magenta;
-            _playerData.boostCharge -= Time.deltaTime;
+            PlayerData.boostCharge -= Time.deltaTime;
             { }
         }
         else {

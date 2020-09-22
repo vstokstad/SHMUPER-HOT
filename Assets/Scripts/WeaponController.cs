@@ -2,7 +2,7 @@ using System;
 using UnityEngine;
 using static WeaponType;
 
-
+[Serializable]
 public enum WeaponType {
     Plasma = 0,
     Laser = 1,
@@ -17,7 +17,6 @@ public class WeaponController : MonoBehaviour {
     private WeaponManager.IWeapon _iWeapon;
     [NonSerialized] public bool fireInput;
     [NonSerialized] public bool nextWeaponInput;
-
 
     private void Awake(){
         plasmaEquipped = true;
@@ -41,8 +40,11 @@ public class WeaponController : MonoBehaviour {
         }
     }
 
+    public void HandleWeaponPickUp(){
+        HandleWeaponType(weaponType);
+    }
 
-    private void HandleWeaponType(WeaponType weaponChoice){
+    public void HandleWeaponType(WeaponType weaponChoice){
         Component c = GetComponent<WeaponManager.IWeapon>() as Component;
 
         if (c != null) Destroy(c);

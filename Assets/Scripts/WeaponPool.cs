@@ -13,6 +13,7 @@ public class WeaponPool : MonoBehaviour {
 
     private void Awake(){
         Instance = this;
+        AddWeapon(_plasmaQueue, plasmaPrefab, 5);
     }
 
     public GameObject Get(WeaponType currentWeapon){

@@ -1,7 +1,7 @@
 using UnityEngine;
+using static TagsAsStrings;
 
 public class PlasmaControl : MonoBehaviour {
-    private readonly string _enemyTag = "Enemy";
     private readonly float _plasmaDamage = 1f;
     private ParticleSystem _particleSystem;
 
@@ -23,7 +23,7 @@ public class PlasmaControl : MonoBehaviour {
     }
 
     private void OnTriggerEnter(Collider other){
-        if (!other.gameObject.CompareTag(_enemyTag)) return;
+        if (!other.gameObject.CompareTag(enemyTag)) return;
         other.gameObject.GetComponent<EnemyController>().TakeDamage(_plasmaDamage);
         gameObject.SetActive(false);
     }

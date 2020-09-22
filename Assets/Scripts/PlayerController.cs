@@ -1,5 +1,5 @@
-using System.Collections;
 using UnityEngine;
+using static TagsAsStrings;
 
 [RequireComponent(typeof(PlayerInput), typeof(PlayerMovement), typeof(PlayerBoundaries))]
 [RequireComponent(typeof(Rigidbody))]
@@ -8,44 +8,38 @@ public class PlayerController : MonoBehaviour {
     [SerializeField] public PlayerData playerData;
     public float killCounter;
     public WeaponPickUpManager weaponPickUpManager;
-    private IEnumerator _collisionManagerRoutine;
+    private Rigidbody _playerRigidbody;
 
     private void Awake(){
         killCounter = 0f;
+        _playerRigidbody = GetComponent<Rigidbody>();
     }
 
     private void Update(){
         playerData.RechargeTimer();
-        if (killCounter > 5f && killCounter < 10f) {
+        if (killCounter > 5f && killCounter < 10f)
             weaponPickUpManager.SpawnLaser();
-        }
-        else if (killCounter > 10f && killCounter < 15f) {
-            weaponPickUpManager.SpawnMissiles();
-        }
+        else if (killCounter > 10f && killCounter < 15f) weaponPickUpManager.SpawnMissiles();
+
+        if (killCounter >= playerData.highScore) playerData.highScore = killCounter;
     }
 
     private void OnCollisionEnter(Collision other){
-        const string enemy = "Enemy";
-        if (!other.collider.CompareTag(enemy)) return;
-        StartCoroutine(CollisionManager(other));
+        if (!other.collider.CompareTag(enemyTag)) return;
+        CollisionManager(other);
     }
 
-    private IEnumerator CollisionManager(Collision other){
+    private void CollisionManager(Collision other){
         EnemyController enemyController = other.gameObject.GetComponent<EnemyController>();
         Rigidbody enemyBody = other.gameObject.GetComponent<Rigidbody>();
-
+        Vector3 velocity = _playerRigidbody.velocity * 2f;
         TakeDamage(PlayerData.health, enemyController.crashDamage);
-        Vector2 bounceOffForce = -enemyBody.velocity;
-        enemyBody.AddForce(bounceOffForce, ForceMode.Impulse);
-        yield return new WaitForSeconds(0.4f);
-        enemyController.TakeDamage(playerData.crashDamage);
+        enemyBody.AddRelativeForce(velocity.x, velocity.y, 0f, ForceMode.VelocityChange);
     }
 
 
-    static void TakeDamage(float playerHealth, float damage){
+    private static void TakeDamage(float playerHealth, float damage){
         playerHealth -= damage;
-        print("took " + damage + " damage. health is now " + playerHealth);
         PlayerData.health = playerHealth;
-        if (playerHealth <= 0f) print("DEAD");
     }
 }

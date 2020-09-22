@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using static TagsAsStrings;
 using static WeaponManager;
 
 
@@ -7,7 +8,7 @@ public class PlasmaShot : MonoBehaviour, IWeapon {
     private float _shootTimer = 0.3f;
 
     private void Awake(){
-        _playerController = GameObject.FindWithTag("Player").GetComponent<PlayerController>();
+        _playerController = GameObject.FindWithTag(playerTag).GetComponent<PlayerController>();
     }
 
 
@@ -20,15 +21,13 @@ public class PlasmaShot : MonoBehaviour, IWeapon {
         _shootTimer = 0.3f;
 
         Vector3 plasmaVelocity = new Vector3(20f, 0f);
-        GameObject _plasmaShot;
-        _plasmaShot = WeaponPool.Instance.Get(WeaponType.Plasma);
+        GameObject plasmaShot = WeaponPool.Instance.Get(WeaponType.Plasma);
         Vector3 initialPosition = _playerController.gameObject.transform.position;
         initialPosition.x += 1f;
-        _plasmaShot.transform.position = initialPosition;
-        _plasmaShot.SetActive(true);
+        plasmaShot.transform.position = initialPosition;
+        plasmaShot.SetActive(true);
         plasmaVelocity.x = 20f;
-
-        plasmaVelocity.y = Mathf.Tan(initialPosition.y * Time.fixedUnscaledDeltaTime);
-        _plasmaShot.GetComponent<Rigidbody>().velocity = plasmaVelocity;
+        plasmaVelocity.y = 0f;
+        plasmaShot.GetComponent<Rigidbody>().velocity = plasmaVelocity;
     }
 }

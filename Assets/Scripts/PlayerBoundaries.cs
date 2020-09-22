@@ -9,9 +9,12 @@ public class PlayerBoundaries : MonoBehaviour {
     private float _playerWidth;
 
     private void Awake(){
-        _playerWidth = gameObject.GetComponent<MeshRenderer>().bounds.size.x / 2;
-        _playerHeight = gameObject.GetComponent<MeshRenderer>().bounds.size.y / 2;
-        _boundPosition = gameObject.transform.position;
+        GameObject o = gameObject;
+        Bounds b = o.GetComponent<MeshRenderer>().bounds;
+
+        _playerWidth = b.size.x / 2;
+        _playerHeight = b.size.y / 2;
+        _boundPosition = o.transform.position;
     }
 
     private void LateUpdate(){

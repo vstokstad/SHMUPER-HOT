@@ -7,8 +7,8 @@ public class WeaponPickUpManager : MonoBehaviour {
 
 
     private void Awake(){
-        _missile = GetComponentInChildren<MissilePickUp>(includeInactive: true).gameObject;
-        _laser = GetComponentInChildren<LaserPickUp>(includeInactive: true).gameObject;
+        _missile = GetComponentInChildren<MissilePickUp>(true).gameObject;
+        _laser = GetComponentInChildren<LaserPickUp>(true).gameObject;
     }
 
 
@@ -19,6 +19,6 @@ public class WeaponPickUpManager : MonoBehaviour {
 
     public void SpawnMissiles(){
         _missile.SetActive(true);
-        _missile.transform.position = CameraBounds;    
+        _missile.transform.position = CameraBounds;
     }
 }

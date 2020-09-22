@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using static TagsAsStrings;
 
 public class LaserControl : MonoBehaviour {
     private readonly float _laserDamage = 0.1f;
@@ -11,7 +12,7 @@ public class LaserControl : MonoBehaviour {
     private Transform _playerTransform;
 
     private void Awake(){
-        _playerTransform = GameObject.FindWithTag("Player").transform;
+        _playerTransform = GameObject.FindWithTag(playerTag).transform;
         transform.position = _playerTransform.position;
         gameObject.SetActive(true);
     }
@@ -35,18 +36,19 @@ public class LaserControl : MonoBehaviour {
 
     private void OnDisable(){
         _laserScale.z = _laserLengthOff;
-        gameObject.transform.localScale = _laserScale;
+        GameObject o = gameObject;
+        o.transform.localScale = _laserScale;
         _laserIsOn = false;
-        WeaponPool.Instance.ReturnToPool(WeaponType.Laser, gameObject);
+        WeaponPool.Instance.ReturnToPool(WeaponType.Laser, shot: o);
     }
 
     private void OnTriggerStay(Collider other){
-        if (other.gameObject.CompareTag("SpaceJunk")) {
+        if (other.gameObject.CompareTag(spaceJunkTag)) {
             _laserScale -= other.ClosestPointOnBounds(default);
             other.transform.localScale -= Vector3.one * Time.deltaTime;
         }
 
-        if (!other.gameObject.CompareTag("Enemy")) return;
+        if (!other.gameObject.CompareTag(enemyTag)) return;
         other.GetComponent<EnemyController>().TakeDamage(_laserDamage);
     }
 }

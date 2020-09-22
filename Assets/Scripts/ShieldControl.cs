@@ -1,10 +1,11 @@
 ﻿using System;
 using UnityEngine;
+using static TagsAsStrings;
 
 public class ShieldControl : MonoBehaviour {
     private const float _shieldDamage = 0.5f;
-    [NonSerialized] public bool shieldInput;
     private PlayerData _playerData;
+    [NonSerialized] public bool shieldInput;
 
     private void Awake(){
         _playerData = GetComponentInParent<PlayerController>().playerData;
@@ -17,7 +18,7 @@ public class ShieldControl : MonoBehaviour {
     }
 
     private void OnTriggerEnter(Collider other){
-        if (!other.CompareTag("Enemy") || !_playerData.ShieldIsLoaded) return;
+        if (!other.CompareTag(enemyTag) || !_playerData.ShieldIsLoaded) return;
         other.gameObject.GetComponent<EnemyController>().TakeDamage(_shieldDamage);
         _playerData.ShieldIsLoaded = false;
     }

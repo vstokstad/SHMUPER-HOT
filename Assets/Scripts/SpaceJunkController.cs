@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using static TagsAsStrings;
 
 public class SpaceJunkController : MonoBehaviour {
     private Vector3 _angularVelocity;
@@ -43,5 +44,13 @@ public class SpaceJunkController : MonoBehaviour {
 
     private void OnBecameInvisible(){
         gameObject.SetActive(false);
+    }
+
+    private void OnCollisionEnter(Collision other){
+        if (other.gameObject.CompareTag(shotTag)) {
+            GameObject capsule = GameObject.CreatePrimitive(PrimitiveType.Capsule);
+            capsule.transform.position = other.GetContact(0).point;
+            capsule.transform.localScale = new Vector3(1f, 1f, 1f);
+        }
     }
 }

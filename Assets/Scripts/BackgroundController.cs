@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
+using static TagsAsStrings;
 
 public class BackgroundController : MonoBehaviour {
-    private readonly string _playerTag = "Player";
     private ParticleSystem[] _backgroundStarSystems;
     private GameObject _nebulaSprite;
     private Vector3 _playerPosition;
@@ -9,9 +9,9 @@ public class BackgroundController : MonoBehaviour {
 
 
     private void Awake(){
-        _nebulaSprite = GameObject.FindWithTag("Nebula");
+        _nebulaSprite = GameObject.FindWithTag(nebulaTag);
 
-        _playerTransform = GameObject.FindWithTag(_playerTag).GetComponent<Transform>();
+        _playerTransform = GameObject.FindWithTag(playerTag).GetComponent<Transform>();
         _backgroundStarSystems = GetComponentsInChildren<ParticleSystem>();
     }
 

@@ -35,8 +35,7 @@ public class TimeManager : MonoBehaviour {
                 Time.fixedDeltaTime = Time.timeScale * _fixedDeltaTime;
                 break;
             default:
-                print("default time mode");
-                break;
+                goto case TimeState.Stopped;
         }
     }
 }

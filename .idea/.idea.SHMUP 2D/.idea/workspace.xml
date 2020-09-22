@@ -12,254 +12,56 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b0782a68-a060-4e6c-bd60-010f9108599b" name="Default Changelist" comment="weapon pickup started, enemy levels cleaned up">
-      <change afterPath="$PROJECT_DIR$/Assets/GUI.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/GUI/Scripts.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/GUI/Scripts/ControllInstructions.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/GUI/Scripts/ControllInstructions.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/GUI/Scripts/HealthBar.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/GUI/Scripts/HealthBar.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/GUI/Scripts/RechargeGUI.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Documentation.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Documentation/TextMesh Pro User Guide 2016.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Documentation/TextMesh Pro User Guide 2016.pdf.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Fonts.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Fonts/LiberationSans - OFL.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Fonts/LiberationSans - OFL.txt.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Fonts/LiberationSans.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Fonts/LiberationSans.ttf.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Drop Shadow.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Drop Shadow.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Outline.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Outline.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/LineBreaking Following Characters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/LineBreaking Following Characters.txt.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/LineBreaking Leading Characters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/LineBreaking Leading Characters.txt.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Sprite Assets.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Sprite Assets/EmojiOne.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Sprite Assets/EmojiOne.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Style Sheets.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Style Sheets/Default Style Sheet.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Style Sheets/Default Style Sheet.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/TMP Settings.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/TMP Settings.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMP_Bitmap-Custom-Atlas.shader" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMP_Bitmap-Custom-Atlas.shader.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMP_Bitmap-Mobile.shader" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMP_Bitmap-Mobile.shader.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMP_Bitmap.shader" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMP_Bitmap.shader.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMP_SDF Overlay.shader" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMP_SDF Overlay.shader.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMP_SDF SSD.shader" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMP_SDF SSD.shader.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile Masking.shader" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile Masking.shader.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile Overlay.shader" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile Overlay.shader.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile SSD.shader" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile SSD.shader.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile.shader" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile.shader.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMP_SDF-Surface-Mobile.shader" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMP_SDF-Surface-Mobile.shader.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMP_SDF-Surface.shader" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMP_SDF-Surface.shader.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMP_SDF.shader" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMP_SDF.shader.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMP_Sprite.shader" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMP_Sprite.shader.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMPro.cginc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMPro.cginc.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMPro_Mobile.cginc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMPro_Mobile.cginc.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMPro_Properties.cginc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMPro_Properties.cginc.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMPro_Surface.cginc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMPro_Surface.cginc.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Sprites.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Sprites/EmojiOne Attribution.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Sprites/EmojiOne Attribution.txt.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Sprites/EmojiOne.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Sprites/EmojiOne.json.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Sprites/EmojiOne.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Sprites/EmojiOne.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Profiling.app/Contents/Frameworks/UnityPlayer.dylib" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Profiling.app/Contents/Frameworks/libMonoPosixHelper.dylib" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Profiling.app/Contents/Frameworks/libcrypto.dylib" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Profiling.app/Contents/Frameworks/libmonobdwgc-2.0.dylib" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Profiling.app/Contents/Frameworks/libssl.dylib" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Profiling.app/Contents/Info.plist" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Profiling.app/Contents/MacOS/SHMUP 2D" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Profiling.app/Contents/MonoBleedingEdge/etc/mono/2.0/Browsers/Compat.browser" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Profiling.app/Contents/MonoBleedingEdge/etc/mono/2.0/DefaultWsdlHelpGenerator.aspx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Profiling.app/Contents/MonoBleedingEdge/etc/mono/2.0/machine.config" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Profiling.app/Contents/MonoBleedingEdge/etc/mono/2.0/settings.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Profiling.app/Contents/MonoBleedingEdge/etc/mono/2.0/web.config" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Profiling.app/Contents/MonoBleedingEdge/etc/mono/4.0/Browsers/Compat.browser" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Profiling.app/Contents/MonoBleedingEdge/etc/mono/4.0/DefaultWsdlHelpGenerator.aspx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Profiling.app/Contents/MonoBleedingEdge/etc/mono/4.0/machine.config" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Profiling.app/Contents/MonoBleedingEdge/etc/mono/4.0/settings.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Profiling.app/Contents/MonoBleedingEdge/etc/mono/4.0/web.config" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Profiling.app/Contents/MonoBleedingEdge/etc/mono/4.5/Browsers/Compat.browser" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Profiling.app/Contents/MonoBleedingEdge/etc/mono/4.5/DefaultWsdlHelpGenerator.aspx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Profiling.app/Contents/MonoBleedingEdge/etc/mono/4.5/machine.config" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Profiling.app/Contents/MonoBleedingEdge/etc/mono/4.5/settings.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Profiling.app/Contents/MonoBleedingEdge/etc/mono/4.5/web.config" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Profiling.app/Contents/MonoBleedingEdge/etc/mono/browscap.ini" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Profiling.app/Contents/MonoBleedingEdge/etc/mono/config" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Profiling.app/Contents/MonoBleedingEdge/etc/mono/mconfig/config.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Profiling.app/Contents/Resources/Data/Managed/Assembly-CSharp.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Profiling.app/Contents/Resources/Data/Managed/Mono.Security.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Profiling.app/Contents/Resources/Data/Managed/System.ComponentModel.Composition.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Profiling.app/Contents/Resources/Data/Managed/System.Configuration.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Profiling.app/Contents/Resources/Data/Managed/System.Core.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Profiling.app/Contents/Resources/Data/Managed/System.Data.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Profiling.app/Contents/Resources/Data/Managed/System.Diagnostics.StackTrace.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Profiling.app/Contents/Resources/Data/Managed/System.Drawing.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Profiling.app/Contents/Resources/Data/Managed/System.EnterpriseServices.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Profiling.app/Contents/Resources/Data/Managed/System.Globalization.Extensions.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Profiling.app/Contents/Resources/Data/Managed/System.IO.Compression.FileSystem.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Profiling.app/Contents/Resources/Data/Managed/System.IO.Compression.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Profiling.app/Contents/Resources/Data/Managed/System.Net.Http.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Profiling.app/Contents/Resources/Data/Managed/System.Numerics.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Profiling.app/Contents/Resources/Data/Managed/System.Runtime.Serialization.Xml.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Profiling.app/Contents/Resources/Data/Managed/System.Runtime.Serialization.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Profiling.app/Contents/Resources/Data/Managed/System.ServiceModel.Internals.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Profiling.app/Contents/Resources/Data/Managed/System.Transactions.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Profiling.app/Contents/Resources/Data/Managed/System.Xml.Linq.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Profiling.app/Contents/Resources/Data/Managed/System.Xml.XPath.XDocument.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Profiling.app/Contents/Resources/Data/Managed/System.Xml.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Profiling.app/Contents/Resources/Data/Managed/System.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Profiling.app/Contents/Resources/Data/Managed/Unity.2D.Animation.Runtime.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Profiling.app/Contents/Resources/Data/Managed/Unity.2D.Animation.Triangle.Runtime.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Profiling.app/Contents/Resources/Data/Managed/Unity.2D.Common.Runtime.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Profiling.app/Contents/Resources/Data/Managed/Unity.2D.PixelPerfect.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Profiling.app/Contents/Resources/Data/Managed/Unity.2D.SpriteShape.Runtime.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Profiling.app/Contents/Resources/Data/Managed/Unity.InternalAPIEngineBridge.001.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Profiling.app/Contents/Resources/Data/Managed/Unity.Mathematics.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Profiling.app/Contents/Resources/Data/Managed/Unity.Postprocessing.Runtime.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Profiling.app/Contents/Resources/Data/Managed/Unity.RenderPipeline.Universal.ShaderLibrary.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Profiling.app/Contents/Resources/Data/Managed/Unity.RenderPipelines.Core.Runtime.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Profiling.app/Contents/Resources/Data/Managed/Unity.RenderPipelines.Core.ShaderLibrary.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Profiling.app/Contents/Resources/Data/Managed/Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Profiling.app/Contents/Resources/Data/Managed/Unity.RenderPipelines.Universal.Runtime.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Profiling.app/Contents/Resources/Data/Managed/Unity.RenderPipelines.Universal.Shaders.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Profiling.app/Contents/Resources/Data/Managed/Unity.TextMeshPro.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Profiling.app/Contents/Resources/Data/Managed/Unity.Timeline.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Profiling.app/Contents/Resources/Data/Managed/UnityEngine.AIModule.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Profiling.app/Contents/Resources/Data/Managed/UnityEngine.ARModule.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Profiling.app/Contents/Resources/Data/Managed/UnityEngine.AccessibilityModule.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Profiling.app/Contents/Resources/Data/Managed/UnityEngine.AndroidJNIModule.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Profiling.app/Contents/Resources/Data/Managed/UnityEngine.AnimationModule.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Profiling.app/Contents/Resources/Data/Managed/UnityEngine.AssetBundleModule.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Profiling.app/Contents/Resources/Data/Managed/UnityEngine.AudioModule.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Profiling.app/Contents/Resources/Data/Managed/UnityEngine.ClothModule.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Profiling.app/Contents/Resources/Data/Managed/UnityEngine.ClusterInputModule.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Profiling.app/Contents/Resources/Data/Managed/UnityEngine.ClusterRendererModule.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Profiling.app/Contents/Resources/Data/Managed/UnityEngine.CoreModule.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Profiling.app/Contents/Resources/Data/Managed/UnityEngine.CrashReportingModule.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Profiling.app/Contents/Resources/Data/Managed/UnityEngine.DSPGraphModule.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Profiling.app/Contents/Resources/Data/Managed/UnityEngine.DirectorModule.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Profiling.app/Contents/Resources/Data/Managed/UnityEngine.GameCenterModule.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Profiling.app/Contents/Resources/Data/Managed/UnityEngine.GridModule.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Profiling.app/Contents/Resources/Data/Managed/UnityEngine.HotReloadModule.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Profiling.app/Contents/Resources/Data/Managed/UnityEngine.IMGUIModule.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Profiling.app/Contents/Resources/Data/Managed/UnityEngine.ImageConversionModule.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Profiling.app/Contents/Resources/Data/Managed/UnityEngine.InputLegacyModule.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Profiling.app/Contents/Resources/Data/Managed/UnityEngine.InputModule.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Profiling.app/Contents/Resources/Data/Managed/UnityEngine.JSONSerializeModule.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Profiling.app/Contents/Resources/Data/Managed/UnityEngine.LocalizationModule.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Profiling.app/Contents/Resources/Data/Managed/UnityEngine.ParticleSystemModule.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Profiling.app/Contents/Resources/Data/Managed/UnityEngine.PerformanceReportingModule.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Profiling.app/Contents/Resources/Data/Managed/UnityEngine.Physics2DModule.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Profiling.app/Contents/Resources/Data/Managed/UnityEngine.PhysicsModule.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Profiling.app/Contents/Resources/Data/Managed/UnityEngine.ProfilerModule.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Profiling.app/Contents/Resources/Data/Managed/UnityEngine.ScreenCaptureModule.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Profiling.app/Contents/Resources/Data/Managed/UnityEngine.SharedInternalsModule.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Profiling.app/Contents/Resources/Data/Managed/UnityEngine.SpriteMaskModule.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Profiling.app/Contents/Resources/Data/Managed/UnityEngine.SpriteShapeModule.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Profiling.app/Contents/Resources/Data/Managed/UnityEngine.StreamingModule.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Profiling.app/Contents/Resources/Data/Managed/UnityEngine.SubstanceModule.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Profiling.app/Contents/Resources/Data/Managed/UnityEngine.SubsystemsModule.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Profiling.app/Contents/Resources/Data/Managed/UnityEngine.TLSModule.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Profiling.app/Contents/Resources/Data/Managed/UnityEngine.TerrainModule.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Profiling.app/Contents/Resources/Data/Managed/UnityEngine.TerrainPhysicsModule.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Profiling.app/Contents/Resources/Data/Managed/UnityEngine.TextCoreModule.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Profiling.app/Contents/Resources/Data/Managed/UnityEngine.TextRenderingModule.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Profiling.app/Contents/Resources/Data/Managed/UnityEngine.TilemapModule.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Profiling.app/Contents/Resources/Data/Managed/UnityEngine.UI.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Profiling.app/Contents/Resources/Data/Managed/UnityEngine.UIElementsModule.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Profiling.app/Contents/Resources/Data/Managed/UnityEngine.UIElementsNativeModule.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Profiling.app/Contents/Resources/Data/Managed/UnityEngine.UIModule.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Profiling.app/Contents/Resources/Data/Managed/UnityEngine.UNETModule.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Profiling.app/Contents/Resources/Data/Managed/UnityEngine.UmbraModule.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Profiling.app/Contents/Resources/Data/Managed/UnityEngine.UnityAnalyticsModule.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Profiling.app/Contents/Resources/Data/Managed/UnityEngine.UnityConnectModule.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Profiling.app/Contents/Resources/Data/Managed/UnityEngine.UnityTestProtocolModule.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Profiling.app/Contents/Resources/Data/Managed/UnityEngine.UnityWebRequestAssetBundleModule.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Profiling.app/Contents/Resources/Data/Managed/UnityEngine.UnityWebRequestAudioModule.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Profiling.app/Contents/Resources/Data/Managed/UnityEngine.UnityWebRequestModule.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Profiling.app/Contents/Resources/Data/Managed/UnityEngine.UnityWebRequestTextureModule.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Profiling.app/Contents/Resources/Data/Managed/UnityEngine.UnityWebRequestWWWModule.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Profiling.app/Contents/Resources/Data/Managed/UnityEngine.VFXModule.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Profiling.app/Contents/Resources/Data/Managed/UnityEngine.VRModule.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Profiling.app/Contents/Resources/Data/Managed/UnityEngine.VehiclesModule.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Profiling.app/Contents/Resources/Data/Managed/UnityEngine.VideoModule.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Profiling.app/Contents/Resources/Data/Managed/UnityEngine.VirtualTexturingModule.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Profiling.app/Contents/Resources/Data/Managed/UnityEngine.WindModule.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Profiling.app/Contents/Resources/Data/Managed/UnityEngine.XRModule.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Profiling.app/Contents/Resources/Data/Managed/UnityEngine.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Profiling.app/Contents/Resources/Data/Managed/mscorlib.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Profiling.app/Contents/Resources/Data/Managed/netstandard.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Profiling.app/Contents/Resources/Data/Resources/unity_builtin_extra" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Profiling.app/Contents/Resources/Data/app.info" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Profiling.app/Contents/Resources/Data/boot.config" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Profiling.app/Contents/Resources/Data/globalgamemanagers" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Profiling.app/Contents/Resources/Data/globalgamemanagers.assets" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Profiling.app/Contents/Resources/Data/level0" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Profiling.app/Contents/Resources/Data/resources.assets" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Profiling.app/Contents/Resources/Data/resources.assets.resS" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Profiling.app/Contents/Resources/Data/resources.resource" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Profiling.app/Contents/Resources/Data/sharedassets0.assets" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Profiling.app/Contents/Resources/Data/sharedassets0.assets.resS" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Profiling.app/Contents/Resources/Data/sharedassets0.resource" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Profiling.app/Contents/Resources/DefaultPreferences.plist" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Profiling.app/Contents/Resources/MainMenu.nib" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Profiling.app/Contents/Resources/unity default resources" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/TagsAsStrings.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/TagsAsStrings.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UIBoostBar.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UIKillCounter.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UIKillCounter.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.SHMUP 2D/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.SHMUP 2D/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.SHMUP 2D/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.SHMUP 2D/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.SHMUP 2D/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.SHMUP 2D/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assembly-CSharp.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Assembly-CSharp.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/prefabs/color_customizible/rounded/health_bar_rounded 1/HealthBar_LR.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Downloads/SimplePixelUI/prefabs/color_customizible/rounded/health_bar_rounded 1/HealthBar_LR.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LaserPickUp.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/LaserPickUp.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LaserPickUp.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/LaserPickUp.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/MissilePickUp.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MissilePickUp.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/MissilePickUp.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MissilePickUp.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PlasmaPickUp.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlasmaPickUp.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PlasmaPickUp.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlasmaPickUp.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GUI.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GUI/Scripts.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GUI/Scripts/ControllInstructions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UIControlInstructions.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GUI/Scripts/ControllInstructions.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UIControlInstructions.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GUI/Scripts/HealthBar.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UIHealthBar.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GUI/Scripts/HealthBar.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UIHealthBar.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GUI/Scripts/RechargeGUI.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GUI/Scripts/RechargeGUI.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UIBoostBar.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Resources/Explosion.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Explosion.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Resources/Homing Missile.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Homing Missile.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Resources/LaserBeam.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/LaserBeam.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Resources/PlasmaBall.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/PlasmaBall.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Player.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/AudioMixer.mixer" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/AudioMixer.mixer" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene/LightingData.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene/LightingData.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BackgroundController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/BackgroundController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/EnemyController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/EnemyController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/EnemySpawnManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/EnemySpawnManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/HomingMissile.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/HomingMissile.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/LaserControl.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/LaserControl.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/LaserPickUp.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/LaserPickUp.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MissileControl.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MissileControl.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MissilePickUp.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MissilePickUp.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlasmaControl.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlasmaControl.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlasmaPickUp.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlasmaPickUp.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlasmaShot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlasmaShot.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerBoundaries.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerBoundaries.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerData.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerInput.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerInput.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerMovement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerMovement.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ShieldControl.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ShieldControl.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/SpaceJunkController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SpaceJunkController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/SpaceJunkManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SpaceJunkManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/TimeManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/TimeManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/WeaponController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/WeaponController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/WeaponPickUpManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/WeaponPickUpManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/WeaponPool.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/WeaponPool.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/ArtifactDB" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ArtifactDB" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/CurrentLayout-default.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/Library/CurrentLayout-default.dwlt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/CurrentMaximizeLayout.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/Library/CurrentMaximizeLayout.dwlt" afterDir="false" />
@@ -267,29 +69,17 @@
       <change beforePath="$PROJECT_DIR$/Library/SceneVisibilityState.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Library/SceneVisibilityState.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/ScriptMapper" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptMapper" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/ShaderCache/EditorEncounteredVariants" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ShaderCache/EditorEncounteredVariants" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/SourceAssetDB" beforeDir="false" afterPath="$PROJECT_DIR$/Library/SourceAssetDB" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/StateCache/MainStageHierarchy/b3/b33c0e3f811f60f68b686d48892eb094.json" beforeDir="false" afterPath="$PROJECT_DIR$/Library/StateCache/MainStageHierarchy/b3/b33c0e3f811f60f68b686d48892eb094.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/StateCache/SceneView/d8/d8ceb4b4b810e823a3347aadfc1996d1.json" beforeDir="false" afterPath="$PROJECT_DIR$/Library/StateCache/SceneView/d8/d8ceb4b4b810e823a3347aadfc1996d1.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/UIElements/EditorWindows/UnityEditor.PackageManager.UI.PackageManagerWindow.pref" beforeDir="false" afterPath="$PROJECT_DIR$/Library/UIElements/EditorWindows/UnityEditor.PackageManager.UI.PackageManagerWindow.pref" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/expandedItems" beforeDir="false" afterPath="$PROJECT_DIR$/Library/expandedItems" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler0.log" beforeDir="false" afterPath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler0.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler1.log" beforeDir="false" afterPath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler1.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler10.log" beforeDir="false" afterPath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler10.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler11.log" beforeDir="false" afterPath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler11.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler12.log" beforeDir="false" afterPath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler12.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler13.log" beforeDir="false" afterPath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler13.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler14.log" beforeDir="false" afterPath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler14.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler15.log" beforeDir="false" afterPath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler15.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler2.log" beforeDir="false" afterPath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler2.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler3.log" beforeDir="false" afterPath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler3.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler4.log" beforeDir="false" afterPath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler4.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler5.log" beforeDir="false" afterPath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler5.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler6.log" beforeDir="false" afterPath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler6.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler7.log" beforeDir="false" afterPath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler7.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler8.log" beforeDir="false" afterPath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler8.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler9.log" beforeDir="false" afterPath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler9.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/InputManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/InputManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -320,16 +110,17 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/7CD321F2-2A98-4E1E-B513-F00B987C648C/55/325a4a2a/Transform.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/6DB092D1-1A2C-42B6-84A7-EB3CC9C0740E/4c/60bb3cad/Queue`1.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/EnemyController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/7CD321F2-2A98-4E1E-B513-F00B987C648C/22/5d72074d/Material.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/7CD321F2-2A98-4E1E-B513-F00B987C648C/2b/0b738b3d/GameObject.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/484E0A2F-7D55-49CC-9F07-3823AD678B61/1b/dfaa467c/ParticleSystem.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/1CC9F42F-C888-4DD6-B922-6D52BD1D749D/7a/dced9cdc/Rigidbody.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/1CC9F42F-C888-4DD6-B922-6D52BD1D749D/91/a8cc8430/RaycastHit.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/7CD321F2-2A98-4E1E-B513-F00B987C648C/94/1e87cc21/Component.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/GUI/Scripts/RechargeGUI.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UIBoostBar.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.2d.spriteshape@4.1.3/Runtime/SpriteShapeController.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/7CD321F2-2A98-4E1E-B513-F00B987C648C/c5/1e90ffc0/Random.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/GUI/Scripts/HealthBar.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UIHealthBar.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/484E0A2F-7D55-49CC-9F07-3823AD678B61/9b/5adc7f2c/ParticleSystem.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/7CD321F2-2A98-4E1E-B513-F00B987C648C/7f/95c33ebd/MonoBehaviour.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/LaserPickUp.cs" root0="FORCE_HIGHLIGHTING" />
@@ -348,55 +139,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/PlasmaBallEffect.cs" />
-        <option value="$PROJECT_DIR$/Assets/Material/PlasmaBallEffect.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/PlasmaBallEffect.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/PlasmaBallController.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/NewPlayableAsset.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/PlayerBoundaries.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/PlayerActions.cs" />
-        <option value="$PROJECT_DIR$/Assets/ShieldControl.cs" />
-        <option value="$PROJECT_DIR$/Assets/BackgroundController.cs" />
-        <option value="$PROJECT_DIR$/Assets/TimeManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/EnemyData.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/EnemySpawn.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/PlayerMovement.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/WeaponType.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/ShieldControl.cs" />
         <option value="$PROJECT_DIR$/Assets/MissilePool.cs" />
         <option value="$PROJECT_DIR$/Assets/WeaponPool.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/HomingMissileController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/LaserBeamControl.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PlasmaShotController.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/PlayerInput.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/WeaponManager.cs" />
         <option value="$PROJECT_DIR$/Assets/LaserControl.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/PlasmaShot.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/HomingMissile.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/PlasmaControl.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/WeaponPool.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/MissileControl.cs" />
         <option value="$PROJECT_DIR$/Assets/SpaceJunkController.cs" />
         <option value="$PROJECT_DIR$/Assets/SpaceJunkManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/LaserBeam.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/LaserControl.cs" />
         <option value="$PROJECT_DIR$/Assets/WeaponPickUpManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/WeaponController.cs" />
         <option value="$PROJECT_DIR$/Assets/MissilePickUp.cs" />
         <option value="$PROJECT_DIR$/Assets/LaserPickUp.cs" />
+        <option value="$PROJECT_DIR$/Assets/HealthBar.cs" />
+        <option value="$PROJECT_DIR$/Assets/RechargeGUI.cs" />
+        <option value="$PROJECT_DIR$/Assets/GUI/Scripts/ControllInstructions.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/TimeManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PlayerInput.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/SpaceJunkManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/ShieldControl.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PlayerBoundaries.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PlasmaShot.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PlasmaControl.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/MissileControl.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/LaserControl.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/HomingMissile.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/EnemySpawnManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/SpaceJunkManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/SpaceJunkController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/EnemyController.cs" />
-        <option value="$PROJECT_DIR$/Assets/HealthBar.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/PlayerData.cs" />
-        <option value="$PROJECT_DIR$/Assets/RechargeGUI.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/TagsAsStrings.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/BackgroundController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/SpaceJunkController.cs" />
         <option value="$PROJECT_DIR$/Assets/GUI/Scripts/HealthBar.cs" />
-        <option value="$PROJECT_DIR$/Assets/GUI/Scripts/ControllInstructions.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" />
+        <option value="$PROJECT_DIR$/Assets/GUI/Scripts/RechargeGUI.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/HealtBarUI.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UI_HealthBar.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UIBoostBar.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UIControlInstructions.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/WeaponPickUpManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/WeaponPool.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/MissilePickUp.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/WeaponController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PlayerMovement.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UIKillCounter.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PlasmaPickUp.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/LaserPickUp.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PlayerData.cs" />
       </list>
     </option>
   </component>
@@ -509,6 +302,7 @@
       <workItem from="1600673162811" duration="270000" />
       <workItem from="1600674548435" duration="10044000" />
       <workItem from="1600688417490" duration="6133000" />
+      <workItem from="1600755711758" duration="10582000" />
     </task>
     <task id="LOCAL−00001" summary="Updated with Particle System  and plasma Shots&#10;WeaponSystem WIP">
       <created>1599581575365</created>
@@ -728,10 +522,10 @@
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
     <state x="763" y="642" key="ANALYSIS_DLG_com.jetbrains.rider.actions.impl.cleanup.ChooseSilentCodeCleanupProfileDialog/0.23.2560.1417/-1792.343.1792.1097@0.23.2560.1417" timestamp="1599739763865" />
-    <state x="-1070" y="777" key="ANALYSIS_DLG_com.jetbrains.rider.actions.impl.cleanup.RiderCodeCleanupAction$actionPerformed$dlg$1" timestamp="1600691749674">
-      <screen x="-1792" y="343" width="1792" height="1097" />
+    <state x="722" y="457" key="ANALYSIS_DLG_com.jetbrains.rider.actions.impl.cleanup.RiderCodeCleanupAction$actionPerformed$dlg$1" timestamp="1600768346823">
+      <screen x="0" y="23" width="1792" height="1097" />
     </state>
-    <state x="722" y="457" key="ANALYSIS_DLG_com.jetbrains.rider.actions.impl.cleanup.RiderCodeCleanupAction$actionPerformed$dlg$1/0.23.1792.1097@0.23.1792.1097" timestamp="1600510928831" />
+    <state x="722" y="457" key="ANALYSIS_DLG_com.jetbrains.rider.actions.impl.cleanup.RiderCodeCleanupAction$actionPerformed$dlg$1/0.23.1792.1097@0.23.1792.1097" timestamp="1600768346823" />
     <state x="-1070" y="777" key="ANALYSIS_DLG_com.jetbrains.rider.actions.impl.cleanup.RiderCodeCleanupAction$actionPerformed$dlg$1/0.23.2560.1417/-1792.343.1792.1097@-1792.343.1792.1097" timestamp="1600691749674" />
     <state x="1031" y="583" key="ANALYSIS_DLG_com.jetbrains.rider.actions.impl.cleanup.RiderCodeCleanupAction$actionPerformed$dlg$1/0.23.2560.1417/-1792.343.1792.1097@0.23.2560.1417" timestamp="1600437924857" />
     <state width="486" height="465" key="DebuggerActiveHint" timestamp="1600070003892">
@@ -957,14 +751,15 @@
     </state>
     <state x="620" y="522" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1792.1097@0.23.1792.1097" timestamp="1599861093103" />
     <state x="886" y="668" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.2560.1417/-1792.343.1792.1097@0.23.2560.1417" timestamp="1600412265769" />
-    <state x="832" y="468" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1599752249165">
-      <screen x="0" y="23" width="2560" height="1417" />
-    </state>
-    <state x="832" y="468" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.23.2560.1417/-1792.343.1792.1097@0.23.2560.1417" timestamp="1599752249165" />
-    <state width="420" height="332" key="javadoc.popup" timestamp="1600509481166">
+    <state x="582" y="368" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1600768320140">
       <screen x="0" y="23" width="1792" height="1097" />
     </state>
-    <state width="420" height="332" key="javadoc.popup/0.23.1792.1097@0.23.1792.1097" timestamp="1600509481166" />
+    <state x="582" y="368" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.23.1792.1097@0.23.1792.1097" timestamp="1600768320140" />
+    <state x="832" y="468" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.23.2560.1417/-1792.343.1792.1097@0.23.2560.1417" timestamp="1599752249165" />
+    <state width="420" height="332" key="javadoc.popup" timestamp="1600767711667">
+      <screen x="0" y="23" width="1792" height="1097" />
+    </state>
+    <state width="420" height="332" key="javadoc.popup/0.23.1792.1097@0.23.1792.1097" timestamp="1600767711667" />
     <state width="932" height="428" key="javadoc.popup/0.23.2560.1417/-1792.343.1792.1097@-1792.343.1792.1097" timestamp="1599654340151" />
     <state width="1002" height="428" key="javadoc.popup/0.23.2560.1417/-1792.343.1792.1097@0.23.2560.1417" timestamp="1600438868659" />
     <state x="908" y="984" key="run.anything.popup" timestamp="1599493012896">

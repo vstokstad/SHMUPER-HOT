@@ -1,5 +1,6 @@
 ﻿using System;
 using UnityEngine;
+using static TagsAsStrings;
 using Random = UnityEngine.Random;
 
 public class EnemyController : MonoBehaviour {
@@ -33,7 +34,7 @@ public class EnemyController : MonoBehaviour {
 
     private void OnEnable(){
         _rigidBody = GetComponent<Rigidbody>();
-        _playerTransform = GameObject.FindWithTag("Player").GetComponent<Transform>();
+        _playerTransform = GameObject.FindWithTag(playerTag).GetComponent<Transform>();
     }
 
 
@@ -45,20 +46,16 @@ public class EnemyController : MonoBehaviour {
 
     private void Move(Vector3 direction){
         float speedAdjust = Vector3.Distance(_playerTransform.position, transform.position);
-       
-        if (_level < 2f) {
-            direction.y = Mathf.Sin(speedAdjust*Mathf.PI);
-        }
 
-        if (_level >= 3) {
-            _rigidBody.rotation = Random.rotationUniform;
-        }
-        _rigidBody.AddForce(direction * ( speedAdjust + _moveSpeed * Time.fixedDeltaTime), ForceMode.Acceleration);
+        if (_level < 2f) direction.y = Mathf.Sin(speedAdjust * Mathf.PI);
+
+        if (_level >= 3) _rigidBody.rotation = Random.rotationUniform;
+        _rigidBody.AddForce(direction * (speedAdjust + _moveSpeed * Time.fixedDeltaTime), ForceMode.Acceleration);
     }
 
 
     private void Explode(){
-        _explosion = Instantiate(Resources.Load<GameObject>("Explosion")).GetComponent<ParticleSystem>();
+        _explosion = Instantiate(Resources.Load<GameObject>(explosionTag)).GetComponent<ParticleSystem>();
         _explosion.transform.position = transform.position;
         _playerTransform.GetComponent<PlayerController>().killCounter += 1f;
         Destroy(gameObject);

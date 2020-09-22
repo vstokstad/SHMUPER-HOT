@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using static TagsAsStrings;
 using static WeaponManager;
 
 public class HomingMissile : MonoBehaviour, IWeapon {
@@ -12,7 +13,7 @@ public class HomingMissile : MonoBehaviour, IWeapon {
 
     private void OnEnable(){
         gameObject.SetActive(true);
-        _player = GameObject.FindGameObjectWithTag("Player");
+        _player = GameObject.FindGameObjectWithTag(playerTag);
     }
 
     public void Shoot(){

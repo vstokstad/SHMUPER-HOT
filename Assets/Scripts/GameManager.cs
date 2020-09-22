@@ -1,15 +1,16 @@
-
-using static UnityEngine.Cursor;
 using UnityEngine;
+using static UnityEngine.Cursor;
 
 [RequireComponent(typeof(Transform))]
 [DefaultExecutionOrder(-1000)]
 public class GameManager : MonoBehaviour {
     public static Camera PlayerCamera { get; private set; }
     public static Transform PlayerCameraTransform { get; private set; }
+
     public static bool LockCursor {
-        set { lockState = value ? CursorLockMode.Locked : CursorLockMode.None; }
+        set => lockState = value ? CursorLockMode.Locked : CursorLockMode.None;
     }
+
     public static Vector3 CameraBounds { get; private set; }
 
 

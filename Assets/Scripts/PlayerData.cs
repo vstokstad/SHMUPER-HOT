@@ -1,21 +1,23 @@
 using System;
 using UnityEngine;
+using static TagsAsStrings;
 
 [CreateAssetMenu(fileName = "New Player Data", menuName = "Scriptable/PlayerData", order = 0)]
 public class PlayerData : ScriptableObject {
     [Header("Statistics")] public static float health = 5f;
 
-    public float rechargeTime = 5f;
+    public static readonly float rechargeTime = 10f;
+    [NonSerialized] public static float boostCharge = 10f;
+
+    public float highScore;
 
     [Header("Move")] [Range(4f, 12f)] public float maxSpeed = 10f;
 
-    public float crashDamage = 0.5f;
     public float acceleration = 3f;
-    
+
 
     private float _rechargeTimer;
     private GameObject _shieldBubble;
-    [NonSerialized] public float boostCharge = 10f;
 
     public bool ShieldIsLoaded {
         get => _shieldBubble.activeSelf;
@@ -23,7 +25,7 @@ public class PlayerData : ScriptableObject {
     }
 
     private void OnEnable(){
-        _shieldBubble = GameObject.Find("Shield");
+        _shieldBubble = GameObject.Find(shieldTag);
     }
 
 
@@ -31,10 +33,11 @@ public class PlayerData : ScriptableObject {
     public void RechargeTimer(){
         if (_rechargeTimer > 0f) {
             _rechargeTimer -= Time.deltaTime;
+            boostCharge += Time.deltaTime * 0.5f;
+            Mathf.Clamp(boostCharge, 0f, 10f);
         }
         else if (_rechargeTimer <= 0f) {
             ShieldIsLoaded = true;
-            if (boostCharge < 0.1f && boostCharge < 10f) boostCharge += rechargeTime * Time.deltaTime;
             _rechargeTimer = rechargeTime;
         }
     }

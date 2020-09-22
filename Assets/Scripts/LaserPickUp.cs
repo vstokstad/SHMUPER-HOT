@@ -1,6 +1,9 @@
 ﻿using UnityEngine;
+using UnityEngine.Events;
+using static TagsAsStrings;
 
 public class LaserPickUp : MonoBehaviour {
+    public UnityEvent onPickUp = new UnityEvent();
     private Collider _collider;
     private Vector3 _translateTargetPos;
 
@@ -12,12 +15,14 @@ public class LaserPickUp : MonoBehaviour {
         _translateTargetPos.y = Mathf.Sin(Mathf.PI * Time.fixedDeltaTime);
         transform.position = Vector3.Lerp(transform.position, _translateTargetPos, Time.fixedDeltaTime);
     }
-    
+
 
     private void OnTriggerEnter(Collider other){
-        if (!other.CompareTag("Player")) return;
+        if (!other.CompareTag(playerTag)) return;
+
         WeaponController.laserEquipped = true;
         WeaponController.weaponType = WeaponType.Laser;
+        onPickUp.Invoke();
         gameObject.SetActive(false);
     }
 }

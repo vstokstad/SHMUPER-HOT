@@ -28,13 +28,6 @@
             </e>
           </e>
         </e>
-        <e p="GUI" t="Include">
-          <e p="Scripts" t="Include">
-            <e p="ControllInstructions.cs" t="Include" />
-            <e p="HealthBar.cs" t="Include" />
-            <e p="RechargeGUI.cs" t="Include" />
-          </e>
-        </e>
         <e p="Material" t="Include">
           <e p="Plasma_S.shader" t="Include" />
         </e>
@@ -61,42 +54,16 @@
           <e p="ShieldControl.cs" t="Include" />
           <e p="SpaceJunkController.cs" t="Include" />
           <e p="SpaceJunkManager.cs" t="Include" />
+          <e p="TagsAsStrings.cs" t="Include" />
           <e p="TimeManager.cs" t="Include" />
+          <e p="UIBoostBar.cs" t="Include" />
+          <e p="UIControlInstructions.cs" t="Include" />
+          <e p="UIHealthBar.cs" t="Include" />
+          <e p="UIKillCounter.cs" t="Include" />
           <e p="WeaponController.cs" t="Include" />
           <e p="WeaponManager.cs" t="Include" />
           <e p="WeaponPickUpManager.cs" t="Include" />
           <e p="WeaponPool.cs" t="Include" />
-        </e>
-        <e p="TextMesh Pro" t="Include">
-          <e p="fonts" t="Include">
-            <e p="LiberationSans - OFL.txt" t="Include" />
-          </e>
-          <e p="Resources" t="Include">
-            <e p="LineBreaking Following Characters.txt" t="Include" />
-            <e p="LineBreaking Leading Characters.txt" t="Include" />
-          </e>
-          <e p="Shaders" t="Include">
-            <e p="TMP_Bitmap-Custom-Atlas.shader" t="Include" />
-            <e p="TMP_Bitmap-Mobile.shader" t="Include" />
-            <e p="TMP_Bitmap.shader" t="Include" />
-            <e p="TMP_SDF Overlay.shader" t="Include" />
-            <e p="TMP_SDF SSD.shader" t="Include" />
-            <e p="TMP_SDF-Mobile Masking.shader" t="Include" />
-            <e p="TMP_SDF-Mobile Overlay.shader" t="Include" />
-            <e p="TMP_SDF-Mobile SSD.shader" t="Include" />
-            <e p="TMP_SDF-Mobile.shader" t="Include" />
-            <e p="TMP_SDF-Surface-Mobile.shader" t="Include" />
-            <e p="TMP_SDF-Surface.shader" t="Include" />
-            <e p="TMP_SDF.shader" t="Include" />
-            <e p="TMP_Sprite.shader" t="Include" />
-            <e p="TMPro.cginc" t="Include" />
-            <e p="TMPro_Mobile.cginc" t="Include" />
-            <e p="TMPro_Properties.cginc" t="Include" />
-            <e p="TMPro_Surface.cginc" t="Include" />
-          </e>
-          <e p="Sprites" t="Include">
-            <e p="EmojiOne Attribution.txt" t="Include" />
-          </e>
         </e>
       </e>
       <e p="obj" t="ExcludeRecursive" />

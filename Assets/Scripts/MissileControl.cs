@@ -1,7 +1,8 @@
 using UnityEngine;
+using static TagsAsStrings;
 
 public class MissileControl : MonoBehaviour {
-    private readonly float _missileDamage = 1f;
+    private readonly float _missileDamage = 0.3f;
     private readonly float _speed = 10f;
     private Vector3 _moveDirection;
     private Rigidbody _rigidBody;
@@ -35,7 +36,7 @@ public class MissileControl : MonoBehaviour {
     }
 
     private void OnTriggerEnter(Collider other){
-        if (!other.CompareTag("Enemy")) return;
+        if (!other.CompareTag(enemyTag)) return;
         other.GetComponent<EnemyController>().TakeDamage(_missileDamage);
         gameObject.SetActive(false);
     }
@@ -44,7 +45,7 @@ public class MissileControl : MonoBehaviour {
         Collider[] hitColliders = new Collider[10];
         int numColliders = Physics.OverlapSphereNonAlloc(transform.position, 20f, hitColliders);
         for (int i = 0; i < numColliders; i++) {
-            if (!hitColliders[i].CompareTag("Enemy")) continue;
+            if (!hitColliders[i].CompareTag(enemyTag)) continue;
             Vector3 enemyPos = hitColliders[i].attachedRigidbody.position;
             _moveDirection = enemyPos - transform.position;
             return;
