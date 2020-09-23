@@ -6,12 +6,12 @@ public class ShieldControl : MonoBehaviour {
     private const float _shieldDamage = 0.5f;
     private PlayerData _playerData;
     [NonSerialized] public bool shieldInput;
-    private SphereCollider shieldCollider;
-    private SpriteRenderer shieldSprite;
+    private SphereCollider _shieldCollider;
+    private SpriteRenderer _shieldSprite;
 
     private void Awake(){
-        shieldCollider = GetComponent<SphereCollider>();
-        shieldSprite = GetComponent<SpriteRenderer>();
+        _shieldCollider = GetComponent<SphereCollider>();
+        _shieldSprite = GetComponent<SpriteRenderer>();
         _playerData = GetComponentInParent<PlayerController>().playerData;
     }
 
@@ -19,8 +19,8 @@ public class ShieldControl : MonoBehaviour {
 
     private void Update(){
      
-           shieldCollider.enabled = _playerData.ShieldIsLoaded;
-           shieldSprite.enabled = _playerData.ShieldIsLoaded;
+           _shieldCollider.enabled = _playerData.ShieldIsLoaded;
+           _shieldSprite.enabled = _playerData.ShieldIsLoaded;
            if (_playerData.ShieldIsLoaded) return;
            if (!shieldInput || !(PlayerData.boostCharge >= 5f)) return;
            _playerData.ShieldIsLoaded = true;
