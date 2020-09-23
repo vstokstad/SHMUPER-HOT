@@ -18,8 +18,10 @@ public class PlasmaShot : MonoBehaviour, IWeapon {
             return;
         }
 
+        if (!(PlayerData.boostCharge >= 0.5f)) return;
         _shootTimer = 0.3f;
 
+        PlayerData.boostCharge -= 0.5f;
         Vector3 plasmaVelocity = new Vector3(20f, 0f);
         GameObject plasmaShot = WeaponPool.Instance.Get(WeaponType.Plasma);
         Vector3 initialPosition = _playerController.gameObject.transform.position;

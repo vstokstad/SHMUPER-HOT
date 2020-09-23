@@ -35,6 +35,7 @@ public class PlayerMovement : MonoBehaviour {
         Vector3 velocity = _currentVelocity + _moveDirection * (inputAmount * _playerData.acceleration);
         velocity = Vector3.ClampMagnitude(velocity, _playerData.maxSpeed);
         MovePlayer(velocity);
+        
         _audioSource.panStereo = sidewaysInput;
         if (boostInput && !_audioSource.isPlaying) _audioSource.Play();
     }
@@ -43,14 +44,12 @@ public class PlayerMovement : MonoBehaviour {
     private void MovePlayer(Vector3 velocity){
         TrailingFlames();
         if (boostInput && PlayerData.boostCharge > 0) {
-            velocity *= 5f;
+            velocity *= 3f;
 
             _rigidbody.velocity = velocity;
-
             _light.intensity = _intensity * 10f;
             _light.color = Color.magenta;
-            PlayerData.boostCharge -= Time.deltaTime;
-            { }
+            PlayerData.boostCharge -= 3f*Time.fixedDeltaTime;
         }
         else {
             _rigidbody.velocity = velocity;

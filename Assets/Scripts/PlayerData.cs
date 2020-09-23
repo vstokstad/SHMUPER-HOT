@@ -1,5 +1,6 @@
 using System;
 using UnityEngine;
+using UnityEngine.Assertions.Must;
 using static TagsAsStrings;
 
 [CreateAssetMenu(fileName = "New Player Data", menuName = "Scriptable/PlayerData", order = 0)]
@@ -14,29 +15,20 @@ public class PlayerData : ScriptableObject {
     [Header("Move")] [Range(4f, 12f)] public float maxSpeed = 10f;
 
     public float acceleration = 3f;
-
-
+    
     private float _rechargeTimer;
-    private GameObject _shieldBubble;
-
-    public bool ShieldIsLoaded {
-        get => _shieldBubble.activeSelf;
-        set => _shieldBubble?.SetActive(value);
-    }
-
-    private void OnEnable(){
-        _shieldBubble = GameObject.Find(shieldTag);
-    }
+    public bool ShieldIsLoaded { get; set; }
 
 
+    
+    
 //Charges shield and booster
     public void RechargeTimer(){
         if (_rechargeTimer > 0f) {
             _rechargeTimer -= Time.deltaTime;
-            boostCharge = Mathf.Lerp(boostCharge, 10f, Time.deltaTime*0.5f);
+            boostCharge = Mathf.Lerp(boostCharge, 10f, 0.2f*Time.fixedDeltaTime);
         }
         else if (_rechargeTimer <= 0f) {
-            ShieldIsLoaded = true;
             _rechargeTimer = rechargeTime;
         }
     }
