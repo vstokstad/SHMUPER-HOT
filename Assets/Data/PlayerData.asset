@@ -12,7 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0bfec7da7844a5cbb9a0214c643dc38, type: 3}
   m_Name: PlayerData
   m_EditorClassIdentifier: 
-  highScore: 7
+  highScore: 82
   maxSpeed: 10
   acceleration: 3
-  shieldBubble: {fileID: 4805805623486112806, guid: 52686ef3e06f94e11aae7e32aed3aa6d, type: 3}

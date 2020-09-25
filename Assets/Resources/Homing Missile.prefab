@@ -128,6 +128,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8457a35a8ef412a9c6d67cb64046c8d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  missileDamage: 0.8
+  speed: 20
+  enemySearchRate: 0.4
 --- !u!82 &6268078407493639258
 AudioSource:
   m_ObjectHideFlags: 0

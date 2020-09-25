@@ -12,15 +12,18 @@ public class TimeManager : MonoBehaviour {
     private readonly float _stoppedTime = 0.0f;
     private float _fixedDeltaTime;
     [NonSerialized] public TimeState timeState;
-
+    public bool gamePaused;
     private void Awake(){
         _fixedDeltaTime = Time.fixedUnscaledDeltaTime;
     }
 
     private void Update(){
-        if (Input.anyKey) timeState = TimeState.Normal;
-        else if (!Input.anyKey) timeState = TimeState.Stopped;
+        if (!gamePaused) {
+            if (Input.anyKey) timeState = TimeState.Normal;
+            else if (!Input.anyKey) timeState = TimeState.Stopped;
+        }
         TimeShift();
+       
     }
 
     private void TimeShift(){

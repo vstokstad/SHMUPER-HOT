@@ -45,13 +45,12 @@ public class WeaponController : MonoBehaviour {
     }
 
     public void HandleWeaponType(WeaponType weaponChoice){
-#if DEBUG
+
         if (debugMode) {
             plasmaEquipped = true;
             laserEquipped = true;
             missileEquipped = true;
         }
-#endif
         Component c = GetComponent<WeaponManager.IWeapon>() as Component;
 
         if (c != null) Destroy(c);
