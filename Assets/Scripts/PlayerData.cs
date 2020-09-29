@@ -4,7 +4,7 @@ using UnityEngine;
 
 [CreateAssetMenu(fileName = "New Player Data", menuName = "Scriptable/PlayerData", order = 0)]
 public class PlayerData : ScriptableObject {
-    [Header("Statistics")] [NonSerialized] public static float health = 1f;
+    [Header("Statistics")] [NonSerialized] public static float health = 10f;
     [NonSerialized] public static float boostCharge = 10f;
 
     public float highScore;

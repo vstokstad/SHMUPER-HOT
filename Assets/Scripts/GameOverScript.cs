@@ -33,7 +33,7 @@ public class GameOverScript : MonoBehaviour {
     private void OnEnable(){
         _playerController = FindObjectOfType<PlayerController>();
         _timeManager = FindObjectOfType<TimeManager>();
-        this.runInEditMode = true;
+        
         _highScoreStateAtDeath = _playerController.playerData.highScore;
     }
 }

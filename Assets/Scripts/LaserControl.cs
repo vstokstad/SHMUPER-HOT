@@ -4,7 +4,7 @@ using static TagsAsStrings;
 public class LaserControl : MonoBehaviour {
     private readonly float _laserDamage = 0.1f;
     private readonly float _laserLengthOff = 0f;
-    private readonly float _laserLengthOn = GameManager.CameraBounds.x;
+    private readonly float _laserLengthOn = 20f;
     private Collider _laserCollider;
     private bool _laserIsOn;
     private Vector3 _laserScale;
