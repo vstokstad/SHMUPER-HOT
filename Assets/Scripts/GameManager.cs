@@ -7,17 +7,16 @@ using Debug = System.Diagnostics.Debug;
 public class GameManager : MonoBehaviour {
     public static Camera PlayerCamera { get; private set; }
 
-    public static bool LockCursor {
+    private static bool LockCursor {
         set => lockState = value ? CursorLockMode.Locked : CursorLockMode.None;
     }
 
-    public static Vector3 CameraBounds { get; set; }
+    public static Vector3 CameraBounds { get; private set; }
 
 
     private void Awake(){
-        PlayerCamera = Camera.main;
+        PlayerCamera = FindObjectOfType<Camera>();
         Debug.Assert(PlayerCamera != null, nameof(PlayerCamera) + " != null");
-        PlayerCamera.orthographic = true;
         float width = PlayerCamera.scaledPixelWidth;
         float height = PlayerCamera.scaledPixelHeight;
         // Screen.SetResolution(960, 720, false, 60);

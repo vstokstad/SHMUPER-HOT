@@ -3,13 +3,13 @@ using UnityEngine;
 using static TagsAsStrings;
 
 public class SpaceJunkManager : MonoBehaviour {
-    private readonly int _numberOfSpaceJunk = 15;
-    internal List<GameObject> _spaceJunkList;
+    [SerializeField] private int numberOfSpaceJunk = 15;
+    private List<GameObject> _spaceJunkList;
     private float _spawnTimer;
 
     private void Awake(){
-        _spaceJunkList = new List<GameObject>(_numberOfSpaceJunk);
-        for (int i = 0; i < _numberOfSpaceJunk; i++) {
+        _spaceJunkList = new List<GameObject>(numberOfSpaceJunk);
+        for (int i = 0; i < numberOfSpaceJunk; i++) {
             _spaceJunkList.Add(Instantiate(Resources.Load(spaceJunkTag, typeof(GameObject))) as GameObject);
             _spaceJunkList[i].SetActive(false);
         }

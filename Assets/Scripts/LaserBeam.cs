@@ -2,7 +2,7 @@
 using static WeaponManager;
 
 public class LaserBeam : MonoBehaviour, IWeapon {
-    private float _rateOfFire = 0f;
+    private float _rateOfFire;
     [SerializeField] private float fireRate = 1f;
     private void Update(){
         _rateOfFire -= Time.unscaledDeltaTime;
