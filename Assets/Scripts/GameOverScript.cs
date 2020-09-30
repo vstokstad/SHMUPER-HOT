@@ -3,7 +3,7 @@ using UnityEngine.SceneManagement;
 
 
 public class GameOverScript : MonoBehaviour {
-    private PlayerInput _playerInput;
+    private Input _input;
     private TimeManager _timeManager;
     private PlayerData _playerData;
     private PlayerController _playerController;
@@ -13,7 +13,7 @@ public class GameOverScript : MonoBehaviour {
     private void Update(){
         _timeManager.gamePaused = true;
         _timeManager.timeState = TimeState.Stopped;
-        if (Input.GetKeyDown(KeyCode.Return)) {
+        if (UnityEngine.Input.anyKey) {
             AsyncOperation asyncLoad = SceneManager.LoadSceneAsync(SceneManager.GetActiveScene().buildIndex);
             asyncLoad.allowSceneActivation = true;
             ResetGame();

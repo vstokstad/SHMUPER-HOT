@@ -2,7 +2,7 @@ using UnityEngine;
 using UnityEngine.Events;
 using static TagsAsStrings;
 
-[RequireComponent(typeof(PlayerInput), typeof(PlayerMovement), typeof(PlayerBoundaries))]
+[RequireComponent(typeof(Input), typeof(PlayerMovement), typeof(PlayerBoundaries))]
 [RequireComponent(typeof(Rigidbody))]
 [RequireComponent(typeof(SphereCollider), typeof(ParticleSystem))]
 public class PlayerController : MonoBehaviour {

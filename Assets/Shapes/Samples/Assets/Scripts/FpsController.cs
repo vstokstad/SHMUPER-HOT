@@ -174,18 +174,18 @@ namespace Shapes {
 
 			if( InputFocus ) {
 				// mouselook
-				yaw += Input.GetAxis( "Mouse X" ) * lookSensitivity;
-				pitch -= Input.GetAxis( "Mouse Y" ) * lookSensitivity;
+				yaw += UnityEngine.Input.GetAxis( "Mouse X" ) * lookSensitivity;
+				pitch -= UnityEngine.Input.GetAxis( "Mouse Y" ) * lookSensitivity;
 				pitch = Mathf.Clamp( pitch, -90, 90 );
 				head.localRotation = Quaternion.Euler( pitch, yaw, 0f );
 
-				chargeBar.isCharging = Input.GetMouseButton( 1 ); // rmb
+				chargeBar.isCharging = UnityEngine.Input.GetMouseButton( 1 ); // rmb
 
-				if( Input.GetKey( KeyCode.R ) )
+				if( UnityEngine.Input.GetKey( KeyCode.R ) )
 					ammoBar.Reload();
 
 				// actions
-				if( Input.GetMouseButtonDown( 0 ) && ammoBar.HasBulletsLeft ) {
+				if( UnityEngine.Input.GetMouseButtonDown( 0 ) && ammoBar.HasBulletsLeft ) {
 					// Fire
 					ammoBar.Fire();
 					crosshair.Fire();
@@ -198,7 +198,7 @@ namespace Shapes {
 				moveInput = Vector2.zero;
 
 				void DoInput( KeyCode key, Vector2 dir ) {
-					if( Input.GetKey( key ) )
+					if( UnityEngine.Input.GetKey( key ) )
 						moveInput += dir;
 				}
 
@@ -208,9 +208,9 @@ namespace Shapes {
 				DoInput( KeyCode.A, Vector2.left );
 
 				// leave focus mode stuff
-				if( Input.GetKeyDown( KeyCode.Escape ) )
+				if( UnityEngine.Input.GetKeyDown( KeyCode.Escape ) )
 					InputFocus = false;
-			} else if( Input.GetMouseButtonDown( 0 ) ) {
+			} else if( UnityEngine.Input.GetMouseButtonDown( 0 ) ) {
 				InputFocus = true;
 			}
 		}

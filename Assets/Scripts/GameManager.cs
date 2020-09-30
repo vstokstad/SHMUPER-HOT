@@ -25,7 +25,7 @@ public class GameManager : MonoBehaviour {
     }
 
     private void OnEnable(){
-        LockCursor = true;
+        LockCursor = false;
     }
 
     private void OnDisable(){

@@ -6,6 +6,8 @@ public class UIControlInstructions : MonoBehaviour {
     }
 
     private void OnGUI(){
-        if (Input.anyKey) gameObject.SetActive(false);
+#if ENABLE_LEGACY_INPUT_MANAGER
+        if (UnityEngine.Input.anyKey) gameObject.SetActive(false);
+#endif
     }
 }

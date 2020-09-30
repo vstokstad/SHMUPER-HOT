@@ -18,15 +18,17 @@ public class TimeManager : MonoBehaviour {
     }
 
     private void Update(){
+        #if ENABLE_LEGACY_INPUT_MANAGER
         if (!gamePaused) {
-            if (Input.anyKey) timeState = TimeState.Normal;
-            else if (!Input.anyKey) timeState = TimeState.Stopped;
+            if (UnityEngine.Input.anyKey) timeState = TimeState.Normal;
+            else if (!UnityEngine.Input.anyKey) timeState = TimeState.Stopped;
         }
         TimeShift();
-       
+       #endif
     }
+    
 
-    private void TimeShift(){
+    public void TimeShift(){
         switch (timeState) {
             case TimeState.Stopped:
                 Time.timeScale = Mathf.Lerp(Time.timeScale, _stoppedTime,

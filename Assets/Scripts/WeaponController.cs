@@ -26,7 +26,7 @@ public class WeaponController : MonoBehaviour {
         weaponType = Plasma;
         HandleWeaponType(weaponType);
     }
-
+#if ENABLE_LEGACY_INPUT_MANAGER
     private void Update(){
         if (fireInput) Fire();
         if (!nextWeaponInput) return;
@@ -39,7 +39,7 @@ public class WeaponController : MonoBehaviour {
             HandleWeaponType(weaponType);
         }
     }
-
+#endif
     public void HandleWeaponPickUp(){
         HandleWeaponType(weaponType);
     }
@@ -75,7 +75,7 @@ public class WeaponController : MonoBehaviour {
         }
     }
 
-    private void Fire(){
+    public void Fire(){
         _iWeapon.Shoot();
     }
 }
