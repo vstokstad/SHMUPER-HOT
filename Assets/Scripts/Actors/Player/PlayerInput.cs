@@ -46,9 +46,9 @@ namespace Actors.Player {
             if (Input.GetButton("Fire1")) shoot();
             if (Input.GetButton("Boost")) boost();
             if (Input.GetButtonDown("Shield")) shield();
-            //  movement.upDownInput = Input.GetAxis("Vertical");
-            //  movement.sidewaysInput = Input.GetAxis("Horizontal");
-            //  _shieldControl.shieldInput = Input.GetButtonDown("Shield");
+              movement.upDownInput = Input.GetAxis("Vertical");
+              movement.sidewaysInput = Input.GetAxis("Horizontal");
+              _shieldControl.shieldInput = Input.GetButtonDown("Shield");
             //  movement.boostInput = Input.GetButton("Boost");
             //  _weaponController.fireInput = Input.GetButton("Fire1");
             //  _weaponController.nextWeaponInput = Input.GetButtonDown("Weapon Cycle");

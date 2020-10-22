@@ -575,6 +575,7 @@ GameObject:
   - component: {fileID: 4319577970070677576}
   - component: {fileID: 4319577970070677577}
   - component: {fileID: 4319577970070677590}
+  - component: {fileID: 324370427}
   m_Layer: 0
   m_Name: Rectangle
   m_TagString: Untagged
@@ -590,7 +591,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4319577970070677591}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -500, y: 50, z: 0}
+  m_LocalPosition: {x: -400, y: -250, z: 0}
   m_LocalScale: {x: 50, y: 50, z: 50}
   m_Children:
   - {fileID: 346565565}
@@ -671,6 +672,18 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &324370427
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4319577970070677591}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0efee6d6efd3c45ea82cdfc323da389c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &4319577970274815092
 GameObject:
   m_ObjectHideFlags: 0
@@ -944,7 +957,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4319577971648065935}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 450, y: 100, z: 0}
+  m_LocalPosition: {x: 450, y: -200, z: 0}
   m_LocalScale: {x: 30, y: 30, z: 30}
   m_Children:
   - {fileID: 4319577970566685249}
@@ -1180,6 +1193,7 @@ GameObject:
   - component: {fileID: 905207883482846594}
   - component: {fileID: 1403291530067267612}
   - component: {fileID: 6776674600184383266}
+  - component: {fileID: 1802837834}
   m_Layer: 0
   m_Name: Disc
   m_TagString: Untagged
@@ -1204,7 +1218,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -400, y: 50}
+  m_AnchoredPosition: {x: -500, y: -250}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &905207883482846594
@@ -1297,3 +1311,15 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &1802837834
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8831876269705844773}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 57153e7df85a54bb48f72a378fbb5405, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
