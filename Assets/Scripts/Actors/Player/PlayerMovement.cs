@@ -37,8 +37,12 @@ namespace Actors.Player {
         }
 
         private void OnEnable(){
-            PlayerInput.Boost += Boost;
+            PlayerInput.boost += Boost;
         
+        }
+
+        private void OnDisable(){
+            PlayerInput.boost -= Boost;
         }
 
         private void FixedUpdate(){

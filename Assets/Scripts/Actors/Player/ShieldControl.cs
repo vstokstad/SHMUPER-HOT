@@ -17,17 +17,18 @@ namespace Actors.Player {
             _playerData = GetComponentInParent<PlayerController>().playerData;
         }
 
-  
+        private void OnEnable(){
+            PlayerInput.shield += ActivateShield;
+        }
+
+        private void OnDisable(){
+            PlayerInput.shield -= ActivateShield;
+        }
 
         private void Update(){
      
             _shieldCollider.enabled = _playerData.ShieldIsLoaded;
             _shieldSprite.enabled = _playerData.ShieldIsLoaded;
-            if (_playerData.ShieldIsLoaded) return;
-            if (!shieldInput || !(PlayerData.boostCharge >= 5f)) return;
-            ActivateShield();
-
-
 
         }
 
@@ -38,6 +39,8 @@ namespace Actors.Player {
         }
 
         private void ActivateShield(){
+            if (_playerData.ShieldIsLoaded) return;
+            if (!(PlayerData.boostCharge >= 5f)) return;
             _playerData.ShieldIsLoaded = true;
             PlayerData.boostCharge -= 5f;
         }

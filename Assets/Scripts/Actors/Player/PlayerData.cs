@@ -19,7 +19,7 @@ namespace Actors.Player {
 
 //Charges shield and booster
         public void RechargeTimer(){
-            boostCharge = Mathf.Lerp(boostCharge, 10f, 0.1f * Time.fixedDeltaTime);
+            boostCharge = Mathf.Lerp(boostCharge, 10f, 0.5f * Time.fixedDeltaTime);
         }
     }
 }

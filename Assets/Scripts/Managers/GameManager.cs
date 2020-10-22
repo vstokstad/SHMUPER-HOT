@@ -17,8 +17,7 @@ namespace Managers {
 
 
         private void Awake(){
-            PlayerCamera = FindObjectOfType<Camera>();
-            Debug.Assert(PlayerCamera != null, nameof(PlayerCamera) + " != null");
+            PlayerCamera = Camera.main;
             float width = PlayerCamera.scaledPixelWidth;
             float height = PlayerCamera.scaledPixelHeight;
             // Screen.SetResolution(960, 720, false, 60);

@@ -3,47 +3,53 @@ using Actors.Weapons;
 using Managers;
 using Shapes;
 using UI;
+using UI.TouchUI;
 using UnityEngine;
 using UnityEngine.UIElements;
 
 namespace Actors.Player {
     [RequireComponent(typeof(Joystick))]
     public class PlayerInput : MonoBehaviour {
-        internal PlayerMovement _movement;
-        private ShieldControl _shieldControl;
-        private WeaponController _weaponController;
-        public GameObject gamePad;
-        internal float _gamePadRadius;
-        public Button rectangleButton;
-        public Button discButton;
+        [SerializeField] internal PlayerMovement movement;
+        [SerializeField] public ShieldControl _shieldControl;
+        [SerializeField] public WeaponController _weaponController;
+        [SerializeField] public GameObject gamePad;
+        internal float gamePadRadius;
+        [SerializeField] public Rectangle rectangleButton;
+        [SerializeField] public Disc discButton;
 
-        public static Action Boost = delegate{ };
-        public static Action Shoot = delegate{ };
-        public static Action Shield = delegate{ };
-        private Joystick _joystick;
+        public static Action boost;
+        public static Action shoot;
+        public static Action shield;
+        [SerializeField] Joystick _joystick;
 
 
         private void Awake(){
-            _movement = GetComponent<PlayerMovement>();
-            _joystick = GetComponent<Joystick>();
-        
+            movement = GetComponent<PlayerMovement>();
+
             if (GameManager.OnMobile) {
                 Input.multiTouchEnabled = true;
                 gamePad.SetActive(true);
-                _gamePadRadius = gamePad.GetComponent<Disc>().Radius;
+                gamePadRadius = gamePad.GetComponent<Disc>().Radius;
             }
             else {
                 Destroy(gamePad);
             }
         }
 
+        private void OnEnable(){
+          
+        }
 
         private void Update(){
             _joystick.TouchMoveControl();
-            //  _movement.upDownInput = Input.GetAxis("Vertical");
-            //  _movement.sidewaysInput = Input.GetAxis("Horizontal");
+            if (Input.GetButton("Fire1")) shoot();
+            if (Input.GetButton("Boost")) boost();
+            if (Input.GetButtonDown("Shield")) shield();
+            //  movement.upDownInput = Input.GetAxis("Vertical");
+            //  movement.sidewaysInput = Input.GetAxis("Horizontal");
             //  _shieldControl.shieldInput = Input.GetButtonDown("Shield");
-            //  _movement.boostInput = Input.GetButton("Boost");
+            //  movement.boostInput = Input.GetButton("Boost");
             //  _weaponController.fireInput = Input.GetButton("Fire1");
             //  _weaponController.nextWeaponInput = Input.GetButtonDown("Weapon Cycle");
         }

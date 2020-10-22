@@ -130,8 +130,7 @@ GameObject:
   - component: {fileID: 2870423132358844714}
   - component: {fileID: 4565420466384218642}
   - component: {fileID: 342861050}
-  - component: {fileID: 1356397443}
-  - component: {fileID: 1356397457}
+  - component: {fileID: 5674447778357315436}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -5003,7 +5002,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 0, y: -1.0688065e-32, z: 4.5792e-41, w: 3.929108e-23}
+  m_BoundingSphereOverride: {x: 1e-45, y: 0, z: 0, w: 6.0047395e+20}
   m_UseBoundingSphereOverride: 0
   m_ShadowRadius: 5
   m_ShadowAngle: 0
@@ -5031,9 +5030,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 58a6a6d38d83343d3b379bf3d86599c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  joyStick: {fileID: 0}
-  shoot: {fileID: 0}
-  shield: {fileID: 0}
+  movement: {fileID: 7365231321015884042}
+  _shieldControl: {fileID: 5702717483126974422}
+  _weaponController: {fileID: 0}
+  gamePad: {fileID: 0}
 --- !u!199 &2035047893
 ParticleSystemRenderer:
   serializedVersion: 6
@@ -5239,7 +5239,7 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &1356397443
+--- !u!114 &5674447778357315436
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -5248,28 +5248,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 4805805623486112806}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4f231c4fb786f3946a6b90b886c48677, type: 3}
+  m_Script: {fileID: 11500000, guid: 1465e075e81749d3bad43b159b78cbc9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_HorizontalAxis: Horizontal
-  m_VerticalAxis: Vertical
-  m_SubmitButton: Submit
-  m_CancelButton: Cancel
-  m_InputActionsPerSecond: 10
-  m_RepeatDelay: 0.5
-  m_ForceModuleActive: 1
---- !u!114 &1356397457
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4805805623486112806}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 76c392e42b5098c458856cdf6ecaaaa1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_FirstSelected: {fileID: 4805805623486112806}
-  m_sendNavigationEvents: 1
-  m_DragThreshold: 10
+  movement: {fileID: 7365231321015884042}
+  _shieldControl: {fileID: 5702717483126974422}
+  _weaponController: {fileID: 0}
+  gamePad: {fileID: 0}

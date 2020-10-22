@@ -1,4 +1,5 @@
 using System;
+using Actors.Player;
 using Managers;
 using UnityEngine;
 
@@ -30,6 +31,14 @@ namespace Actors.Weapons {
             missileEquipped = false;
             weaponType = WeaponType.Plasma;
             HandleWeaponType(weaponType);
+        }
+
+        private void OnEnable(){
+            PlayerInput.shoot += Fire;
+        }
+
+        private void OnDisable(){
+            PlayerInput.shoot -= Fire;
         }
 
         private void Update(){
