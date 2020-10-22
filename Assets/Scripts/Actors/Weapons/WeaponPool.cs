@@ -1,5 +1,3 @@
-using System;
-using System.Collections.Generic;
 using UnityEngine;
 
 namespace Actors.Weapons {
@@ -7,66 +5,61 @@ namespace Actors.Weapons {
         [SerializeField] private GameObject plasmaPrefab;
         [SerializeField] private GameObject laserPrefab;
         [SerializeField] private GameObject missilePrefab;
-        private readonly Queue<GameObject> _laserQueue = new Queue<GameObject>(5);
-        private readonly Queue<GameObject> _missileQueue = new Queue<GameObject>(20);
-        private readonly Queue<GameObject> _plasmaQueue = new Queue<GameObject>(20);
+        private readonly GameObject[] _laserQueue = new GameObject[2];
+        private readonly GameObject[] _missileQueue = new GameObject[20];
+        private readonly GameObject[] _plasmaQueue = new GameObject[20];
         public static WeaponPool Instance { get; private set; }
 
         private void Awake(){
             Instance = this;
-            AddWeapon(_plasmaQueue, plasmaPrefab, 10);
-            AddWeapon(_laserQueue, laserPrefab, 1);
-            AddWeapon(_missileQueue, missilePrefab, 10);
+            AddWeapon(_plasmaQueue, plasmaPrefab, 20, Instance.transform);
+            AddWeapon(_laserQueue, laserPrefab, 2, Instance.transform);
+            AddWeapon(_missileQueue, missilePrefab, 20, Instance.transform);
+        }
+
+        // ReSharper disable once UnusedMethodReturnValue.Local
+        private GameObject CheckAvailableShot(GameObject[] shotArray){
+            foreach (GameObject t in shotArray) {
+                if (t.activeSelf) continue;
+                return t;
+            }
+
+            throw new UnityException("No available shots right now");
         }
 
         public GameObject Get(WeaponType currentWeapon){
             switch (currentWeapon) {
                 case WeaponType.Plasma:
-                    if (_plasmaQueue.Count == 0) AddWeapon(_plasmaQueue, plasmaPrefab, 1);
 
-                    return _plasmaQueue.Dequeue();
+                    CheckAvailableShot(_plasmaQueue);
+
+                    break;
 
                 case WeaponType.Laser:
-                    if (_laserQueue.Count == 0) AddWeapon(_laserQueue, laserPrefab, 1);
 
-                    return _laserQueue.Dequeue();
+                    CheckAvailableShot(_laserQueue);
+                    break;
 
 
                 case WeaponType.Missile:
-                    if (_missileQueue.Count == 0) AddWeapon(_missileQueue, missilePrefab, 1);
 
-                    return _missileQueue.Dequeue();
+                    CheckAvailableShot(_missileQueue);
+                    break;
 
                 default:
-                    if (_plasmaQueue.Count == 0) AddWeapon(_plasmaQueue, plasmaPrefab, 1);
 
-                    return _plasmaQueue.Dequeue();
+                    CheckAvailableShot(_plasmaQueue);
+                    break;
             }
+
+            throw new UnityException("No available shots right now");
         }
 
-        private static void AddWeapon(Queue<GameObject> queue, GameObject weaponPrefab, int number){
+        private static void AddWeapon(GameObject[] queue, GameObject weaponPrefab, int number, Transform parent){
             for (int i = 0; i < number; i++) {
-                GameObject shot = Instantiate(weaponPrefab);
+                GameObject shot = Instantiate(weaponPrefab, parent);
                 shot.gameObject.SetActive(false);
-                queue.Enqueue(shot);
-            }
-        }
-
-        public void ReturnToPool(WeaponType weaponType, GameObject shot){
-       
-            switch (weaponType) {
-                case WeaponType.Plasma:
-                    _plasmaQueue.Enqueue(shot);
-                    break;
-                case WeaponType.Laser:
-                    _laserQueue.Enqueue(shot);
-                    break;
-                case WeaponType.Missile:
-                    shot.GetComponent<Rigidbody>().velocity = Vector3.zero;
-                    _missileQueue.Enqueue(shot);
-                    break;
-                default:
-                    throw new ArgumentOutOfRangeException(nameof(weaponType), weaponType, null);
+                queue[i] = shot;
             }
         }
     }

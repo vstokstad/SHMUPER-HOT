@@ -22,7 +22,8 @@ namespace Actors.Player {
         }
 
         private void OnDisable(){
-            PlayerInput.shield -= ActivateShield;
+            // ReSharper disable once DelegateSubtraction
+            if (PlayerInput.shield != null) PlayerInput.shield -= ActivateShield;
         }
 
         private void Update(){

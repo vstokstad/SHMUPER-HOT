@@ -23,7 +23,6 @@ namespace Actors.Weapons {
             transform.position = _playerTransform.position;
             if (_laserIsOn) _laserTimer -= Time.unscaledDeltaTime;
             if (_laserTimer <= 0f) {
-                WeaponPool.Instance.ReturnToPool(WeaponType.Laser, gameObject);
                 gameObject.SetActive(false);
             }
         }
@@ -41,7 +40,6 @@ namespace Actors.Weapons {
             GameObject o = gameObject;
             o.transform.localScale = _laserScale;
             _laserIsOn = false;
-            WeaponPool.Instance.ReturnToPool(WeaponType.Laser, o);
         }
 
         private void OnTriggerStay(Collider other){

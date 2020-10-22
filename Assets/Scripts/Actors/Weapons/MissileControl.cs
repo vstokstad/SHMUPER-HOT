@@ -37,10 +37,7 @@ namespace Actors.Weapons {
             _rigidBody.velocity = Vector3.right;
             gameObject.SetActive(true);
         }
-
-        private void OnDisable(){
-            WeaponPool.Instance.ReturnToPool(WeaponType.Missile, gameObject);
-        }
+        
 
         private void OnBecameInvisible(){
             gameObject.SetActive(false);

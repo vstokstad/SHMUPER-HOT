@@ -1,4 +1,5 @@
 using System;
+using JetBrains.Annotations;
 using Managers;
 using UnityEngine;
 
@@ -15,14 +16,19 @@ namespace Actors.Player {
         private PlayerData _playerData;
 
         private Rigidbody _rigidbody;
-        [NonSerialized] public bool boostInput;
-        [NonSerialized] public float sidewaysInput;
-        [NonSerialized] public float upDownInput;
+        [NonSerialized] internal bool boostInput;
+        [NonSerialized] internal float sidewaysInput;
+        [NonSerialized] internal float upDownInput;
 
         private float _inputAmount;
 
         //TouchControls
-        [NonSerialized] public Vector2 touchInput;
+        [NonSerialized] public static Vector2 touchInput;
+        public PlayerMovement(bool boostInput, float sidewaysInput, float upDownInput){
+            this.boostInput = boostInput;
+            this.sidewaysInput = sidewaysInput;
+            this.upDownInput = upDownInput;
+        }
 
 
         private void Awake(){
@@ -36,14 +42,10 @@ namespace Actors.Player {
             _currentVelocity = _rigidbody.velocity;
         }
 
-        private void OnEnable(){
-            PlayerInput.boost += Boost;
-        
-        }
+        private void OnEnable() => PlayerInput.boost += Boost;
 
-        private void OnDisable(){
-            PlayerInput.boost -= Boost;
-        }
+        // ReSharper disable once DelegateSubtraction
+        private void OnDisable() => PlayerInput.boost -= Boost;
 
         private void FixedUpdate(){
             if (GameManager.OnMobile) {
@@ -77,14 +79,8 @@ namespace Actors.Player {
             velocity = Vector3.ClampMagnitude(velocity, _playerData.maxSpeed);
             TrailingFlamesHandheld();
             MovePlayer(velocity);
-            if (boostInput) {
-                Boost();
-            }
 
-            if (boostInput && !_audioSource.isPlaying) {
-                Handheld.Vibrate();
-                _audioSource.Play();
-            }
+           
         }
 
         private void Boost(){
@@ -92,6 +88,10 @@ namespace Actors.Player {
             _rigidbody.velocity *= 3f;
             _light.intensity = _intensity * 10f;
             _light.color = Color.magenta;
+            if (!_audioSource.isPlaying) {
+                Handheld.Vibrate();
+                _audioSource.Play();
+            }
             PlayerData.boostCharge -= 3f * Time.fixedDeltaTime;
         }
 

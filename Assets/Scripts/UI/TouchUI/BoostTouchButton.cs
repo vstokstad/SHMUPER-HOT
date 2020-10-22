@@ -6,7 +6,8 @@ namespace UI.TouchUI {
         private Rect _rectPosition;
 
         private void Awake(){
-            _rectPosition = new Rect(transform.position, transform.localScale);
+            var transform1 = transform;
+            _rectPosition = new Rect(transform1.position, transform1.localScale);
         }
 
         private void OnGUI(){

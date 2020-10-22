@@ -38,7 +38,8 @@ namespace Actors.Weapons {
         }
 
         private void OnDisable(){
-            PlayerInput.shoot -= Fire;
+            // ReSharper disable once DelegateSubtraction
+            if (PlayerInput.shoot != null) PlayerInput.shoot -= Fire;
         }
 
         private void Update(){

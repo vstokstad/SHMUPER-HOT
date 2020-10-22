@@ -1,12 +1,11 @@
 using UnityEngine;
 using static UnityEngine.Cursor;
-using Debug = System.Diagnostics.Debug;
 
 namespace Managers {
     [RequireComponent(typeof(Transform))]
     [DefaultExecutionOrder(-1002)]
     public class GameManager : MonoBehaviour {
-        public static bool OnMobile = true;
+        public static bool OnMobile { get; set; } = true;
         public static Camera PlayerCamera { get; private set; }
 
         private static bool LockCursor {

@@ -4,10 +4,11 @@ using UnityEngine;
 
 namespace UI.TouchUI {
     public class ShootTouchButton : MonoBehaviour {
-        private Rect rectPosition;
+        private Rect _rectPosition;
 
         private void Awake(){
-            rectPosition = new Rect(transform.position, transform.localScale); 
+            var transform1 = transform;
+            _rectPosition = new Rect(transform1.position, transform1.localScale);
         }
 
         private void OnGUI(){
@@ -15,7 +16,7 @@ namespace UI.TouchUI {
         }
 
         private void Clicked(){
-            if (GUI.RepeatButton(rectPosition, name) == false) return;
+            if (GUI.RepeatButton(_rectPosition, name) == false) return;
             PlayerInput.shoot();
         }
     }

@@ -16,10 +16,6 @@ namespace Actors.Weapons {
             gameObject.SetActive(true);
         }
 
-        private void OnDisable(){
-            WeaponPool.Instance.ReturnToPool(WeaponType.Plasma, gameObject);
-        }
-
         private void OnBecameInvisible(){
             gameObject.SetActive(false);
         }
