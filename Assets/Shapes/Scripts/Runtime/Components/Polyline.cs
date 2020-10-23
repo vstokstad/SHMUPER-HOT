@@ -26,8 +26,6 @@ namespace Shapes {
 			new PolylinePoint( new Vector3( -0.86602540378f, -.5f, 0 ), Color.white )
 		};
 
-		public bool meshOutOfDate = true; // todo: move this to base class?
-
 		// also called alignment
 		[SerializeField] PolylineGeometry geometry = PolylineGeometry.Flat2D;
 		public PolylineGeometry Geometry {
@@ -64,7 +62,6 @@ namespace Shapes {
 			set => SetFloatNow( ShapesMaterialUtils.propThickness, thickness = value );
 		}
 
-		// todo: make this work
 		[SerializeField] ThicknessSpace thicknessSpace = Shapes.ThicknessSpace.Meters;
 		public ThicknessSpace ThicknessSpace {
 			get => thicknessSpace;
@@ -157,7 +154,7 @@ namespace Shapes {
 
 
 		protected override MeshUpdateMode MeshUpdateMode => MeshUpdateMode.SelfGenerated;
-		protected override void GenerateMesh() => ShapesMeshGen.GenPolylineMesh( Mesh, points, closed, joins, true );
+		protected override void GenerateMesh() => ShapesMeshGen.GenPolylineMesh( Mesh, points, closed, joins, flattenZ: geometry == PolylineGeometry.Flat2D, useColors: true );
 
 		protected override void SetAllMaterialProperties() {
 			SetFloat( ShapesMaterialUtils.propThickness, thickness );
@@ -183,6 +180,9 @@ namespace Shapes {
 				min = Vector3.Min( min, pt );
 				max = Vector3.Max( max, pt );
 			}
+
+			if( geometry == PolylineGeometry.Flat2D )
+				min.z = max.z = 0;
 
 			return new Bounds( ( max + min ) * 0.5f, ( max - min ) + Vector3.one * ( thickness * 0.5f ) );
 		}

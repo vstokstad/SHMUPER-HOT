@@ -12,9 +12,19 @@ namespace Shapes {
 		public DashType type = DashType.Basic;
 		public DashSpace space = DashSpace.Relative;
 		public DashSnapping snap = DashSnapping.Off;
+
+		/// <summary>Size of dashes in the specified dash space. When using DashSpace.FixedCount, this is the number of dashes</summary>
 		public float size = 1f;
+
+		/// <summary>An offset of 1 is the size of a whole dash+space period</summary>
 		public float offset = 0f;
+
+		/// <summary>Size of spacing between each dash, in the specified dash space.\nWhen using DashSpace.FixedCount, this is the dash:space ratio</summary>
 		public float spacing = 1f;
+
+		/// <summary>-1 to 1 modifier that allows you to tweak or mirror certain dash types</summary>
+		[UnityEngine.Range( -1f, 1f )] public float shapeModifier = 1f;
+
 		float GetNet( float v, float thickness ) => space == DashSpace.Relative ? thickness * v : v;
 		public float GetNetAbsoluteSize( bool dashed, float thickness ) => dashed ? GetNet( size, thickness ) : 0f;
 		public float GetNetAbsoluteSpacing( bool dashed, float thickness ) => dashed ? GetNet( spacing, thickness ) : 0f;

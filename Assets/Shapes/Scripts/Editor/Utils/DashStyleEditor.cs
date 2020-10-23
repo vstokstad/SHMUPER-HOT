@@ -12,6 +12,7 @@ namespace Shapes {
 		SerializedProperty propOffset;
 		SerializedProperty propSpacing;
 		SerializedProperty propSnap;
+		SerializedProperty propShapeModifier;
 
 		SerializedProperty propDashed;
 		SerializedProperty propGeometry; // line only
@@ -47,6 +48,7 @@ namespace Shapes {
 			propOffset = propDashSettings.FindPropertyRelative( "offset" );
 			propSpacing = propDashSettings.FindPropertyRelative( "spacing" );
 			propSnap = propDashSettings.FindPropertyRelative( "snap" );
+			propShapeModifier = propDashSettings.FindPropertyRelative( "shapeModifier" );
 		}
 
 		public void DrawProperties() {
@@ -110,6 +112,10 @@ namespace Shapes {
 					EditorGUILayout.PrefixLabel( "Style" );
 					ShapesUI.DrawTypeSwitchButtons( propType, ShapesAssets.LineDashButtonContents );
 				}
+
+				bool canEditStyle = propShapeModifier.hasMultipleDifferentValues || ( (DashType)propType.enumValueIndex ).HasModifier();
+				using( new EditorGUI.DisabledScope( canEditStyle == false ) )
+					EditorGUILayout.PropertyField( propShapeModifier );
 			} else { // this else is only applicable for lines
 				using( new EditorGUI.DisabledScope( true ) ) {
 					using( new EditorGUILayout.HorizontalScope() ) {

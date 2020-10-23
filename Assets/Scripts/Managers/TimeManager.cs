@@ -1,4 +1,5 @@
 ﻿using System;
+using Actors.Player;
 using UnityEngine;
 
 namespace Managers {
@@ -8,23 +9,39 @@ namespace Managers {
     }
 
     public class TimeManager : MonoBehaviour {
-        [SerializeField] private float timeChangeRate = 3f;
+        [SerializeField] private float timeChangeRate = 2f;
         private readonly float _normalTime = 1.0f;
         private readonly float _stoppedTime = 0.0f;
         private float _fixedDeltaTime;
         [NonSerialized] public TimeState timeState;
-        public bool gamePaused;
+        [NonSerialized]public bool gamePaused;
         private void Awake(){
             _fixedDeltaTime = Time.fixedUnscaledDeltaTime;
+            timeState = TimeState.Stopped;
+         
+
+        }
+
+        private void Start(){
+            PlayerInput.move += SwitchTimeState;
         }
 
         private void Update(){
-            if (!gamePaused) {
-                if (Input.anyKey) timeState = TimeState.Normal;
-                else if (!Input.anyKey) timeState = TimeState.Stopped;
-            }
+           
             TimeShift();
        
+        }
+
+        private void OnDisable(){
+            // ReSharper disable once DelegateSubtraction
+            PlayerInput.move -= SwitchTimeState;
+        }
+
+        private void SwitchTimeState(){
+            if (gamePaused) return;
+            timeState = timeState == TimeState.Stopped ? TimeState.Normal : TimeState.Stopped ;
+            print("TimeShift");
+            TimeShift();
         }
 
         private void TimeShift(){

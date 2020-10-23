@@ -1,23 +1,22 @@
-﻿
-using Actors.Player;
+﻿using Actors.Player;
 using UnityEngine;
+using UnityEngine.UI;
 
 namespace UI.TouchUI {
+    [RequireComponent(typeof(Button))]
     public class ShootTouchButton : MonoBehaviour {
-        private Rect _rectPosition;
+        public Button shootButton;
 
-        private void Awake(){
-            var transform1 = transform;
-            _rectPosition = new Rect(transform1.position, transform1.localScale);
+        private void Start(){
+            shootButton = shootButton.GetComponent<Button>();
+            shootButton.onClick.AddListener(Clicked);
         }
 
-        private void OnGUI(){
-            Clicked();
-        }
-
-        private void Clicked(){
-            if (GUI.RepeatButton(_rectPosition, name) == false) return;
+        private static void Clicked(){
             PlayerInput.shoot();
+        }
+        private void OnDisable(){
+            shootButton.onClick.RemoveAllListeners();
         }
     }
 }

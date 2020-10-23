@@ -7,23 +7,19 @@ namespace Actors.Player {
     public class ShieldControl : MonoBehaviour {
         private const float _shieldDamage = 0.5f;
         private PlayerData _playerData;
-        [NonSerialized] public bool shieldInput;
         private SphereCollider _shieldCollider;
         private SpriteRenderer _shieldSprite;
 
-        private void Awake(){
+        private void Start(){
             _shieldCollider = GetComponent<SphereCollider>();
             _shieldSprite = GetComponent<SpriteRenderer>();
             _playerData = GetComponentInParent<PlayerController>().playerData;
-        }
-
-        private void OnEnable(){
             PlayerInput.shield += ActivateShield;
         }
+        
 
         private void OnDisable(){
-            // ReSharper disable once DelegateSubtraction
-            if (PlayerInput.shield != null) PlayerInput.shield -= ActivateShield;
+            PlayerInput.shield -= ActivateShield;
         }
 
         private void Update(){
@@ -40,6 +36,8 @@ namespace Actors.Player {
         }
 
         private void ActivateShield(){
+            //TODO remove print
+            print("ShieldButton");
             if (_playerData.ShieldIsLoaded) return;
             if (!(PlayerData.boostCharge >= 5f)) return;
             _playerData.ShieldIsLoaded = true;

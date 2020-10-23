@@ -6,13 +6,13 @@
 
 UNITY_INSTANCING_BUFFER_START(Props)
 UNITY_DEFINE_INSTANCED_PROP(int, _ScaleMode)
-UNITY_DEFINE_INSTANCED_PROP(float4, _Color)
+UNITY_DEFINE_INSTANCED_PROP(half4, _Color)
 UNITY_DEFINE_INSTANCED_PROP(float4, _PointStart)
 UNITY_DEFINE_INSTANCED_PROP(float4, _PointEnd)
-UNITY_DEFINE_INSTANCED_PROP(float, _Thickness)
+UNITY_DEFINE_INSTANCED_PROP(half, _Thickness)
 UNITY_DEFINE_INSTANCED_PROP(int, _ThicknessSpace)
-UNITY_DEFINE_INSTANCED_PROP(float, _DashSize)
-UNITY_DEFINE_INSTANCED_PROP(float, _DashOffset)
+UNITY_DEFINE_INSTANCED_PROP(half, _DashSize)
+UNITY_DEFINE_INSTANCED_PROP(half, _DashOffset)
 UNITY_DEFINE_INSTANCED_PROP(int, _Alignment)
 UNITY_INSTANCING_BUFFER_END(Props)
 
@@ -80,7 +80,7 @@ VertexOutput vert (VertexInput v) {
     float3 pt = 0;
     float3 ptPrev = 0;
     float3 ptNext = 0;
-    float3 dirToCam = 0;
+    half3 dirToCam = 0;
     switch( alignment ){
         case ALIGNMENT_FLAT:
             // local space
@@ -100,15 +100,15 @@ VertexOutput vert (VertexInput v) {
     
 
     // tangents & normals
-    float3 tangentPrev = normalize( pt - ptPrev );
-    float3 tangentNext = normalize( ptNext - pt );
-    float3 normalPrev = 0;
-    float3 normalNext = 0;
+    half3 tangentPrev = normalize( pt - ptPrev );
+    half3 tangentNext = normalize( ptNext - pt );
+    half3 normalPrev = 0;
+    half3 normalNext = 0;
     switch( alignment ){
         case ALIGNMENT_FLAT:
             // local space
-            normalPrev = float3( tangentPrev.y, -tangentPrev.x, 0 );
-            normalNext = float3( tangentNext.y, -tangentNext.x, 0 );
+            normalPrev = half3( tangentPrev.y, -tangentPrev.x, 0 );
+            normalNext = half3( tangentNext.y, -tangentNext.x, 0 );
         break;
         case ALIGNMENT_BILLBOARD:
             // world space

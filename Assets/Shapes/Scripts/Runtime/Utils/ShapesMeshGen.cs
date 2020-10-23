@@ -14,7 +14,7 @@ namespace Shapes {
 			return delta < 0.00001f;
 		}
 
-		public static void GenPolylineMesh( Mesh mesh, IList<PolylinePoint> path, bool closed, PolylineJoins joins, bool useColors ) {
+		public static void GenPolylineMesh( Mesh mesh, IList<PolylinePoint> path, bool closed, PolylineJoins joins, bool flattenZ, bool useColors ) {
 			mesh.Clear(); // todo maybe not always do this you know?
 
 			int pointCount = path.Count;
@@ -93,7 +93,7 @@ namespace Shapes {
 
 
 				// Indices & verts
-				Vector3 vert = path[i].point;
+				Vector3 vert = flattenZ ? new Vector3( path[i].point.x, path[i].point.y, 0f ) : path[i].point;
 				Color color = useColors ? path[i].color : default;
 				iv0 = i * vertsPerPathPoint;
 				if( separateJoinMesh ) {
@@ -311,6 +311,7 @@ namespace Shapes {
 		public static void GenPolygonMesh( Mesh mesh, List<Vector2> path, PolygonTriangulation triangulation ) {
 			// kinda have to do this, the algorithm relies on knowing this
 			generatingClockwisePolygon = ShapesMath.PolygonSignedArea( path ) > 0;
+			float clockwiseSign = generatingClockwisePolygon ? 1f : -1f;
 
 			mesh.Clear(); // todo maybe not always do this you know?
 			int pointCount = path.Count;
@@ -366,7 +367,7 @@ namespace Shapes {
 								if( j == idNext ) continue; // skip prev
 								if( pointsLeft[j].ReflexState == ReflexState.Reflex ) {
 									// found a reflex point, make sure it's outside the triangle
-									if( ShapesMath.PointInsideTriangle( p.next.pt, p.pt, p.prev.pt, pointsLeft[j].pt, 0f, -0.0001f, 0f ) ) {
+									if( ShapesMath.PointInsideTriangle( p.next.pt, p.pt, p.prev.pt, pointsLeft[j].pt, 0f, clockwiseSign * -0.0001f, 0f ) ) {
 										canClipEar = false; // it's inside, rip
 										break;
 									}

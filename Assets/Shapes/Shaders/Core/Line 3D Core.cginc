@@ -6,15 +6,15 @@
 
 UNITY_INSTANCING_BUFFER_START(Props)
 UNITY_DEFINE_INSTANCED_PROP(int, _ScaleMode)
-UNITY_DEFINE_INSTANCED_PROP(float4, _Color)
-UNITY_DEFINE_INSTANCED_PROP(float4, _ColorEnd)
+UNITY_DEFINE_INSTANCED_PROP(half4, _Color)
+UNITY_DEFINE_INSTANCED_PROP(half4, _ColorEnd)
 UNITY_DEFINE_INSTANCED_PROP(float3, _PointStart)
 UNITY_DEFINE_INSTANCED_PROP(float3, _PointEnd)
-UNITY_DEFINE_INSTANCED_PROP(float, _Thickness)
+UNITY_DEFINE_INSTANCED_PROP(half, _Thickness)
 UNITY_DEFINE_INSTANCED_PROP(int, _ThicknessSpace)
-UNITY_DEFINE_INSTANCED_PROP(float, _DashSize)
-UNITY_DEFINE_INSTANCED_PROP(float, _DashOffset)
-UNITY_DEFINE_INSTANCED_PROP(float, _DashSpacing)
+UNITY_DEFINE_INSTANCED_PROP(half, _DashSize)
+UNITY_DEFINE_INSTANCED_PROP(half, _DashOffset)
+UNITY_DEFINE_INSTANCED_PROP(half, _DashSpacing)
 UNITY_DEFINE_INSTANCED_PROP(int, _DashSpace)
 UNITY_DEFINE_INSTANCED_PROP(int, _DashSnap)
 UNITY_INSTANCING_BUFFER_END(Props)
@@ -107,7 +107,7 @@ VertexOutput vert(VertexInput v) {
 	// dashes
 	half dashSizeInput = UNITY_ACCESS_INSTANCED_PROP(Props, _DashSize);
 	if( dashSizeInput > 0 ){
-		float dashOffset = UNITY_ACCESS_INSTANCED_PROP(Props, _DashOffset);
+		half dashOffset = UNITY_ACCESS_INSTANCED_PROP(Props, _DashOffset);
 		int dashSpace = UNITY_ACCESS_INSTANCED_PROP(Props, _DashSpace);
 		half size = dashSizeInput * scaleDashes;
 		half spacing = UNITY_ACCESS_INSTANCED_PROP(Props, _DashSpacing) * scaleSpacing;
@@ -142,7 +142,7 @@ FRAG_OUTPUT_V4 frag( VertexOutput i ) : SV_Target {
 	dashData.coord = i.IP_dash_coord;
 	dashData.spacePerPeriod = i.IP_dash_spacePerPeriod;
 	dashData.thicknessPerPeriod = i.IP_dash_thicknessPerPeriod;
-	ApplyDashMask( /*inout*/ shape_mask, dashData, 0, 0 );
+	ApplyDashMask( /*inout*/ shape_mask, dashData, 0, 0, 1 );
 	    
     shape_mask *= saturate(i.IP_pxCoverage);
 	return ShapesOutput( shape_color, shape_mask );

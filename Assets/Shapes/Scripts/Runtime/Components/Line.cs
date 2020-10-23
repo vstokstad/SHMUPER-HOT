@@ -130,23 +130,13 @@ namespace Shapes {
 			get => dashStyle.type;
 			set => SetIntNow( ShapesMaterialUtils.propDashType, (int)( dashStyle.type = value ) );
 		}
-
-		void SetAllDashValues( bool now ) {
-			float netDashSize = dashStyle.GetNetAbsoluteSize( dashed, thickness );
-			if( Dashed ) {
-				SetFloat( ShapesMaterialUtils.propDashSpacing, GetNetDashSpacing() );
-				SetFloat( ShapesMaterialUtils.propDashOffset, dashStyle.offset );
-				SetInt( ShapesMaterialUtils.propDashSpace, (int)dashStyle.space );
-				SetInt( ShapesMaterialUtils.propDashSnap, (int)dashStyle.snap );
-				if( Geometry != LineGeometry.Volumetric3D )
-					SetInt( ShapesMaterialUtils.propDashType, (int)dashStyle.type ); // only applicable to non-3D lines
-			}
-
-			if( now )
-				SetFloatNow( ShapesMaterialUtils.propDashSize, netDashSize );
-			else
-				SetFloat( ShapesMaterialUtils.propDashSize, netDashSize );
+		public float DashShapeModifier {
+			get => dashStyle.shapeModifier;
+			set => SetFloatNow( ShapesMaterialUtils.propDashShapeModifier, dashStyle.shapeModifier = value );
 		}
+
+		void SetAllDashValues( bool now ) => SetAllDashValues( dashStyle, Dashed, matchDashSpacingToSize, thickness, Geometry != LineGeometry.Volumetric3D, now );
+		float GetNetDashSpacing() => GetNetDashSpacing( dashStyle, dashed, matchDashSpacingToSize, thickness );
 
 		protected override void SetAllMaterialProperties() {
 			SetVector3( ShapesMaterialUtils.propPointStart, start );
@@ -158,11 +148,6 @@ namespace Shapes {
 			SetAllDashValues( now: false );
 		}
 
-		float GetNetDashSpacing() {
-			if( matchDashSpacingToSize && DashSpace == DashSpace.FixedCount )
-				return 0.5f;
-			return matchDashSpacingToSize ? dashStyle.GetNetAbsoluteSize( dashed, thickness ) : dashStyle.GetNetAbsoluteSpacing( dashed, thickness );
-		}
 
 		protected override Bounds GetBounds() {
 			// presume 0 world space padding when pixels or noots are used

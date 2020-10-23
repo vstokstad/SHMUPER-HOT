@@ -31,28 +31,23 @@ namespace Actors.Weapons {
             switch (currentWeapon) {
                 case WeaponType.Plasma:
 
-                    CheckAvailableShot(_plasmaQueue);
+                    return CheckAvailableShot(_plasmaQueue);
 
-                    break;
 
                 case WeaponType.Laser:
 
-                    CheckAvailableShot(_laserQueue);
-                    break;
+                    return CheckAvailableShot(_laserQueue);
 
 
                 case WeaponType.Missile:
 
-                    CheckAvailableShot(_missileQueue);
-                    break;
+                    return CheckAvailableShot(_missileQueue);
+
 
                 default:
 
-                    CheckAvailableShot(_plasmaQueue);
-                    break;
+                    return CheckAvailableShot(_plasmaQueue);
             }
-
-            throw new UnityException("No available shots right now");
         }
 
         private static void AddWeapon(GameObject[] queue, GameObject weaponPrefab, int number, Transform parent){

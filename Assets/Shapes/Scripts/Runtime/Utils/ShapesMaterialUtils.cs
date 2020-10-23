@@ -46,6 +46,7 @@ namespace Shapes {
 		public static readonly int propDashType = Shader.PropertyToID( "_DashType" ); // line, arc, ring
 		public static readonly int propDashSpace = Shader.PropertyToID( "_DashSpace" ); // line, arc, ring
 		public static readonly int propDashSnap = Shader.PropertyToID( "_DashSnap" ); // line, arc, ring
+		public static readonly int propDashShapeModifier = Shader.PropertyToID( "_DashShapeModifier" ); // line, arc, ring
 		public static readonly int propSize = Shader.PropertyToID( "_Size" ); // cuboid
 		public static readonly int propSizeSpace = Shader.PropertyToID( "_SizeSpace" ); // cuboid
 		public static readonly int propAlignment = Shader.PropertyToID( "_Alignment" ); // line, disc todo: polyline

@@ -30,18 +30,27 @@ namespace Shapes {
 			mat.SetInt( ShapesMaterialUtils.propAlignment, (int)geometry );
 			mat.SetInt( ShapesMaterialUtils.propThicknessSpace, (int)thicknessSpace );
 			mat.SetInt( ShapesMaterialUtils.propScaleMode, (int)ScaleMode );
-			bool dashed = dashStyle?.size > 0f;
-			mat.SetFloat( ShapesMaterialUtils.propDashSize, dashed ? dashStyle.GetNetAbsoluteSize( true, thickness ) : 0 );
-			if( dashed ) {
-				if( geometry != LineGeometry.Volumetric3D )
-					mat.SetInt( ShapesMaterialUtils.propDashType, (int)dashStyle.type );
-				mat.SetInt( ShapesMaterialUtils.propDashSpace, (int)dashStyle.space );
-				mat.SetInt( ShapesMaterialUtils.propDashSnap, (int)dashStyle.snap );
-				mat.SetFloat( ShapesMaterialUtils.propDashOffset, dashStyle.offset );
-				mat.SetFloat( ShapesMaterialUtils.propDashSpacing, dashStyle.GetNetAbsoluteSpacing( true, thickness ) );
-			}
+
+			ApplyDashSettings( mat, dashStyle, thickness, useType: geometry != LineGeometry.Volumetric3D );
 
 			DrawMesh( Vector3.zero, Quaternion.identity, ShapesMeshUtils.GetLineMesh( geometry, endCaps ), mat );
+		}
+
+		static void ApplyDashSettings( Material mat, DashStyle style, float thickness, bool useType = true ) {
+			bool dashed = style?.size > 0f;
+			mat.SetFloat( ShapesMaterialUtils.propDashSize, dashed ? style.GetNetAbsoluteSize( true, thickness ) : 0 );
+			if( dashed ) {
+				if( useType ) {
+					mat.SetInt( ShapesMaterialUtils.propDashType, (int)style.type );
+					if( style.type.HasModifier() )
+						mat.SetInt( ShapesMaterialUtils.propDashShapeModifier, (int)style.shapeModifier );
+				}
+
+				mat.SetInt( ShapesMaterialUtils.propDashSpace, (int)style.space );
+				mat.SetInt( ShapesMaterialUtils.propDashSnap, (int)style.snap );
+				mat.SetFloat( ShapesMaterialUtils.propDashOffset, style.offset );
+				mat.SetFloat( ShapesMaterialUtils.propDashSpacing, style.GetNetAbsoluteSpacing( true, thickness ) );
+			}
 		}
 
 
@@ -201,15 +210,7 @@ namespace Shapes {
 			mat.SetColor( ShapesMaterialUtils.propColorInnerEnd, colorInnerEnd );
 			mat.SetColor( ShapesMaterialUtils.propColorOuterEnd, colorOuterEnd );
 
-			bool dashed = dashStyle?.size > 0f;
-			mat.SetFloat( ShapesMaterialUtils.propDashSize, dashed ? dashStyle.GetNetAbsoluteSize( true, thickness ) : 0 );
-			if( dashed ) {
-				mat.SetInt( ShapesMaterialUtils.propDashType, (int)dashStyle.type );
-				mat.SetInt( ShapesMaterialUtils.propDashSpace, (int)dashStyle.space );
-				mat.SetInt( ShapesMaterialUtils.propDashSnap, (int)dashStyle.snap );
-				mat.SetFloat( ShapesMaterialUtils.propDashOffset, dashStyle.offset );
-				mat.SetFloat( ShapesMaterialUtils.propDashSpacing, dashStyle.GetNetAbsoluteSpacing( true, thickness ) );
-			}
+			ApplyDashSettings( mat, dashStyle, thickness );
 
 			DrawMesh( pos, rot, ShapesMeshUtils.QuadMesh, mat );
 		}
@@ -236,7 +237,7 @@ namespace Shapes {
 			mat.SetInt( ShapesMaterialUtils.propSides, Mathf.Max( 3, sideCount ) );
 			mat.SetFloat( ShapesMaterialUtils.propAng, angle );
 			mat.SetFloat( ShapesMaterialUtils.propRoundness, roundness );
-			
+
 			mat.SetInt( ShapesMaterialUtils.propHollow, hollow.AsInt() );
 			if( hollow ) {
 				mat.SetInt( ShapesMaterialUtils.propThicknessSpace, (int)spaceThickness );
@@ -259,6 +260,11 @@ namespace Shapes {
 														  [OvldDefault( "0f" )] float thickness = 0f,
 														  [OvldDefault( "default" )] Vector4 cornerRadii = default ) {
 			bool rounded = ShapesMath.MaxComp( cornerRadii ) >= 0.0001f;
+
+			// positive vibes only
+			if( rect.width < 0 ) rect.x -= rect.width *= -1;
+			if( rect.height < 0 ) rect.y -= rect.height *= -1;
+
 			if( hollow && thickness * 2 >= Mathf.Min( rect.width, rect.height ) ) hollow = false;
 			Material mat = ShapesMaterialUtils.GetRectMaterial( hollow, rounded )[blendMode];
 			ApplyGlobalProperties( mat );

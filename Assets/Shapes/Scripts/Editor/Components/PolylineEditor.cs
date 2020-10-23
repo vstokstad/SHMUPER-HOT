@@ -31,8 +31,7 @@ namespace Shapes {
 
 			pointList = new ReorderableList( serializedObject, propPoints, true, true, true, true ) {
 				drawElementCallback = DrawPointElement,
-				drawHeaderCallback = PointListHeader,
-				onChangedCallback = ( x ) => UpdateMesh()
+				drawHeaderCallback = PointListHeader
 			};
 
 			if( pointList.count > MANY_POINTS ) {
@@ -42,8 +41,6 @@ namespace Shapes {
 
 			scenePointEditor = new ScenePointEditor( this ) { hasEditThicknessMode = true, hasEditColorMode = true };
 		}
-
-		void UpdateMesh() => targets.Cast<Polyline>().ForEach( x => x.UpdateMesh( force: true ) );
 
 		public override void OnInspectorGUI() {
 			base.BeginProperties();
@@ -62,8 +59,7 @@ namespace Shapes {
 
 			scenePointEditor.GUIEditButton( "Edit Points in Scene" );
 
-			if( base.EndProperties() )
-				UpdateMesh();
+			base.EndProperties();
 		}
 
 		void OnSceneGUI() {

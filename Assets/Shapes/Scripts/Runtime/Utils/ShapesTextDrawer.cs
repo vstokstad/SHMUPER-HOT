@@ -29,6 +29,8 @@ namespace Shapes {
 				DontDestroyOnLoad( holder ); // might be a lil gross, not sure
 			ShapesTextDrawer text = holder.AddComponent<ShapesTextDrawer>();
 			text.tmp = holder.AddComponent<TextMeshPro>();
+			text.tmp.enableWordWrapping = false;
+			text.tmp.overflowMode = TextOverflowModes.Overflow;
 
 			// mesh renderer should exist now due to TMP requiring the component
 			holder.GetComponent<MeshRenderer>().enabled = false;

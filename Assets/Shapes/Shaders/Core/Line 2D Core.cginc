@@ -6,15 +6,16 @@
 
 UNITY_INSTANCING_BUFFER_START(Props)
 UNITY_DEFINE_INSTANCED_PROP(int, _ScaleMode)
-UNITY_DEFINE_INSTANCED_PROP(float4, _Color)
-UNITY_DEFINE_INSTANCED_PROP(float4, _ColorEnd)
+UNITY_DEFINE_INSTANCED_PROP(half4, _Color)
+UNITY_DEFINE_INSTANCED_PROP(half4, _ColorEnd)
 UNITY_DEFINE_INSTANCED_PROP(float3, _PointStart)
 UNITY_DEFINE_INSTANCED_PROP(float3, _PointEnd)
 UNITY_DEFINE_INSTANCED_PROP(half, _Thickness)
 UNITY_DEFINE_INSTANCED_PROP(int, _ThicknessSpace)
 UNITY_DEFINE_INSTANCED_PROP(int, _DashType)
 UNITY_DEFINE_INSTANCED_PROP(half, _DashSize)
-UNITY_DEFINE_INSTANCED_PROP(float, _DashOffset)
+UNITY_DEFINE_INSTANCED_PROP(half, _DashShapeModifier)
+UNITY_DEFINE_INSTANCED_PROP(half, _DashOffset)
 UNITY_DEFINE_INSTANCED_PROP(half, _DashSpacing)
 UNITY_DEFINE_INSTANCED_PROP(int, _DashSpace)
 UNITY_DEFINE_INSTANCED_PROP(int, _DashSnap)
@@ -128,7 +129,7 @@ VertexOutput vert(VertexInput v) {
         half projDist = dot( tangent, vertPos - a ); // distance along line
         half dashSize = UNITY_ACCESS_INSTANCED_PROP(Props, _DashSize) * scaleDashes;
         half dashSpacing = UNITY_ACCESS_INSTANCED_PROP(Props, _DashSpacing) * scaleSpacing;
-		LineDashData dashData = GetDashCoordinates( dashSize, dashSpacing, projDist,  lineLengthVisual, 2*radiusVisuals, thicknessSpace, widthData.pxPerMeter, dashOffset, dashSpace, snap ); 
+		LineDashData dashData = GetDashCoordinates( dashSize, dashSpacing, projDist, lineLengthVisual, 2*radiusVisuals, thicknessSpace, widthData.pxPerMeter, dashOffset, dashSpace, snap ); 
 		o.IP_dash_coord = dashData.coord;
 		o.IP_dash_spacePerPeriod = dashData.spacePerPeriod;
 		o.IP_dash_thicknessPerPeriod = dashData.thicknessPerPeriod; 
@@ -180,11 +181,12 @@ FRAG_OUTPUT_V4 frag( VertexOutput i ) : SV_Target {
 	#endif
 
     int dashType = UNITY_ACCESS_INSTANCED_PROP(Props, _DashType);
+	half dashModifier = UNITY_ACCESS_INSTANCED_PROP(Props, _DashShapeModifier);
 	LineDashData dashData;
 	dashData.coord = i.IP_dash_coord;
 	dashData.spacePerPeriod = i.IP_dash_spacePerPeriod;
 	dashData.thicknessPerPeriod = i.IP_dash_thicknessPerPeriod;
-	ApplyDashMask( /*inout*/ shape_mask, dashData, i.IP_uv0.x, dashType );
+	ApplyDashMask( /*inout*/ shape_mask, dashData, i.IP_uv0.x, dashType, dashModifier );
     
 	shape_mask *= saturate( i.IP_pxCoverage );
 	return ShapesOutput( shape_color, shape_mask );

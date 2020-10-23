@@ -307,7 +307,7 @@ inline float3 GetCameraForwardDirection(){
 inline bool IsOrthographic(){
     return unity_OrthoParams.w == 1;
 }
-inline float3 DirectionToNearPlanePos( float3 pt ){
+inline half3 DirectionToNearPlanePos( float3 pt ){
     if( IsOrthographic() ){
         return -GetCameraForwardDirection();
     } else {
@@ -400,18 +400,18 @@ struct LineDashData{
 	#define AA_PADDING_PX 2
 #endif
 
-inline void GetPaddingData( float thicknessPixelsTarget, out float aaPaddingScale, out float pxWidthVert ){
+inline void GetPaddingData( half thicknessPixelsTarget, out half aaPaddingScale, out half pxWidthVert ){
     // for vertex width, we need to clamp at 1px wide to prevent wandering ants and we don't want ants now do we
     pxWidthVert = max( 1, thicknessPixelsTarget+AA_PADDING_PX);
     aaPaddingScale = pxWidthVert / max( VERY_SMOL, thicknessPixelsTarget ); // how much extra we got from the padding, as a multiplier
 }
 
 
-inline LineWidthData GetScreenSpaceWidthData( float3 vertOrigin, float3 normal, float thickness, int thicknessSpace ){
+inline LineWidthData GetScreenSpaceWidthData( float3 vertOrigin, half3 normal, half thickness, int thicknessSpace ){
     LineWidthData data;
     ConvertToPixelThickness( vertOrigin, normal, thickness, thicknessSpace, /*out*/ data.pxPerMeter, /*out*/ data.thicknessPixelsTarget );
 	
-	float pxWidthVert;
+	half pxWidthVert;
 	GetPaddingData( data.thicknessPixelsTarget, /*out*/ data.aaPaddingScale, /*out*/ pxWidthVert );
 	
 	// when using pixel size, scale to match pixels
@@ -420,17 +420,17 @@ inline LineWidthData GetScreenSpaceWidthData( float3 vertOrigin, float3 normal, 
     return data;
 }
 
-inline LineWidthData GetScreenSpaceWidthDataSimple( float3 vertOrigin, float3 normal, float thickness, int thicknessSpace ){
+inline LineWidthData GetScreenSpaceWidthDataSimple( float3 vertOrigin, half3 normal, half thickness, int thicknessSpace ){
     LineWidthData data;
     ConvertToPixelThickness( vertOrigin, normal, thickness, thicknessSpace, /*out*/ data.pxPerMeter, /*out*/ data.thicknessPixelsTarget );
-    float pxWidthVert = max( 1, data.thicknessPixelsTarget );
+    half pxWidthVert = max( 1, data.thicknessPixelsTarget );
     data.aaPaddingScale = 1; 
 	data.thicknessMeters = pxWidthVert / data.pxPerMeter; // clamps at 1px wide, then converts to meters
     return data;
 }
 
 // this works in normalized space, repeating integers for every period
-inline void ApplyDashMask( inout half shape_mask, LineDashData dashData, half coordAcross, int type ){
+inline void ApplyDashMask( inout half shape_mask, LineDashData dashData, half coordAcross, int type, half dashModifier ){
     
     half spacePerPeriod = dashData.spacePerPeriod;
 
@@ -444,7 +444,7 @@ inline void ApplyDashMask( inout half shape_mask, LineDashData dashData, half co
         half2 coord = half2( coordAcross, dashData.coord );
         
         if( type == DASH_TYPE_ANGLED )
-            coord.y += 0.5*coord.x*thicknessPerPeriod; // 45° angle skewing        
+            coord.y += 0.5*coord.x*thicknessPerPeriod*dashModifier; // 45° angle skewing        
 		half dashSdf = abs(frac(coord.y) * 2 - 1); // triangle wave
 		dashSdf = InverseLerp( spacePerPeriod, 1, dashSdf ); // convert to SDF matching dash ratio
 		

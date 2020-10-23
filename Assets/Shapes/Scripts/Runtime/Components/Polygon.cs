@@ -28,8 +28,6 @@ namespace Shapes {
 			new Vector2( 0.5f, -0.86602545f )
 		};
 
-		public bool meshOutOfDate = true; // todo: move this to base class?
-
 		// also called alignment
 		[SerializeField] PolygonTriangulation triangulation = PolygonTriangulation.EarClipping;
 		public PolygonTriangulation Triangulation {

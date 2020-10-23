@@ -5,7 +5,7 @@
 
 // macros
 #define SHAPES_FILL_PROPERTIES \
-UNITY_DEFINE_INSTANCED_PROP( float4, _ColorEnd) \
+UNITY_DEFINE_INSTANCED_PROP( half4, _ColorEnd) \
 UNITY_DEFINE_INSTANCED_PROP( int, _FillType) \
 UNITY_DEFINE_INSTANCED_PROP( int, _FillSpace) \
 UNITY_DEFINE_INSTANCED_PROP( float4, _FillStart) /* xyz = pos, w = radius*/ \
@@ -80,8 +80,8 @@ half4 GetFillColor( float3 fillCoords, int fillType, float4 start, half4 color, 
 #endif
 
 // used for the final output. supports branching based on opaque vs transparent and outline functions
-inline float4 ShapesOutput( float4 shape_color, float shape_mask ){
-    float4 outColor = float4(shape_color.rgb, shape_mask * shape_color.a);
+inline half4 ShapesOutput( half4 shape_color, float shape_mask ){
+    half4 outColor = half4(shape_color.rgb, shape_mask * shape_color.a);
     
     clip(outColor.a - VERY_SMOL);
     

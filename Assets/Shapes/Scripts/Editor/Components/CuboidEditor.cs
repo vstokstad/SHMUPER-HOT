@@ -12,10 +12,9 @@ namespace Shapes {
 		SerializedProperty propSizeSpace = null;
 
 		public override void OnInspectorGUI() {
-			serializedObject.Update();
 			base.BeginProperties();
 			ShapesUI.FloatInSpaceField( propSize, propSizeSpace );
-			serializedObject.ApplyModifiedProperties();
+			base.EndProperties();
 		}
 
 	}

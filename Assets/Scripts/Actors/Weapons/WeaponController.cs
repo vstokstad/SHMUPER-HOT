@@ -12,16 +12,11 @@ namespace Actors.Weapons {
     }
 
     public class WeaponController : MonoBehaviour {
-        [SerializeField] public bool debugMode;
         [NonSerialized] public static WeaponType weaponType;
         public static bool laserEquipped;
-        // ReSharper disable once MemberCanBePrivate.Global
-        public static bool plasmaEquipped;
+        public bool plasmaEquipped;
         public static bool missileEquipped;
         private WeaponManager.IWeapon _iWeapon;
-        [NonSerialized] public bool fireInput;
-    
-        [NonSerialized] public bool nextWeaponInput;
 
         //touchControls
     
@@ -31,20 +26,16 @@ namespace Actors.Weapons {
             missileEquipped = false;
             weaponType = WeaponType.Plasma;
             HandleWeaponType(weaponType);
-        }
-
-        private void OnEnable(){
             PlayerInput.shoot += Fire;
         }
+        
 
         private void OnDisable(){
             // ReSharper disable once DelegateSubtraction
-            if (PlayerInput.shoot != null) PlayerInput.shoot -= Fire;
+             PlayerInput.shoot -= Fire;
         }
 
-        private void Update(){
-            if (fireInput) Fire();
-            if (!nextWeaponInput) return;
+        private void ChangeWeapon(){
             if (weaponType == WeaponType.Missile) {
                 weaponType = WeaponType.Plasma;
                 HandleWeaponType(weaponType);
@@ -59,13 +50,8 @@ namespace Actors.Weapons {
             HandleWeaponType(weaponType);
         }
 
-        public void HandleWeaponType(WeaponType weaponChoice){
-
-            if (debugMode) {
-                plasmaEquipped = true;
-                laserEquipped = true;
-                missileEquipped = true;
-            }
+        private void HandleWeaponType(WeaponType weaponChoice){
+            
             Component c = GetComponent<WeaponManager.IWeapon>() as Component;
 
             if (c != null) Destroy(c);
@@ -91,6 +77,7 @@ namespace Actors.Weapons {
         }
 
         private void Fire(){
+            print("Fire");
             _iWeapon.Shoot();
         }
     }

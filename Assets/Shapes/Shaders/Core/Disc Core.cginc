@@ -7,20 +7,21 @@
 UNITY_INSTANCING_BUFFER_START(Props)
 UNITY_DEFINE_INSTANCED_PROP(int, _ScaleMode)
 UNITY_DEFINE_INSTANCED_PROP(int, _Alignment)
-UNITY_DEFINE_INSTANCED_PROP(float4, _Color)
-UNITY_DEFINE_INSTANCED_PROP(float4, _ColorOuterStart)
-UNITY_DEFINE_INSTANCED_PROP(float4, _ColorInnerEnd)
-UNITY_DEFINE_INSTANCED_PROP(float4, _ColorOuterEnd)
-UNITY_DEFINE_INSTANCED_PROP(float, _Radius)
+UNITY_DEFINE_INSTANCED_PROP(half4, _Color)
+UNITY_DEFINE_INSTANCED_PROP(half4, _ColorOuterStart)
+UNITY_DEFINE_INSTANCED_PROP(half4, _ColorInnerEnd)
+UNITY_DEFINE_INSTANCED_PROP(half4, _ColorOuterEnd)
+UNITY_DEFINE_INSTANCED_PROP(half, _Radius)
 UNITY_DEFINE_INSTANCED_PROP(int, _RadiusSpace)
-UNITY_DEFINE_INSTANCED_PROP(float, _Thickness)
+UNITY_DEFINE_INSTANCED_PROP(half, _Thickness)
 UNITY_DEFINE_INSTANCED_PROP(int, _ThicknessSpace)
-UNITY_DEFINE_INSTANCED_PROP(float, _AngleStart)
-UNITY_DEFINE_INSTANCED_PROP(float, _AngleEnd)
+UNITY_DEFINE_INSTANCED_PROP(half, _AngleStart)
+UNITY_DEFINE_INSTANCED_PROP(half, _AngleEnd)
 UNITY_DEFINE_INSTANCED_PROP(int, _RoundCaps)
 UNITY_DEFINE_INSTANCED_PROP(int, _DashType)
 UNITY_DEFINE_INSTANCED_PROP(half, _DashSize)
-UNITY_DEFINE_INSTANCED_PROP(float, _DashOffset)
+UNITY_DEFINE_INSTANCED_PROP(half, _DashShapeModifier)
+UNITY_DEFINE_INSTANCED_PROP(half, _DashOffset)
 UNITY_DEFINE_INSTANCED_PROP(half, _DashSpacing)
 UNITY_DEFINE_INSTANCED_PROP(int, _DashSpace)
 UNITY_DEFINE_INSTANCED_PROP(int, _DashSnap)
@@ -178,7 +179,8 @@ inline void ApplyDashes( inout half mask, VertexOutput i, half t, half tRadial, 
     LineDashData dashData = GetDashCoordinates( dashSize, dashSpacing, distanceAroundRing, distanceAroundRingTotal, i.IP_thicknessMeters, thicknessSpace, i.IP_pxPerMeter, offset, dashSpace, snap );
     
     int dashType = UNITY_ACCESS_INSTANCED_PROP(Props, _DashType);
-    ApplyDashMask( /*inout*/ mask, dashData, tRadial*2-1, dashType );
+	half dashModifier = UNITY_ACCESS_INSTANCED_PROP(Props, _DashShapeModifier);
+    ApplyDashMask( /*inout*/ mask, dashData, tRadial*2-1, dashType, dashModifier );
     
     #endif
 }

@@ -1,4 +1,7 @@
 ﻿using System.Linq;
+#if UNITY_EDITOR
+using UnityEditor;
+#endif
 using UnityEngine;
 using UnityEngine.Rendering;
 
@@ -17,6 +20,11 @@ namespace Shapes {
 		MaterialPropertyBlock Mpb => mpb ?? ( mpb = new MaterialPropertyBlock() ); // hecking, gosh, I want the C#8 ??= operator
 		Material[] instancedMaterials = null; // used when pass tags are anything but the default (eg ZTest != Less Equal, or scale offset is set, or a weird blend mode)
 		public bool IsUsingUniqueMaterials => IsInstanced == false;
+
+		/// <summary>
+		/// Used to mark this mesh as changed. Only required when manually editing the point lists of polygons and polylines, otherwise you shouldn't ever need to use this
+		/// </summary>
+		public bool meshOutOfDate = true;
 
 		public Mesh Mesh {
 			get => mf.sharedMesh;
@@ -60,22 +68,23 @@ namespace Shapes {
 		[SerializeField] CompareFunction zTest = CompareFunction.LessEqual;
 		public CompareFunction ZTest {
 			get => zTest;
-			set => SetIntNow( ShapesMaterialUtils.propZTest, (int)( zTest = value ) );
+			set => SetIntOnAllInstancedMaterials( ShapesMaterialUtils.propZTest, (int)( zTest = value ) );
 		}
 		[SerializeField] float zOffsetFactor = 0f;
 		public float ZOffsetFactor {
 			get => zOffsetFactor;
-			set => SetFloatNow( ShapesMaterialUtils.propZOffsetFactor, zOffsetFactor = value );
+			set => SetFloatOnAllInstancedMaterials( ShapesMaterialUtils.propZOffsetFactor, zOffsetFactor = value );
 		}
 		[SerializeField] int zOffsetUnits = 0;
 		public int ZOffsetUnits {
 			get => zOffsetUnits;
-			set => SetIntNow( ShapesMaterialUtils.propZOffsetUnits, zOffsetUnits = value );
+			set => SetFloatOnAllInstancedMaterials( ShapesMaterialUtils.propZOffsetUnits, zOffsetUnits = value );
 		}
 
 		#endregion
 
 		#if UNITY_EDITOR
+
 		public virtual void OnValidate() {
 			// OnValidate can get called before awake in editor, so make sure the required things are initialized
 			if( rnd == null ) rnd = GetComponent<MeshRenderer>(); // Needed for ApplyProperties
@@ -84,6 +93,8 @@ namespace Shapes {
 			UpdateAllMaterialProperties();
 			ApplyProperties();
 
+			if( MeshUpdateMode == MeshUpdateMode.SelfGenerated )
+				meshOutOfDate = true; // we can't update the mesh in OnValidate because of https://issuetracker.unity3d.com/issues/warning-appears-when-changing-meshfilter-dot-sharedmesh-during-onvalidate
 			// UpdateMesh( force:true ); gosh I wish I could do this it would solve so many problems but Unity has some WEIRD quirks here
 		}
 
@@ -281,14 +292,24 @@ namespace Shapes {
 				targetMats = instancedMaterials;
 			}
 
+			VerifyComponents();
+
 			#if UNITY_EDITOR
+			if( EditorApplication.isPlaying == false )
+				UpdateMaterialsEditorMode( targetMats );
+			else
+				#endif
+				rnd.sharedMaterials = targetMats;
+		}
+
+		#if UNITY_EDITOR
+		void UpdateMaterialsEditorMode( Material[] targetMats ) {
 			bool needsUpdate = false;
 			if( rnd.sharedMaterials.Length != targetMats.Length ) {
 				needsUpdate = true;
 			} else {
 				for( int i = 0; i < targetMats.Length; i++ ) {
 					if( rnd.sharedMaterials[i] != targetMats[i] ) {
-						string shMat = rnd.sharedMaterials[i] == null ? "null" : rnd.sharedMaterials[i].GetType().Name;
 						needsUpdate = true;
 						break;
 					}
@@ -296,14 +317,11 @@ namespace Shapes {
 			}
 
 			if( needsUpdate ) {
-				UnityEditor.SerializedObject soRnd = new UnityEditor.SerializedObject( rnd );
-				UnityEditor.Undo.RecordObject( rnd, "" );
+				Undo.RecordObject( rnd, "" );
 				rnd.sharedMaterials = targetMats;
 			}
-			#else
-			rnd.sharedMaterials = targetMats;
-			#endif
 		}
+		#endif
 
 		public void UpdateMesh( bool force = false ) {
 			MeshUpdateMode mode = MeshUpdateMode;
@@ -356,6 +374,22 @@ namespace Shapes {
 
 		void OnDidApplyAnimationProperties() => UpdateAllMaterialProperties(); // so this is not great but it works don't judge
 
+		void SetIntOnAllInstancedMaterials( int property, int value ) {
+			if( IsUsingUniqueMaterials ) {
+				UpdateMaterial();
+				foreach( Material instancedMaterial in instancedMaterials )
+					instancedMaterial.SetInt( property, value );
+			}
+		}
+
+		void SetFloatOnAllInstancedMaterials( int property, float value ) {
+			if( IsUsingUniqueMaterials ) {
+				UpdateMaterial();
+				foreach( Material instancedMaterial in instancedMaterials )
+					instancedMaterial.SetFloat( property, value );
+			}
+		}
+
 		public void UpdateAllMaterialProperties() {
 			if( gameObject.scene.IsValid() == false )
 				return; // not in a scene :c
@@ -381,6 +415,32 @@ namespace Shapes {
 			rnd.SetPropertyBlock( Mpb );
 			if( MeshUpdateMode == MeshUpdateMode.UseAssetCopy )
 				UpdateMeshBounds();
+		}
+
+		protected void SetAllDashValues( DashStyle style, bool dashed, bool matchSpacingToSize, float thickness, bool setType, bool now ) {
+			float netDashSize = style.GetNetAbsoluteSize( dashed, thickness );
+			if( dashed ) {
+				SetFloat( ShapesMaterialUtils.propDashSpacing, GetNetDashSpacing( style, true, matchSpacingToSize, thickness ) );
+				SetFloat( ShapesMaterialUtils.propDashOffset, style.offset );
+				SetInt( ShapesMaterialUtils.propDashSpace, (int)style.space );
+				SetInt( ShapesMaterialUtils.propDashSnap, (int)style.snap );
+				if( setType ) {
+					SetInt( ShapesMaterialUtils.propDashType, (int)style.type );
+					if( style.type.HasModifier() )
+						SetFloat( ShapesMaterialUtils.propDashShapeModifier, style.shapeModifier );
+				}
+			}
+
+			if( now )
+				SetFloatNow( ShapesMaterialUtils.propDashSize, netDashSize );
+			else
+				SetFloat( ShapesMaterialUtils.propDashSize, netDashSize );
+		}
+
+		protected float GetNetDashSpacing( DashStyle style, bool dashed, bool matchSpacingToSize, float thickness ) {
+			if( matchSpacingToSize && style.space == DashSpace.FixedCount )
+				return 0.5f;
+			return matchSpacingToSize ? style.GetNetAbsoluteSize( dashed, thickness ) : style.GetNetAbsoluteSpacing( dashed, thickness );
 		}
 
 
