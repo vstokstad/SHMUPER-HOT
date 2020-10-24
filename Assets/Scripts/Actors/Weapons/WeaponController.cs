@@ -25,10 +25,13 @@ namespace Actors.Weapons {
             laserEquipped = false;
             missileEquipped = false;
             weaponType = WeaponType.Plasma;
+            
+        }
+
+        private void Start(){
             HandleWeaponType(weaponType);
             PlayerInput.shoot += Fire;
         }
-        
 
         private void OnDisable(){
             // ReSharper disable once DelegateSubtraction
@@ -71,13 +74,14 @@ namespace Actors.Weapons {
                     break;
 
                 default:
+                    weaponType = WeaponType.Plasma;
+                    plasmaEquipped = true;
                     _iWeapon = gameObject.AddComponent<PlasmaShot>();
                     break;
             }
         }
 
         private void Fire(){
-            print("Fire");
             _iWeapon.Shoot();
         }
     }

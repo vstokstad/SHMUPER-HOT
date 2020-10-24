@@ -6,22 +6,25 @@ using static Managers.WeaponManager;
 
 namespace Actors.Weapons {
     public class PlasmaShot : MonoBehaviour, IWeapon {
-        private PlayerController _playerController;
-        private float _shootTimer = 0.3f;
+       [SerializeField] private PlayerController _playerController;
+
+        [SerializeField] private float timeBetweenShots = 0.0f;
+        private float _shootTimer;
 
         private void Awake(){
             _playerController = GameObject.FindWithTag(playerTag).GetComponent<PlayerController>();
+            _shootTimer = timeBetweenShots;
         }
 
 
         public void Shoot(){
-            if (!(_shootTimer <= 0f)) {
-                _shootTimer -= Time.deltaTime;
+            if (!(_shootTimer <= 0.0f)) {
+                _shootTimer -= Time.unscaledDeltaTime;
                 return;
             }
 
-            if (!(PlayerData.boostCharge >= 0.5f)) return;
-            _shootTimer = 0.3f;
+            if ((PlayerData.boostCharge <= 0.5f)) return;
+            _shootTimer = timeBetweenShots;
 
             PlayerData.boostCharge -= 0.5f;
             Vector3 plasmaVelocity = new Vector3(20f, 0f);

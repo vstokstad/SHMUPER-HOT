@@ -23,37 +23,33 @@ namespace Managers {
         }
 
         private void Start(){
-            PlayerInput.move += SwitchTimeState;
+            PlayerInput.move += TimeShift;
         }
 
         private void Update(){
-           
-            TimeShift();
-       
+            SwitchTimeState();
         }
 
         private void OnDisable(){
             // ReSharper disable once DelegateSubtraction
-            PlayerInput.move -= SwitchTimeState;
+            PlayerInput.move -= TimeShift;
         }
 
         private void SwitchTimeState(){
             if (gamePaused) return;
-            timeState = timeState == TimeState.Stopped ? TimeState.Normal : TimeState.Stopped ;
-            print("TimeShift");
+            if (Input.anyKey) timeState = TimeState.Normal;
+            else timeState = timeState = TimeState.Stopped;
             TimeShift();
         }
 
         private void TimeShift(){
             switch (timeState) {
                 case TimeState.Stopped:
-                    Time.timeScale = Mathf.Lerp(Time.timeScale, _stoppedTime,
-                        timeChangeRate * Time.unscaledDeltaTime);
+                    Time.timeScale = Mathf.Lerp(Time.timeScale,_stoppedTime, timeChangeRate*Time.unscaledDeltaTime);
                     Time.fixedDeltaTime = Time.timeScale * _fixedDeltaTime;
                     break;
                 case TimeState.Normal:
-                    Time.timeScale = Mathf.Lerp(Time.timeScale, _normalTime,
-                        timeChangeRate * Time.unscaledDeltaTime);
+                    Time.timeScale = Mathf.Lerp(Time.timeScale,_normalTime, timeChangeRate*Time.unscaledDeltaTime);
                     Time.fixedDeltaTime = Time.timeScale * _fixedDeltaTime;
                     break;
                 default:

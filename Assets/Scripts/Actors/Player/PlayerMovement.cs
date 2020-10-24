@@ -5,17 +5,15 @@ namespace Actors.Player {
     [RequireComponent(typeof(ParticleSystem))]
     public class PlayerMovement : MonoBehaviour {
         private AudioSource _audioSource;
-        private Vector3 _currentVelocity;
+        private Vector2 _currentVelocity;
         private float _intensity;
         private Light _light;
         private Color _lightColor;
-        [NonSerialized] private Vector3 _moveDirection;
+        [NonSerialized] private Vector2 _moveDirection;
         private ParticleSystem _particleSystem;
         private PlayerData _playerData;
         private Rigidbody _rigidbody;
-
         private float _inputAmount;
-        [SerializeField] public Vector2 touchInput;
 
 
         private void Awake(){
@@ -37,26 +35,24 @@ namespace Actors.Player {
         private void OnDisable(){
             PlayerInput.boost -= Boost;
         }
-
+        
 
         internal void TouchInput(Vector2 gamepadTouch){
-            //TODO remove print
-            print("TouchInput");
             _moveDirection = gamepadTouch;
-            _inputAmount = Mathf.Clamp01(Mathf.Abs(touchInput.y) + Mathf.Abs(touchInput.x));
+            _inputAmount = Mathf.Clamp01(Mathf.Abs(gamepadTouch.y) + Mathf.Abs(gamepadTouch.x));
             _currentVelocity = _rigidbody.velocity;
-            Vector3 velocity = _currentVelocity + _moveDirection * (_inputAmount * _playerData.acceleration);
-            velocity = Vector3.ClampMagnitude(velocity, _playerData.maxSpeed);
-            TrailingFlamesHandheld();
-            MovePlayer(velocity);
+            Vector2 velocity = _currentVelocity + _moveDirection * (_inputAmount * _playerData.acceleration);
+            velocity = Vector2.ClampMagnitude(velocity, _playerData.maxSpeed);
+            TrailingFlamesHandheld(velocity);
+             MovePlayer(velocity);
         }
 
         private void Boost(){
             //TODO remove print
             print("Boost");
-            if (!(PlayerData.boostCharge > 0)) return;
+            if (!(PlayerData.boostCharge > 0)) return;  
+            TrailingFlamesHandheld(_rigidbody.velocity);
             _rigidbody.velocity *= 3f;
-
             _light.intensity = _intensity * 10f;
             _light.color = Color.magenta;
             if (!_audioSource.isPlaying) {
@@ -67,21 +63,26 @@ namespace Actors.Player {
             PlayerData.boostCharge -= 3f * Time.fixedDeltaTime;
         }
 
-        private void MovePlayer(Vector3 velocity){
+        private void MovePlayer(Vector2 velocity){
             //TODO remove print
             print("MovePlayer");
             _rigidbody.velocity = velocity;
-            _light.intensity = _intensity;
-            _light.color = _lightColor;
+                _light.intensity = _intensity;
+                _light.color = _lightColor;
+                
+            
         }
 
-        private void TrailingFlamesHandheld(){
+        private void TrailingFlamesHandheld(Vector2 velocity){
             ParticleSystem.LightsModule systemLights = _particleSystem.lights;
-            if (touchInput != Vector2.zero) {
+            if ( velocity != Vector2.zero) {
                 systemLights.enabled = true;
-                _particleSystem.Simulate(1f, true, false, false);
+               
+                _particleSystem.Play();
             }
             else {
+                _light.intensity = _intensity;
+                _light.color = _lightColor;
                 _particleSystem.Clear();
                 systemLights.enabled = false;
             }

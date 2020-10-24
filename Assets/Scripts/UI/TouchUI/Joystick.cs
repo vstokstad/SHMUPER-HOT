@@ -7,10 +7,45 @@ using UnityEngine.UI;
 
 namespace UI.TouchUI {
     public class Joystick : MonoBehaviour {
-        private float _gamePadRadius;
         private GameObject _gamePad;
-        [Tooltip("Up, Down, Left, Right")] public Button[] joystickButtons = new Button[4];
         [SerializeField] private PlayerMovement playerMovement;
+        public Button upButton;
+        public Button downButton;
+        public Button leftButton;
+        public Button rightButton;
+     
+
+        private void Start(){
+            _gamePad = this.gameObject;
+            _gamePad.SetActive(true);
+            upButton.onClick.AddListener(PlayerInput.moveUp + PlayerInput.move);
+            downButton.onClick.AddListener(PlayerInput.moveDown + PlayerInput.move);
+            leftButton.onClick.AddListener(PlayerInput.moveLeft + PlayerInput.move);
+            rightButton.onClick.AddListener(PlayerInput.moveRight + PlayerInput.move);
+        }
+
+        private void OnEnable(){
+            PlayerInput.moveUp += MoveUp;
+            PlayerInput.moveDown += MoveDown;
+            PlayerInput.moveLeft += MoveLeft;
+            PlayerInput.moveRight += MoveRight;
+        }
+
+        private void MoveUp(){
+            TouchMoveControl(Vector2.up);
+        }
+
+        private void MoveDown(){
+            TouchMoveControl(Vector2.down);
+        }
+
+        private void MoveLeft(){
+            TouchMoveControl(Vector2.left);
+        }
+
+        private void MoveRight(){
+            TouchMoveControl(Vector2.right);
+        }
 
         private Vector2 WorldToGamepad(Vector2 worldPt){
             Vector2 objPos = _gamePad.transform.position;
@@ -21,38 +56,16 @@ namespace UI.TouchUI {
             float y = Vector2.Dot(pointOffset, up);
             return new Vector2(x, y);
         }
-
-        private void Start(){
-            _gamePad = this.gameObject;
-            _gamePad.SetActive(true);
-            _gamePadRadius = _gamePad.GetComponent<Disc>().Radius;
-            joystickButtons[0].onClick.AddListener(Move);
-            joystickButtons[1].onClick.AddListener(Move);
-            joystickButtons[2].onClick.AddListener(Move);
-            joystickButtons[3].onClick.AddListener(Move);
-            PlayerInput.move += TouchMoveControl;
-        }
-
-        private void Update(){ }
-
-        private void Move(){
-            PlayerInput.move();
-        }
-
-        private void TouchMoveControl(){
-//TODO remove print
-            print("TouchMoveControl");
-            
-            Vector2 mousePos = Input.mousePosition;
-            
-            Vector2 gamepadTouch = WorldToGamepad(mousePos).normalized;
-            playerMovement.TouchInput(gamepadTouch);
+        private void TouchMoveControl(Vector2 direction){
+            playerMovement.TouchInput(direction);
         }
 
         private void OnDisable(){
-            foreach (Button button in joystickButtons) {
-                button.onClick.RemoveAllListeners();
-            }
+            upButton.onClick.RemoveAllListeners();
+            downButton.onClick.RemoveAllListeners();
+            leftButton.onClick.RemoveAllListeners();
+            rightButton.onClick.RemoveAllListeners();
         }
     }
+    
 }

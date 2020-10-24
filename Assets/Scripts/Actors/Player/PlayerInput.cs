@@ -1,5 +1,4 @@
-﻿using System;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.Events;
 
 namespace Actors.Player {
@@ -12,6 +11,18 @@ namespace Actors.Player {
         public static UnityAction moveDown = delegate{ };
         public static UnityAction moveLeft = delegate{ };
         public static UnityAction moveRight = delegate{ };
-        
+
+        private void Update(){
+            if (Input.anyKeyDown) {
+                move();
+                if (Input.GetKey(KeyCode.W)){ moveUp();}
+                if (Input.GetKey(KeyCode.S)) moveDown();
+                if (Input.GetKey(KeyCode.A)) moveLeft();
+                if (Input.GetKey(KeyCode.D)) moveRight();
+                if (Input.GetKeyDown(KeyCode.Space)) shoot();
+                if (Input.GetKeyDown(KeyCode.LeftShift)) boost();
+                if (Input.GetKeyDown(KeyCode.F)) shield();
+            }
+        }
     }
 }

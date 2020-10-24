@@ -46,9 +46,12 @@ namespace Actors.Enemies {
         private void Move(Vector3 direction){
             float speedAdjust = Vector3.Distance(_playerTransform.position, transform.position);
 
-            if (_level < 2f) direction.y = Mathf.Sin(direction.y * (Mathf.PI * Time.fixedDeltaTime));
+            if (_level < 2f) {speedAdjust = 3f;
+                direction.y = Mathf.Sin(direction.y * (Mathf.PI * Time.fixedDeltaTime));}
 
-            if (_level >= 3) _rigidBody.rotation = Random.rotationUniform.normalized;
+            if (_level >= 3) {
+                speedAdjust = 10f; }
+            
             _rigidBody.AddForce(direction * (speedAdjust + _moveSpeed * Time.fixedDeltaTime), ForceMode.Acceleration);
         }
 
