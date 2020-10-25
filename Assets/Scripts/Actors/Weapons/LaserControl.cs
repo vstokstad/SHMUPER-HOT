@@ -12,16 +12,18 @@ namespace Actors.Weapons {
         private Vector3 _laserScale;
         private float _laserTimer;
         private Transform _playerTransform;
+        [SerializeField] private float laserTime = 0.8f;
 
         private void Awake(){
             _playerTransform = GameObject.FindWithTag(playerTag).transform;
             transform.position = _playerTransform.position;
             gameObject.SetActive(true);
+            _laserTimer = laserTime;
         }
 
-        private void Update(){
+        public void Update(){
             transform.position = _playerTransform.position;
-            if (_laserIsOn) _laserTimer -= Time.unscaledDeltaTime;
+            if (_laserIsOn) _laserTimer -= Time.deltaTime;
             if (_laserTimer <= 0f) {
                 gameObject.SetActive(false);
             }
@@ -31,7 +33,7 @@ namespace Actors.Weapons {
             _laserScale.z = _laserLengthOn;
             gameObject.transform.localScale = _laserScale;
             _laserIsOn = true;
-            _laserTimer = 1f;
+            _laserTimer = laserTime;
             gameObject.SetActive(true);
         }
 

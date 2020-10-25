@@ -33,7 +33,7 @@ namespace Managers {
         }
 
 
-        private void Update(){
+       public void BatchUpdate(){
             _spawnTimer -= Time.deltaTime;
 
             if (_spawnTimer <= 0f) {

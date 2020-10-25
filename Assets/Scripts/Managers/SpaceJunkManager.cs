@@ -17,7 +17,7 @@ namespace Managers {
         }
 
 
-        private void FixedUpdate(){
+        public void BatchFixedUpdate(){
             _spawnTimer -= Time.fixedDeltaTime;
             if (_spawnTimer <= 0f)
                 if (_spaceJunkList.Count > 0)

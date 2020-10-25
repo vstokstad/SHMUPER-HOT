@@ -16,7 +16,7 @@ namespace Actors.Environment {
             _backgroundStarSystems = GetComponentsInChildren<ParticleSystem>();
         }
 
-        private void Update(){
+        public void BatchUpdate(){
             _playerPosition = _playerTransform.position;
             _backgroundStarSystems[0].transform.position = -_playerPosition * 0.09f;
 

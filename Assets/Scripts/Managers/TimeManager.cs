@@ -15,6 +15,7 @@ namespace Managers {
         private float _fixedDeltaTime;
         [NonSerialized] public TimeState timeState;
         [NonSerialized]public bool gamePaused;
+        [SerializeField] private Rigidbody playerRB;
         private void Awake(){
             _fixedDeltaTime = Time.fixedUnscaledDeltaTime;
             timeState = TimeState.Stopped;
@@ -22,34 +23,33 @@ namespace Managers {
 
         }
 
-        private void Start(){
-            PlayerInput.move += TimeShift;
-        }
 
-        private void Update(){
+        public void BatchFixedUpdate(){
             SwitchTimeState();
         }
-
-        private void OnDisable(){
-            // ReSharper disable once DelegateSubtraction
-            PlayerInput.move -= TimeShift;
-        }
+        
 
         private void SwitchTimeState(){
             if (gamePaused) return;
-            if (Input.anyKey) timeState = TimeState.Normal;
-            else timeState = timeState = TimeState.Stopped;
+            if (playerRB.velocity.x > 1f || playerRB.velocity.x < -1f || playerRB.velocity.y > 1f || playerRB.velocity.y < -1f){
+                timeState = TimeState.Normal;
+            }
+            else{
+                timeState = TimeState.Stopped;
+            }
+            //  if (Input.anyKey) timeState = TimeState.Normal;
+           // else timeState = TimeState.Stopped;
             TimeShift();
         }
 
         private void TimeShift(){
             switch (timeState) {
                 case TimeState.Stopped:
-                    Time.timeScale = Mathf.Lerp(Time.timeScale,_stoppedTime, timeChangeRate*Time.unscaledDeltaTime);
+                    Time.timeScale = Mathf.Lerp(Time.timeScale,_stoppedTime, timeChangeRate*Time.fixedDeltaTime);
                     Time.fixedDeltaTime = Time.timeScale * _fixedDeltaTime;
                     break;
                 case TimeState.Normal:
-                    Time.timeScale = Mathf.Lerp(Time.timeScale,_normalTime, timeChangeRate*Time.unscaledDeltaTime);
+                    Time.timeScale = Mathf.Lerp(Time.timeScale,_normalTime, timeChangeRate*Time.fixedDeltaTime);
                     Time.fixedDeltaTime = Time.timeScale * _fixedDeltaTime;
                     break;
                 default:

@@ -11,18 +11,19 @@ namespace Actors.Player {
         public static UnityAction moveDown = delegate{ };
         public static UnityAction moveLeft = delegate{ };
         public static UnityAction moveRight = delegate{ };
+        public static UnityAction nextWeapon = delegate{  };
 
-        private void Update(){
-            if (Input.anyKeyDown) {
-                move();
-                if (Input.GetKey(KeyCode.W)){ moveUp();}
-                if (Input.GetKey(KeyCode.S)) moveDown();
-                if (Input.GetKey(KeyCode.A)) moveLeft();
-                if (Input.GetKey(KeyCode.D)) moveRight();
-                if (Input.GetKeyDown(KeyCode.Space)) shoot();
-                if (Input.GetKeyDown(KeyCode.LeftShift)) boost();
-                if (Input.GetKeyDown(KeyCode.F)) shield();
-            }
-        }
+       public void BatchUpdate(){
+           if (!Input.anyKeyDown) return;
+           move();
+           if (Input.GetKey(KeyCode.W)){ moveUp();}
+           if (Input.GetKey(KeyCode.S)) moveDown();
+           if (Input.GetKey(KeyCode.A)) moveLeft();
+           if (Input.GetKey(KeyCode.D)) moveRight();
+           if (Input.GetKeyDown(KeyCode.Space)) shoot();
+           if (Input.GetKeyDown(KeyCode.LeftShift)) boost();
+           if (Input.GetKeyDown(KeyCode.F)) shield();
+           if (Input.GetKeyDown(KeyCode.Q)) nextWeapon();
+       }
     }
 }

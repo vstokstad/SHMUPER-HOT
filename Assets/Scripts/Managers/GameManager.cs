@@ -25,7 +25,7 @@ namespace Managers {
         }
 
         private void OnEnable(){
-            LockCursor = false;
+            LockCursor = true;
         }
 
         private void OnDisable(){

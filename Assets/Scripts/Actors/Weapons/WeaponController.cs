@@ -31,6 +31,7 @@ namespace Actors.Weapons {
         private void Start(){
             HandleWeaponType(weaponType);
             PlayerInput.shoot += Fire;
+            PlayerInput.nextWeapon += ChangeWeapon;
         }
 
         private void OnDisable(){

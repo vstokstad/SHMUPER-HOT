@@ -1,6 +1,9 @@
 ﻿using Actors.Player;
+using JetBrains.Annotations;
+using UnityEditor;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using static Managers.TagsAsStrings;
 
 namespace Managers {
     public class GameOverManager : MonoBehaviour {
@@ -9,16 +12,20 @@ namespace Managers {
         private PlayerData _playerData;
         private PlayerController _playerController;
         private float _highScoreStateAtDeath;
+  
 
-
-        private void Update(){
+        private void OnEnable(){
+            _playerController = FindObjectOfType<PlayerController>();
+            _timeManager = FindObjectOfType<TimeManager>();
             _timeManager.gamePaused = true;
             _timeManager.timeState = TimeState.Stopped;
-            if (Input.GetKeyDown(KeyCode.Return)) {
-                AsyncOperation asyncLoad = SceneManager.LoadSceneAsync(SceneManager.GetActiveScene().buildIndex);
-                asyncLoad.allowSceneActivation = true;
-                ResetGame();
-            }
+            _highScoreStateAtDeath = _playerController.playerData.highScore;
+            
+        }
+        private void Update(){
+            if (!Input.anyKeyDown) return;
+            ResetGame();
+       
         }
 
         private void ResetGame(){
@@ -27,14 +34,13 @@ namespace Managers {
             _playerController.killCounter = 0f;
             PlayerData.boostCharge = 10f;
             _timeManager.gamePaused = false;
+            DontDestroyOnLoad(GameObject.FindWithTag(playerTag));
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+       
+      
             this.enabled = false;
         }
 
-        private void OnEnable(){
-            _playerController = FindObjectOfType<PlayerController>();
-            _timeManager = FindObjectOfType<TimeManager>();
-        
-            _highScoreStateAtDeath = _playerController.playerData.highScore;
-        }
+      
     }
 }

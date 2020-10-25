@@ -20,7 +20,7 @@ namespace Actors.Player {
             _playerRigidbody = GetComponent<Rigidbody>();
         }
 
-        private void Update(){
+        public void BatchUpdate(){
             playerData.RechargeTimer();
             if (killCounter > 5f && killCounter < 10f)
                 weaponPickUpManager.SpawnLaser();

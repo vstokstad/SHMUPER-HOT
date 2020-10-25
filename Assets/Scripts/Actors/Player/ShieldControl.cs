@@ -22,7 +22,7 @@ namespace Actors.Player {
             PlayerInput.shield -= ActivateShield;
         }
 
-        private void Update(){
+       public void BatchUpdate(){
      
             _shieldCollider.enabled = _playerData.ShieldIsLoaded;
             _shieldSprite.enabled = _playerData.ShieldIsLoaded;
@@ -36,8 +36,6 @@ namespace Actors.Player {
         }
 
         private void ActivateShield(){
-            //TODO remove print
-            print("ShieldButton");
             if (_playerData.ShieldIsLoaded) return;
             if (!(PlayerData.boostCharge >= 5f)) return;
             _playerData.ShieldIsLoaded = true;

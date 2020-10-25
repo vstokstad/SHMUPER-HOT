@@ -1,5 +1,6 @@
 ﻿using Actors.Player;
 using UnityEngine;
+using UnityEngine.PlayerLoop;
 using static Managers.TagsAsStrings;
 using static Managers.WeaponManager;
 
@@ -8,7 +9,7 @@ namespace Actors.Weapons {
     public class PlasmaShot : MonoBehaviour, IWeapon {
        [SerializeField] private PlayerController _playerController;
 
-        [SerializeField] private float timeBetweenShots = 0.0f;
+        [SerializeField] private float timeBetweenShots = 0.1f;
         private float _shootTimer;
 
         private void Awake(){
@@ -16,6 +17,9 @@ namespace Actors.Weapons {
             _shootTimer = timeBetweenShots;
         }
 
+        public void Update(){
+            _shootTimer -= Time.deltaTime;
+        }
 
         public void Shoot(){
             if (!(_shootTimer <= 0.0f)) {
@@ -26,7 +30,7 @@ namespace Actors.Weapons {
             if ((PlayerData.boostCharge <= 0.5f)) return;
             _shootTimer = timeBetweenShots;
 
-            PlayerData.boostCharge -= 0.5f;
+            PlayerData.boostCharge -= 0.6f;
             Vector3 plasmaVelocity = new Vector3(20f, 0f);
             GameObject plasmaShot = WeaponPool.Instance.Get(WeaponType.Plasma);
             Vector3 initialPosition = _playerController.gameObject.transform.position;

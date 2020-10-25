@@ -6,9 +6,9 @@ using static Managers.WeaponManager;
 namespace Actors.Weapons {
     public class HomingMissile : MonoBehaviour, IWeapon {
         private GameObject _player;
-        [SerializeField] private float rateOfFire = 0.3f;
+        [SerializeField] private float rateOfFire = 0.2f;
         private float _fireTimer;
-        private void Update(){
+        public void Update(){
             _fireTimer -= Time.deltaTime;
         }
 
@@ -21,7 +21,7 @@ namespace Actors.Weapons {
 
         public void Shoot(){
             if (!FireTimer() || PlayerData.boostCharge <= 1f) return;
-            PlayerData.boostCharge -= 1f;
+            PlayerData.boostCharge -= 1.5f;
             GameObject missile = WeaponPool.Instance.Get(WeaponType.Missile);
             Transform transform1 = _player.transform;
             missile.transform.position = transform1.position;

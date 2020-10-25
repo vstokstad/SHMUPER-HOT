@@ -14,21 +14,24 @@ namespace Actors.Player {
         private PlayerData _playerData;
         private Rigidbody _rigidbody;
         private float _inputAmount;
+        [SerializeField] private float boostAmount = 4f;
 
 
         private void Awake(){
             _playerData = GetComponent<PlayerController>().playerData;
             _light = GetComponent<Light>();
-            _rigidbody = GetComponent<Rigidbody>();
+        
             _audioSource = GetComponent<AudioSource>();
             _particleSystem = GetComponent<ParticleSystem>();
             _intensity = _light.intensity;
             _lightColor = _light.color;
-            _currentVelocity = _rigidbody.velocity;
+           
         }
 
         private void Start(){
             PlayerInput.boost += Boost;
+            _rigidbody = GetComponent<Rigidbody>();
+            _currentVelocity = _rigidbody.velocity;
         }
 
 
@@ -48,11 +51,10 @@ namespace Actors.Player {
         }
 
         private void Boost(){
-            //TODO remove print
-            print("Boost");
+           
             if (!(PlayerData.boostCharge > 0)) return;  
             TrailingFlamesHandheld(_rigidbody.velocity);
-            _rigidbody.velocity *= 3f;
+            _rigidbody.velocity *= boostAmount;
             _light.intensity = _intensity * 10f;
             _light.color = Color.magenta;
             if (!_audioSource.isPlaying) {
@@ -64,8 +66,6 @@ namespace Actors.Player {
         }
 
         private void MovePlayer(Vector2 velocity){
-            //TODO remove print
-            print("MovePlayer");
             _rigidbody.velocity = velocity;
                 _light.intensity = _intensity;
                 _light.color = _lightColor;
@@ -77,7 +77,6 @@ namespace Actors.Player {
             ParticleSystem.LightsModule systemLights = _particleSystem.lights;
             if ( velocity != Vector2.zero) {
                 systemLights.enabled = true;
-               
                 _particleSystem.Play();
             }
             else {

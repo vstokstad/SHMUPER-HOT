@@ -5,8 +5,8 @@ using static Managers.WeaponManager;
 namespace Actors.Weapons {
     public class LaserBeam : MonoBehaviour, IWeapon {
         private float _rateOfFire;
-        [SerializeField] private float fireRate = 1f;
-        private void Update(){
+        [SerializeField] private float fireRate = 0.8f;
+        public void Update(){
             _rateOfFire -= Time.unscaledDeltaTime;
         }
 

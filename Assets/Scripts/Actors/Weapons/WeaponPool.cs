@@ -1,3 +1,4 @@
+using System.Linq;
 using UnityEngine;
 
 namespace Actors.Weapons {
@@ -12,7 +13,7 @@ namespace Actors.Weapons {
         public static WeaponPool Instance { get; private set; }
 
         private void Awake(){
-            if(Instance != null) Destroy(Instance);
+            if (Instance != null) Destroy(Instance);
             Instance = this;
             AddWeapon(_plasmaQueue, plasmaPrefab, 15, player);
             AddWeapon(_laserQueue, laserPrefab, 2, player);
@@ -20,13 +21,18 @@ namespace Actors.Weapons {
         }
 
         // ReSharper disable once UnusedMethodReturnValue.Local
-        private GameObject CheckAvailableShot(GameObject[] shotArray){
+        private static GameObject CheckAvailableShot(GameObject[] shotArray){
             foreach (GameObject t in shotArray) {
                 if (t.activeSelf) continue;
-                return t;
+                try {
+                    return Instantiate(shotArray.Last());
+                }
+                catch {
+                    throw new UnityException("No Available Shots right now.");
+                }
             }
 
-            throw new UnityException("No available shots right now");
+            throw new UnityException("No available shots right now.");
         }
 
         public GameObject Get(WeaponType currentWeapon){

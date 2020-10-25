@@ -1,12 +1,12 @@
-using System;
 using UnityEngine;
 
 namespace Actors.Player {
     [CreateAssetMenu(fileName = "New Player Data", menuName = "Scriptable/PlayerData", order = 0)]
     public class PlayerData : ScriptableObject {
-        [Header("Statistics")] [NonSerialized] public static float health = 10f;
+        [Header("Statistics")]
+        public static float health = 10f;
         
-        [NonSerialized] public static float boostCharge = 10f;
+         public static float boostCharge = 10f;
 
         public float highScore;
 

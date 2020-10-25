@@ -18,7 +18,7 @@ namespace Actors.Player {
         
         }
 
-        private void FixedUpdate(){
+        public void BatchFixedUpdate(){
             _boundPosition = transform.position;
             _boundPosition.x = Mathf.Clamp(_boundPosition.x, _cameraBounds.x * -1f + _playerWidth,
                 _cameraBounds.x - _playerWidth);
