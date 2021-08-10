@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using Managers;
+using UnityEngine;
 using UnityEngine.Events;
 
 namespace Actors.Player {
@@ -14,6 +15,7 @@ namespace Actors.Player {
         public static UnityAction nextWeapon = delegate{  };
 
        public void BatchUpdate(){
+           if (GameManager.OnMobile) return;
            if (!Input.anyKeyDown) return;
            move();
            if (Input.GetKey(KeyCode.W)){ moveUp();}

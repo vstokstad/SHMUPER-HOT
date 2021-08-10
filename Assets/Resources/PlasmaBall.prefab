@@ -4895,7 +4895,7 @@ Rigidbody:
   m_AngularDrag: 0
   m_UseGravity: 0
   m_IsKinematic: 0
-  m_Interpolate: 1
+  m_Interpolate: 0
   m_Constraints: 8
   m_CollisionDetection: 0
 --- !u!114 &-7780017904300683250
@@ -5094,7 +5094,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 0, y: -1.4252705e+18, z: 4.5859e-41, w: 0}
+  m_BoundingSphereOverride: {x: 0, y: 3.6613526e-22, z: 4.5806e-41, w: 0}
   m_UseBoundingSphereOverride: 0
   m_ShadowRadius: 0.32
   m_ShadowAngle: 0

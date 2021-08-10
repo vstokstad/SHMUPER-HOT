@@ -16,6 +16,7 @@ namespace Managers {
 
 
         private void Awake(){
+            OnMobile = SystemInfo.deviceType == DeviceType.Handheld;
             PlayerCamera = Camera.main;
             float width = PlayerCamera.scaledPixelWidth;
             float height = PlayerCamera.scaledPixelHeight;
@@ -23,6 +24,7 @@ namespace Managers {
             CameraBounds = PlayerCamera.ScreenToWorldPoint(new Vector3(width, height,
                 0f));
         }
+        
 
         private void OnEnable(){
             LockCursor = true;

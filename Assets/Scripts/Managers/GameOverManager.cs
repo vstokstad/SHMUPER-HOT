@@ -1,9 +1,6 @@
 ﻿using Actors.Player;
-using JetBrains.Annotations;
-using UnityEditor;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using static Managers.TagsAsStrings;
 
 namespace Managers {
     public class GameOverManager : MonoBehaviour {
@@ -34,11 +31,9 @@ namespace Managers {
             _playerController.killCounter = 0f;
             PlayerData.boostCharge = 10f;
             _timeManager.gamePaused = false;
-            DontDestroyOnLoad(GameObject.FindWithTag(playerTag));
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
        
-      
-            this.enabled = false;
+      gameObject.SetActive(false);
         }
 
       

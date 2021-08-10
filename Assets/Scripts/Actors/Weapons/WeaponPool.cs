@@ -1,4 +1,6 @@
+using System;
 using System.Linq;
+using Actors.Player;
 using UnityEngine;
 
 namespace Actors.Weapons {
@@ -20,16 +22,11 @@ namespace Actors.Weapons {
             AddWeapon(_missileQueue, missilePrefab, 10, player);
         }
 
-        // ReSharper disable once UnusedMethodReturnValue.Local
-        private static GameObject CheckAvailableShot(GameObject[] shotArray){
+        private GameObject CheckAvailableShot(GameObject[] shotArray){
             foreach (GameObject t in shotArray) {
                 if (t.activeSelf) continue;
-                try {
-                    return Instantiate(shotArray.Last());
-                }
-                catch {
-                    throw new UnityException("No Available Shots right now.");
-                }
+                return t;
+
             }
 
             throw new UnityException("No available shots right now.");
@@ -59,7 +56,9 @@ namespace Actors.Weapons {
         }
 
         private static void AddWeapon(GameObject[] queue, GameObject weaponPrefab, int number, Transform parent){
-            for (int i = 0; i < number; i++) {
+            for (int i = 0;
+                i < number;
+                i++) {
                 GameObject shot = Instantiate(weaponPrefab, parent);
                 shot.gameObject.SetActive(false);
                 queue[i] = shot;

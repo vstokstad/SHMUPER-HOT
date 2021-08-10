@@ -1,3 +1,5 @@
+using System.Collections;
+using System.Collections.Generic;
 using Actors.Enemies;
 using Managers;
 using UnityEngine;
@@ -14,10 +16,12 @@ namespace Actors.Player {
         public WeaponPickUpManager weaponPickUpManager;
         public UnityEvent gameOverEvent = new UnityEvent();
         private Rigidbody _playerRigidbody;
+        private Renderer _renderer;
 
         private void Awake(){
             killCounter = 0f;
             _playerRigidbody = GetComponent<Rigidbody>();
+            _renderer = GetComponent<Renderer>();
         }
 
         public void BatchUpdate(){
@@ -38,14 +42,20 @@ namespace Actors.Player {
             EnemyController enemyController = other.gameObject.GetComponent<EnemyController>();
             Rigidbody enemyBody = other.gameObject.GetComponent<Rigidbody>();
             Vector3 velocity = _playerRigidbody.velocity * 2f;
-            TakeDamage(PlayerData.health, enemyController.crashDamage);
+            StartCoroutine(TakeDamage(PlayerData.health, enemyController.crashDamage));
             enemyBody.AddRelativeForce(velocity.x, velocity.y, 0f, ForceMode.VelocityChange);
+            
         }
 
 
-        private void TakeDamage(float playerHealth, float damage){
+        private IEnumerator TakeDamage(float playerHealth, float damage){
             playerHealth -= damage;
             PlayerData.health = playerHealth;
+            Color color = _renderer.material.color;
+            _renderer.material.color = Color.red;
+            Handheld.Vibrate();
+           yield return new WaitForFixedUpdate();
+            _renderer.material.color = color;
             if (PlayerData.health <= 0f) gameOverEvent.Invoke();
         }
     }

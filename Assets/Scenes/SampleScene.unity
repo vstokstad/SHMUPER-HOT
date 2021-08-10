@@ -659,16 +659,16 @@ ParticleSystem:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 394086860}
   serializedVersion: 6
-  lengthInSec: 2.09
+  lengthInSec: 5.773
   simulationSpeed: 1
   stopAction: 0
   cullingMode: 0
   ringBufferMode: 0
   ringBufferLoopRange: {x: 0, y: 1}
   looping: 1
-  prewarm: 1
+  prewarm: 0
   playOnAwake: 1
-  useUnscaledTime: 0
+  useUnscaledTime: 1
   autoRandomSeed: 1
   useRigidbodyForVelocity: 0
   startDelay:
@@ -734,7 +734,7 @@ ParticleSystem:
     startLifetime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 7.91
+      scalar: 6.37
       minScalar: 5
       maxCurve:
         serializedVersion: 2
@@ -787,7 +787,7 @@ ParticleSystem:
     startSpeed:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 6
+      scalar: 7.11
       minScalar: 5
       maxCurve:
         serializedVersion: 2
@@ -1219,7 +1219,7 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
     randomizeRotationDirection: 0
-    maxNumParticles: 30
+    maxNumParticles: 114
     size3D: 0
     rotation3D: 0
     gravityModifier:
@@ -11255,6 +11255,16 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1289717216}
   m_CullTransparentMesh: 0
+--- !u!82 &1302108576 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 342861050, guid: 52686ef3e06f94e11aae7e32aed3aa6d, type: 3}
+  m_PrefabInstance: {fileID: 4805805625132452891}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &1302108579 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 2035047892, guid: 52686ef3e06f94e11aae7e32aed3aa6d, type: 3}
+  m_PrefabInstance: {fileID: 4805805625132452891}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &1349152567 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 2870423132358844714, guid: 52686ef3e06f94e11aae7e32aed3aa6d, type: 3}
@@ -12319,7 +12329,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2c351fa38dd6e4a95b71465ae8f88ec8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeChangeRate: 2
+  timeChangeRate: 3
   playerRB: {fileID: 1349152572}
 --- !u!224 &679094705828267339
 RectTransform:
@@ -18631,6 +18641,10 @@ PrefabInstance:
       propertyPath: m_Drag
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 2035047893, guid: 52686ef3e06f94e11aae7e32aed3aa6d, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 415b2b5b090ea4d35a9f21b6eddd5c65, type: 2}
     - target: {fileID: 4565420466384218642, guid: 52686ef3e06f94e11aae7e32aed3aa6d, type: 3}
       propertyPath: weaponPickUpManager
       value: 
@@ -18689,16 +18703,36 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5097930644572582933, guid: 52686ef3e06f94e11aae7e32aed3aa6d, type: 3}
       propertyPath: m_BoundingSphereOverride.y
-      value: -1.2971635e+37
+      value: 7.5
       objectReference: {fileID: 0}
     - target: {fileID: 5097930644572582933, guid: 52686ef3e06f94e11aae7e32aed3aa6d, type: 3}
       propertyPath: m_BoundingSphereOverride.z
-      value: 4.5804e-41
+      value: 7.5
       objectReference: {fileID: 0}
     - target: {fileID: 5097930644572582933, guid: 52686ef3e06f94e11aae7e32aed3aa6d, type: 3}
       propertyPath: m_BoundingSphereOverride.w
-      value: 1.825361e+10
+      value: -8
       objectReference: {fileID: 0}
+    - target: {fileID: 5097930644572582933, guid: 52686ef3e06f94e11aae7e32aed3aa6d, type: 3}
+      propertyPath: m_BoundingSphereOverride.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7365231321015884042, guid: 52686ef3e06f94e11aae7e32aed3aa6d, type: 3}
+      propertyPath: _audioSource
+      value: 
+      objectReference: {fileID: 1302108576}
+    - target: {fileID: 7365231321015884042, guid: 52686ef3e06f94e11aae7e32aed3aa6d, type: 3}
+      propertyPath: _particleSystem
+      value: 
+      objectReference: {fileID: 1302108579}
+    - target: {fileID: 7365231321015884042, guid: 52686ef3e06f94e11aae7e32aed3aa6d, type: 3}
+      propertyPath: _playerData
+      value: 
+      objectReference: {fileID: 11400000, guid: d9e56dc32dd8443e8a325fb20b5639cd, type: 2}
+    - target: {fileID: 7365231321015884042, guid: 52686ef3e06f94e11aae7e32aed3aa6d, type: 3}
+      propertyPath: _rigidbody
+      value: 
+      objectReference: {fileID: 1349152572}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 52686ef3e06f94e11aae7e32aed3aa6d, type: 3}
 --- !u!1 &4874757225900777103
